@@ -1,4 +1,6 @@
-# hologrowth
+# Hologrowth
+
+Please write something here later
 
 ## Project setup
 ```
