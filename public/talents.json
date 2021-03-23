@@ -1,0 +1,137 @@
+{
+    "jp": {
+        "sora": {
+            "channelId": "UCp6993wxpyDPHUpavwDFqgg"
+        }, 
+        "roboco": {
+            "channelId": "UCDqI2jOz0weumE8s7paEk6g"
+        },
+        "miko": {
+            "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA"
+        },
+        "suisei": {
+            "channelId": "UC5CwaMl1eIgY8h02uZw7u8A"
+        },
+        "azki": {
+            "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw"
+        },
+        "mel": {
+            "channelId": "UCD8HOxPs4Xvsm8H0ZxXGiBw"
+        },
+        "akirose": {
+            "channelId": "UCFTLzh12_nrtzqBPsTCqenA"
+        },
+        "haato": {
+            "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg"
+        },
+        "fubuki": {
+            "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg"
+        },
+        "matsuri": {
+            "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg"
+        },
+        "aqua": {
+            "channelId": "UC1opHUrw8rvnsadT-iGp7Cg"
+        },
+        "shion": {
+            "channelId": "UCXTpFs_3PqI41qX2d9tL2Rw"
+        },
+        "ayame": {
+            "channelId": "UC7fk0CB07ly8oSl0aqKkqFg"
+        },
+        "choco": {
+            "channelId": "UC1suqwovbL1kzsoaZgFZLKg"
+        },
+        "subaru": {
+            "channelId": "UCvzGlP9oQwU--Y0r9id_jnA"
+        },
+        "mio": {
+            "channelId": "UCp-5t9SrOQwXMU7iIjQfARg"
+        },
+        "okayu": {
+            "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw"
+        },
+        "korone": {
+            "channelId": "UChAnqc_AY5_I3Px5dig3X1Q"
+        },
+        "marine": {
+            "channelId": "UCCzUftO8KOVkV4wQG1vkUvg"
+        },
+        "rushia": {
+            "channelId": "UCl_gCybOJRIgOXw6Qb4qJzQ"
+        },
+        "pekora": {
+            "channelId": "UC1DCedRgGHBdm81E1llLhOQ"
+        },
+        "flare": {
+            "channelId": "UCvInZx9h3jC2JzsIzoOebWg"
+        },
+        "noel": {
+            "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ"
+        },
+        "watame": {
+            "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA"
+        },
+        "towa": {
+            "channelId": "UC1uv2Oq6kNxgATlCiez59hw"
+        },
+        "coco": {
+            "channelId": "UCS9uQI-jC3DE0L4IpXyvr6w"
+        },
+        "kanata": {
+            "channelId": "UCZlDXzGoo7d44bwdNObFacg"
+        },
+        "luna": {
+            "channelId": "UCa9Y57gfeY0Zro_noHRVrnw"
+        },
+        "lamy": {
+            "channelId": "UCFKOVgVbGmX65RxO3EtH3iw"
+        },
+        "nene": {
+            "channelId": "UCAWSyEs_Io8MtpY3m-zqILA"
+        },
+        "botan": {
+            "channelId": "UCUKD-uaobj9jiqB-VXt71mA"
+        },
+        "polka": {
+            "channelId": "UCK9V2B22uJYu3N7eR_BT9QA"
+        }
+    },
+    "en": {
+        "amelia": {
+            "channelId": "UCyl1z3jo3XHR1riLFKG5UAg"
+        },
+        "ina'nis": {
+            "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg"
+        },
+        "gura": {
+            "channelId": "UCoSrY_IQQVpmIRZ9Xf-y93g"
+        },
+        "calliope": {
+            "channelId": "UCL_qhgtOy0dy1Agp8vkySQg"
+        },
+        "kiara": {
+            "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww"
+        }
+    },
+    "id": {
+        "moona": {
+            "channelId": "UCP0BspO_AMEe3aQqqpo89Dg"
+        },
+        "risu": {
+            "channelId": "UCOyYb1c43VlX9rc_lT6NKQw"
+        },
+        "iofifteen": {
+            "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg"
+        },
+        "reine": {
+            "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q"
+        },
+        "ollie": {
+            "channelId": "UCYz_5n-uDuChHtLo7My1HnQ"
+        },
+        "anya": {
+            "channelId": "UC727SQYUvx5pDDGQpTICNWg"
+        }
+    }
+}
