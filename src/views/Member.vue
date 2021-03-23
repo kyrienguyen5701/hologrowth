@@ -1,7 +1,5 @@
 <template>
-  <div class="home">
-    Home
-  </div>
+  <div class="member-page"></div>
 </template>
 
 <script lang="ts">
