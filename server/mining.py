@@ -28,6 +28,8 @@ YOUTUBE_BANNER_END_URL = '-no-nd-rj'
 load_dotenv(ENV_PATH)
 YOUTUBE_V3_API_KEY = os.getenv('YOUTUBE_V3_API_KEY')
 
+sub_today, view_today = {'Date': [today]}, {'Date': [today]}
+
 def download_picture(srcUrl, destFolder, talent_name, resolution='default', dimension='', ext='.png'):
     srcBin = requests.get(srcUrl).content
     destFile = f'{talent_name}_{dimension}{ext}' if dimension else f'{talent_name}{ext}'
@@ -101,46 +103,57 @@ def getYoutubeChannelBanners(talent_name, channelId):
             bannerUrl = f'https://{YOUTUBE_BANNER_START_URL}{banner}{YOUTUBE_BANNER_END_URL}'
             download_picture(bannerUrl, BANNER_FOLDER, talent_name, resolution=resolution, dimension=dimension)
 
-sub_today, view_today = {'Date': [today]}, {'Date': [today]}
-for branch in META.items():
-    branch_name = branch[0]
-    talents = branch[1]
-    for talent in talents.items():
-        talent_name = talent[0]
-        talent_info = talent[1]
-        print(f'Fetching data of {talent_name} ...')
+def getDataFromYoutube(API_URL):
+    req_data = json.loads(requests.get(API_URL).text)['items'][0]
 
-        # # fetch banners
-        # if talent_name != 'haato': # kaette kudasai, haato-chan
-        #     getYoutubeChannelBanners(talent_name, talent_info['channelId'])
-        
-        # fetch from API
-        API_URL = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id={}&key={}'.format(talent_info['channelId'], YOUTUBE_V3_API_KEY)
-        req_data = json.loads(requests.get(API_URL).text)['items'][0]
+    # get subscriberCount and viewCount
+    channel_name = req_data['snippet']['title']
+    sub_count = req_data['statistics']['subscriberCount']
+    view_count = req_data['statistics']['viewCount']
+    sub_today[channel_name] = [sub_count]
+    view_today[channel_name] = [view_count]
 
-        # get subscriberCount and viewCount
-        channel_name = req_data['snippet']['title']
-        sub_count = req_data['statistics']['subscriberCount']
-        view_count = req_data['statistics']['viewCount']
-        sub_today[channel_name] = [sub_count]
-        view_today[channel_name] = [view_count]
+    # # get avatars
+    # avatars = req_data['snippet']['thumbnails']
+    # for resolution, avatar in avatars.items():
+    #     avaUrl = avatar['url']
+    #     download_picture(avaUrl, AVA_FOLDER, talent_name, resolution)
 
-        # # get avatars
-        # avatars = req_data['snippet']['thumbnails']
-        # for resolution, avatar in avatars.items():
-        #     avaUrl = avatar['url']
-        #     download_picture(avaUrl, AVA_FOLDER, talent_name, resolution)
-        
-        # # fetch icons
-        # getIcon(talent_name)
+def updateDB():
+    subDF = pd.concat([pd.DataFrame(sub_today), subDF])
+    viewDF = pd.concat([pd.DataFrame(view_today), viewDF])
+    subDF.set_index('Date', inplace=True)
+    viewDF.set_index('Date', inplace=True)
+    subDF.to_csv(subDB)
+    viewDF.to_csv(viewDB)
 
-        # # fetch signatures
-        # getSignature(talent_name)
+def main():
+    for branch in META.items():
+        branch_name = branch[0]
+        talents = branch[1]
+        for talent in talents.items():
+            talent_name = talent[0]
+            talent_info = talent[1]
+            print(f'Fetching data of {talent_name} ...')
 
-# write to DB   
-subDF = pd.concat([pd.DataFrame(sub_today), subDF])
-viewDF = pd.concat([pd.DataFrame(view_today), viewDF])
-subDF.set_index('Date', inplace=True)
-viewDF.set_index('Date', inplace=True)
-subDF.to_csv(subDB)
-viewDF.to_csv(viewDB)
+            # # fetch banners
+            # if talent_name != 'haato': # kaette kudasai, haato-chan
+            #     getYoutubeChannelBanners(talent_name, talent_info['channelId'])
+            
+            # fetch from API
+            API_URL = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id={}&key={}'.format(talent_info['channelId'], YOUTUBE_V3_API_KEY)
+            getDataFromYoutube(API_URL)        
+
+            # # fetch icons
+            # getIcon(talent_name)
+
+            # # fetch signatures
+            # getSignature(talent_name)
+
+    # write to DB   
+    updateDB()
+
+if __name__ == '__main__':
+    main()
+
+# TODO: add argparse
