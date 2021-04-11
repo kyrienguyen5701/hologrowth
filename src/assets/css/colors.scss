@@ -1,0 +1,76 @@
+$color_sora: #4886e8;
+$color_fubuki: #16fefd;
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+$colors: (
+    "sora": $color_sora,
+    "fubuki": $color_fubuki
+);
+
+:root {
+    @each $name, $base_color in $colors {
+        $tint-25: tint($base_color, 25);
+        $tint-50: tint($base_color, 50);
+        $shade-25: shade($base_color, 25);
+        $shade-50: shade($base_color, 50);
+        $complement: complement($base_color);
+        --color-#{$name}: #{$base_color};
+        --color-#{$name}-tint-25: #{$tint-25};
+        --color-#{$name}-tint-50: #{$tint-50};
+        --color-#{$name}-shade-25: #{$shade-25};
+        --color-#{$name}-shade-50: #{$shade-50};
+        --color-#{$name}-complement: #{$complement};
+    }
+    --color-current: var(--color-sora);
+    --color-current-tint-25: var(--color-sora-tint-25);
+    --color-current-tint-50: var(--color-sora-tint-50);
+    --color-current-shade-25: var(--color-sora-shade-25);
+    --color-current-shade-50: var(--color-sora-shade-50);
+    --color-current-complement: var(--color-sora-complement);
+}
+
+
+.color-default {
+    color: var(--color-current);
+}
+.color-tint-25 {
+    color: var(--color-current-tint-25);
+}
+.color-tint-50 {
+    color: var(--color-current-tint-50);
+}
+.color-shade-25 {
+    color: var(--color-current-shade-25);
+}
+.color-shade-50 {
+    color: var(--color-current-shade-50);
+}
+.color-complement {
+    color: var(--color-current-complement);
+}
+
+.bg-default {
+    background-color: var(--color-current);
+}
+.bg-tint-25 {
+    background-color: var(--color-current-tint-25);
+}
+.bg-tint-50 {
+    background-color: var(--color-current-tint-50);
+}
+.bg-shade-25 {
+    background-color: var(--color-current-shade-25);
+}
+.bg-shade-50 {
+    background-color: var(--color-current-shade-50);
+}
+.bg-complement {
+    background-color: var(--color-current-complement);
+}

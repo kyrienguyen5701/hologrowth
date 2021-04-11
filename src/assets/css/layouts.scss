@@ -1,0 +1,45 @@
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-centered {
+    display: flex;
+    > * {
+        margin: auto;
+    }
+}
+
+$directions: (
+    't': 'top',
+    'r': 'right',
+    'b': 'bottom',
+    'l': 'left'
+);
+
+@for $i from 1 to 10 {
+    @each $d, $dn in $directions {
+        .m#{$d}-#{$i * 10} {
+            margin-#{$dn}: #{$i * 10}px;
+        }
+        .p#{$d}-#{$i * 10} {
+            padding-#{$dn}: #{$i * 10}px;
+        }
+    }
+    .m-#{$i * 10} {
+        margin: #{$i * 10}px;
+    }
+    .p-#{$i * 10} {
+        padding: #{$i * 10}px;
+    }
+}
+
+@for $i from 1 to 12 {
+    .col-#{$i} {
+        max-width: percentage(1 / $i);
+    }
+}
