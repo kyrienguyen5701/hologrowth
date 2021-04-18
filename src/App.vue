@@ -48,18 +48,30 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+// div {
+//   padding: 0 !important;
+// }
+
+#navbar {
+  background: var(--color-current);
+  color: var(--color-text);
+  height: 80px;
+  @extend %flex;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #fff;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #fff;
+    }
+  }
+
+  .logo {
+    * > {
+      margin: auto;
     }
   }
 }

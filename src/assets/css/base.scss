@@ -1,2 +1,26 @@
 @import 'colors.scss';
 @import 'layouts.scss';
+
+.section {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    // background-color: #333;
+    // width: 100vw;
+    // height: 100vh;
+    a {
+        text-decoration: none;
+    }
+    div {
+        padding: 0;
+    }
+}
+
+* {
+    font-family: "Berlin FB";
+    font-weight: 100;
+    letter-spacing: .1ch;
+    line-height: 2;
+}
