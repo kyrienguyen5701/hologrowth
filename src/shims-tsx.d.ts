@@ -10,4 +10,8 @@ declare global {
       [elem: string]: any;
     }
   }
+
+  // interface Object {
+  //   ContainsKey(searchKey: string): boolean;
+  // }
 }

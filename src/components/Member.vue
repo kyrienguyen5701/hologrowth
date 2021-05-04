@@ -1,15 +1,9 @@
 <template>
-  <div class="member-page">
-      
-  </div>
+  <div class="member-page"></div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

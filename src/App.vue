@@ -1,15 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
+    <div id="navbar">
+      <div class="logo p-10 flex-centered">
+        <div class="logo-text">
+          <a href="/">Hologrowth</a>
+        </div>
+      </div>
+      <BranchMenu></BranchMenu>
+      <div class="language">
+        <a href=""></a>
+      </div>
+    </div>
+    <router-view />
+    <div class="body">
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/member">Member</router-link>
       <router-link to="/tests-color">Color Test</router-link>
       <div class="color-change">
         <button v-on:click="SetColor('fubuki')">Change color: FBK</button>
         <button v-on:click="SetColor('sora')">Change color: Sora</button>
       </div>
     </div>
-    <router-view />
   </div>
 </template>
 
@@ -18,12 +30,16 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import AboutVue from "./views/About.vue";
 import Home from "./views/Home.vue";
+import Member from "./views/Member.vue";
 import Color from "./views/tests/Color.vue";
+import BranchMenu from "./components/BranchMenu.vue";
 
 import * as Colors from "./assets/ts/colors";
+// import { Component } from "node_modules/vue-property-decorator/lib";
 
 const routes = [
   { path: "/", component: Home },
+  { path: "/member", component: Member },
   { path: "/about", component: AboutVue },
   { path: "/tests-color", component: Color }
 ];
@@ -38,15 +54,17 @@ export default Vue.extend({
     SetColor(name: string) {
       Colors.ChangeColor(name);
     }
+  },
+  components: {
+    BranchMenu
   }
 });
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
 
@@ -61,7 +79,6 @@ export default Vue.extend({
   @extend %flex;
 
   a {
-    font-weight: bold;
     color: #fff;
 
     &.router-link-exact-active {
@@ -72,6 +89,9 @@ export default Vue.extend({
   .logo {
     * > {
       margin: auto;
+    }
+    a {
+      font-size: 1.5rem;
     }
   }
 }
