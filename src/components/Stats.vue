@@ -1,15 +1,9 @@
 <template>
-  <div class="stats-page">
-
-  </div>
+  <div class="stats-page"></div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>

@@ -1,13 +1,14 @@
-.flex {
+%flex {
     display: flex;
+    display: -webkit-flex;
 }
 
-.flex-column {
+%flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.content-centered {
+.flex-centered {
     display: flex;
     > * {
         margin: auto;
@@ -38,8 +39,8 @@ $directions: (
     }
 }
 
-@for $i from 1 to 12 {
-    .col-#{$i} {
-        max-width: percentage(1 / $i);
-    }
-}
+// @for $i from 1 to 12 {
+//     .col-#{$i} {
+//         max-width: percentage(1 / $i);
+//     }
+// }
