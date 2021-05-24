@@ -8,7 +8,7 @@
 
 export interface TalentData {
   branch: string;
-  genNumber: number;
+  genNumber: string;
   genName: string;
   genOther: string[];
   name: string;

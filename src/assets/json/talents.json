@@ -1,7 +1,7 @@
 [
     {
         "branch":"jp",
-        "genNumber":0,
+        "genNumber":"0",
         "genName":"3D Talents",
         "genOther":[
 
@@ -11,7 +11,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":0,
+        "genNumber":"0",
         "genName":"3D Talents",
         "genOther":[
 
@@ -21,7 +21,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":0,
+        "genNumber":"0",
         "genName":"3D Talents",
         "genOther":[
 
@@ -31,7 +31,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":0,
+        "genNumber":"0",
         "genName":"3D Talents",
         "genOther":[
 
@@ -81,7 +81,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"GAMERS",
         "genOther":[
 
@@ -181,7 +181,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":3,
+        "genNumber":"3",
         "genName":"Fantasy",
         "genOther":[
 
@@ -191,7 +191,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":3,
+        "genNumber":"3",
         "genName":"Fantasy",
         "genOther":[
 
@@ -201,7 +201,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":3,
+        "genNumber":"3",
         "genName":"Fantasy",
         "genOther":[
 
@@ -211,7 +211,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":3,
+        "genNumber":"3",
         "genName":"Fantasy",
         "genOther":[
 
@@ -221,7 +221,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":3,
+        "genNumber":"3",
         "genName":"Fantasy",
         "genOther":[
 
@@ -281,7 +281,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":5,
+        "genNumber":"5",
         "genName":"HoloFive",
         "genOther":[
 
@@ -291,7 +291,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":5,
+        "genNumber":"5",
         "genName":"HoloFive",
         "genOther":[
 
@@ -301,7 +301,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":5,
+        "genNumber":"5",
         "genName":"HoloFive",
         "genOther":[
 
@@ -311,7 +311,7 @@
     },
     {
         "branch":"jp",
-        "genNumber":5,
+        "genNumber":"5",
         "genName":"HoloFive",
         "genOther":[
 
@@ -321,7 +321,7 @@
     },
     {
         "branch":"en",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"HoloMyth",
         "genOther":[
 
@@ -331,7 +331,7 @@
     },
     {
         "branch":"en",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"HoloMyth",
         "genOther":[
 
@@ -341,7 +341,7 @@
     },
     {
         "branch":"en",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"HoloMyth",
         "genOther":[
 
@@ -351,7 +351,7 @@
     },
     {
         "branch":"en",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"HoloMyth",
         "genOther":[
 
@@ -361,7 +361,7 @@
     },
     {
         "branch":"en",
-        "genNumber":1,
+        "genNumber":"1",
         "genName":"HoloMyth",
         "genOther":[
 
