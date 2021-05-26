@@ -42,3 +42,8 @@ export interface MemberMenuData {
   memberName: string;
   memberURL: string;
 }
+
+export interface LanguageData {
+  jp?: string;
+  en?: string;
+}
