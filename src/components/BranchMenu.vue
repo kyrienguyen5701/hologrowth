@@ -36,6 +36,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import talents from "@/assets/json/talents.json";
 import { Categorize, GetYoutubeURL } from "@/assets/ts/common";
+import * as Localization from "@/assets/ts/localize";
 import {
   BranchMenuData,
   DataType,
@@ -66,24 +67,26 @@ export default class BranchMenu extends Vue {
 
         for (let i = 0; i < talents.length; i++) {
           const memberData = {} as MemberMenuData;
-          memberData.memberName = talents[i].name;
+          memberData.memberName = Localization.GetLocalizedText(
+            `menu-${talents[i].name.replaceAll(" ", "-").toLowerCase()}`
+          );
           memberData.memberURL = GetYoutubeURL(talents[i].channelId);
 
           memberMenuData.push(memberData);
         }
 
-        genData.genName = gen;
+        genData.genName = Localization.GetLocalizedText(
+          `menu-${branch}-gen-${gen}`
+        );
         genData.genMember = memberMenuData;
 
         genMenuData.push(genData);
       }
 
-      branchData.branchName = branch;
+      branchData.branchName = Localization.GetLocalizedText(`menu-${branch}`);
       branchData.branchGenData = genMenuData;
       this.data.push(branchData);
     }
-
-    console.log(this.data);
   }
 }
 </script>
