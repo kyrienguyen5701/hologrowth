@@ -6,9 +6,9 @@
           <a href="/">Hologrowth</a>
         </div>
       </div>
-      <BranchMenu></BranchMenu>
-      <div class="language">
-        <a href=""></a>
+      <div class="menus">
+        <BranchMenu :key="currentLang"></BranchMenu>
+        <LanguageMenu v-on:setLang="changeLang($event)"></LanguageMenu>
       </div>
     </div>
     <router-view />
@@ -51,6 +51,14 @@ export default Vue.extend({
   methods: {
     SetColor(name: string) {
       Colors.ChangeColor(name);
+    },
+    changeLang(value: string) {
+      this.currentLang = value;
+    }
+  },
+  data() {
+    return {
+      currentLang: localStorage.getItem("lang")
     }
   }
 });
@@ -88,6 +96,12 @@ export default Vue.extend({
     a {
       font-size: 1.5rem;
     }
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 </style>

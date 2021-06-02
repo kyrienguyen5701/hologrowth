@@ -6,6 +6,10 @@
 //   return Object.keys(this).includes(searchKey);
 // };
 
+export interface Configuration {
+  languages: string[];
+}
+
 export interface TalentData {
   branch: string;
   genNumber: string;
