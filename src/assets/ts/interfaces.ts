@@ -51,3 +51,13 @@ export interface LanguageData {
   jp?: string;
   en?: string;
 }
+
+export enum LocalizationType {
+  Text,
+  Song
+}
+
+export interface SongData {
+  name: LanguageData;
+  path: string;
+}
