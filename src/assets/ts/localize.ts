@@ -1,14 +1,31 @@
 import langData from "@/assets/json/localization.json";
-import { LanguageData } from "./interfaces";
+import songData from "@/assets/json/songs.json";
+import { LanguageData, LocalizationType } from "./interfaces";
 
-export function GetLocalizedText(text: string) {
+export function GetLocalizedText(text: string, localizationType = LocalizationType.Text) {
+  let data = {};
+
+  switch (localizationType) {
+    case LocalizationType.Text:
+      data = langData;
+      break;
+
+    case LocalizationType.Song:
+      data = songData;
+      break;
+  
+    default:
+      data = langData;
+      break;
+  }
+
   let lang = localStorage.getItem("lang");
   if (!lang) {
     lang = "en";
     localStorage.setItem("lang", "en");
   }
-  if (Object.keys(langData).indexOf(text) != -1) {
-    const textData = (langData as Record<string, LanguageData>)[text];
+  if (Object.keys(data).indexOf(text) != -1) {
+    const textData = (data as Record<string, LanguageData>)[text];
     if (Object.keys(textData).indexOf(lang) != -1) {
       switch (lang) {
         case "en":
@@ -21,6 +38,10 @@ export function GetLocalizedText(text: string) {
     return text;
   }
   return text;
+}
+
+export function GetLocalizedSong(text: string) {
+  return GetLocalizedText(text, LocalizationType.Song);
 }
 
 export function SetLang(langCode: string) {
