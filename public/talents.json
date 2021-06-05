@@ -2,179 +2,222 @@
     "jp": {
         "Tokino Sora": {
             "channelId": "UCp6993wxpyDPHUpavwDFqgg",
-            "generation": ["3D Talents", 0]
+            "generation": ["3D Talents", 0],
+            "bgm": ["https://www.youtube.com/watch?v=UHTdQ_DXvdM", "https://www.youtube.com/watch?v=idmbA6U2kxw"]
         }, 
         "Roboco": {
             "channelId": "UCDqI2jOz0weumE8s7paEk6g",
-            "generation": ["3D Talents", 0]
+            "generation": ["3D Talents", 0],
+            "bgm": ["https://www.youtube.com/watch?v=r3jigPQEz70"]
         },
         "Sakura Miko": {
             "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
-            "generation": ["3D Talents", 0]
+            "generation": ["3D Talents", 0],
+            "bgm": ["https://www.youtube.com/watch?v=v4EN8yNVdyI"]
         },
         "Hoshimachi Suisei": {
             "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
-            "generation": ["3D Talents", 0]
+            "generation": ["3D Talents", 0],
+            "bgm": ["https://www.youtube.com/watch?v=sS7quCdpF4E", "https://www.youtube.com/watch?v=bogzWYYz91U", "https://www.youtube.com/watch?v=u1IMCv0N34A", "https://www.youtube.com/watch?v=bqIuiphOPYY"]
         },
         "AZKi": {
             "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
-            "generation": ["INoNaKa Music"]
+            "generation": ["INoNaKa Music"],
+            "bgm": ["https://www.youtube.com/watch?v=7O9XSvuQy5Q"]
         },
         "Yozora Mel": {
             "channelId": "UCD8HOxPs4Xvsm8H0ZxXGiBw",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=YoHz8NZtv0Q"]
         },
         "Aki Rosenthal": {
             "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=8bU1x4uHHnI"]
         },
         "Akai Haato": {
             "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=010NHQFw-10", "https://www.youtube.com/watch?v=08jSEDnDxOA", "https://www.youtube.com/watch?v=wz83EADzLVI", "https://www.youtube.com/watch?v=H3KvMgoA1C4", "https://www.youtube.com/watch?v=A9pEAvMnl6Q", "https://www.youtube.com/watch?v=tHYq5DHmPto"]
         },
         "Shirakami Fubuki": {
             "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
-            "generation": ["GAMERS", 1]
+            "generation": ["GAMERS", 1],
+            "bgm": ["https://www.youtube.com/watch?v=FvEX7UvewGQ"]
         },
         "Natsuiro Matsuri": {
             "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=knO98BjdBbg", "https://www.youtube.com/watch?v=Lhla45CwQBc"]
         },
         "Minato Aqua": {
             "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=8dlwzbOxWdA", "https://www.youtube.com/watch?v=1mQkmMtruSw", "https://www.youtube.com/watch?v=bNBEgmsEXII", "https://www.youtube.com/watch?v=IEO8cxE14N0"]
         },
         "Murasaki Shion": {
             "channelId": "UCXTpFs_3PqI41qX2d9tL2Rw",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=a5NLUuupMoo", "https://www.youtube.com/watch?v=3goQx39mHhA"]
         },
         "Nakiri Ayame": {
             "channelId": "UC7fk0CB07ly8oSl0aqKkqFg",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=VtzcpJV8-J0", "https://www.youtube.com/watch?v=F0lAK_kL9o0", "https://www.youtube.com/watch?v=wTmWZWAYmOg", "https://www.youtube.com/watch?v=FdQTtmHifz4", "https://www.youtube.com/watch?v=kZJ6i3G1cCU"]
         },
         "Yuzuki Choco": {
             "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=p6Octo8SuJ0"]
         },
         "Oozora Subaru": {
             "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=Cwj910TeKRQ", "https://www.youtube.com/watch?v=BsmGeNIW8K4", "https://www.youtube.com/watch?v=WtRHih2nZxk"]
         },
         "Ookami Mio": {
             "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
-            "generation": ["GAMERS"]
+            "generation": ["GAMERS"],
+            "bgm": ["https://www.youtube.com/watch?v=aYKOc3-HOhg", "https://www.youtube.com/watch?v=jazsUbOkPZg", "https://www.youtube.com/watch?v=BqRw-KGqnvo", "https://www.youtube.com/watch?v=AP_d3z2B8XA", "https://www.youtube.com/watch?v=p1O7tSN5_Co", "https://www.youtube.com/watch?v=Y7Zu2IruAq4", "https://www.youtube.com/watch?v=q2IEfQQwMPs", "https://www.youtube.com/watch?v=slt_Bav8nsQ"]
         },
         "Nekomata Okayu": {
             "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
-            "generation": ["GAMERS"]
+            "generation": ["GAMERS"],
+            "bgm": ["https://www.youtube.com/watch?v=N-Jfc6h48qo", "https://www.youtube.com/watch?v=3g8wCRl2WmU", "https://www.youtube.com/watch?v=LKRamtwinlU", "https://www.youtube.com/watch?v=UX5GjNYTGwA", "https://www.youtube.com/watch?v=oamFF1HStis"]
         },
         "Inugami Korone": {
             "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
-            "generation": ["GAMERS"]
+            "generation": ["GAMERS"],
+            "bgm": ["https://www.youtube.com/watch?v=DP-WLalWujw", "https://www.youtube.com/watch?v=YvX9stltotY", "https://www.youtube.com/watch?v=ykjMcSfLNvk"]
         },
         "Houshou Marine": {
             "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
-            "generation": ["Fantasy", 3]
+            "generation": ["Fantasy", 3],
+            "bgm": ["https://www.youtube.com/watch?v=-tewoyhu1Ew", "https://www.youtube.com/watch?v=LfPoXDZpZ6Y"]
         },
         "Uruha Rushia": {
             "channelId": "UCl_gCybOJRIgOXw6Qb4qJzQ",
-            "generation": ["Fantasy", 3]
+            "generation": ["Fantasy", 3],
+            "bgm": ["https://www.youtube.com/watch?v=slt_Bav8nsQ", "https://www.youtube.com/watch?v=-GBzHevaM3o", "https://www.youtube.com/watch?v=l8QUu2V4S1k", "https://www.youtube.com/watch?v=Pz1K3GMAT8s"]
         },
         "Usada Pekora": {
             "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
-            "generation": ["Fantasy", 3]
+            "generation": ["Fantasy", 3],
+            "bgm": ["https://www.youtube.com/watch?v=DQweLHdlVWo", "https://www.youtube.com/watch?v=fmj43EQ5M-g", "https://www.youtube.com/watch?v=oGbvgBpUjmA"]
         },
         "Shiranui Flare": {
             "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
-            "generation": ["Fantasy", 3]
+            "generation": ["Fantasy", 3],
+            "bgm": ["https://www.youtube.com/watch?v=_n0tPwDup4c", "https://www.youtube.com/watch?v=ER6RmH7_0Ck"]
         },
         "Shirogane Noel": {
             "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
-            "generation": ["Fantasy", 3]
+            "generation": ["Fantasy", 3],
+            "bgm": ["https://www.youtube.com/watch?v=WtRHih2nZxk", "https://www.youtube.com/watch?v=tWJJIb_dlaU", "https://www.youtube.com/watch?v=98oKhyur1jg"]
         },
         "Tsunomaki Watame": {
             "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
-            "generation": [4]
+            "generation": [4],
+            "bgm": ["https://www.youtube.com/watch?v=oN5iXdh-HdY"]
         },
         "Tokoyami Towa": {
             "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
-            "generation": [4]
+            "generation": [4],
+            "bgm": ["https://www.youtube.com/watch?v=pgjwcEpjhKE", "https://www.youtube.com/watch?v=mIOWVZp6GPA", "https://www.youtube.com/watch?v=0gOK68GwHXw", "https://www.youtube.com/watch?v=__op5JYsadk"]
         },
         "Kiryu Coco": {
             "channelId": "UCS9uQI-jC3DE0L4IpXyvr6w",
-            "generation": [4]
+            "generation": [4],
+            "bgm": ["https://www.youtube.com/watch?v=rRvCCp-AQkU", "https://www.youtube.com/watch?v=VQNZoBt6Q3E", "https://www.youtube.com/watch?v=jI3xJh6xipY", "https://www.youtube.com/watch?v=vHOmLRcCVQ0"]
         },
         "Amane Kanata": {
             "channelId": "UCZlDXzGoo7d44bwdNObFacg",
-            "generation": [4]
+            "generation": [4],
+            "bgm": ["https://www.youtube.com/watch?v=UX5GjNYTGwA", "https://www.youtube.com/watch?v=AET8Pv_c7Eo"]
         },
         "Himemori Luna": {
             "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
-            "generation": [4]
+            "generation": [4],
+            "bgm": ["https://www.youtube.com/watch?v=EODGkm15wVY"]
         },
         "Yukihana Lamy": {
             "channelId": "UCFKOVgVbGmX65RxO3EtH3iw",
-            "generation": ["HoloFive", 5]
+            "generation": ["HoloFive", 5],
+            "bgm": ["https://www.youtube.com/watch?v=viJwp_3mniU", "https://www.youtube.com/watch?v=joTc9sMFeFk", "https://www.youtube.com/watch?v=klEId-0l4ag"]
         },
         "Momosuzu Nene": {
             "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
-            "generation": ["HoloFive", 5]
+            "generation": ["HoloFive", 5],
+            "bgm": ["https://www.youtube.com/watch?v=un0Iw2yjy4c", "https://www.youtube.com/watch?v=n5o17YNB0Y8", "https://www.youtube.com/watch?v=viQAr5wh_2w", "https://www.youtube.com/watch?v=H_Jw2webu3U"]
         },
         "Shishiro Botan": {
             "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
-            "generation": ["HoloFive", 5]
+            "generation": ["HoloFive", 5],
+            "bgm": ["https://www.youtube.com/watch?v=F20f9kchk6k", "https://www.youtube.com/watch?v=slt_Bav8nsQ"]
         },
         "Omaru Polka": {
             "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
-            "generation": ["HoloFive", 5]
+            "generation": ["HoloFive", 5],
+            "bgm": ["https://www.youtube.com/watch?v=pJpmaN7aXmU", "https://www.youtube.com/watch?v=D-IwLexmQh0", "https://www.youtube.com/watch?v=e9NOhg2Iv9E", "https://www.youtube.com/watch?v=icVtR9ZCsdg"]
         }
     },
     "en": {
         "Watson Amelia": {
             "channelId": "UCyl1z3jo3XHR1riLFKG5UAg",
-            "generation": ["HoloMyth", 1]
+            "generation": ["HoloMyth", 1],
+            "bgm": ["https://www.youtube.com/watch?v=s9vMM6t2RYo", "https://www.youtube.com/watch?v=kKg-aXVS1YI"]
         },
         "Ninomae Ina'nis": {
             "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
-            "generation": ["HoloMyth", 1]
+            "generation": ["HoloMyth", 1],
+            "bgm": ["https://www.youtube.com/watch?v=hS6NUgyGFkg"]
         },
         "Gawr Gura": {
             "channelId": "UCoSrY_IQQVpmIRZ9Xf-y93g",
-            "generation": ["HoloMyth", 1]
+            "generation": ["HoloMyth", 1],
+            "bgm": ["https://www.youtube.com/watch?v=4a4hwDRKBJU", "https://www.youtube.com/watch?v=yoY_8cAoRKg", "https://www.youtube.com/watch?v=urNfrfP-YPI", "https://www.youtube.com/watch?v=3yLctNdl4xQ", "https://www.youtube.com/watch?v=DHUR70BTTv4", "https://www.youtube.com/watch?v=ucWwffAw-SY", "https://www.youtube.com/watch?v=1YP3CBjvcew"]
         },
         "Mori Calliope": {
             "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
-            "generation": ["HoloMyth", 1]
+            "generation": ["HoloMyth", 1],
+            "bgm": ["https://www.youtube.com/watch?v=tMYToGyupzA", "https://www.youtube.com/watch?v=K8TGzXeipG4"]
         },
         "Takanashi Kiara": {
             "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
-            "generation": ["HoloMyth", 1]
+            "generation": ["HoloMyth", 1],
+            "bgm": ["https://www.youtube.com/watch?v=daKcU7mjNOQ", "https://www.youtube.com/watch?v=t4QhSJ1jmHQ", "https://www.youtube.com/watch?v=f122oaumFwc", "https://www.youtube.com/watch?v=lGliMB4nAGc"]
         }
     },
     "id": {
         "Moona Hoshinova": {
             "channelId": "UCP0BspO_AMEe3aQqqpo89Dg",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=Le_ePMOJt20", "https://www.youtube.com/watch?v=WqvVzRWpGzY", "https://www.youtube.com/watch?v=djdILgM34yQ", "https://www.youtube.com/watch?v=vyUvNdlEPj8", "https://www.youtube.com/watch?v=PNiEoKG-nqs"]
         },
         "Ayunda Risu": {
             "channelId": "UCOyYb1c43VlX9rc_lT6NKQw",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=br3pU-wfYI4", "https://www.youtube.com/watch?v=XsbYDB4j5IM", "https://www.youtube.com/watch?v=Pzj4a2UrlGc","https://www.youtube.com/watch?v=VMd4XEct3HY", "https://www.youtube.com/watch?v=7BgkneZWBI8","https://www.youtube.com/watch?v=kG-hSbE2ANc","https://www.youtube.com/watch?v=4a4hwDRKBJU"]
         },
         "Airani Iofifteen": {
             "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg",
-            "generation": [1]
+            "generation": [1],
+            "bgm": ["https://www.youtube.com/watch?v=_JDfB8h3rRE"]
         },
         "Pavolia Reine": {
             "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=HcjQFRElNOY"]
         },
         "Kureiji Ollie": {
             "channelId": "UCYz_5n-uDuChHtLo7My1HnQ",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=YVzk3bqEu6g"]
         },
         "Anya Melfissa": {
             "channelId": "UC727SQYUvx5pDDGQpTICNWg",
-            "generation": [2]
+            "generation": [2],
+            "bgm": ["https://www.youtube.com/watch?v=jiEmx2LmkF0", "https://www.youtube.com/watch?v=d72MfVTecs8"]
         }
     }
 }
