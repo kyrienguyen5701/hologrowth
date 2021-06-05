@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 import json
 META = json.load(open(os.path.join(os.path.dirname(__file__), '../public/talents.json'), 'r'))
+END_INTERPOLATE = '2021-03-23'
 months = {
     "Jan.": "01",
     "Feb.": "02",
