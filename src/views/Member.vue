@@ -1,5 +1,18 @@
 <template>
-  <div class="member-page"></div>
+  <div class="member-page">
+    <div class="container">
+      <div id="section-1" class="section">
+        <div class="carousel">
+          a
+        </div>
+        <div class="title">
+          Member title
+        </div>
+      </div>
+      <div class="section"></div>
+      <div class="section"></div>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
