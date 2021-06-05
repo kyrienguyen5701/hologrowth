@@ -124,7 +124,7 @@ export default class MusicPlayer extends Vue {
   }
 
   getCurrentSongName(): string {
-    const name = "ochame-kinou";
+    const name = "hyakka-ryoran-hanafubuki";
     return Localization.GetLocalizedSong(`${name}`);
   }
 
@@ -193,6 +193,8 @@ input.slider {
     height: 40px;
     background: var(--color-current);
     color: var(--color-text);
+    overflow: hidden;
+    padding: 0 10px;
 
     &:hover {
       .player-seek {
@@ -204,11 +206,11 @@ input.slider {
     }
 
     .player-text {
-      padding: 0 5px 0 10px;
+      animation: move 5s infinite;
+      animation-timing-function: linear;
 
       .inner {
         white-space: nowrap;
-        overflow: hidden;
       }
     }
 
@@ -252,6 +254,29 @@ input.slider {
       transform-origin: 100% 0%;
       padding: 15px;
     }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+  32% {
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  67% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 </style>
