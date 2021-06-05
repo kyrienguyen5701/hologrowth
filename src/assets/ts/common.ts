@@ -58,7 +58,7 @@ export function Categorize(
   for (let i = 0; i < data.length; i++) {
     const key = GetProperty(data[i], findKey) as string;
     // if (!data[i].ContainsKey(key)) {
-    if (!ContainsKey(data[i], key)) {
+    if (!ContainsKey(result, key)) {
       result[key] = [data[i]];
     } else {
       result[key].push(data[i]);

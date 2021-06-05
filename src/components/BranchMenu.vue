@@ -1,12 +1,12 @@
 <template>
   <div class="menu-branch">
     <div
-      class="branch flex-centered"
+      class="branch"
       v-for="branchData in data"
       v-bind:key="branchData.branchName"
     >
-      <div class="branch-name">
-        {{ branchData.branchName }}
+      <div class="branch-name flex-centered h-100">
+        <span>{{ branchData.branchName }}</span>
       </div>
       <div class="branch-gens">
         <div
@@ -14,16 +14,14 @@
           v-for="genData in branchData.branchGenData"
           v-bind:key="genData.genName"
         >
-          <div class="gen-name">
-            {{ genData.genName }}
-          </div>
+          <span class="gen-name">{{ genData.genName }}</span>
           <div class="gen-members">
             <div
-              class="member"
+              class="member flex-centered"
               v-for="memberData in genData.genMember"
               v-bind:key="memberData.memberName"
             >
-              {{ memberData.memberName }}
+              <span>{{ memberData.memberName }}</span>
             </div>
           </div>
         </div>
@@ -60,8 +58,10 @@ export default class BranchMenu extends Vue {
       const genMenuData = [] as GenMenuData[];
       const talentByGen = Categorize(talents, DataType.GenNumber);
 
-      const genData = {} as GenMenuData;
+      console.log(talentByGen);
+
       for (const [gen, talents] of Object.entries(talentByGen)) {
+        const genData = {} as GenMenuData;
         const memberMenuData = [] as MemberMenuData[];
 
         for (let i = 0; i < talents.length; i++) {
@@ -74,6 +74,8 @@ export default class BranchMenu extends Vue {
 
         genData.genName = gen;
         genData.genMember = memberMenuData;
+
+        genMenuData.push(genData);
       }
 
       branchData.branchName = branch;
@@ -92,13 +94,60 @@ export default class BranchMenu extends Vue {
 
   .branch {
     cursor: pointer;
-    min-width: 100px;
+    width: 100px;
 
     &:hover {
       background: var(--color-current-shade-25);
 
-      > .talent-name {
+      .branch-gens {
         display: block;
+        padding-top: 5px;
+      }
+    }
+
+    .branch-gens {
+      display: none;
+      width: 150px;
+    }
+
+    .gen-members {
+      width: fit-content;
+      height: fit-content;
+      display: none;
+    }
+
+    .branch-gen {
+      @extend %flex;
+      height: 40px;
+      margin: 5px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .gen-name {
+        min-width: 150px;
+        height: 40px;
+        background: var(--color-current);
+        padding: 5px 0px;
+      }
+
+      &:hover {
+        .gen-members {
+          display: block;
+        }
+      }
+
+      .member {
+        background: var(--color-current);
+        width: 200px;
+        height: 40px;
+        margin: 0 0 5px 5px;
+        display: flex;
+
+        &:hover {
+          background: var(--color-current-shade-25);
+        }
       }
     }
   }

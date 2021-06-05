@@ -32,10 +32,8 @@ import AboutVue from "./views/About.vue";
 import Home from "./views/Home.vue";
 import Member from "./views/Member.vue";
 import Color from "./views/tests/Color.vue";
-import BranchMenu from "./components/BranchMenu.vue";
 
 import * as Colors from "./assets/ts/colors";
-// import { Component } from "node_modules/vue-property-decorator/lib";
 
 const routes = [
   { path: "/", component: Home },
@@ -54,9 +52,6 @@ export default Vue.extend({
     SetColor(name: string) {
       Colors.ChangeColor(name);
     }
-  },
-  components: {
-    BranchMenu
   }
 });
 </script>
