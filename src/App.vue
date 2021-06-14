@@ -6,9 +6,9 @@
           <a href="/">Hologrowth</a>
         </div>
       </div>
-      <BranchMenu></BranchMenu>
-      <div class="language">
-        <a href=""></a>
+      <div class="menus">
+        <BranchMenu :key="currentLang"></BranchMenu>
+        <LanguageMenu v-on:setLang="changeLang($event)"></LanguageMenu>
       </div>
     </div>
     <router-view />
@@ -22,6 +22,7 @@
         <button v-on:click="SetColor('sora')">Change color: Sora</button>
       </div>
     </div>
+    <MusicPlayer :key="currentLang"></MusicPlayer>
   </div>
 </template>
 
@@ -32,10 +33,8 @@ import AboutVue from "./views/About.vue";
 import Home from "./views/Home.vue";
 import Member from "./views/Member.vue";
 import Color from "./views/tests/Color.vue";
-import BranchMenu from "./components/BranchMenu.vue";
 
 import * as Colors from "./assets/ts/colors";
-// import { Component } from "node_modules/vue-property-decorator/lib";
 
 const routes = [
   { path: "/", component: Home },
@@ -53,10 +52,15 @@ export default Vue.extend({
   methods: {
     SetColor(name: string) {
       Colors.ChangeColor(name);
+    },
+    changeLang(value: string) {
+      this.currentLang = value;
     }
   },
-  components: {
-    BranchMenu
+  data() {
+    return {
+      currentLang: localStorage.getItem("lang")
+    }
   }
 });
 </script>
@@ -93,6 +97,12 @@ export default Vue.extend({
     a {
       font-size: 1.5rem;
     }
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 </style>

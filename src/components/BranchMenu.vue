@@ -1,12 +1,12 @@
 <template>
   <div class="menu-branch">
     <div
-      class="branch flex-centered"
-      v-for="branchData in data"
+      class="branch"
+      v-for="branchData in menuData"
       v-bind:key="branchData.branchName"
     >
-      <div class="branch-name">
-        {{ branchData.branchName }}
+      <div class="branch-name flex-centered h-100">
+        <span>{{ branchData.branchName }}</span>
       </div>
       <div class="branch-gens">
         <div
@@ -14,16 +14,14 @@
           v-for="genData in branchData.branchGenData"
           v-bind:key="genData.genName"
         >
-          <div class="gen-name">
-            {{ genData.genName }}
-          </div>
+          <span class="gen-name">{{ genData.genName }}</span>
           <div class="gen-members">
             <div
-              class="member"
+              class="member flex-centered"
               v-for="memberData in genData.genMember"
               v-bind:key="memberData.memberName"
             >
-              {{ memberData.memberName }}
+              <span>{{ memberData.memberName }}</span>
             </div>
           </div>
         </div>
@@ -35,9 +33,10 @@
 <script lang="ts">
 // import * as interfaces from "@/assets/ts/interfaces";
 // import * as Localization from "@/assets/ts/localize";
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
 import talents from "@/assets/json/talents.json";
 import { Categorize, GetYoutubeURL } from "@/assets/ts/common";
+import * as Localization from "@/assets/ts/localize";
 import {
   BranchMenuData,
   DataType,
@@ -48,40 +47,54 @@ import {
 
 @Component
 export default class BranchMenu extends Vue {
-  @Prop() data!: BranchMenuData[];
-  mounted() {
-    this.data = [];
+  data() {
+    return {
+      menuData: ((): BranchMenuData[] => {
+        const result = [];
 
-    const talentByBranch = Categorize(talents as TalentData[], DataType.Branch);
+        const talentByBranch = Categorize(
+          talents as TalentData[],
+          DataType.Branch
+        );
 
-    for (const [branch, talents] of Object.entries(talentByBranch)) {
-      const branchData = {} as BranchMenuData;
+        for (const [branch, talents] of Object.entries(talentByBranch)) {
+          const branchData = {} as BranchMenuData;
 
-      const genMenuData = [] as GenMenuData[];
-      const talentByGen = Categorize(talents, DataType.GenNumber);
+          const genMenuData = [] as GenMenuData[];
+          const talentByGen = Categorize(talents, DataType.GenNumber);
 
-      const genData = {} as GenMenuData;
-      for (const [gen, talents] of Object.entries(talentByGen)) {
-        const memberMenuData = [] as MemberMenuData[];
+          for (const [gen, talents] of Object.entries(talentByGen)) {
+            const genData = {} as GenMenuData;
+            const memberMenuData = [] as MemberMenuData[];
 
-        for (let i = 0; i < talents.length; i++) {
-          const memberData = {} as MemberMenuData;
-          memberData.memberName = talents[i].name;
-          memberData.memberURL = GetYoutubeURL(talents[i].channelId);
+            for (let i = 0; i < talents.length; i++) {
+              const memberData = {} as MemberMenuData;
+              memberData.memberName = Localization.GetLocalizedText(
+                `menu-${talents[i].name.replaceAll(" ", "-").toLowerCase()}`
+              );
+              memberData.memberURL = GetYoutubeURL(talents[i].channelId);
 
-          memberMenuData.push(memberData);
+              memberMenuData.push(memberData);
+            }
+
+            genData.genName = Localization.GetLocalizedText(
+              `menu-${branch}-gen-${gen}`
+            );
+            genData.genMember = memberMenuData;
+
+            genMenuData.push(genData);
+          }
+
+          branchData.branchName = Localization.GetLocalizedText(
+            `menu-${branch}`
+          );
+          branchData.branchGenData = genMenuData;
+          result.push(branchData);
         }
 
-        genData.genName = gen;
-        genData.genMember = memberMenuData;
-      }
-
-      branchData.branchName = branch;
-      branchData.branchGenData = genMenuData;
-      this.data.push(branchData);
-    }
-
-    console.log(this.data);
+        return result;
+      })()
+    };
   }
 }
 </script>
@@ -89,16 +102,64 @@ export default class BranchMenu extends Vue {
 <style lang="scss" scoped>
 .menu-branch {
   @extend %flex;
+  z-index: 99;
 
   .branch {
     cursor: pointer;
-    min-width: 100px;
+    width: 100px;
 
     &:hover {
       background: var(--color-current-shade-25);
 
-      > .talent-name {
+      .branch-gens {
         display: block;
+        padding-top: 5px;
+      }
+    }
+
+    .branch-gens {
+      display: none;
+      width: 150px;
+    }
+
+    .gen-members {
+      width: fit-content;
+      height: fit-content;
+      display: none;
+    }
+
+    .branch-gen {
+      @extend %flex;
+      height: 40px;
+      margin: 5px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .gen-name {
+        min-width: 150px;
+        height: 40px;
+        background: var(--color-current);
+        padding: 5px 0px;
+      }
+
+      &:hover {
+        .gen-members {
+          display: block;
+        }
+      }
+
+      .member {
+        background: var(--color-current);
+        width: 200px;
+        height: 40px;
+        margin: 0 0 5px 5px;
+        display: flex;
+
+        &:hover {
+          background: var(--color-current-shade-25);
+        }
       }
     }
   }

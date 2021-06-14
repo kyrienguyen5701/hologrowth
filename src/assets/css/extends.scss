@@ -8,5 +8,8 @@
 }
 
 %content-centered {
-    
+    display: flex;
+    > * {
+        margin: auto;
+    }
 }

@@ -35,4 +35,5 @@ for branch, branchInfo in content.items():
         df.loc[i] = [branch, genNum, genName, genOther, talentName, channelId]
         i += 1
 
+df['genNumber'] = df['genNumber'].astype('str')
 df.to_json(talentsDestPath, orient='records', indent=4)

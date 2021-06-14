@@ -6,9 +6,13 @@
 //   return Object.keys(this).includes(searchKey);
 // };
 
+export interface Configuration {
+  languages: string[];
+}
+
 export interface TalentData {
   branch: string;
-  genNumber: number;
+  genNumber: string;
   genName: string;
   genOther: string[];
   name: string;
@@ -41,4 +45,19 @@ export interface GenMenuData {
 export interface MemberMenuData {
   memberName: string;
   memberURL: string;
+}
+
+export interface LanguageData {
+  jp?: string;
+  en?: string;
+}
+
+export enum LocalizationType {
+  Text,
+  Song
+}
+
+export interface SongData {
+  name: LanguageData;
+  path: string;
 }
