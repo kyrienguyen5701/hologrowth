@@ -14,15 +14,14 @@ SLEEPING_TIME = 86000
 
 sub_today, view_today = {'Date': [today]}, {'Date': [today]}
 
-def getDataFromYoutube(API_URL):
+def getDataFromYoutube(API_URL, talent_name):
     req_data = json.loads(requests.get(API_URL).text)['items'][0]
 
     # get subscriberCount and viewCount
-    channel_name = req_data['snippet']['title']
     sub_count = req_data['statistics']['subscriberCount']
     view_count = req_data['statistics']['viewCount']
-    sub_today[channel_name] = [sub_count]
-    view_today[channel_name] = [view_count]
+    sub_today[talent_name] = [sub_count]
+    view_today[talent_name] = [view_count]
 
 def updateDB():
     global subDB, viewDB
@@ -32,8 +31,8 @@ def updateDB():
     viewDF = pd.concat([pd.DataFrame(view_today), viewDF])
     subDF.set_index('Date', inplace=True)
     viewDF.set_index('Date', inplace=True)
-    subDF.to_csv(subDB)
-    viewDF.to_csv(viewDB)
+    subDF.astype('int64').to_csv(subDB)
+    viewDF.astype('int64').to_csv(viewDB)
 
 def main():
     for branch in META.items():
@@ -46,7 +45,7 @@ def main():
             
             # fetch from API
             API_URL = 'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&id={}&key={}'.format(talent_info['channelId'], YOUTUBE_V3_API_KEY)
-            getDataFromYoutube(API_URL)
+            getDataFromYoutube(API_URL, talent_name)
 
     # write to DB   
     updateDB()
