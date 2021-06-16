@@ -28,24 +28,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import VueRouter from "vue-router";
-import AboutVue from "./views/About.vue";
-import Home from "./views/Home.vue";
-import Member from "./views/Member.vue";
-import Color from "./views/tests/Color.vue";
-
+import router from "./router/index";
 import * as Colors from "./assets/ts/colors";
-
-const routes = [
-  { path: "/", component: Home },
-  { path: "/member", component: Member },
-  { path: "/about", component: AboutVue },
-  { path: "/tests-color", component: Color }
-];
-
-const router = new VueRouter({
-  routes
-});
 
 export default Vue.extend({
   router: router,
