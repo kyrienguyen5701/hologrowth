@@ -102,37 +102,74 @@
 import { Component, Vue } from "vue-property-decorator";
 import { SongData } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
+import songData from "@/assets/json/songs.json";
 
 @Component
 export default class MusicPlayer extends Vue {
-  data() {
-    return {
-      isPlaying: true,
-      currentSong: {} as SongData
-    };
+  songList = () => {
+    const res = Array<string>();
+    const r = require.context("@/assets/sounds/solo/Hoshimachi Suisei/", false);
+    r.keys().forEach((path: string) => res.push(r(path)));
+    return res;
+  };
+  isPlaying = true;
+  currentSongIndex = 0;
+
+  get currentAudio(): HTMLAudioElement {
+    const songPath = this.songList()[this.currentSongIndex];
+    console.log(songPath)
+    return new Audio(songPath);
+  }
+
+  set currentAudio(value: HTMLAudioElement) {
+    value.play();
+  }
+
+  get currentSong(): string {
+    const originalPathSegments = this.songList()[this.currentSongIndex].split("/")[1].split(".");
+    const originPath = `${originalPathSegments[0]}.${originalPathSegments[2]}`;
+    const data = Object.entries(songData).find(kv => kv[1].path === originPath);
+    if (data) {
+      return data[0];
+    }
+    return '';
   }
 
   togglePlay() {
-    if (this.$data.isPlaying) {
+    if (this.isPlaying) {
       (this.$refs["iconPlay"] as HTMLElement).style.display = "none";
       (this.$refs["iconPause"] as HTMLElement).style.display = "block";
+      this.currentAudio.pause();
     } else {
       (this.$refs["iconPlay"] as HTMLElement).style.display = "block";
       (this.$refs["iconPause"] as HTMLElement).style.display = "none";
+      this.currentAudio.play();
     }
-    this.$data.isPlaying = !this.$data.isPlaying;
+    this.isPlaying = !this.isPlaying;
   }
 
   getCurrentSongName(): string {
-    const name = "hyakka-ryoran-hanafubuki";
+    const name = this.currentSong;
     return Localization.GetLocalizedSong(`${name}`);
   }
 
   prevSong() {
+    this.currentAudio.pause();
+    this.currentSongIndex === 0 
+      ? this.currentSongIndex = this.songList().length 
+      : this.currentSongIndex;
+    this.currentSongIndex--;
+    this.currentAudio.play();
     console.log("Prev");
   }
 
   nextSong() {
+    this.currentAudio.pause();
+    this.currentSongIndex === this.songList().length - 1 
+      ? this.currentSongIndex = -1 
+      : this.currentSongIndex;
+    this.currentSongIndex++;
+    this.currentAudio.play();
     console.log("Next");
   }
 }
