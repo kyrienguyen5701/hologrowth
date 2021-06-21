@@ -40,7 +40,7 @@
     </div>
     <div class="player-info flex-centered">
       <div class="player-text">
-        <span class="inner">{{ getCurrentSongName() }}</span>
+        <span class="inner" :key="lang">{{ getCurrentSongName() }}</span>
       </div>
       <div class="player-seek">
         <input class="slider" type="range" />
@@ -93,8 +93,8 @@
           step="0.5"
           min="0"
           max="100"
-          :value="100"
-          @change="volumeChange()"
+          :value="0"
+          @mousemove="volumeChange()"
         />
       </div>
     </div>
@@ -102,13 +102,15 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { SongData } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
 import songData from "@/assets/json/songs.json";
 
 @Component
 export default class MusicPlayer extends Vue {
+  @Prop() lang!: string;
+
   songList = () => {
     const res = Array<string>();
     const r = require.context("@/assets/sounds/solo/Hoshimachi Suisei/", false);
@@ -117,25 +119,28 @@ export default class MusicPlayer extends Vue {
   };
   isPlaying = true;
   currentSongIndex = 0;
-  
+
+  @Watch("lang")
+  onLanguageChanged() {
+    this.getCurrentSongName();
+  }
+
   get currentAudio(): HTMLAudioElement {
     const songPath = this.songList()[this.currentSongIndex];
-    console.log(songPath)
+    console.log(songPath);
     return new Audio(songPath);
   }
 
-  set currentAudio(value: HTMLAudioElement) {
-    value.play();
-  }
-
   get currentSong(): string {
-    const originalPathSegments = this.songList()[this.currentSongIndex].split("/")[1].split(".");
+    const originalPathSegments = this.songList()
+      [this.currentSongIndex].split("/")[1]
+      .split(".");
     const originPath = `${originalPathSegments[0]}.${originalPathSegments[2]}`;
     const data = Object.entries(songData).find(kv => kv[1].path === originPath);
     if (data) {
       return data[0];
     }
-    return '';
+    return "";
   }
 
   togglePlay() {
@@ -158,8 +163,8 @@ export default class MusicPlayer extends Vue {
 
   prevSong() {
     this.currentAudio.pause();
-    this.currentSongIndex === 0 
-      ? this.currentSongIndex = this.songList().length 
+    this.currentSongIndex === 0
+      ? (this.currentSongIndex = this.songList().length)
       : this.currentSongIndex;
     this.currentSongIndex--;
     this.currentAudio.play();
@@ -168,8 +173,8 @@ export default class MusicPlayer extends Vue {
 
   nextSong() {
     this.currentAudio.pause();
-    this.currentSongIndex === this.songList().length - 1 
-      ? this.currentSongIndex = -1 
+    this.currentSongIndex === this.songList().length - 1
+      ? (this.currentSongIndex = -1)
       : this.currentSongIndex;
     this.currentSongIndex++;
     this.currentAudio.play();
@@ -177,9 +182,14 @@ export default class MusicPlayer extends Vue {
   }
 
   volumeChange() {
-    const value = Number((document.getElementById('player-volume') as HTMLInputElement).value) / 100;
+    const value =
+      1 -
+      Number(
+        (document.getElementById("player-volume") as HTMLInputElement).value
+      ) /
+        100;
     this.currentAudio.volume = value;
-    localStorage.setItem('player-volume', String(value));
+    localStorage.setItem("player-volume", String(value));
   }
 }
 </script>
