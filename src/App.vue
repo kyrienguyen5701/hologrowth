@@ -22,7 +22,7 @@
         <button v-on:click="SetColor('sora')">Change color: Sora</button>
       </div>
     </div>
-    <MemberChart></MemberChart>
+    <MemberChart v-bind:memberData="{name: 'Hoshimachi Suisei', CSSname: 'suisei'}"></MemberChart>
     <MusicPlayer :key="currentLang"></MusicPlayer>
   </div>
 </template>

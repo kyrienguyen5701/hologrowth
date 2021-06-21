@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
 import { GetColor } from "@/assets/ts/colors";
 
@@ -24,14 +24,19 @@ const subcountFormatter = (val: number) => {
   if (val < thousand) return val;
   if (val < million) return `${val / thousand}K`;
   return `${val / million}M`;
-} 
+};
 
 @Component
 export default class MemberChart extends Vue {
+  @Prop() memberData!: {
+    name: string,
+    CSSname: string
+  }
+
   data() {
     return {
       series: [{
-        name: "Subscriber counts",
+        name: "Subscriber count",
         data: [965000, 968000, 970000, 973000, 975000, 978000, 981000]
       }],
       chartOptions:{
@@ -44,7 +49,7 @@ export default class MemberChart extends Vue {
             autoScaleYaxis: true
           }
         },
-        colors: [GetColor("suisei")[0]],
+        colors: [GetColor(this.memberData.CSSname)[0]],
         dataLabels: {
           enabled: false
         },
@@ -52,12 +57,12 @@ export default class MemberChart extends Vue {
           curve: "smooth"
         },
         title: {
-          text: "Hoshimachi Suisei's last 7 days subscriber counts",
+          text: `${this.memberData.name}'s last 7 days subscriber counts`,
           align: "center"
         },
         grid: {
           row: {
-            colors: [GetColor("suisei")[2], "transparent"],
+            colors: [GetColor(this.memberData.CSSname)[2], "transparent"],
             opacity: .5
           },
         },
