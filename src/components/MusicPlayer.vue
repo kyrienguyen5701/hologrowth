@@ -4,7 +4,7 @@
       <span>
         <svg
           class="icon"
-          ref="iconPlay"
+          :class="{ hidden: isPlaying }"
           height="50"
           width="50"
           viewBox="0 0 50 50"
@@ -13,11 +13,10 @@
         </svg>
         <svg
           class="icon"
-          ref="iconPause"
+          :class="{ hidden: !isPlaying }"
           height="50"
           width="50"
           viewBox="0 0 50 50"
-          style="display: none"
         >
           <rect x="10" y="5" width="10" height="40" />
           <rect x="30" y="5" width="10" height="40" />
@@ -86,14 +85,14 @@
       </span>
       <div class="player-volume-container">
         <input
-          id="player-volume"
+          ref="player-volume"
           class="slider"
           orient="vertical"
           type="range"
           step="0.5"
           min="0"
           max="100"
-          :value="0"
+          value="0"
           @mousemove="volumeChange()"
         />
       </div>
@@ -119,6 +118,7 @@ export default class MusicPlayer extends Vue {
   };
   isPlaying = true;
   currentSongIndex = 0;
+  currentVolume = 0;
 
   @Watch("lang")
   onLanguageChanged() {
@@ -145,12 +145,8 @@ export default class MusicPlayer extends Vue {
 
   togglePlay() {
     if (this.isPlaying) {
-      (this.$refs["iconPlay"] as HTMLElement).style.display = "none";
-      (this.$refs["iconPause"] as HTMLElement).style.display = "block";
       this.currentAudio.pause();
     } else {
-      (this.$refs["iconPlay"] as HTMLElement).style.display = "block";
-      (this.$refs["iconPause"] as HTMLElement).style.display = "none";
       this.currentAudio.play();
     }
     this.isPlaying = !this.isPlaying;
@@ -162,34 +158,46 @@ export default class MusicPlayer extends Vue {
   }
 
   prevSong() {
+    this.currentVolume = this.currentAudio.volume;
     this.currentAudio.pause();
     this.currentSongIndex === 0
       ? (this.currentSongIndex = this.songList().length)
       : this.currentSongIndex;
     this.currentSongIndex--;
     this.currentAudio.play();
+    this.isPlaying = true;
+    this.setSliderValue();
+    this.volumeChange();
     console.log("Prev");
   }
 
   nextSong() {
+    this.currentVolume = this.currentAudio.volume;
     this.currentAudio.pause();
     this.currentSongIndex === this.songList().length - 1
       ? (this.currentSongIndex = -1)
       : this.currentSongIndex;
     this.currentSongIndex++;
     this.currentAudio.play();
+    this.isPlaying = true;
+    this.setSliderValue();
+    this.volumeChange();
     console.log("Next");
   }
 
   volumeChange() {
     const value =
-      1 -
-      Number(
-        (document.getElementById("player-volume") as HTMLInputElement).value
-      ) /
-        100;
+      1 - Number((this.$refs["player-volume"] as HTMLInputElement).value) / 100;
+    console.log("Volume changed to " + value);
     this.currentAudio.volume = value;
     localStorage.setItem("player-volume", String(value));
+  }
+
+  setSliderValue() {
+    (this.$refs["player-volume"] as HTMLInputElement).value = (
+      (1 - this.currentVolume) *
+      100
+    ).toString();
   }
 }
 </script>
