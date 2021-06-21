@@ -22,6 +22,7 @@
         <button v-on:click="SetColor('sora')">Change color: Sora</button>
       </div>
     </div>
+    <MemberChart></MemberChart>
     <MusicPlayer :key="currentLang"></MusicPlayer>
   </div>
 </template>
