@@ -84,14 +84,17 @@
           />
         </svg>
       </span>
-      <div class="player-volume">
+      <div class="player-volume-container">
         <input
+          id="player-volume"
           class="slider"
           orient="vertical"
           type="range"
           step="0.5"
           min="0"
           max="100"
+          :value="100"
+          @change="volumeChange()"
         />
       </div>
     </div>
@@ -114,7 +117,7 @@ export default class MusicPlayer extends Vue {
   };
   isPlaying = true;
   currentSongIndex = 0;
-
+  
   get currentAudio(): HTMLAudioElement {
     const songPath = this.songList()[this.currentSongIndex];
     console.log(songPath)
@@ -171,6 +174,12 @@ export default class MusicPlayer extends Vue {
     this.currentSongIndex++;
     this.currentAudio.play();
     console.log("Next");
+  }
+
+  volumeChange() {
+    const value = Number((document.getElementById('player-volume') as HTMLInputElement).value) / 100;
+    this.currentAudio.volume = value;
+    localStorage.setItem('player-volume', String(value));
   }
 }
 </script>
@@ -267,14 +276,14 @@ input.slider {
   .player-button {
     &.volume {
       &:hover {
-        .player-volume {
+        .player-volume-container {
           display: block;
         }
       }
     }
   }
 
-  .player-volume {
+  .player-volume-container {
     display: none;
     position: absolute;
     right: 0;
