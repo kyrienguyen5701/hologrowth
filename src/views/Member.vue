@@ -6,7 +6,7 @@
           a
         </div>
         <div class="title">
-          Member title
+          {{ getMemberName() }}
         </div>
       </div>
       <div class="section"></div>
@@ -16,15 +16,27 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import Member from "@/components/Member.vue"; // @ is an alias to /src
+import { Component, Prop, Vue } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
+import * as Common from "@/assets/ts/common";
 
 @Component({
   components: {
-    Member,
     Stats
   }
 })
-export default class Home extends Vue {}
+export default class MemberPage extends Vue {
+  data() {
+    return {
+      memberName: this.$route.params.talentName
+    };
+  }
+
+  getMemberName() {
+    return Common.GetTalentName(this.$data.memberName);
+  }
+  // computed() {
+  //   this.$data.memberName = this.$route.params.talentName;
+  // }
+}
 </script>

@@ -67,3 +67,13 @@ export function Categorize(
 
   return result;
 }
+
+export function GetTalentName(name: string)
+{
+  const s = name.split("-")
+  for (let i = 0; i < s.length; i++)
+  {
+    s[i] = s[i].charAt(0).toUpperCase() + s[i].substring(1);
+  }
+  return s.join(" ")
+}

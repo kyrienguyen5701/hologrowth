@@ -6,12 +6,10 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Member from "@/components/Member.vue"; // @ is an alias to /src
 import Stats from "@/components/Stats.vue";
 
 @Component({
   components: {
-    Member,
     Stats
   }
 })
