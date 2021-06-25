@@ -114,6 +114,11 @@
         "en": "GHOST",
         "path": "GHOST.mp3"
     },
+    "bluerose": {
+        "jp": "Bluerose",
+        "en": "Bluerose",
+        "path": "Bluerose.mp3"
+    },
     "kaeru": {
         "jp": "かえるのピアノ",
         "en": "Kaeru no Piano",
