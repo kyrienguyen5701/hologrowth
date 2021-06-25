@@ -465,7 +465,7 @@
         "path": "Hoihoi☆Gensou Holoism.mp3"
     },
     "anchor": {
-        "jp": "キャプテンマリンのケツアンカ",
+        "jp": "キャプテンマリンのケツアンカー",
         "en": "Captain Marine no Ketsu Anchor",
         "path": "キャプテンマリンのケツアンカ.mp3"
     },
@@ -943,5 +943,65 @@
         "jp": "Yawning at Dusk",
         "en": "Yawning at Dusk",
         "path": "Yawning at Dusk.mp3"
+    },
+    "shiny": {
+        "jp": "Shiny Smily Story",
+        "en": "Shiny Smily Story",
+        "path": "Shiny Smily Story.mp3"
+    },
+    "yumemirusorae": {
+        "jp": "夢見る空へ",
+        "en": "Yumemiru Sora e",
+        "path": "夢見る空へ.mp3"
+    },
+    "kirameki": {
+        "jp": "キラメキライダー☆",
+        "en": "Kirameki Rider ☆",
+        "path": "キラメキライダー☆.mp3"
+    },
+    "halloween": {
+        "jp": "今宵はHalloween Night!",
+        "en": "Koyoi ha Halloween Night!",
+        "path": "今宵はHalloween Night.mp3"
+    },
+    "pekomiko": {
+        "jp": "ぺこみこ大戦争",
+        "en": "Peko Miko Daisensō",
+        "path": "ぺこみこ大戦争.mp3"
+    },
+    "clapper": {
+        "jp": "BLUE CLAPPER",
+        "en": "BLUE CLAPPER",
+        "path": "BLUE CLAPPER.mp3"
+    },
+    "can-you": {
+        "jp": "ホロライブ言えるかな?",
+        "en": "Hololive Ierukana>",
+        "path": "ホロライブ言えるかな.mp3"
+    },
+    "daily": {
+        "jp": "でいり～だいあり～",
+        "en": "DAILY~DIARY~",
+        "path": "でいり～だいあり～.mp3"
+    },
+    "sus": {
+        "jp": "Suspect",
+        "en": "Suspect",
+        "path": "Suspect.mp3"
+    },
+    "entity": {
+        "jp": "id-entity voices",
+        "en": "id-entity voices",
+        "path": "id-entity voices.mp3"
+    },
+    "plasmagic": {
+        "jp": "Plasmagic Seasons",
+        "en": "Plasmagic Seasons",
+        "path": "Plasmagic Seasons.mp3"
+    },
+    "kiseki": {
+        "jp": "キセキ結び",
+        "en": "Kiseki Musubi",
+        "path": "キセキ結び.mp3"
     }
 }
