@@ -102,7 +102,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
-import { SongData } from "@/assets/ts/interfaces";
+import { CurrentSong } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
 import songData from "@/assets/json/songs.json";
 
@@ -125,71 +125,76 @@ export default class MusicPlayer extends Vue {
     this.getCurrentSongName();
   }
 
-  get currentAudio(): HTMLAudioElement {
+  get currentSong(): CurrentSong {
+    // create the audio object
     const songPath = this.songList()[this.currentSongIndex];
-    console.log(songPath);
-    return new Audio(songPath);
-  }
-
-  get currentSong(): string {
-    const originalPathSegments = this.songList()
+    const song = new Audio(songPath);
+    if (song) {
+      song.play();
+      song.onended = () => this.nextSong();
+    };
+    // get the song name
+    const songPathSegments = this.songList()
       [this.currentSongIndex].split("/")[1]
       .split(".");
-    const originPath = `${originalPathSegments[0]}.${originalPathSegments[2]}`;
+    const originPath = `${songPathSegments[0]}.${songPathSegments[2]}`;
     const data = Object.entries(songData).find(kv => kv[1].path === originPath);
     if (data) {
-      return data[0];
+      return {
+        name: data[0],
+        audio: song
+      }
     }
-    return "";
+    return {
+      name: "",
+      audio: new Audio()
+    };
   }
 
   togglePlay() {
     if (this.isPlaying) {
-      this.currentAudio.pause();
+      this.currentSong.audio.pause();
     } else {
-      this.currentAudio.play();
+      this.currentSong.audio.play();
     }
     this.isPlaying = !this.isPlaying;
   }
 
   getCurrentSongName(): string {
-    const name = this.currentSong;
+    const name = this.currentSong.name;
     return Localization.GetLocalizedSong(`${name}`);
   }
 
   prevSong() {
-    this.currentVolume = this.currentAudio.volume;
-    this.currentAudio.pause();
+    this.currentVolume = this.currentSong.audio.volume;
+    this.currentSong.audio.pause();
     this.currentSongIndex === 0
       ? (this.currentSongIndex = this.songList().length)
       : this.currentSongIndex;
     this.currentSongIndex--;
-    this.currentAudio.play();
+    this.currentSong.audio.play();
     this.isPlaying = true;
     this.setSliderValue();
     this.volumeChange();
-    console.log("Prev");
   }
 
   nextSong() {
-    this.currentVolume = this.currentAudio.volume;
-    this.currentAudio.pause();
+    this.currentVolume = this.currentSong.audio.volume;
+    this.currentSong.audio.pause();
     this.currentSongIndex === this.songList().length - 1
       ? (this.currentSongIndex = -1)
       : this.currentSongIndex;
     this.currentSongIndex++;
-    this.currentAudio.play();
+    this.currentSong.audio.play();
     this.isPlaying = true;
     this.setSliderValue();
     this.volumeChange();
-    console.log("Next");
   }
 
   volumeChange() {
     const value =
       1 - Number((this.$refs["player-volume"] as HTMLInputElement).value) / 100;
-    console.log("Volume changed to " + value);
-    this.currentAudio.volume = value;
+    this.currentSong.audio.volume = value;
     localStorage.setItem("player-volume", String(value));
   }
 
