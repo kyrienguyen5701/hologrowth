@@ -61,3 +61,8 @@ export interface SongData {
   name: LanguageData;
   path: string;
 }
+
+export interface CurrentSong {
+  name: string;
+  audio: HTMLAudioElement;
+}

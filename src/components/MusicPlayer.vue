@@ -4,7 +4,7 @@
       <span>
         <svg
           class="icon"
-          ref="iconPlay"
+          :class="{ hidden: isPlaying }"
           height="50"
           width="50"
           viewBox="0 0 50 50"
@@ -13,11 +13,10 @@
         </svg>
         <svg
           class="icon"
-          ref="iconPause"
+          :class="{ hidden: !isPlaying }"
           height="50"
           width="50"
           viewBox="0 0 50 50"
-          style="display: none"
         >
           <rect x="10" y="5" width="10" height="40" />
           <rect x="30" y="5" width="10" height="40" />
@@ -40,7 +39,7 @@
     </div>
     <div class="player-info flex-centered">
       <div class="player-text">
-        <span class="inner">{{ getCurrentSongName() }}</span>
+        <span class="inner" :key="lang">{{ getCurrentSongName() }}</span>
       </div>
       <div class="player-seek">
         <input class="slider" type="range" />
@@ -84,14 +83,17 @@
           />
         </svg>
       </span>
-      <div class="player-volume">
+      <div class="player-volume-container">
         <input
+          ref="player-volume"
           class="slider"
           orient="vertical"
           type="range"
           step="0.5"
           min="0"
           max="100"
+          value="0"
+          @mousemove="volumeChange()"
         />
       </div>
     </div>
@@ -99,41 +101,108 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import { SongData } from "@/assets/ts/interfaces";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { CurrentSong } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
+import songData from "@/assets/json/songs.json";
 
 @Component
 export default class MusicPlayer extends Vue {
-  data() {
+  @Prop() lang!: string;
+
+  songList = () => {
+    const res = Array<string>();
+    const r = require.context("@/assets/sounds/solo/Hoshimachi Suisei/", false);
+    r.keys().forEach((path: string) => res.push(r(path)));
+    return res;
+  };
+  isPlaying = true;
+  currentSongIndex = 0;
+  currentVolume = 0;
+
+  @Watch("lang")
+  onLanguageChanged() {
+    this.getCurrentSongName();
+  }
+
+  get currentSong(): CurrentSong {
+    // create the audio object
+    const songPath = this.songList()[this.currentSongIndex];
+    const song = new Audio(songPath);
+    if (song) {
+      song.play();
+      song.onended = () => this.nextSong();
+    };
+    // get the song name
+    const songPathSegments = this.songList()
+      [this.currentSongIndex].split("/")[1]
+      .split(".");
+    const originPath = `${songPathSegments[0]}.${songPathSegments[2]}`;
+    const data = Object.entries(songData).find(kv => kv[1].path === originPath);
+    if (data) {
+      return {
+        name: data[0],
+        audio: song
+      }
+    }
     return {
-      isPlaying: true,
-      currentSong: {} as SongData
+      name: "",
+      audio: new Audio()
     };
   }
 
   togglePlay() {
-    if (this.$data.isPlaying) {
-      (this.$refs["iconPlay"] as HTMLElement).style.display = "none";
-      (this.$refs["iconPause"] as HTMLElement).style.display = "block";
+    if (this.isPlaying) {
+      this.currentSong.audio.pause();
     } else {
-      (this.$refs["iconPlay"] as HTMLElement).style.display = "block";
-      (this.$refs["iconPause"] as HTMLElement).style.display = "none";
+      this.currentSong.audio.play();
     }
-    this.$data.isPlaying = !this.$data.isPlaying;
+    this.isPlaying = !this.isPlaying;
   }
 
   getCurrentSongName(): string {
-    const name = "hyakka-ryoran-hanafubuki";
+    const name = this.currentSong.name;
     return Localization.GetLocalizedSong(`${name}`);
   }
 
   prevSong() {
-    console.log("Prev");
+    this.currentVolume = this.currentSong.audio.volume;
+    this.currentSong.audio.pause();
+    this.currentSongIndex === 0
+      ? (this.currentSongIndex = this.songList().length)
+      : this.currentSongIndex;
+    this.currentSongIndex--;
+    this.currentSong.audio.play();
+    this.isPlaying = true;
+    this.setSliderValue();
+    this.volumeChange();
   }
 
   nextSong() {
-    console.log("Next");
+    this.currentVolume = this.currentSong.audio.volume;
+    this.currentSong.audio.pause();
+    this.currentSongIndex === this.songList().length - 1
+      ? (this.currentSongIndex = -1)
+      : this.currentSongIndex;
+    this.currentSongIndex++;
+    this.currentSong.audio.play();
+    this.isPlaying = true;
+    this.setSliderValue();
+    this.volumeChange();
+  }
+
+  volumeChange() {
+    const value =
+      1 - Number((this.$refs["player-volume"] as HTMLInputElement).value) / 100;
+    this.currentSong.audio.volume = value;
+    localStorage.setItem("player-volume", String(value));
+  }
+
+  setSliderValue() {
+    (this.$refs["player-volume"] as HTMLInputElement).value = (
+      (1 - this.currentVolume) *
+      100
+    ).toString();
   }
 }
 </script>
@@ -230,14 +299,14 @@ input.slider {
   .player-button {
     &.volume {
       &:hover {
-        .player-volume {
+        .player-volume-container {
           display: block;
         }
       }
     }
   }
 
-  .player-volume {
+  .player-volume-container {
     display: none;
     position: absolute;
     right: 0;

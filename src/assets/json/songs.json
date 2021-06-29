@@ -1,12 +1,22 @@
 {
-    "ochame-kinou": {
-        "jp": "おちゃめ機能",
-        "en": "Ochame Kinou (Fukkireta)",
-        "path": "ochamekinou.mp3"
+    "comet": {
+        "jp": "Comet",
+        "en": "Comet",
+        "path": "comet.mp3"
+    },   
+    "tenkyuu": {
+        "jp": "天球、彗星は夜を跨いで",
+        "en": "Heavenly spheres, comets straddle the night",
+        "path": "天球、彗星は夜を跨いで.mp3"
     },
-    "hyakka-ryoran-hanafubuki": {
-        "jp": "百花繚乱花吹雪",
-        "en": "Hyakka Ryoran Hanafubuki",
-        "path": "Hyakka Ryoran Hanafubuki.mp3"
+    "planet": {
+        "jp": "Next Color Planet",
+        "en": "Next Color Planet",
+        "path": "NEXT COLOR PLANET.mp3"
+    },
+    "ghost": {
+        "jp": "GHOST",
+        "en": "GHOST",
+        "path": "GHOST.mp3"
     }
 }
