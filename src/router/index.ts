@@ -37,9 +37,10 @@ const routes: Array<RouteConfig> = [
     component: () => import("../views/About.vue")
   },
   {
-    path: "/member",
+    path: "/member/:talentName",
     name: "Member",
-    component: () => import("../views/Member.vue")
+    component: () => import("../views/Member.vue"),
+    props: true
   },
   {
     path: "color",
@@ -49,8 +50,8 @@ const routes: Array<RouteConfig> = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
+  // mode: "history",
+  // base: process.env.BASE_URL,
   routes
 });
 
