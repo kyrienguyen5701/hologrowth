@@ -16,12 +16,3 @@ export function ChangeColor(member: string) {
     SetCSSVar(targetName, GetCSSVar(name));
   });
 }
-
-export function GetColor(member: string) {
-  const res = Array<string>();
-  COLOR_VARS.forEach(colorVar => {
-    const name = `--color-${member}${colorVar}`;
-    res.push(GetCSSVar(name));
-  });
-  return res;
-}
