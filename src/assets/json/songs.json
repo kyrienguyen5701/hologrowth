@@ -1,12 +1,107 @@
 {
+    "konometoki": {
+        "jp": "木の芽時の空",
+        "en": "Konometoki no Sora",
+        "path": "木の芽時の空.mp3"
+    },
+    "watashi": {
+        "jp": "わたしとあなたと皆さまと!",
+        "en": "Watashi to Anata to Minasama to!",
+        "path": "わたしとあなたと皆さまと.mp3"
+    },
+    "miren": {
+        "jp": "未練レコード",
+        "en": "Miren Rekōdo",
+        "path": "未練レコード.mp3"
+    },
+    "hurray": {
+        "jp": "フレーフレーLOVE",
+        "en": "Hurray Hurray LOVE",
+        "path": "フレーフレーLOVE.mp3"
+    },
+    "aoi": {
+        "jp": "青空のシンフォニー",
+        "en": "Aoi Sora no Shinfonī",
+        "path": "青空のシンフォニー.mp3"
+    },
+    "step": {
+        "jp": "Step and Go!!",
+        "en": "Step and Go!!",
+        "path": "Step and Go.mp3"
+    },
+    "blueberry": {
+        "jp": "ブルーベリームーン",
+        "en": "Burūberīmūn",
+        "path": "ブルーベリームーン.mp3"
+    },
+    "suki": {
+        "jp": "好き、泣いちゃいそうだ",
+        "en": "Suki, Nai Chai-souda",
+        "path": "好き、泣いちゃいそうだ.mp3"
+    },
+    "under": {
+        "jp": "アズールレーン×ホロライブ-ときのそら【澄んだ空の下】スキンBGM",
+        "en": "Azur Lane x Hololive - Tokino Sora [Under the Clear Sky] Skin BGM",
+        "path": "Under the Clear Sky.mp3"
+    },
+    "yuube": {
+        "jp": "夕べの星",
+        "en": "Yuube no Hoshi",
+        "path": "夕べの星.mp3"
+    },
+    "fiction": {
+        "jp": "FICTION",
+        "en": "FICTION",
+        "path": "FICTION.mp3"
+    },
+    "shachiku": {
+        "jp": "社畜の歌",
+        "en": "Shachiku no Uta",
+        "path": "社畜の歌.mp3"
+    },
+    "azamina": {
+        "jp": "アザミナ",
+        "en": "Azamina",
+        "path": "アザミナ.mp3"
+    },
+    "wednesday": {
+        "jp": "Next Wednesday 魂音泉",
+        "en": "Next Wednesday Tamaonsen",
+        "path": "Next Wednesday 魂音泉.mp3"
+    },
+    "elite": {
+        "jp": "マイネームイズエリート☆",
+        "en": "My Name is Elite☆",
+        "path": "マイネームイズエリート☆.mp3"
+    },
+    "sakurakaze": {
+        "jp": "サクラカゼ",
+        "en": "Sakurakaze",
+        "path": "サクラカゼ.mp3"
+    },
+    "sakura-iro": {
+        "jp": "さくら色ハイテンション!",
+        "en": "Sakura-iro Hi-Tension!",
+        "path": "さくら色ハイテンション.mp3"
+    },
+    "roba": {
+        "jp": "ロバでも眺めながら",
+        "en": "Roba demo Nagamenagara",
+        "path": "ロバでも眺めながら.mp3"
+    },
+    "wakuwaku-tanoshi": {
+        "jp": "ワクワク楽しいクリスマス",
+        "en": "Wakuwaku Tanoshī Kurisumasu",
+        "path": "ワクワク楽しいクリスマス.mp3"
+    },
     "comet": {
         "jp": "Comet",
         "en": "Comet",
         "path": "comet.mp3"
-    },   
+    },
     "tenkyuu": {
         "jp": "天球、彗星は夜を跨いで",
-        "en": "Heavenly spheres, comets straddle the night",
+        "en": "Tenkyuu, Suisei wa Yoru o Mataide",
         "path": "天球、彗星は夜を跨いで.mp3"
     },
     "planet": {
@@ -18,5 +113,900 @@
         "jp": "GHOST",
         "en": "GHOST",
         "path": "GHOST.mp3"
+    },
+    "bluerose": {
+        "jp": "Bluerose",
+        "en": "Bluerose",
+        "path": "Bluerose.mp3"
+    },
+    "kaeru": {
+        "jp": "かえるのピアノ",
+        "en": "Kaeru no Piano",
+        "path": "かえるのピアノ.mp3"
+    },
+    "gorogoro": {
+        "jp": "ごろごろゲームする日",
+        "en": "Gorogo Gēmu suru Hi",
+        "path": "ごろごろゲームする日.mp3"
+    },
+    "wakuwaku-cooking": {
+        "jp": "わくわくクッキングタイム的な",
+        "en": "Wakuwaku Kukkingu Taimu-tekina",
+        "path": "わくわくクッキングタイム的な.mp3"
+    },
+    "ryoshin": {
+        "jp": "良心が強すぎる泥棒的な",
+        "en": "Ryōshin ga Tsuyo sugiru Dorobō-tekina",
+        "path": "良心が強すぎる泥棒的な.mp3"
+    },
+    "creating": {
+        "jp": "Creating world【開拓するの私の世界】",
+        "en": "Creating world [Kaitaku suru no Watashi no Sekai]",
+        "path": "Creating world【開拓するの私の世界】.mp3"
+    },
+    "real": {
+        "jp": "リアルメランコリー【私と似てる気持ちの君へ】",
+        "en": "Real Melancholy [Watashi to Ni teru Kimochi no Kimi e]",
+        "path": "リアルメランコリー【私と似てる気持ちの君へ】.mp3"
+    },
+    "felicia": {
+        "jp": "フェリシア",
+        "en": "Felicia",
+        "path": "フェリシア.mp3"
+    },
+    "hikari": {
+        "jp": "ひかりのまち",
+        "en": "Hikari no Machi",
+        "path": "ひかりのまち"
+    },
+    "inochi": {
+        "jp": "いのち",
+        "en": "Inochi",
+        "path": "いのち.mp3"
+    },
+    "a-to-z": {
+        "jp": "From A to Z",
+        "en": "From A to Z",
+        "path": "From A to Z.mp3"
+    },
+    "eternity": {
+        "jp": "Eternity Bright",
+        "en": "Eternity Bright",
+        "path": "Eternity Bright.mp3"
+    },
+    "heaven": {
+        "jp": "Take me to Heaven【連れて行って、あのメロディへ】",
+        "en": "Take me to Heaven [Tsurete Itte, Ano Melody e]",
+        "path": "Take me to Heaven【連れて行って、あのメロディへ】.mp3"
+    },
+    "bougainvillea": {
+        "jp": "ブーゲンビリア",
+        "en": "Bougainvillea",
+        "path": "Bougainvillea.mp3"
+    },
+    "kafe": {
+        "jp": "カフェでひと休み",
+        "en": "Kafe de Hito Yasumi",
+        "path": "カフェでひと休み.mp3"
+    },
+    "pop-candy": {
+        "jp": "ポップキャンディ",
+        "en": "Pop candy",
+        "path": "ポップキャンディ.mp3"
+    },
+    "chocolate": {
+        "jp": "Chocolate Pandemic【キミの元に出荷します】",
+        "en": "Chocolate Pandemic [Kimi no Gen ni Shukka shimasu]",
+        "path": "Chocolate Pandemic【キミの元に出荷します】.mp3"
+    },
+    "shallys": {
+        "jp": "シャルイース",
+        "en": "SHALLYS",
+        "path": "シャルイース.mp3"
+    },
+    "mawaru": {
+        "jp": "輪廻るセカイと罪ノ果実",
+        "en": "Mawaru Sekai to Tsumi no Kajitsu",
+        "path": "輪廻るセカイと罪ノ果実.mp3"
+    },
+    "heroine": {
+        "jp": "ヒロインオーディション",
+        "en": "Heroine Audition",
+        "path": "ヒロインオーディション.mp3"
+    },
+    "numbers": {
+        "jp": "Numbers",
+        "en": "Numbers",
+        "path": "Numbers.mp3"
+    },
+    "lights": {
+        "jp": "Lights out",
+        "en": "Lights out",
+        "path": "Lights out.mp3"
+    },
+    "redheart": {
+        "jp": "REDHEART",
+        "en": "REDHEART",
+        "path": "REDHEART.mp3"
+    },
+    "infinity": {
+        "jp": "Infinity",
+        "en": "Infinity",
+        "path": "Infinity.mp3"
+    },
+    "haachama": {
+        "jp": "はあちゃまっちゃま",
+        "en": "HAACHAMACHAMA",
+        "path": "はあちゃまっちゃま.mp3"
+    },
+    "dark": {
+        "jp": "ダークメルヘンコーラス",
+        "en": "Dark Fairytale Chorus",
+        "path": "ダークメルヘンコーラス.mp3"
+    },
+    "yasashi": {
+        "jp": "優しいギターソロ",
+        "en": "Yasashī Guitar Solo",
+        "path": "優しいギターソロ.mp3"
+    },
+    "mattari": {
+        "jp": "まったりゆらゆら",
+        "en": "Mattari Yurayura",
+        "path": "まったりゆらゆら.mp3"
+    },
+    "cooking": {
+        "jp": "赤井２分クッキング",
+        "en": "Akai 2-pun Kukkingu",
+        "path": "赤井２分クッキング.mp3"
+    },
+    "friday": {
+        "jp": "【13日の金曜日!】ハム＆ナゴ",
+        "en": "[13-nichi no Kinyōbi!] Ham & Nago",
+        "path": "【13日の金曜日】ハム＆ナゴ.mp3"
+    },
+    "fanfare": {
+        "jp": "Say! ファンファーレ!",
+        "en": "Say! Fanfare!",
+        "path": "Say - ファンファーレ.mp3"
+    },
+    "beachside": {
+        "jp": "アズールレーン×ホロライブ-白上フブキ【ビーチサイドフォックス】スキンBGM ",
+        "en": "Azur Lane x Hololive - Shirakami Fubuki [Beachside Fox] Skin BGM",
+        "path": "Beachside Fox.mp3"
+    },
+    "kutsushita": {
+        "jp": "靴下をはいた猫",
+        "en": "Kutsushita o Haita Neko",
+        "path": "靴下をはいた猫.mp3"
+    },
+    "kaori": {
+        "jp": "香りのやる気スイッチ",
+        "en": "Kaori no Yaruki Switch",
+        "path": "香りのやる気スイッチ.mp3"
+    },
+    "sakurairo": {
+        "jp": "桜色コントレイル",
+        "en": "Sakura-iro Contrail",
+        "path": "桜色コントレイル.mp3"
+    },
+    "kimi-to": {
+        "jp": "君と眺める夏の花",
+        "en": "Kimi to Nagameru Natso no Hana",
+        "path": "君と眺める夏の花.mp3"
+    },
+    "day-off": {
+        "jp": "アズールレーン×ホロライブ-夏色まつり【まつりの休日】スキンBGM ",
+        "en": "Azur Lane x Hololive - Natsuiro Matsuri [Matsuri's Day Off] Skin BGM",
+        "path": "Matsuri's Day Off.mp3"
+    },
+    "suzuiro": {
+        "jp": "鈴色日和",
+        "en": "Suzu-iro Biyori",
+        "path": "鈴色日和.mp3"
+    },
+    "pallete": {
+        "jp": "あくあ色ぱれっと",
+        "en": "Aqua-iro Pallete",
+        "path": "あくあ色ぱれっと.mp3"
+    },
+    "win": {
+        "jp": "For the Win",
+        "en": "For the Win",
+        "path": "For the Win.mp3"
+    },
+    "maid": {
+        "jp": "アズールレーン×ホロライブ-湊あくあく【マリンメイド】スキンBGM",
+        "en": "Azur Lane x Hololive - Minato Aqua [Marine Maid] Skin BGM",
+        "path": "Marine Maid.mp3"
+    },
+    "radio#16": {
+        "jp": "Radio#16",
+        "en": "Radio#16",
+        "path": "Radio#16.mp3"
+    },
+    "koneko": {
+        "jp": "子猫のお散歩",
+        "en": "Koneko no Osanpo",
+        "path": "子猫のお散歩.mp3"
+    },
+    "recorder": {
+        "jp": "リコーダービート2",
+        "en": "Recorder beat 2",
+        "path": "リコーダービート2 "
+    },
+    "magician": {
+        "jp": "アズールレーン×ホロライブ-紫咲シオン【バーチャルマジシャン】スキンBGM",
+        "en": "Azur Lane x HOLOLIVE - Murasaki Shion [Virtual Magician] Skin BGM",
+        "path": "Virtual Magician.mp3"
+    },
+    "murasaki": {
+        "jp": "紫咲詩音正月",
+        "en": "Murasaki Shion Shougetsu",
+        "path": "紫咲詩音正月.mp3"
+    },
+    "summertime": {
+        "jp": "アズールレーン×ホロライブ-百鬼あやめ【夏のなきり】スキンBGM",
+        "en": "Azur Lane x Hololive - Nakiri Ayame [Summertime Nakiri] Skin BGM",
+        "path": "Summertime Nakiri.mp3"
+    },
+    "chrono": {
+        "jp": "クロノ",
+        "en": "Chrono",
+        "path": "Chrono.mp3"
+    },
+    "shinpi-tekide": {
+        "jp": "神秘的で切ない曲",
+        "en": "Shinpi-tekide Setsunai Kyoku",
+        "path": "神秘的で切ない曲.mp3"
+    },
+    "vankett": {
+        "jp": "ヴァンケット",
+        "en": "VANKETT",
+        "path": "VANKETT.mp3"
+    },
+    "yumemiru": {
+        "jp": "夢見るひつじ",
+        "en": "Yumemiru Hitsuji",
+        "path": "夢見るひつじ.mp3"
+    },
+    "cooking-time": {
+        "jp": "Cooking Time",
+        "en": "Cooking Time",
+        "path": "Cooking Time.mp3"
+    },
+    "mattarisuru": {
+        "jp": "まったりしましょ",
+        "en": "Mattari shimasho",
+        "path": "まったりしましょ.mp3"
+    },
+    "you-and-me": {
+        "jp": "You and Me",
+        "en": "You and Me",
+        "path": "You and Me.mp3"
+    },
+    "telecaster": {
+        "jp": "極東の羊、テレキャスターと踊る",
+        "en": "Kyokutō no Hitsuji, Telecaster to Odoru",
+        "path": "極東の羊、テレキャスターと踊る.mp3"
+    },
+    "summer": {
+        "jp": "アズールレーン×ホロライブ-大神ミオ【夏休み】スキンBGM",
+        "en": "Azur Lane x Hololive - Ookami Mio [Summer Vacation] Skin BGM",
+        "path": "Summer Vacation.mp3"
+    },
+    "hirusagari": {
+        "jp": "昼下がり気分",
+        "en": "Hirusagari Kibun",
+        "path": "昼下がり気分.mp3"
+    },
+    "celtic": {
+        "jp": "優しいケルト曲",
+        "en": "Yasashī Celtic Kyoku",
+        "path": "優しいケルト曲.mp3"
+    },
+    "so-sweet": {
+        "jp": "So Sweet",
+        "en": "So Sweet",
+        "path": "So Sweet.mp3"
+    },
+    "noraneko": {
+        "jp": "野良猫は宇宙を目指した",
+        "en": "Noraneko wa Uchū o Mezashita",
+        "path": "野良猫は宇宙を目指した.mp3"
+    },
+    "mogumogu": {
+        "jp": "もぐもぐYUMMY!",
+        "en": "Mogu Mogu YUMMY!",
+        "path": "もぐもぐYUMMY.mp3"
+    },
+    "peaceful": {
+        "jp": "Peaceful Treasure",
+        "en": "Peaceful Treasure",
+        "path": "Peaceful Treasure.mp3"
+    },
+    "kurumi": {
+        "jp": "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop",
+        "en": "Kurumiwariningyō [Ashibue no Odori] Inu no Otōsan VerLoop",
+        "path": "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3"
+    },
+    "kaerimichi": {
+        "jp": "楽しい帰り道",
+        "en": "Tanoshī Kaerimichi",
+        "path": "楽しい帰り道.mp3"
+    },
+    "komorebi": {
+        "jp": "木漏れ日",
+        "en": "Komorebi",
+        "path": "木漏れ日.mp3"
+    },
+    "saikyo": {
+        "jp": "ころねの最凶天災☆わんだふぉー❤わーるど",
+        "en": "Korone no Saikyō Tensai ☆ Wonderful ̄❤ World",
+        "path": "ころねの最凶天災☆わんだふぉー❤わーるど.mp3"
+    },
+    "essa": {
+        "jp": "えっさほいさ囃子",
+        "en": "Essa Hoisa Hayashi",
+        "path": "えっさほいさ囃子.mp3"
+    },
+    "hitahita": {
+        "jp": "ひたひたと迫る影",
+        "en": "Hitahita to Semaru Kage",
+        "path": "ひたひたと迫る影.mp3"
+    },
+    "honwaka": {
+        "jp": "ほんわかぷっぷー",
+        "en": "Honwaka Puppu",
+        "path": "ほんわかぷっぷー.mp3"
+    },
+    "ahoy": {
+        "jp": "Ahoy - 我ら宝鐘海賊団☆",
+        "en": "Ahoy - Warera Houshou Kaizokudan",
+        "path": "Ahoy - 我ら宝鐘海賊団☆.mp3"
+    },
+    "hoihoi": {
+        "jp": "ホイホイ☆幻想ホロイズム",
+        "en": "Hoihoi☆Gensou Holoism",
+        "path": "Hoihoi☆Gensou Holoism.mp3"
+    },
+    "anchor": {
+        "jp": "キャプテンマリンのケツアンカー",
+        "en": "Captain Marine no Ketsu Anchor",
+        "path": "キャプテンマリンのケツアンカ.mp3"
+    },
+    "comfy": {
+        "jp": "船長の快適なBGM",
+        "en": "Senchou's Comfy BGM",
+        "path": "Senchou's Comfy BGM.mp3"
+    },
+    "2ncooh": {
+        "jp": "💘 宝鐘マリン (@2ncooh) 💘",
+        "en": "💘 Houshou Marine (@2ncooh) 💘",
+        "path": "💘 宝鐘マリン (@2ncooh) 💘.mp3"
+    },
+    "fairy": {
+        "jp": "妖精のキッチン",
+        "en": "Yōsei no Kitchen",
+        "path": "妖精のキッチン"
+    },
+    "beatbox": {
+        "jp": "キャプテンンビートボックスII",
+        "en": "Captain Beatbox II",
+        "path": "Captain Beatbox II.mp3"
+    },
+    "iris": {
+        "jp": "アイリス",
+        "en": "Iris",
+        "path": "アイリス.mp3"
+    },
+    "happy": {
+        "jp": "Be Happy",
+        "en": "Be Happy",
+        "path": "Be Happy.mp3"
+    },
+    "guitar": {
+        "jp": "Guitar Gentle",
+        "en": "Guitar Gentle",
+        "path": "Guitar Gentle.mp3"
+    },
+    "triangle": {
+        "jp": "SUMMER TRIANGLE",
+        "en": "SUMMER TRIANGLE",
+        "path": "SUMMER TRIANGLE.mp3"
+    },
+    "2-23": {
+        "jp": "2_23 AM",
+        "en": "2_23 AM",
+        "path": "2_23 AM.mp3"
+    },
+    "randombrain": {
+        "jp": "ぺこらんだむぶれいん",
+        "en": "PEKORANDOMBRAIN",
+        "path": "ぺこらんだむぶれいん.mp3"
+    },
+    "pekorap": {
+        "jp": "ぺこラップ",
+        "en": "Peko Rap",
+        "path": "ぺこラップ.mp3"
+    },
+    "tanukichi": {
+        "jp": "たぬきちの冒険",
+        "en": "Tanukichi no Bōken",
+        "path": "たぬきちの冒険.mp3"
+    },
+    "diorama": {
+        "jp": "ジオラマパレード",
+        "en": "Diorama Parade",
+        "path": "ジオラマパレード.mp3"
+    },
+    "ninjin": {
+        "jp": "人参",
+        "en": "Ninjin",
+        "path": "人参"
+    },
+    "otamu": {
+        "jp": "おーたむうぉーきんぐ",
+        "en": "Otamu Woo King",
+        "path": "おーたむうぉーきんぐ"
+    },
+    "smile": {
+        "jp": "Smile & Go",
+        "en": "​Smile & Go",
+        "path": "​Smile & Go.mp3"
+    },
+    "yusha": {
+        "jp": "カエルの勇者",
+        "en": "Kaeru no Yūsha",
+        "path": "カエルの勇者.mp3"
+    },
+    "kaze": {
+        "jp": "風がはじめに寄る街的なBGM",
+        "en": "Kaze ga Hajime ni Yoru Machi-tekina BGM",
+        "path": "風がはじめに寄る街的なBGM.mp3"
+    },
+    "konbanmuscle": {
+        "jp": "こんばんマスルー",
+        "en": "Konban-muscle",
+        "path": "こんばんマスルー.mp3"
+    },
+    "himitsu": {
+        "jp": "ひみつ基地",
+        "en": "Himitsu Kichi",
+        "path": "ひみつ基地.mp3"
+    },
+    "gogo": {
+        "jp": "午後のカフェ",
+        "en": "Gogo no Càfe",
+        "path": "午後のカフェ"
+    },
+    "harapeko": {
+        "jp": "はらぺこのうた",
+        "en": "Harapeko no Uta",
+        "path": "はらぺこのうた.mp3"
+    },
+    "komori": {
+        "jp": "わための子守唄",
+        "en": "Watame no Komori-uta",
+        "path": "わための子守唄.mp3"
+    },
+    "watamerap": {
+        "jp": "わためラップ",
+        "en": "Watame Rap",
+        "path": "わためラップ.mp3"
+    },
+    "aimai": {
+        "jp": "愛昧ショコラーテ",
+        "en": "Aimai Chocolate",
+        "path": "愛昧ショコラーテ.mp3"
+    },
+    "rainy": {
+        "jp": "Rainy Day ☔",
+        "en": "Rainy Day ☔",
+        "path": "Rainy Day ☔.mp3"
+    },
+    "dododo": {
+        "jp": "ドドドホリデ",
+        "en": "Do Do Do Holiday",
+        "path": "ドドドホリデ.mp3"
+    },
+    "palette": {
+        "jp": "Palette",
+        "en": "Palette",
+        "path": "Palette.mp3"
+    },
+    "10C": {
+        "jp": "10℃",
+        "en": "10℃",
+        "path": "10℃.mp3"
+    },
+    "komika": {
+        "jp": "YouTube向けコミカルでかわいい、ちょっととぼけた曲",
+        "en": "Youtube-muke Comical de Kawaii, Chotto Toboketa Kyoku",
+        "path": "YouTube向けコミカルでかわいい、ちょっととぼけた曲.mp3"
+    },
+    "nichijo": {
+        "jp": "YouTube向けまったりした日常曲",
+        "en": "Youtube-muke Mattari shita Nichijō Kyoku",
+        "path": "YouTube向けまったりした日常曲.mp3"
+    },
+    "genki": {
+        "jp": "明日も元気に",
+        "en": "Ashita mo Genki ni",
+        "path": "明日も元気に.mp3"
+    },
+    "mccoco": {
+        "jp": "ココおねいさんといっしょ",
+        "en": "Coco Onee-san to Issho",
+        "path": "ココおねいさんといっしょ.mp3"
+    },
+    "gangimari": {
+        "jp": "ガンギマリドラゴン",
+        "en": "Gangimari Dragon",
+        "path": "ガンギマリドラゴン.mp3"
+    },
+    "flat": {
+        "jp": "フラット気分",
+        "en": "Flat Kibun",
+        "path": "フラット気分.mp3"
+    },
+    "cocoed": {
+        "jp": "桐生ココED",
+        "en": "Kiryu Coco ED",
+        "path": "桐生ココED.mp3"
+    },
+    "kinmirai": {
+        "jp": "近未来なお知らせ",
+        "en": "Kin Mirai Oshirase",
+        "path": "近未来なお知らせ.mp3"
+    },
+    "ippai": {
+        "jp": "元気いっぱい",
+        "en": "Genki Ippai",
+        "path": "元気いっぱい.mp3"
+    },
+    "soran": {
+        "jp": "ソーラン節",
+        "en": "Sōran Bushi",
+        "path": "ソーラン節.mp3"
+    },
+    "yosei-san": {
+        "jp": "妖精さんこんにちは",
+        "en": "Yōsei-san Konnichiwa",
+        "path": "妖精さんこんにちは.mp3"
+    },
+    "hatsuyuki": {
+        "jp": "妖精達の初雪物語",
+        "en": "Yōsei-tachi no Hatsuyuki Monogatari",
+        "path": "妖精達の初雪物語.mp3"
+    },
+    "furubita": {
+        "jp": "古びたメロディ",
+        "en": "Furubita Melody",
+        "path": "古びたメロディ.mp3"
+    },
+    "skaters": {
+        "jp": "スケーターズ・ワルツ",
+        "en": "Skaters Waltz",
+        "path": "スケーターズ - ワルツ.mp3"
+    },
+    "lunar": {
+        "jp": "Lunar Light",
+        "en": "Lunar Light",
+        "path": "Lunar Light.mp3"
+    },
+    "meaningful": {
+        "jp": "A Meaningful Day",
+        "en": "A Meaningful Day",
+        "path": "A Meaningful Day.mp3"
+    },
+    "snowy": {
+        "jp": "On A Snowy Day",
+        "en": "On A Snowy Day",
+        "path": "On A Snowy Day.mp3"
+    },
+    "snowflake": {
+        "jp": "Waltz of Snowflake",
+        "en": "Waltz of Snowflake",
+        "path": "Waltz of Snowflake.mp3"
+    },
+    "berry": {
+        "jp": "ベリーベリーパンケーキ",
+        "en": "Berry Berry Pancake",
+        "path": "ベリーベリーパンケーキ.mp3"
+    },
+    "yume": {
+        "jp": "夢の中",
+        "en": "Yume no Uchi",
+        "path": "夢の中.mp3"
+    },
+    "lion": {
+        "jp": "Kawaii White Lion",
+        "en": "Kawaii White Lion",
+        "path": "Kawaii White Lion.mp3"
+    },
+    "hologram": {
+        "jp": "HOLOGRAM CIRCUS",
+        "en": "HOLOGRAM CIRCUS",
+        "path": "HOLOGRAM CIRCUS.mp3"
+    },
+    "kabuki": {
+        "jp": "Neu Kabuki",
+        "en": "Neu Kabuki",
+        "path": "Neu Kabuki.mp3"
+    },
+    "owaruka": {
+        "jp": "ポルカオワルカ国歌",
+        "en": "Polka Owaruka Kokka",
+        "path": "ポルカオワルカ国歌.mp3"
+    },
+    "hirahirari": {
+        "jp": "ひらひらり",
+        "en": "Hirahirari",
+        "path": "ひらひらり.mp3"
+    },
+    "mezase": {
+        "jp": "目指せ!KIRAKIRAアイドル!",
+        "en": "Mezase! KIRA KIRA Idol",
+        "path": "目指せKIRAKIRAアイドル.mp3"
+    },
+    "omocha": {
+        "jp": "おもちゃのダンス",
+        "en": "Omocha no Dance",
+        "path": "おもちゃのダンス"
+    },
+    "5min": {
+        "jp": "Watson Amelia BGM 5 min",
+        "en": "Watson Amelia BGM 5 min",
+        "path": "Watson Amelia BGM 5 min.mp3"
+    },
+    "ensolarado": {
+        "jp": "Ensolarado",
+        "en": "Ensolarado",
+        "path": "ensolarado.mp3"
+    },
+    "reflect": {
+        "jp": "REFLECT",
+        "en": "REFLECT",
+        "path": "REFLECT.mp3"
+    },
+    "atelier": {
+        "jp": "アトリエと電脳世界",
+        "en": "Atelier to Dennō Sekai",
+        "path": "アトリエと電脳世界.mp3"
+    },
+    "koshin": {
+        "jp": "おもちゃの行進曲",
+        "en": "Omocha no Kōshin Kyoku",
+        "path": "おもちゃの行進曲.mp3"
+    },
+    "like-the-snow": {
+        "jp": "Like the Snow",
+        "en": "Like the Snow",
+        "path": "Like the Snow.mp3"
+    },
+    "yuruyuru": {
+        "jp": "ゆるゆるタイム",
+        "en": "Yuruyuru Time",
+        "path": "ゆるゆるタイム.mp3"
+    },
+    "atarashi": {
+        "jp": "新しい季節",
+        "en": "Atarashī Kisetsu",
+        "path": "新しい季節.mp3"
+    },
+    "rip": {
+        "jp": "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP",
+        "en": "Shitsureishimasuga、RIP♡ _ Excuse My Rudeness, But Could You Please RIP",
+        "path": "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP.mp3"
+    },
+    "cursed": {
+        "jp": "Cursed Night",
+        "en": "Cursed Night",
+        "path": "Cursed Night.mp3"
+    },
+    "holoalt": {
+        "jp": "Dawn Blue",
+        "en": "Dawn Blue",
+        "path": "Dawn Blue.mp3"
+    },
+    "deadbeats": {
+        "jp": "DEAD BEATS",
+        "en": "DEAD BEATS",
+        "path": "DEAD BEATS.mp3"
+    },
+    "live": {
+        "jp": "Live Again",
+        "en": "Live Again",
+        "path": "Live Again.mp3"
+    },
+    "heads": {
+        "jp": "Off With Their Heads",
+        "en": "Off With Their Heads",
+        "path": "Off With Their Heads.mp3"
+    },
+    "reaper": {
+        "jp": "ReaperかRapper 自己紹介ラップ",
+        "en": "Reaper ka Rapper Jiko Shōkai Rap",
+        "path": "ReaperかRapper 自己紹介ラップ.mp3"
+    },
+    "red": {
+        "jp": "Red",
+        "en": "Red",
+        "path": "Red.mp3"
+    },
+    "nights": {
+        "jp": "Nights With You",
+        "en": "Nights With You",
+        "path": "Nights With You.mp3"
+    },
+    "hinotori": {
+        "jp": "HINOTORI",
+        "en": "HINOTORI",
+        "path": "HINOTORI.mp3"
+    },
+    "challenger": {
+        "jp": "Heart Challenger",
+        "en": "Heart Challenger",
+        "path": "Heart Challenger.mp3"
+    },
+    "holotalk": {
+        "jp": "HOLOTALK with Takanashi Kiara - BGM",
+        "en": "HOLOTALK with Takanashi Kiara - BGM",
+        "path": "HOLOTALK with Takanashi Kiara - BGM.mp3"
+    },
+    "majestic": {
+        "jp": "Majestic Phoenix",
+        "en": "Majestic Phoenix",
+        "path": "Majestic Phoenix.mp3"
+    },
+    "warrior": {
+        "jp": "Part-Time Warrior",
+        "en": "Part-Time Warrior",
+        "path": "Part-Time Warrior.mp3"
+    },
+    "shonen": {
+        "jp": "少年達の夏休み的なBGM",
+        "en": "Shōnen-tachi no Natsu Yasumi-tekina BGM",
+        "path": "少年達の夏休み的なBGM.mp3"
+    },
+    "chisana": {
+        "jp": "愛の小さな歌",
+        "en": "Ai no Chisana Uta",
+        "path": "愛の小さな歌.mp3"
+    },
+    "moona": {
+        "jp": "Moona Hoshinova Intro",
+        "en": "Moona Hoshinova Intro",
+        "path": "Moona Hoshinova Intro.mp3"
+    },
+    "galaxy": {
+        "jp": "Galaxy",
+        "en": "Galaxy",
+        "path": "Galaxy.mp3"
+    },
+    "nonbiri": {
+        "jp": "のんびり昼休み",
+        "en": "Nonbiri Hiru Yasumi",
+        "path": "のんびり昼休み.mp3"
+    },
+    "honobono": {
+        "jp": "ほのぼの",
+        "en": "ほのぼの",
+        "path": "ほのぼの.mp3"
+    },
+    "popipo": {
+        "jp": "ポピポ",
+        "en": "Po Pi Po",
+        "path": "ポピポ.mp3"
+    },
+    "hazimarisu": {
+        "jp": "はざまりす",
+        "en": "Hazimarisu",
+        "path": "はざまりす.mp3"
+    },
+    "henachoko": {
+        "jp": "ぼくはへなちょこ",
+        "en": "Boku wa Henachoko",
+        "path": "ぼくはへなちょこ.mp3"
+    },
+    "coffee": {
+        "jp": "Brewing Coffee",
+        "en": "Brewing Coffee",
+        "path": "Brewing Coffee.mp3"
+    },
+    "bersama": {
+        "jp": "Bersama Ioforia",
+        "en": "Bersama Ioforia",
+        "path": "Bersama Ioforia.mp3"
+    },
+    "cute-music": {
+        "jp": "Funny and Cute music",
+        "en": "Funny and Cute music",
+        "path": "Funny and Cute music.mp3"
+    },
+    "gate": {
+        "jp": "Gate Open - START",
+        "en": "Gate Open - START",
+        "path": "Gate Open - START.mp3"
+    },
+    "peafowl": {
+        "jp": "Peafowl Diva",
+        "en": "Peafowl Diva",
+        "path": "Peafowl Diva.mp3"
+    },
+    "swing": {
+        "jp": "Swing swing",
+        "en": "Swing swing",
+        "path": "swing swing.mp3"
+    },
+    "energetic": {
+        "jp": "Energetic Day",
+        "en": "Energetic Day",
+        "path": "Energetic Day.mp3"
+    },
+    "yawning": {
+        "jp": "Yawning at Dusk",
+        "en": "Yawning at Dusk",
+        "path": "Yawning at Dusk.mp3"
+    },
+    "shiny": {
+        "jp": "Shiny Smily Story",
+        "en": "Shiny Smily Story",
+        "path": "Shiny Smily Story.mp3"
+    },
+    "yumemirusorae": {
+        "jp": "夢見る空へ",
+        "en": "Yumemiru Sora e",
+        "path": "夢見る空へ.mp3"
+    },
+    "kirameki": {
+        "jp": "キラメキライダー☆",
+        "en": "Kirameki Rider ☆",
+        "path": "キラメキライダー☆.mp3"
+    },
+    "halloween": {
+        "jp": "今宵はHalloween Night!",
+        "en": "Koyoi ha Halloween Night!",
+        "path": "今宵はHalloween Night.mp3"
+    },
+    "pekomiko": {
+        "jp": "ぺこみこ大戦争",
+        "en": "Peko Miko Daisensō",
+        "path": "ぺこみこ大戦争.mp3"
+    },
+    "clapper": {
+        "jp": "BLUE CLAPPER",
+        "en": "BLUE CLAPPER",
+        "path": "BLUE CLAPPER.mp3"
+    },
+    "can-you": {
+        "jp": "ホロライブ言えるかな?",
+        "en": "Hololive Ierukana>",
+        "path": "ホロライブ言えるかな.mp3"
+    },
+    "daily": {
+        "jp": "でいり～だいあり～",
+        "en": "DAILY~DIARY~",
+        "path": "でいり～だいあり～.mp3"
+    },
+    "sus": {
+        "jp": "Suspect",
+        "en": "Suspect",
+        "path": "Suspect.mp3"
+    },
+    "entity": {
+        "jp": "id-entity voices",
+        "en": "id-entity voices",
+        "path": "id-entity voices.mp3"
+    },
+    "plasmagic": {
+        "jp": "Plasmagic Seasons",
+        "en": "Plasmagic Seasons",
+        "path": "Plasmagic Seasons.mp3"
+    },
+    "kiseki": {
+        "jp": "キセキ結び",
+        "en": "Kiseki Musubi",
+        "path": "キセキ結び.mp3"
     }
 }

@@ -1,4 +1,5 @@
 $color_sora: #4886e8;
+$color_suisei: #4886e8;
 $color_fubuki: #16fefd;
 
 @function tint($color, $percentage) {
@@ -11,6 +12,7 @@ $color_fubuki: #16fefd;
 
 $colors: (
     "sora": $color_sora,
+    "suisei": $color_suisei,
     "fubuki": $color_fubuki
 );
 
