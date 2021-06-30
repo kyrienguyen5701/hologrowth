@@ -43,6 +43,7 @@ export interface GenMenuData {
 }
 
 export interface MemberMenuData {
+  memberDisplayName: string;
   memberName: string;
   memberURL: string;
 }

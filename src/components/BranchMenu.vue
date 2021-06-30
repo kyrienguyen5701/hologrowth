@@ -20,8 +20,9 @@
               class="member flex-centered"
               v-for="memberData in genData.genMember"
               v-bind:key="memberData.memberName"
+              v-on:click="setTalent(memberData.memberName)"
             >
-              <span>{{ memberData.memberName }}</span>
+              <span>{{ memberData.memberDisplayName }}</span>
             </div>
           </div>
         </div>
@@ -33,7 +34,7 @@
 <script lang="ts">
 // import * as interfaces from "@/assets/ts/interfaces";
 // import * as Localization from "@/assets/ts/localize";
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Emit, Vue } from "vue-property-decorator";
 import talents from "@/assets/json/talents.json";
 import { Categorize, GetYoutubeURL } from "@/assets/ts/common";
 import * as Localization from "@/assets/ts/localize";
@@ -69,7 +70,10 @@ export default class BranchMenu extends Vue {
 
             for (let i = 0; i < talents.length; i++) {
               const memberData = {} as MemberMenuData;
-              memberData.memberName = Localization.GetLocalizedText(
+              memberData.memberName = talents[i].name
+                .replaceAll(" ", "-")
+                .toLowerCase();
+              memberData.memberDisplayName = Localization.GetLocalizedText(
                 `menu-${talents[i].name.replaceAll(" ", "-").toLowerCase()}`
               );
               memberData.memberURL = GetYoutubeURL(talents[i].channelId);
@@ -93,8 +97,14 @@ export default class BranchMenu extends Vue {
         }
 
         return result;
-      })()
+      })(),
+      selectedMember: ""
     };
+  }
+
+  @Emit("setTalent")
+  setTalent(memberName: string) {
+    this.$data.selectedMember = memberName;
   }
 }
 </script>

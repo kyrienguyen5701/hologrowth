@@ -7,7 +7,10 @@
         </div>
       </div>
       <div class="menus">
-        <BranchMenu :key="currentLang"></BranchMenu>
+        <BranchMenu
+          :key="currentLang"
+          v-on:setTalent="changeTalent($event)"
+        ></BranchMenu>
         <LanguageMenu v-on:setLang="changeLang($event)"></LanguageMenu>
       </div>
     </div>
@@ -15,7 +18,7 @@
     <div class="body">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/member">Member</router-link>
+      <!-- <router-link to="/member">Member</router-link> -->
       <router-link to="/tests-color">Color Test</router-link>
       <div class="color-change">
         <button v-on:click="SetColor('fubuki')">Change color: FBK</button>
@@ -40,12 +43,15 @@ export default Vue.extend({
     },
     changeLang(value: string) {
       this.currentLang = value;
+    },
+    changeTalent(talentName: string) {
+      router.push(`/member/${talentName}`);
     }
   },
   data() {
     return {
       currentLang: localStorage.getItem("lang")
-    }
+    };
   }
 });
 </script>
