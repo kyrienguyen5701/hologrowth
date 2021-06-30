@@ -13,7 +13,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
-import { GetColor } from "@/assets/ts/colors";
+import { GetCSSVar } from "@/assets/ts/common";
 
 Vue.use(VueApexCharts);
 Vue.component('chart', VueApexCharts);
@@ -49,7 +49,7 @@ export default class MemberChart extends Vue {
             autoScaleYaxis: true
           }
         },
-        colors: [GetColor(this.memberData.CSSname)[0]],
+        colors: [GetCSSVar(`--color-${this.memberData.CSSname}`)],
         dataLabels: {
           enabled: false
         },
@@ -62,7 +62,7 @@ export default class MemberChart extends Vue {
         },
         grid: {
           row: {
-            colors: [GetColor(this.memberData.CSSname)[2], "transparent"],
+            colors: [GetCSSVar(`--color-${this.memberData.CSSname}-tint-50`), "transparent"],
             opacity: .5
           },
         },
