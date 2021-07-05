@@ -1,5 +1,5 @@
 <template>
-  <div class="member-page">
+  <div class="member-page" :key="$data.memberName">
     <div id="section-1" class="section">
       <b-carousel :interval="4000" background="#ababab">
         <b-carousel-slide img-src=""></b-carousel-slide>
@@ -39,10 +39,12 @@
           {{ getMemberName() }}
         </div>
         <div class="section-text-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          fugit sed cumque sit quisquam aspernatur et. Vitae provident labore ex
-          molestias, facilis voluptatum, beatae officiis placeat possimus quia,
-          assumenda exercitationem!
+          <MemberChart
+            v-bind:memberData="{
+              name: getMemberName(),
+              CSSname: getMemberCSSName()
+            }"
+          ></MemberChart>
         </div>
       </div>
     </div>
@@ -50,7 +52,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
 
@@ -66,8 +68,17 @@ export default class MemberPage extends Vue {
     };
   }
 
+  @Watch("$route")
+  onMemberChange() {
+    this.$data.memberName = this.$route.params.talentName;
+  }
+
   getMemberName() {
     return Common.GetTalentName(this.$data.memberName);
+  }
+
+  getMemberCSSName() {
+    return this.$data.memberName.split("-")[1];
   }
 }
 </script>
