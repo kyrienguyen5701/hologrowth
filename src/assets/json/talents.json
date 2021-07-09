@@ -51,6 +51,9 @@
         "name":"Sakura Miko",
         "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
         "bgm":[
+            "Sakura Miko Ending BGM.mp3",
+            "Sakura Miko Opening BGM.mp3",
+            "いたずらキッズ.mp3",
             "ロバでも眺めながら.mp3",
             "ワクワク楽しいクリスマス.mp3"
         ],
@@ -153,7 +156,7 @@
         "name":"Akai Haato",
         "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
         "bgm":[
-            "はあちゃまはあちゃまっちゃま.mp3",
+            "はあちゃまっちゃま.mp3",
             "まったりゆらゆら.mp3",
             "ダークメルヘンコーラス.mp3",
             "優しいギターソロ.mp3",
@@ -359,7 +362,7 @@
         "name":"Houshou Marine",
         "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
         "bgm":[
-            "Captain Beatbox Ⅱ.mp3",
+            "Captain Beatbox II.mp3",
             "Senchou's Comfy BGM.mp3",
             "妖精のキッチン.mp3",
             "💘 宝鐘マリン (@2ncooh) 💘.mp3"
@@ -436,7 +439,7 @@
         "name":"Shirogane Noel",
         "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
         "bgm":[
-            "You and Me _ しゃろう.mp3",
+            "You and Me.mp3",
             "こんばんマスルー.mp3",
             "ひみつ基地.mp3",
             "午後のカフェ.mp3"
@@ -462,6 +465,7 @@
             "はらぺこのうた.mp3",
             "わための子守唄.mp3",
             "わためラップ.mp3",
+            "キミだけのメロディ.mp3",
             "愛昧ショコラーテ.mp3"
         ]
     },
@@ -500,6 +504,7 @@
             "近未来なお知らせ.mp3"
         ],
         "solo":[
+            "Weather Hackers☆.mp3",
             "ココおねえさんといっしょ.mp3"
         ]
     },
@@ -586,7 +591,7 @@
         "name":"Shishiro Botan",
         "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
         "bgm":[
-            "2_23 AM _ しゃろう.mp3",
+            "2_23 AM.mp3",
             "Kawaii White Lion.mp3"
         ],
         "solo":[
@@ -685,7 +690,7 @@
             "Off With Their Heads.mp3",
             "ReaperかRapper 自己紹介ラップ.mp3",
             "Red.mp3",
-            "失礼しますが、RIP♡ _ “Excuse My Rudeness, But Could You Please RIP”.mp3"
+            "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP.mp3"
         ]
     },
     {
@@ -791,7 +796,7 @@
             "swing swing.mp3"
         ],
         "solo":[
-
+            "アニキへ.mp3"
         ]
     },
     {
