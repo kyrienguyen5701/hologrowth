@@ -20,16 +20,38 @@ import { format } from "date-fns";
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
 
-const subcountFormatter = (val: number) => {
+const countFormatter = (count: number) => {
   const thousand = 1000;
   const million = 1000000;
-  if (val < thousand) return val;
-  if (val < million) return `${val / thousand}K`;
-  return `${val / million}M`;
+  if (count < thousand) return count;
+  if (count < million) return `${count / thousand}K`;
+  return `${count / million}M`;
 };
 
 const dateFormatter = (val: string) => {
   return format(new Date(val), "MMM dd");
+};
+
+const availableRangesMap = (range: number) => {
+  switch (range) {
+    case 7:
+      return "Last Week";
+    case 30:
+      return "Last Month";
+    case 365:
+      return "Last Year";
+    case 0:
+      return "All Time";
+  }
+};
+
+const countTypesMap = (countType: string) => {
+  switch (countType) {
+    case "sub":
+      return "Subscriber";
+    case "view":
+      return "View";
+  }
 };
 
 @Component
@@ -37,6 +59,11 @@ export default class MemberChart extends Vue {
   @Prop() memberData!: {
     name: string;
     CSSname: string;
+  };
+
+  @Prop() chartData!: {
+    range: number;
+    countType: string;
   };
 
   @Watch("memberData", { immediate: true, deep: true })
@@ -47,9 +74,9 @@ export default class MemberChart extends Vue {
       url: "http://127.0.0.1:8000/send",
       headers: { "content-type": "application/json" },
       data: {
-        days: 7,
+        range: this.chartData.range,
         talent: this.memberData.name,
-        countType: "sub"
+        countType: this.chartData.countType
       }
     })
       .then(res => {
@@ -71,7 +98,7 @@ export default class MemberChart extends Vue {
     return {
       series: [
         {
-          name: "Subscriber count",
+          name: `${countTypesMap(this.chartData.countType)} Count`,
           data: []
         }
       ],
@@ -93,7 +120,7 @@ export default class MemberChart extends Vue {
           curve: "smooth"
         },
         title: {
-          text: `${this.memberData.name}'s last 7 days subscriber counts`,
+          text: `${this.memberData.name}'s ${availableRangesMap(this.chartData.range)} ${countTypesMap(this.chartData.countType)} Counts`,
           align: "center"
         },
         grid: {
@@ -110,16 +137,16 @@ export default class MemberChart extends Vue {
         },
         yaxis: {
           labels: {
-            formatter: subcountFormatter
+            formatter: countFormatter
           },
           title: {
-            text: "Subscriber Count"
+            text: `${countTypesMap(this.chartData.countType)} Count`
           }
         },
         tooltip: {
           shared: false,
           y: {
-            formatter: subcountFormatter
+            formatter: countFormatter
           }
         }
       }
