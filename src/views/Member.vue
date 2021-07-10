@@ -39,12 +39,7 @@
           {{ getMemberName() }}
         </div>
         <div class="section-text-description">
-          <MemberChart
-            v-bind:memberData="{
-              name: getMemberName(),
-              CSSname: getMemberCSSName()
-            }"
-          ></MemberChart>
+          <MemberChart v-bind:memberData="getMemberData()"></MemberChart>
         </div>
       </div>
     </div>
@@ -79,6 +74,13 @@ export default class MemberPage extends Vue {
 
   getMemberCSSName() {
     return this.$data.memberName.split("-")[1];
+  }
+
+  getMemberData() {
+    return {
+      name: this.getMemberName(),
+      CSSname: this.getMemberCSSName()
+    };
   }
 }
 </script>

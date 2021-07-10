@@ -1,9 +1,9 @@
 <template>
   <div>
-    <chart 
+    <chart
       class="member-chart"
-      height="350" 
-      :options="chartOptions" 
+      height="350"
+      :options="chartOptions"
       :series="series"
     >
     </chart>
@@ -11,12 +11,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
 import { GetCSSVar } from "@/assets/ts/common";
+import axios from "axios";
+import { format } from "date-fns";
 
 Vue.use(VueApexCharts);
-Vue.component('chart', VueApexCharts);
+Vue.component("chart", VueApexCharts);
 
 const subcountFormatter = (val: number) => {
   const thousand = 1000;
@@ -26,20 +28,54 @@ const subcountFormatter = (val: number) => {
   return `${val / million}M`;
 };
 
+const dateFormatter = (val: string) => {
+  return format(new Date(val), "MMM dd");
+};
+
 @Component
 export default class MemberChart extends Vue {
   @Prop() memberData!: {
-    name: string,
-    CSSname: string
+    name: string;
+    CSSname: string;
+  };
+
+  @Watch("memberData", { immediate: true, deep: true })
+  async initializeData() {
+    console.log(document.getElementById("chart"));
+    await axios({
+      method: "POST",
+      url: "http://127.0.0.1:8000/send",
+      headers: { "content-type": "application/json" },
+      data: {
+        days: 7,
+        talent: this.memberData.name,
+        countType: "sub"
+      }
+    })
+      .then(res => {
+        this.$data.series = [
+          {
+            data: Object.values(res.data)
+          }
+        ];
+        this.$data.chartOptions = {
+          xaxis: {
+            categories: Object.keys(res.data).map(dateFormatter)
+          }
+        };
+      })
+      .catch(e => console.log(e));
   }
 
   data() {
     return {
-      series: [{
-        name: "Subscriber count",
-        data: [965000, 968000, 970000, 973000, 975000, 978000, 981000]
-      }],
-      chartOptions:{
+      series: [
+        {
+          name: "Subscriber count",
+          data: []
+        }
+      ],
+      chartOptions: {
         chart: {
           height: 350,
           type: "line",
@@ -62,12 +98,15 @@ export default class MemberChart extends Vue {
         },
         grid: {
           row: {
-            colors: [GetCSSVar(`--color-${this.memberData.CSSname}-tint-50`), "transparent"],
-            opacity: .5
-          },
+            colors: [
+              GetCSSVar(`--color-${this.memberData.CSSname}-tint-50`),
+              "transparent"
+            ],
+            opacity: 0.5
+          }
         },
         xaxis: {
-          categories: ["Jun 14", "Jun 15", "Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20"]
+          categories: []
         },
         yaxis: {
           labels: {
@@ -84,7 +123,7 @@ export default class MemberChart extends Vue {
           }
         }
       }
-    }  
+    };
   }
 }
 </script>
