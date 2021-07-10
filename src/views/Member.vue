@@ -39,7 +39,13 @@
           {{ getMemberName() }}
         </div>
         <div class="section-text-description">
-          <MemberChart v-bind:memberData="getMemberData()"></MemberChart>
+          <!-- <MemberChart
+            v-bind:memberData="{
+              name: getMemberName(),
+              CSSname: getMemberCSSName()
+            }"
+          ></MemberChart> -->
+          <ChartSwiper></ChartSwiper>
         </div>
       </div>
     </div>
