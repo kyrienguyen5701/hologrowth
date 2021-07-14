@@ -45,6 +45,7 @@ import {
   MemberMenuData,
   TalentData
 } from "@/assets/ts/interfaces";
+import * as Colors from "@/assets/ts/colors";
 
 @Component
 export default class BranchMenu extends Vue {
@@ -105,6 +106,7 @@ export default class BranchMenu extends Vue {
   @Emit("setTalent")
   setTalent(memberName: string) {
     this.$data.selectedMember = memberName;
+    Colors.ChangeColor(memberName.split("-")[1]);
   }
 }
 </script>

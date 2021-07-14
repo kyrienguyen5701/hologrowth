@@ -7,7 +7,21 @@
 
         ],
         "name":"Tokino Sora",
-        "channelId":"UCp6993wxpyDPHUpavwDFqgg"
+        "channelId":"UCp6993wxpyDPHUpavwDFqgg",
+        "bgm":[
+            "Under the Clear Sky.mp3",
+            "夕べの星.mp3"
+        ],
+        "solo":[
+            "Step and Go.mp3",
+            "わたしとあなたと皆さまと.mp3",
+            "フレーフレーLOVE.mp3",
+            "ブルーベリームーン.mp3",
+            "好き、泣いちゃいそうだ.mp3",
+            "木の芽時の空.mp3",
+            "未練レコード.mp3",
+            "青空のシンフォニー.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -17,7 +31,15 @@
 
         ],
         "name":"Roboco",
-        "channelId":"UCDqI2jOz0weumE8s7paEk6g"
+        "channelId":"UCDqI2jOz0weumE8s7paEk6g",
+        "bgm":[
+            "Next Wednesday 魂音泉.mp3"
+        ],
+        "solo":[
+            "FICTION.mp3",
+            "アザミナ.mp3",
+            "社畜の歌.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -27,7 +49,19 @@
 
         ],
         "name":"Sakura Miko",
-        "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA"
+        "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
+        "bgm":[
+            "Sakura Miko Ending BGM.mp3",
+            "Sakura Miko Opening BGM.mp3",
+            "いたずらキッズ.mp3",
+            "ロバでも眺めながら.mp3",
+            "ワクワク楽しいクリスマス.mp3"
+        ],
+        "solo":[
+            "さくら色ハイテンション.mp3",
+            "サクラカゼ.mp3",
+            "マイネームイズエリート☆.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -37,7 +71,20 @@
 
         ],
         "name":"Hoshimachi Suisei",
-        "channelId":"UC5CwaMl1eIgY8h02uZw7u8A"
+        "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
+        "bgm":[
+            "かえるのピアノ.mp3",
+            "ごろごろゲームする日.mp3",
+            "わくわくクッキングタイム的な.mp3",
+            "良心が強すぎる泥棒的な.mp3"
+        ],
+        "solo":[
+            "Bluerose.mp3",
+            "comet.mp3",
+            "GHOST.mp3",
+            "NEXT COLOR PLANET.mp3",
+            "天球、彗星は夜を跨いで.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -47,7 +94,20 @@
 
         ],
         "name":"AZKi",
-        "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw"
+        "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
+        "bgm":[
+            "Bougainvillea.mp3"
+        ],
+        "solo":[
+            "Creating world【開拓するの私の世界】.mp3",
+            "Eternity Bright.mp3",
+            "From A to Z.mp3",
+            "Take me to Heaven【連れて行って、あのメロディへ】.mp3",
+            "いのち.mp3",
+            "ひかりのまち.mp3",
+            "フェリシア.mp3",
+            "リアルメランコリー【私と似てる気持ちの君へ】.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -57,7 +117,14 @@
 
         ],
         "name":"Yozora Mel",
-        "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw"
+        "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
+        "bgm":[
+            "カフェでひと休み.mp3",
+            "ポップキャンディ.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -67,7 +134,17 @@
 
         ],
         "name":"Aki Rosenthal",
-        "channelId":"UCFTLzh12_nrtzqBPsTCqenA"
+        "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
+        "bgm":[
+            "Lights Out.mp3",
+            "Numbers.mp3"
+        ],
+        "solo":[
+            "Chocolate Pandemic【キミの元に出荷します】.mp3",
+            "シャルイース.mp3",
+            "ヒロインオーディション.mp3",
+            "輪廻るセカイと罪ノ果実.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -77,7 +154,18 @@
 
         ],
         "name":"Akai Haato",
-        "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg"
+        "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
+        "bgm":[
+            "はあちゃまっちゃま.mp3",
+            "まったりゆらゆら.mp3",
+            "ダークメルヘンコーラス.mp3",
+            "優しいギターソロ.mp3",
+            "赤井２分クッキング.mp3"
+        ],
+        "solo":[
+            "Infinity.mp3",
+            "REDHEART.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -87,7 +175,17 @@
 
         ],
         "name":"Shirakami Fubuki",
-        "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg"
+        "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
+        "bgm":[
+            "Beachside Fox.mp3",
+            "桜色コントレイル.mp3",
+            "靴下をはいた猫.mp3",
+            "香りのやる気スイッチ.mp3"
+        ],
+        "solo":[
+            "Say - ファンファーレ.mp3",
+            "【13日の金曜日】ハム＆ナゴ.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -97,7 +195,14 @@
 
         ],
         "name":"Natsuiro Matsuri",
-        "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg"
+        "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
+        "bgm":[
+            "Matsuri's Day Off.mp3",
+            "鈴色日和.mp3"
+        ],
+        "solo":[
+            "君と眺める夏の花.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -107,7 +212,17 @@
 
         ],
         "name":"Minato Aqua",
-        "channelId":"UC1opHUrw8rvnsadT-iGp7Cg"
+        "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
+        "bgm":[
+            "Marine Maid.mp3",
+            "Radio#16.mp3",
+            "リコーダービート2.mp3",
+            "子猫のお散歩.mp3"
+        ],
+        "solo":[
+            "For the Win.mp3",
+            "あくあ色ぱれっと.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -117,7 +232,14 @@
 
         ],
         "name":"Murasaki Shion",
-        "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw"
+        "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
+        "bgm":[
+            "Virtual Magician.mp3",
+            "紫咲詩音正月.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -127,7 +249,17 @@
 
         ],
         "name":"Nakiri Ayame",
-        "channelId":"UC7fk0CB07ly8oSl0aqKkqFg"
+        "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
+        "bgm":[
+            "Chrono.mp3",
+            "Summertime Nakiri.mp3",
+            "VANKETT.mp3",
+            "夢見るひつじ.mp3",
+            "神秘的で切ない曲.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -137,7 +269,13 @@
 
         ],
         "name":"Yuzuki Choco",
-        "channelId":"UC1suqwovbL1kzsoaZgFZLKg"
+        "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
+        "bgm":[
+            "Cooking Time.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -147,7 +285,15 @@
 
         ],
         "name":"Oozora Subaru",
-        "channelId":"UCvzGlP9oQwU--Y0r9id_jnA"
+        "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
+        "bgm":[
+            "You and Me.mp3",
+            "まったりしましょ.mp3",
+            "極東の羊、テレキャスターと踊る.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -157,7 +303,17 @@
 
         ],
         "name":"Ookami Mio",
-        "channelId":"UCp-5t9SrOQwXMU7iIjQfARg"
+        "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
+        "bgm":[
+            "So Sweet.mp3",
+            "Summer Vacation.mp3",
+            "優しいケルト曲.mp3",
+            "昼下がり気分.mp3",
+            "野良猫は宇宙を目指した.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -167,7 +323,16 @@
 
         ],
         "name":"Nekomata Okayu",
-        "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw"
+        "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
+        "bgm":[
+            "Peaceful Treasure.mp3",
+            "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3",
+            "木漏れ日.mp3",
+            "楽しい帰り道.mp3"
+        ],
+        "solo":[
+            "もぐもぐYUMMY.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -177,7 +342,15 @@
 
         ],
         "name":"Inugami Korone",
-        "channelId":"UChAnqc_AY5_I3Px5dig3X1Q"
+        "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
+        "bgm":[
+            "えっさほいさ囃子.mp3",
+            "ひたひたと迫る影.mp3",
+            "ほんわかぷっぷー.mp3"
+        ],
+        "solo":[
+            "ころねの最凶天災☆わんだふぉー❤わーるど.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -187,7 +360,18 @@
 
         ],
         "name":"Houshou Marine",
-        "channelId":"UCCzUftO8KOVkV4wQG1vkUvg"
+        "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
+        "bgm":[
+            "Captain Beatbox II.mp3",
+            "Senchou's Comfy BGM.mp3",
+            "妖精のキッチン.mp3",
+            "💘 宝鐘マリン (@2ncooh) 💘.mp3"
+        ],
+        "solo":[
+            "Ahoy - 我ら宝鐘海賊団☆.mp3",
+            "Hoihoi☆Gensou Holoism.mp3",
+            "キャプテンマリンのケツアンカ.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -197,7 +381,16 @@
 
         ],
         "name":"Uruha Rushia",
-        "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ"
+        "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
+        "bgm":[
+            "2_23 AM.mp3",
+            "Be Happy.mp3",
+            "Guitar Gentle.mp3",
+            "SUMMER TRIANGLE.mp3"
+        ],
+        "solo":[
+            "アイリス.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -207,7 +400,17 @@
 
         ],
         "name":"Usada Pekora",
-        "channelId":"UC1DCedRgGHBdm81E1llLhOQ"
+        "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
+        "bgm":[
+            "おーたむうぉーきんぐ.mp3",
+            "たぬきちの冒険.mp3",
+            "ジオラマパレード.mp3",
+            "人参.mp3"
+        ],
+        "solo":[
+            "ぺこらんだむぶれいん.mp3",
+            "ぺこラップ.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -217,7 +420,14 @@
 
         ],
         "name":"Shiranui Flare",
-        "channelId":"UCvInZx9h3jC2JzsIzoOebWg"
+        "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
+        "bgm":[
+            "カエルの勇者.mp3",
+            "風がはじめに寄る街的なBGM.mp3"
+        ],
+        "solo":[
+            "​Smile & Go.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -227,7 +437,16 @@
 
         ],
         "name":"Shirogane Noel",
-        "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ"
+        "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
+        "bgm":[
+            "You and Me.mp3",
+            "こんばんマスルー.mp3",
+            "ひみつ基地.mp3",
+            "午後のカフェ.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -237,7 +456,18 @@
 
         ],
         "name":"Tsunomaki Watame",
-        "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA"
+        "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
+        "bgm":[
+            "Rainy Day ☔.mp3",
+            "ドドドホリデ.mp3"
+        ],
+        "solo":[
+            "はらぺこのうた.mp3",
+            "わための子守唄.mp3",
+            "わためラップ.mp3",
+            "キミだけのメロディ.mp3",
+            "愛昧ショコラーテ.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -247,7 +477,16 @@
 
         ],
         "name":"Tokoyami Towa",
-        "channelId":"UC1uv2Oq6kNxgATlCiez59hw"
+        "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
+        "bgm":[
+            "10℃.mp3",
+            "YouTube向けまったりした日常曲.mp3",
+            "YouTube向けコミカルでかわいい、ちょっととぼけた曲.mp3",
+            "明日も元気に.mp3"
+        ],
+        "solo":[
+            "Palette.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -257,7 +496,17 @@
 
         ],
         "name":"Kiryu Coco",
-        "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w"
+        "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
+        "bgm":[
+            "ガンギマリドラゴン.mp3",
+            "フラット気分.mp3",
+            "桐生ココED.mp3",
+            "近未来なお知らせ.mp3"
+        ],
+        "solo":[
+            "Weather Hackers☆.mp3",
+            "ココおねえさんといっしょ.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -267,7 +516,14 @@
 
         ],
         "name":"Amane Kanata",
-        "channelId":"UCZlDXzGoo7d44bwdNObFacg"
+        "channelId":"UCZlDXzGoo7d44bwdNObFacg",
+        "bgm":[
+            "元気いっぱい.mp3",
+            "楽しい帰り道.mp3"
+        ],
+        "solo":[
+            "ソーラン節.mp3"
+        ]
     },
     {
         "branch":"jp",
@@ -277,7 +533,17 @@
 
         ],
         "name":"Himemori Luna",
-        "channelId":"UCa9Y57gfeY0Zro_noHRVrnw"
+        "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
+        "bgm":[
+            "Lunar Light.mp3",
+            "スケーターズ - ワルツ.mp3",
+            "古びたメロディ.mp3",
+            "妖精さんこんにちは.mp3",
+            "妖精達の初雪物語.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -287,7 +553,15 @@
 
         ],
         "name":"Yukihana Lamy",
-        "channelId":"UCFKOVgVbGmX65RxO3EtH3iw"
+        "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
+        "bgm":[
+            "A Meaningful Day.mp3",
+            "On A Snowy Day.mp3",
+            "Waltz of Snowflake.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -297,7 +571,15 @@
 
         ],
         "name":"Momosuzu Nene",
-        "channelId":"UCAWSyEs_Io8MtpY3m-zqILA"
+        "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
+        "bgm":[
+            "ジオラマパレード.mp3",
+            "ベリーベリーパンケーキ.mp3",
+            "夢の中.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -307,7 +589,14 @@
 
         ],
         "name":"Shishiro Botan",
-        "channelId":"UCUKD-uaobj9jiqB-VXt71mA"
+        "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
+        "bgm":[
+            "2_23 AM.mp3",
+            "Kawaii White Lion.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"jp",
@@ -317,7 +606,16 @@
 
         ],
         "name":"Omaru Polka",
-        "channelId":"UCK9V2B22uJYu3N7eR_BT9QA"
+        "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
+        "bgm":[
+            "Neu Kabuki.mp3",
+            "ひらひらり.mp3",
+            "ポルカオワルカ国歌.mp3",
+            "目指せKIRAKIRAアイドル.mp3"
+        ],
+        "solo":[
+            "HOLOGRAM CIRCUS.mp3"
+        ]
     },
     {
         "branch":"en",
@@ -327,7 +625,14 @@
 
         ],
         "name":"Watson Amelia",
-        "channelId":"UCyl1z3jo3XHR1riLFKG5UAg"
+        "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
+        "bgm":[
+            "Watson Amelia BGM 5 min.mp3",
+            "おもちゃのダンス.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"en",
@@ -337,7 +642,13 @@
 
         ],
         "name":"Ninomae Ina'nis",
-        "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg"
+        "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
+        "bgm":[
+            "ensolarado.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"en",
@@ -347,7 +658,17 @@
 
         ],
         "name":"Gawr Gura",
-        "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g"
+        "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
+        "bgm":[
+            "Like the Snow.mp3",
+            "おもちゃの行進曲.mp3",
+            "ゆるゆるタイム.mp3",
+            "アトリエと電脳世界.mp3",
+            "新しい季節.mp3"
+        ],
+        "solo":[
+            "REFLECT.mp3"
+        ]
     },
     {
         "branch":"en",
@@ -357,7 +678,20 @@
 
         ],
         "name":"Mori Calliope",
-        "channelId":"UCL_qhgtOy0dy1Agp8vkySQg"
+        "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
+        "bgm":[
+            "Nights With You.mp3"
+        ],
+        "solo":[
+            "Cursed Night.mp3",
+            "Dawn Blue.mp3",
+            "DEAD BEATS.mp3",
+            "Live Again.mp3",
+            "Off With Their Heads.mp3",
+            "ReaperかRapper 自己紹介ラップ.mp3",
+            "Red.mp3",
+            "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP.mp3"
+        ]
     },
     {
         "branch":"en",
@@ -367,7 +701,17 @@
 
         ],
         "name":"Takanashi Kiara",
-        "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww"
+        "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
+        "bgm":[
+            "HOLOTALK with Takanashi Kiara - BGM.mp3",
+            "Majestic Phoenix.mp3",
+            "Part-Time Warrior.mp3",
+            "少年達の夏休み的なBGM.mp3"
+        ],
+        "solo":[
+            "Heart Challenger.mp3",
+            "HINOTORI.mp3"
+        ]
     },
     {
         "branch":"id",
@@ -377,7 +721,16 @@
 
         ],
         "name":"Moona Hoshinova",
-        "channelId":"UCP0BspO_AMEe3aQqqpo89Dg"
+        "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
+        "bgm":[
+            "Galaxy.mp3",
+            "Moona Hoshinova Intro.mp3",
+            "のんびり昼休み.mp3",
+            "ほのぼの.mp3"
+        ],
+        "solo":[
+            "愛の小さな歌.mp3"
+        ]
     },
     {
         "branch":"id",
@@ -387,7 +740,16 @@
 
         ],
         "name":"Ayunda Risu",
-        "channelId":"UCOyYb1c43VlX9rc_lT6NKQw"
+        "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
+        "bgm":[
+            "Brewing Coffee.mp3",
+            "はざまりす.mp3",
+            "ぼくはへなちょこ.mp3",
+            "ポピポ.mp3"
+        ],
+        "solo":[
+
+        ]
     },
     {
         "branch":"id",
@@ -397,7 +759,13 @@
 
         ],
         "name":"Airani Iofifteen",
-        "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg"
+        "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
+        "bgm":[
+            "Funny and Cute music.mp3"
+        ],
+        "solo":[
+            "Bersama Ioforia.mp3"
+        ]
     },
     {
         "branch":"id",
@@ -407,7 +775,13 @@
 
         ],
         "name":"Pavolia Reine",
-        "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q"
+        "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
+        "bgm":[
+            "Peafowl Diva.mp3"
+        ],
+        "solo":[
+            "Gate Open - START.mp3"
+        ]
     },
     {
         "branch":"id",
@@ -417,7 +791,13 @@
 
         ],
         "name":"Kureiji Ollie",
-        "channelId":"UCYz_5n-uDuChHtLo7My1HnQ"
+        "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
+        "bgm":[
+            "swing swing.mp3"
+        ],
+        "solo":[
+            "アニキへ.mp3"
+        ]
     },
     {
         "branch":"id",
@@ -427,6 +807,13 @@
 
         ],
         "name":"Anya Melfissa",
-        "channelId":"UC727SQYUvx5pDDGQpTICNWg"
+        "channelId":"UC727SQYUvx5pDDGQpTICNWg",
+        "bgm":[
+            "Energetic Day.mp3",
+            "Yawning at Dusk.mp3"
+        ],
+        "solo":[
+
+        ]
     }
 ]

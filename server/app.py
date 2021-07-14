@@ -1,20 +1,21 @@
-from flask import Flask, request, render_template, send_from_directory
+from flask import Flask, request, jsonify
 from flask_cors import CORS
-from dotenv import load_dotenv
 import os
+import pandas as pd
 
-load_dotenv()
-root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "dist")
-app = Flask(__name__, template_folder=root, static_folder=os.path.join(root, 'static'))
+app = Flask(__name__)
 CORS(app)
 
-@app.route('/<path:path>', methods=['GET'])
-def static_proxy(path):
-    return send_from_directory(root, path)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
+@app.route('/send', methods=['POST'])
+def get_data():
+    range = request.json['range']
+    talent = request.json['talent']
+    count_type = request.json['countType']
+    db = f'holo_{count_type}counts.csv'
+    df = pd.read_csv(db, encoding='utf-8')
+    df.set_index('Date', inplace=True)
+    range = df[talent].size if range == 0 or range > df[talent].size else range
+    return df[talent][:range].to_dict()
 
 if __name__ == '__main__':
-    app.run(port=(os.getenv('PORT') if os.getenv('PORT') else 8000), debug=False)
+    app.run(port=8000, debug=False)

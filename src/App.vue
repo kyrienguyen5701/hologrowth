@@ -21,12 +21,11 @@
       <!-- <router-link to="/member">Member</router-link> -->
       <router-link to="/tests-color">Color Test</router-link>
       <div class="color-change">
-        <button v-on:click="SetColor('fubuki')">Change color: FBK</button>
-        <button v-on:click="SetColor('sora')">Change color: Sora</button>
+        <button v-on:click="changeColor('fubuki')">Change color: FBK</button>
+        <button v-on:click="changeColor('sora')">Change color: Sora</button>
       </div>
     </div>
-    <MemberChart v-bind:memberData="{name: 'Hoshimachi Suisei', CSSname: 'suisei'}"></MemberChart>
-    <MusicPlayer :key="currentLang"></MusicPlayer>
+    <MusicPlayer v-bind:currentLang="currentLang"></MusicPlayer>
   </div>
 </template>
 
@@ -38,7 +37,7 @@ import * as Colors from "./assets/ts/colors";
 export default Vue.extend({
   router: router,
   methods: {
-    SetColor(name: string) {
+    changeColor(name: string) {
       Colors.ChangeColor(name);
     },
     changeLang(value: string) {

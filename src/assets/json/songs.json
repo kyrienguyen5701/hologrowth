@@ -94,6 +94,21 @@
         "en": "Wakuwaku Tanoshī Kurisumasu",
         "path": "ワクワク楽しいクリスマス.mp3"
     },
+    "itazura": {
+        "jp": "いたずらキッズ",
+        "en": "Itazura Kids",
+        "path": "いたずらキッズ.mp3"
+    },
+    "miko-op": {
+        "jp": "さくらみこオープニングBGM",
+        "en": "Sakura Miko Opening BGM",
+        "path": "Sakura Miko Opening BGM.mp3"
+    },
+    "miko-ed": {
+        "jp": "さくらみこエンディングBGM",
+        "en": "Sakura Miko Ending BGM",
+        "path": "Sakura Miko Ending BGM.mp3"
+    },
     "comet": {
         "jp": "Comet",
         "en": "Comet",
@@ -157,7 +172,7 @@
     "hikari": {
         "jp": "ひかりのまち",
         "en": "Hikari no Machi",
-        "path": "ひかりのまち"
+        "path": "ひかりのまち.mp3"
     },
     "inochi": {
         "jp": "いのち",
@@ -220,9 +235,9 @@
         "path": "Numbers.mp3"
     },
     "lights": {
-        "jp": "Lights out",
-        "en": "Lights out",
-        "path": "Lights out.mp3"
+        "jp": "Lights Out",
+        "en": "Lights Out",
+        "path": "Lights Out.mp3"
     },
     "redheart": {
         "jp": "REDHEART",
@@ -332,7 +347,7 @@
     "recorder": {
         "jp": "リコーダービート2",
         "en": "Recorder beat 2",
-        "path": "リコーダービート2 "
+        "path": "リコーダービート2.mp3"
     },
     "magician": {
         "jp": "アズールレーン×ホロライブ-紫咲シオン【バーチャルマジシャン】スキンBGM",
@@ -487,7 +502,7 @@
     "fairy": {
         "jp": "妖精のキッチン",
         "en": "Yōsei no Kitchen",
-        "path": "妖精のキッチン"
+        "path": "妖精のキッチン.mp3"
     },
     "beatbox": {
         "jp": "キャプテンンビートボックスII",
@@ -542,12 +557,12 @@
     "ninjin": {
         "jp": "人参",
         "en": "Ninjin",
-        "path": "人参"
+        "path": "人参.mp3"
     },
     "otamu": {
         "jp": "おーたむうぉーきんぐ",
         "en": "Otamu Woo King",
-        "path": "おーたむうぉーきんぐ"
+        "path": "おーたむうぉーきんぐ.mp3"
     },
     "smile": {
         "jp": "Smile & Go",
@@ -577,7 +592,7 @@
     "gogo": {
         "jp": "午後のカフェ",
         "en": "Gogo no Càfe",
-        "path": "午後のカフェ"
+        "path": "午後のカフェ.mp3"
     },
     "harapeko": {
         "jp": "はらぺこのうた",
@@ -598,6 +613,11 @@
         "jp": "愛昧ショコラーテ",
         "en": "Aimai Chocolate",
         "path": "愛昧ショコラーテ.mp3"
+    },
+    "kimidake": {
+        "jp": "キミだけのメロディ",
+        "en": "Kimi dake no Melody",
+        "path": "キミだけのメロディ.mp3"
     },
     "rainy": {
         "jp": "Rainy Day ☔",
@@ -634,10 +654,15 @@
         "en": "Ashita mo Genki ni",
         "path": "明日も元気に.mp3"
     },
+    "mf": {
+        "jp": "Weather Hackers☆",
+        "en": "Weather Hackers☆",
+        "path": "Weather Hackers☆.mp3"
+    },
     "mccoco": {
-        "jp": "ココおねいさんといっしょ",
+        "jp": "ココおねえさんといっしょ",
         "en": "Coco Onee-san to Issho",
-        "path": "ココおねいさんといっしょ.mp3"
+        "path": "ココおねえさんといっしょ.mp3"
     },
     "gangimari": {
         "jp": "ガンギマリドラゴン",
@@ -752,7 +777,7 @@
     "omocha": {
         "jp": "おもちゃのダンス",
         "en": "Omocha no Dance",
-        "path": "おもちゃのダンス"
+        "path": "おもちゃのダンス.mp3"
     },
     "5min": {
         "jp": "Watson Amelia BGM 5 min",
@@ -933,6 +958,11 @@
         "jp": "Peafowl Diva",
         "en": "Peafowl Diva",
         "path": "Peafowl Diva.mp3"
+    },
+    "aniki": {
+        "jp": "アニキへ",
+        "en": "Aniki e",
+        "path": "アニキへ.mp3"
     },
     "swing": {
         "jp": "Swing swing",

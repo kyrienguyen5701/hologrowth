@@ -39,7 +39,7 @@
     </div>
     <div class="player-info flex-centered">
       <div class="player-text">
-        <span class="inner" :key="lang">{{ getCurrentSongName() }}</span>
+        <span class="inner" :key="currentLang">{{ getCurrentSongName() }}</span>
       </div>
       <div class="player-seek">
         <input class="slider" type="range" />
@@ -104,89 +104,121 @@
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { CurrentSong } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
+import { GetTalentName } from "@/assets/ts/common";
 import songData from "@/assets/json/songs.json";
+import talentData from "@/assets/json/talents.json";
 
 @Component
 export default class MusicPlayer extends Vue {
-  @Prop() lang!: string;
+  @Prop() currentLang!: string;
 
-  songList = () => {
-    const res = Array<string>();
-    const r = require.context("@/assets/sounds/solo/Hoshimachi Suisei/", false);
-    r.keys().forEach((path: string) => res.push(r(path)));
-    return res;
-  };
-  isPlaying = true;
-  currentSongIndex = 0;
-  currentVolume = 0;
+  data() {
+    return {
+      // currentTalent: Object.prototype.hasOwnProperty.call(
+      //   this.$route.params, 
+      //   "talentName"
+      // ) ? this.$route.params.talentName : "hololive",
+      currentTalent: "hololive",
+      songList: Array<string>(),
+      currentSong: {
+        name: "",
+        audio: new Audio()
+      } as CurrentSong,
+      isPlaying: true,
+      currentSongIndex: 0,
+      currentVolume: 0
+    }
+  }
 
-  @Watch("lang")
+  @Watch("currentLang")
   onLanguageChanged() {
     this.getCurrentSongName();
   }
 
-  get currentSong(): CurrentSong {
-    // create the audio object
-    const songPath = this.songList()[this.currentSongIndex];
-    const song = new Audio(songPath);
+  @Watch("$route") // fetch data after navigation
+  initializePlayer() {
+    this.$data.currentSong.audio.pause();
+    this.$data.currentTalent = Object.prototype.hasOwnProperty.call(
+      this.$route.params, 
+      "talentName"
+    ) ? this.$route.params.talentName : "hololive";
+    this.$data.isPlaying = true;
+    this.$data.currentSongIndex = 0;
+    this.$data.currentVolume = Number(localStorage.getItem("player-volume"));
+    const res = Array<string>();
+    const talent = talentData.find(
+      e => e.name === GetTalentName(this.$data.currentTalent)
+    );
+    if (talent) {
+      talent?.bgm.forEach(file => {
+        res.push(`bgm/${GetTalentName(this.$data.currentTalent)}/${file}`);
+      });
+      talent?.solo.forEach(file => {
+        res.push(`solo/${GetTalentName(this.$data.currentTalent)}/${file}`);
+      });
+    }
+    this.$data.songList = res;
+    this.setCurrentSong();
+  }
+
+  setCurrentSong() {
+    const songPath = this.$data.songList[this.$data.currentSongIndex];
+    const song = new Audio(require(`@/assets/sounds/${songPath}`));
     if (song) {
       song.play();
+      song.volume = this.$data.currentVolume;
       song.onended = () => this.nextSong();
-    };
+    }
     // get the song name
-    const songPathSegments = this.songList()
-      [this.currentSongIndex].split("/")[1]
-      .split(".");
-    const originPath = `${songPathSegments[0]}.${songPathSegments[2]}`;
-    const data = Object.entries(songData).find(kv => kv[1].path === originPath);
+    const data = Object.entries(songData).find(
+      kv => kv[1].path === songPath.split("/")[2]
+    );
     if (data) {
-      return {
+      this.$data.currentSong = {
         name: data[0],
         audio: song
-      }
+      };
     }
-    return {
-      name: "",
-      audio: new Audio()
-    };
   }
 
   togglePlay() {
-    if (this.isPlaying) {
-      this.currentSong.audio.pause();
+    if (this.$data.isPlaying) {
+      this.$data.currentSong.audio.pause();
     } else {
-      this.currentSong.audio.play();
+      this.$data.currentSong.audio.play();
     }
-    this.isPlaying = !this.isPlaying;
+    this.$data.isPlaying = !this.$data.isPlaying;
   }
 
   getCurrentSongName(): string {
-    const name = this.currentSong.name;
+    const name = this.$data.currentSong.name;
     return Localization.GetLocalizedSong(`${name}`);
   }
 
   prevSong() {
-    this.currentVolume = this.currentSong.audio.volume;
-    this.currentSong.audio.pause();
-    this.currentSongIndex === 0
-      ? (this.currentSongIndex = this.songList().length)
-      : this.currentSongIndex;
-    this.currentSongIndex--;
-    this.currentSong.audio.play();
-    this.isPlaying = true;
+    this.$data.currentVolume = this.$data.currentSong.audio.volume;
+    this.$data.currentSong.audio.pause();
+    this.$data.currentSongIndex === 0
+      ? (this.$data.currentSongIndex = this.$data.songList.length)
+      : this.$data.currentSongIndex;
+    this.$data.currentSongIndex--;
+    this.setCurrentSong();
+    this.$data.currentSong.audio.play();
+    this.$data.isPlaying = true;
     this.setSliderValue();
     this.volumeChange();
   }
 
   nextSong() {
-    this.currentVolume = this.currentSong.audio.volume;
-    this.currentSong.audio.pause();
-    this.currentSongIndex === this.songList().length - 1
-      ? (this.currentSongIndex = -1)
-      : this.currentSongIndex;
-    this.currentSongIndex++;
-    this.currentSong.audio.play();
-    this.isPlaying = true;
+    this.$data.currentVolume = this.$data.currentSong.audio.volume;
+    this.$data.currentSong.audio.pause();
+    this.$data.currentSongIndex === this.$data.songList.length - 1
+      ? (this.$data.currentSongIndex = -1)
+      : this.$data.currentSongIndex;
+    this.$data.currentSongIndex++;
+    this.setCurrentSong();
+    this.$data.currentSong.audio.play();
+    this.$data.isPlaying = true;
     this.setSliderValue();
     this.volumeChange();
   }
@@ -194,13 +226,13 @@ export default class MusicPlayer extends Vue {
   volumeChange() {
     const value =
       1 - Number((this.$refs["player-volume"] as HTMLInputElement).value) / 100;
-    this.currentSong.audio.volume = value;
+    this.$data.currentSong.audio.volume = value;
     localStorage.setItem("player-volume", String(value));
   }
 
   setSliderValue() {
     (this.$refs["player-volume"] as HTMLInputElement).value = (
-      (1 - this.currentVolume) *
+      (1 - this.$data.currentVolume) *
       100
     ).toString();
   }
