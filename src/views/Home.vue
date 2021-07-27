@@ -6,8 +6,11 @@
       </div>
       <div class="members">
         <div class="member" v-for="mem in members" :key="mem.name">
-          <div class="member-avatar">
-            <img :src="mem.avatar" alt="" />
+          <div class="member-banner">
+            <img :src="mem.banner" width="320" height="105" :alt="mem.name" />
+          </div>
+          <div class="member-avatar hidden">
+            <img :src="mem.avatar" :alt="mem.name" />
           </div>
         </div>
       </div>
@@ -23,8 +26,10 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
-import Member from "@/components/MemberHome.vue"; // @ is an alias to /src
+import Member from "@/components/MemberHome.vue";
 import Stats from "@/components/Stats.vue";
+import { TalentAvatar }  from "@/assets/ts/interfaces";
+import talents from "@/assets/json/talents.json";
 
 @Component({
   components: {
@@ -36,60 +41,15 @@ export default class Home extends Vue {
   data() {
     return {
       members: (() => {
-        return [
-          {
-            name: "fubuki",
-            avatar: require("@/assets/talentAvatars/medium/fubuki.png")
-          },
-          {
-            name: "sora",
-            avatar: require("@/assets/talentAvatars/medium/sora.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          },
-          {
-            name: "suisei",
-            avatar: require("@/assets/talentAvatars/medium/suisei.png")
-          }
-        ];
+        const res = Array<TalentAvatar>();
+        talents.forEach(talent => {
+          res.push({
+            name: talent.name,
+            avatar: require(`@/assets/talentAvatars/medium/${talent.name}.png`),
+            banner: require(`@/assets/talentBanners/medium/${talent.name}_320 x 52.png`)
+          });
+        });
+        return res;
       })()
     };
   }
@@ -101,7 +61,7 @@ $bg_sidebar: #ccc;
 .home {
   display: flex;
   .sidebar {
-    min-width: 100px;
+    max-width: 320px;
     background: $bg_sidebar;
 
     .searchbar {
@@ -121,7 +81,8 @@ $bg_sidebar: #ccc;
       scrollbar-width: none;
 
       .member {
-        padding: 10px 0;
+        // padding: 10px 0;
+        height: 105px;
 
         &:hover {
           cursor: pointer;
@@ -129,10 +90,20 @@ $bg_sidebar: #ccc;
         }
 
         &-avatar {
+          padding: 14px 0;
           img {
-            width: 50px;
-            height: 50px;
+            height: 80px;
+            width: 80px;
             border-radius: 50%;
+          }
+        }
+
+        &-banner {
+          display: flex;
+          height: 100%;
+
+          img {
+            height: 100%;
           }
         }
       }
