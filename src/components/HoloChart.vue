@@ -46,9 +46,11 @@ export default class HoloChart extends Vue {
           });
         });
         this.$data.chartOptions = {
-          colors: Object.keys(res.data).map((talentName) => {
-            return ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
-          }).map(GetCSSVar),
+          colors: Object.keys(res.data).map(talentName =>
+            GetCSSVar(
+              ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
+            ).trim()
+          ),
           xaxis: {
             categories: Object.keys(res.data["Tokino Sora"]).reverse().map(dateFormatter)
           }
