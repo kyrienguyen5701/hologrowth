@@ -43,6 +43,7 @@ export default class HoloChart extends Vue {
           this.$data.series.push({
             name: talent,
             data: Object.values(countData as object).reverse()
+            // data: Object.entries(countData).map(f => { return [new Date(f[0]).getTime(), f[1]]})
           });
         });
         this.$data.chartOptions = {
@@ -52,7 +53,9 @@ export default class HoloChart extends Vue {
             ).trim()
           ),
           xaxis: {
-            categories: Object.keys(res.data["Tokino Sora"]).reverse().map(dateFormatter)
+            categories: Object.keys(res.data["Tokino Sora"]).reverse().map(dateFormatter),
+            tickAmount: 15
+            // type: "datetime"
           }
         };
       })
@@ -88,6 +91,7 @@ export default class HoloChart extends Vue {
         },
         xaxis: {
           categories: []
+          // type: 'datetime'
         },
         yaxis: {
           labels: {
