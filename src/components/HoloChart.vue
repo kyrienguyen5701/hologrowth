@@ -1,8 +1,8 @@
 <template>
   <div>
     <chart
-      class="member-chart"
-      height="350"
+      class="holo-chart"
+      height="1000"
       :options="chartOptions"
       :series="series"
     >
@@ -17,7 +17,6 @@ import {
   GetCSSVar,
   countFormatter,
   dateFormatter,
-  availableRangesMap,
   countTypesMap
 } from "@/assets/ts/common";
 import axios from "axios";
@@ -26,38 +25,32 @@ Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
 
 @Component
-export default class MemberChart extends Vue {
-  @Prop() memberData!: {
-    name: string;
-    CSSname: string;
-  };
+export default class HoloChart extends Vue {
+  @Prop() countType!: string;
 
-  @Prop() chartData!: {
-    range: number;
-    countType: string;
-  };
-
-  @Watch("memberData", { immediate: true, deep: true })
+  @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   async initializeData() {
     await axios({
       method: "POST",
-      url: "http://127.0.0.1:8000/get-member-data",
+      url: "http://127.0.0.1:8000/get-holo-data",
       headers: { "content-type": "application/json" },
       data: {
-        range: this.chartData.range,
-        talent: this.memberData.name,
-        countType: this.chartData.countType
+        countType: this.countType
       }
     })
       .then(res => {
-        this.$data.series = [
-          {
-            data: Object.values(res.data)
-          }
-        ];
+        Object.entries(res.data).forEach(([talent, countData]) => {
+          this.$data.series.push({
+            name: talent,
+            data: Object.values(countData as object).reverse()
+          });
+        });
         this.$data.chartOptions = {
+          colors: Object.keys(res.data).map((talentName) => {
+            return ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
+          }).map(GetCSSVar),
           xaxis: {
-            categories: Object.keys(res.data).map(dateFormatter)
+            categories: Object.keys(res.data["Tokino Sora"]).reverse().map(dateFormatter)
           }
         };
       })
@@ -66,23 +59,13 @@ export default class MemberChart extends Vue {
 
   data() {
     return {
-      series: [
-        {
-          name: `${countTypesMap(this.chartData.countType)} Count`,
-          data: []
-        }
-      ],
+      series: [],
       chartOptions: {
         chart: {
           height: 350,
           type: "line",
-          zoom: {
-            type: "x",
-            enabled: true,
-            autoScaleYaxis: true
-          }
         },
-        colors: [GetCSSVar(`--color-${this.memberData.CSSname}`)],
+        colors: [],
         dataLabels: {
           enabled: false
         },
@@ -90,14 +73,13 @@ export default class MemberChart extends Vue {
           curve: "smooth"
         },
         title: {
-          text: `${this.memberData.name}'s ${availableRangesMap(this.chartData.range)} ${countTypesMap(this.chartData.countType)} Counts`,
+          text: ``,
           align: "center"
         },
         grid: {
           row: {
             colors: [
-              GetCSSVar(`--color-${this.memberData.CSSname}-tint-50`),
-              "transparent"
+              "#ffffff"
             ],
             opacity: 0.5
           }
@@ -110,7 +92,7 @@ export default class MemberChart extends Vue {
             formatter: countFormatter
           },
           title: {
-            text: `${countTypesMap(this.chartData.countType)} Count`
+            text: `${countTypesMap(this.countType)} Count`
           }
         },
         tooltip: {
@@ -126,7 +108,7 @@ export default class MemberChart extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.member-chart {
+.holo-chart {
   background: #ffffff;
 }
 </style>
