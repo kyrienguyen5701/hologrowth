@@ -7,9 +7,10 @@
       <div class="members">
         <div class="member" v-for="mem in members" :key="mem.name">
           <div class="member-banner">
+            <div class="overlay"></div>
             <img :src="mem.banner" width="320" height="105" :alt="mem.name" />
           </div>
-          <div class="member-avatar hidden">
+          <div class="member-avatar">
             <img :src="mem.avatar" :alt="mem.name" />
           </div>
         </div>
@@ -81,19 +82,51 @@ $bg_sidebar: #ccc;
       scrollbar-width: none;
 
       .member {
-        // padding: 10px 0;
+        position: relative;
         height: 105px;
 
         &:hover {
           cursor: pointer;
           background: mix(black, $bg_sidebar, 25);
+          &-avatar {
+            background: black;
+          }
+          .member-banner {
+            .overlay {
+              opacity: 0;
+            }
+          }
+          .member-avatar {
+            opacity: 1;
+          }
+        }
+
+        &-banner {
+          position: relative;
+          .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: white;
+            opacity: 0.6;
+            transition: all 0.75s ease;
+          }
         }
 
         &-avatar {
-          padding: 14px 0;
+          background: white;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          border-radius: 50%;
+          border: 1px solid var(--color-current);
+          padding: 4px;
+          opacity: 0;
+          transition: all 0.5s ease;
           img {
-            height: 80px;
-            width: 80px;
+            border: 1px solid var(--color-current);
+            height: 40px;
+            width: 40px;
             border-radius: 50%;
           }
         }
