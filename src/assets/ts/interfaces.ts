@@ -67,3 +67,9 @@ export interface CurrentSong {
   name: string;
   audio: HTMLAudioElement;
 }
+
+export interface TalentAvatar {
+  name: string;
+  avatar: object;
+  banner: object;
+}
