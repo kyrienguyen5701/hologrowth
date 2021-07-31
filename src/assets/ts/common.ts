@@ -1,4 +1,5 @@
 import * as interfaces from "./interfaces";
+import { format } from "date-fns";
 
 export function GetCSSVar(name: string) {
   return getComputedStyle(document.documentElement).getPropertyValue(name);
@@ -77,3 +78,37 @@ export function GetTalentName(name: string)
   }
   return s.join(" ")
 }
+
+export const countFormatter = (count: number) => {
+  const thousand = 1000;
+  const million = 1000000;
+  if (count < thousand) return count;
+  if (count < million) return `${count / thousand}K`;
+  return `${count / million}M`;
+};
+
+export const dateFormatter = (val: string) => {
+  return format(new Date(val), "MMM dd");
+};
+
+export const availableRangesMap = (range: number) => {
+  switch (range) {
+    case 7:
+      return "Last Week";
+    case 30:
+      return "Last Month";
+    case 365:
+      return "Last Year";
+    case 0:
+      return "All Time";
+  }
+};
+
+export const countTypesMap = (countType: string) => {
+  switch (countType) {
+    case "sub":
+      return "Subscriber";
+    case "view":
+      return "View";
+  }
+};

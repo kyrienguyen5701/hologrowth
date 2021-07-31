@@ -25,6 +25,7 @@
         <button v-on:click="changeColor('sora')">Change color: Sora</button>
       </div>
     </div>
+    <HoloChart v-bind:countType="sub"></HoloChart>
     <MusicPlayer v-bind:currentLang="currentLang"></MusicPlayer>
   </div>
 </template>
@@ -49,6 +50,7 @@ export default Vue.extend({
   },
   data() {
     return {
+      sub: "sub",
       currentLang: localStorage.getItem("lang")
     };
   }
