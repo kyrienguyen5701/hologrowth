@@ -1,5 +1,6 @@
 [
     {
+        "id":0,
         "branch":"jp",
         "genNumber":"0",
         "genName":"3D Talents",
@@ -24,6 +25,7 @@
         ]
     },
     {
+        "id":1,
         "branch":"jp",
         "genNumber":"0",
         "genName":"3D Talents",
@@ -42,6 +44,7 @@
         ]
     },
     {
+        "id":2,
         "branch":"jp",
         "genNumber":"0",
         "genName":"3D Talents",
@@ -64,6 +67,7 @@
         ]
     },
     {
+        "id":3,
         "branch":"jp",
         "genNumber":"0",
         "genName":"3D Talents",
@@ -87,6 +91,7 @@
         ]
     },
     {
+        "id":4,
         "branch":"jp",
         "genNumber":"",
         "genName":"INoNaKa Music",
@@ -110,6 +115,7 @@
         ]
     },
     {
+        "id":5,
         "branch":"jp",
         "genNumber":"1",
         "genName":"",
@@ -127,6 +133,7 @@
         ]
     },
     {
+        "id":6,
         "branch":"jp",
         "genNumber":"1",
         "genName":"",
@@ -147,6 +154,7 @@
         ]
     },
     {
+        "id":7,
         "branch":"jp",
         "genNumber":"1",
         "genName":"",
@@ -168,6 +176,7 @@
         ]
     },
     {
+        "id":8,
         "branch":"jp",
         "genNumber":"1",
         "genName":"GAMERS",
@@ -188,6 +197,7 @@
         ]
     },
     {
+        "id":9,
         "branch":"jp",
         "genNumber":"1",
         "genName":"",
@@ -205,6 +215,7 @@
         ]
     },
     {
+        "id":10,
         "branch":"jp",
         "genNumber":"2",
         "genName":"",
@@ -225,6 +236,7 @@
         ]
     },
     {
+        "id":11,
         "branch":"jp",
         "genNumber":"2",
         "genName":"",
@@ -242,6 +254,7 @@
         ]
     },
     {
+        "id":12,
         "branch":"jp",
         "genNumber":"2",
         "genName":"",
@@ -262,6 +275,7 @@
         ]
     },
     {
+        "id":13,
         "branch":"jp",
         "genNumber":"2",
         "genName":"",
@@ -278,6 +292,7 @@
         ]
     },
     {
+        "id":14,
         "branch":"jp",
         "genNumber":"2",
         "genName":"",
@@ -296,6 +311,7 @@
         ]
     },
     {
+        "id":15,
         "branch":"jp",
         "genNumber":"",
         "genName":"GAMERS",
@@ -316,6 +332,7 @@
         ]
     },
     {
+        "id":16,
         "branch":"jp",
         "genNumber":"",
         "genName":"GAMERS",
@@ -335,6 +352,7 @@
         ]
     },
     {
+        "id":17,
         "branch":"jp",
         "genNumber":"",
         "genName":"GAMERS",
@@ -353,6 +371,7 @@
         ]
     },
     {
+        "id":18,
         "branch":"jp",
         "genNumber":"3",
         "genName":"Fantasy",
@@ -374,6 +393,7 @@
         ]
     },
     {
+        "id":19,
         "branch":"jp",
         "genNumber":"3",
         "genName":"Fantasy",
@@ -393,6 +413,7 @@
         ]
     },
     {
+        "id":20,
         "branch":"jp",
         "genNumber":"3",
         "genName":"Fantasy",
@@ -413,6 +434,7 @@
         ]
     },
     {
+        "id":21,
         "branch":"jp",
         "genNumber":"3",
         "genName":"Fantasy",
@@ -430,6 +452,7 @@
         ]
     },
     {
+        "id":22,
         "branch":"jp",
         "genNumber":"3",
         "genName":"Fantasy",
@@ -449,6 +472,7 @@
         ]
     },
     {
+        "id":23,
         "branch":"jp",
         "genNumber":"4",
         "genName":"",
@@ -470,6 +494,7 @@
         ]
     },
     {
+        "id":24,
         "branch":"jp",
         "genNumber":"4",
         "genName":"",
@@ -489,6 +514,7 @@
         ]
     },
     {
+        "id":25,
         "branch":"jp",
         "genNumber":"4",
         "genName":"",
@@ -509,6 +535,7 @@
         ]
     },
     {
+        "id":26,
         "branch":"jp",
         "genNumber":"4",
         "genName":"",
@@ -526,6 +553,7 @@
         ]
     },
     {
+        "id":27,
         "branch":"jp",
         "genNumber":"4",
         "genName":"",
@@ -546,6 +574,7 @@
         ]
     },
     {
+        "id":28,
         "branch":"jp",
         "genNumber":"5",
         "genName":"HoloFive",
@@ -564,6 +593,7 @@
         ]
     },
     {
+        "id":29,
         "branch":"jp",
         "genNumber":"5",
         "genName":"HoloFive",
@@ -582,6 +612,7 @@
         ]
     },
     {
+        "id":30,
         "branch":"jp",
         "genNumber":"5",
         "genName":"HoloFive",
@@ -599,6 +630,7 @@
         ]
     },
     {
+        "id":31,
         "branch":"jp",
         "genNumber":"5",
         "genName":"HoloFive",
@@ -618,6 +650,7 @@
         ]
     },
     {
+        "id":32,
         "branch":"en",
         "genNumber":"1",
         "genName":"HoloMyth",
@@ -635,6 +668,7 @@
         ]
     },
     {
+        "id":33,
         "branch":"en",
         "genNumber":"1",
         "genName":"HoloMyth",
@@ -651,6 +685,7 @@
         ]
     },
     {
+        "id":34,
         "branch":"en",
         "genNumber":"1",
         "genName":"HoloMyth",
@@ -671,6 +706,7 @@
         ]
     },
     {
+        "id":35,
         "branch":"en",
         "genNumber":"1",
         "genName":"HoloMyth",
@@ -694,6 +730,7 @@
         ]
     },
     {
+        "id":36,
         "branch":"en",
         "genNumber":"1",
         "genName":"HoloMyth",
@@ -714,6 +751,7 @@
         ]
     },
     {
+        "id":37,
         "branch":"id",
         "genNumber":"1",
         "genName":"",
@@ -733,6 +771,7 @@
         ]
     },
     {
+        "id":38,
         "branch":"id",
         "genNumber":"1",
         "genName":"",
@@ -752,6 +791,7 @@
         ]
     },
     {
+        "id":39,
         "branch":"id",
         "genNumber":"1",
         "genName":"",
@@ -768,6 +808,7 @@
         ]
     },
     {
+        "id":40,
         "branch":"id",
         "genNumber":"2",
         "genName":"",
@@ -784,6 +825,7 @@
         ]
     },
     {
+        "id":41,
         "branch":"id",
         "genNumber":"2",
         "genName":"",
@@ -800,6 +842,7 @@
         ]
     },
     {
+        "id":42,
         "branch":"id",
         "genNumber":"2",
         "genName":"",

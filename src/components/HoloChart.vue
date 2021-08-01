@@ -2,9 +2,10 @@
   <div>
     <chart
       class="holo-chart"
-      height="1000"
+      height="500"
       :options="chartOptions"
       :series="series"
+      type="line"
     >
     </chart>
   </div>
@@ -13,13 +14,7 @@
 <script lang="ts">
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
-import {
-  GetCSSVar,
-  countFormatter,
-  dateFormatter,
-  countTypesMap
-} from "@/assets/ts/common";
-import axios from "axios";
+import { countFormatter, countTypesMap } from "@/assets/ts/common";
 
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
@@ -27,58 +22,42 @@ Vue.component("chart", VueApexCharts);
 @Component
 export default class HoloChart extends Vue {
   @Prop() countType!: string;
+  @Prop() sentSeries!: Array<object>;
+  @Prop() sentColors!: Array<object>;
+  @Prop() xaxis!: object;
 
-  @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
-  async initializeData() {
-    await axios({
-      method: "POST",
-      url: "http://127.0.0.1:8000/get-holo-data",
-      headers: { "content-type": "application/json" },
-      data: {
-        countType: this.countType
-      }
-    })
-      .then(res => {
-        Object.entries(res.data).forEach(([talent, countData]) => {
-          this.$data.series.push({
-            name: talent,
-            data: Object.values(countData as object).reverse()
-            // data: Object.entries(countData).map(f => { return [new Date(f[0]).getTime(), f[1]]})
-          });
-        });
-        this.$data.chartOptions = {
-          colors: Object.keys(res.data).map(talentName =>
-            GetCSSVar(
-              ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
-            ).trim()
-          ),
-          xaxis: {
-            categories: Object.keys(res.data["Tokino Sora"]).reverse().map(dateFormatter),
-            tickAmount: 15
-            // type: "datetime"
-          }
-        };
-      })
-      .catch(e => console.log(e));
-  }
+  // @Watch("sentSeries", { immediate: true, deep: true }) // fetch data after navigation
+  // async initializeData() {
+  //   this.$data.series = this.sentSeries;
+  //   this.$data.chartOptions = {
+  //     ...this.$data.chartOptions, ...{
+  //       colors: this.sentColors,
+  //       xaxis: this.xaxis
+  //     }
+  //   }
+  // }
 
   data() {
     return {
-      series: [],
+      series: this.sentSeries,
       chartOptions: {
         chart: {
+          id: `holochart-${this.countType}`,
           height: 350,
-          type: "line",
+          type: "line"
         },
-        colors: [],
+        colors: this.sentColors,
         dataLabels: {
           enabled: false
+        },
+        legend: {
+          show: false
         },
         stroke: {
           curve: "smooth"
         },
         title: {
-          text: ``,
+          text: `Hololive Number of ${countTypesMap(this.countType)}s Growth`,
           align: "center"
         },
         grid: {
@@ -89,10 +68,7 @@ export default class HoloChart extends Vue {
             opacity: 0.5
           }
         },
-        xaxis: {
-          categories: []
-          // type: 'datetime'
-        },
+        xaxis: this.xaxis,
         yaxis: {
           labels: {
             formatter: countFormatter

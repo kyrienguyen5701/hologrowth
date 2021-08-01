@@ -10,14 +10,14 @@ soloDir = '../../src/assets/sounds/solo'
 with open(talentsFilePath) as f:
     content = json.load(f)
 
-df = pd.DataFrame(columns=['branch', 'genNumber', 'genName', 'genOther', 'name', 'channelId', 'bgm', 'solo'])
+df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'channelId', 'bgm', 'solo'])
 
 i = 0
 for branch, branchInfo in content.items():
     for talentName, talentInfo in branchInfo.items():
         channelId = talentInfo['channelId']
         gens = talentInfo['generation']
-        
+        idx = i
         genNum = gens[0]
         genName = ''
         genOther = []
@@ -37,7 +37,7 @@ for branch, branchInfo in content.items():
         bgm = os.listdir(f'{bgmDir}/{talentName}')
         solo = os.listdir(f'{soloDir}/{talentName}')
 
-        df.loc[i] = [branch, genNum, genName, genOther, talentName, channelId, bgm, solo]
+        df.loc[i] = [idx, branch, genNum, genName, genOther, talentName, channelId, bgm, solo]
         i += 1
 
 df['genNumber'] = df['genNumber'].astype('str')
