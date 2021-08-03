@@ -8,6 +8,7 @@
 
         ],
         "name":"Tokino Sora",
+        "tags":["ときのそら", "Soda ソーダ", "Cola コーラ ", "Sofa ソファー", "Soy ソイ", "Soka Souka そうか", "Tokyo 東京", "Goddess"],
         "channelId":"UCp6993wxpyDPHUpavwDFqgg",
         "bgm":[
             "Under the Clear Sky.mp3",
@@ -33,6 +34,7 @@
 
         ],
         "name":"Roboco",
+        "tags":["ロボ子", "Robocosan ロボ子さん", "Roborobo ロボロボ"],
         "channelId":"UCDqI2jOz0weumE8s7paEk6g",
         "bgm":[
             "Next Wednesday 魂音泉.mp3"
@@ -52,6 +54,7 @@
 
         ],
         "name":"Sakura Miko",
+        "tags":["さくらみこ", "Miko-chi Mikochi みこち", "Mikomiko みこみこ", "Mikodanye みこだにぇ"],
         "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
         "bgm":[
             "Sakura Miko Ending BGM.mp3",
@@ -75,6 +78,7 @@
 
         ],
         "name":"Hoshimachi Suisei",
+        "tags":["星街すいせい", "Sui-chan すいちゃん", "Suicopath スイコパス", "Suisui すいすい", "Meteor メテオ", "Cutting Board まな板"],
         "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
         "bgm":[
             "かえるのピアノ.mp3",
@@ -93,12 +97,13 @@
     {
         "id":4,
         "branch":"jp",
-        "genNumber":"",
+        "genNumber":"0",
         "genName":"INoNaKa Music",
         "genOther":[
 
         ],
         "name":"AZKi",
+        "tags":["AZKichi"],
         "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
         "bgm":[
             "Bougainvillea.mp3"
@@ -123,6 +128,7 @@
 
         ],
         "name":"Yozora Mel",
+        "tags":["夜空メル", "Merumeru メル", "BANPire バンパイア"],
         "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
         "bgm":[
             "カフェでひと休み.mp3",
@@ -141,6 +147,7 @@
 
         ],
         "name":"Aki Rosenthal",
+        "tags":["アキローゼンタール", "Akirose アキローゼ", "Akipella アキぺラ"],
         "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
         "bgm":[
             "Lights Out.mp3",
@@ -162,6 +169,7 @@
 
         ],
         "name":"Akai Haato",
+        "tags":["赤井はあと", "Haachama はあちゃま", "GOD"],
         "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
         "bgm":[
             "はあちゃまっちゃま.mp3",
@@ -184,6 +192,7 @@
 
         ],
         "name":"Shirakami Fubuki",
+        "tags":["白上フブキ", "FBK", "Kurokami Fubuki 黒上フブキ", "Friend フレンド", "Waifriend ワイフレンド"], 
         "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
         "bgm":[
             "Beachside Fox.mp3",
@@ -205,6 +214,7 @@
 
         ],
         "name":"Natsuiro Matsuri",
+        "tags":["夏色まつり", "Matsurin まつりん", "GOD", "Horni Horny ムラムラ", "Cutting Board まな板"],
         "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
         "bgm":[
             "Matsuri's Day Off.mp3",
@@ -223,6 +233,7 @@
 
         ],
         "name":"Minato Aqua",
+        "tags":["港あくあ", "Akutan あくたん", "Onion 玉ねぎ", "Baqua ばくあ"],
         "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
         "bgm":[
             "Marine Maid.mp3",
@@ -244,6 +255,7 @@
 
         ],
         "name":"Murasaki Shion",
+        "tags":["紫咲シオン", "Garlic ニンニク", "Kusogaki クソガキ", "Cutting Board まな板"],
         "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
         "bgm":[
             "Virtual Magician.mp3",
@@ -262,6 +274,7 @@
 
         ],
         "name":"Nakiri Ayame",
+        "tags":["百鬼あやめ", "Ojou-sama お嬢さま お嬢様", "Kijin Hyakki 鬼神百鬼"],
         "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
         "bgm":[
             "Chrono.mp3",
@@ -283,6 +296,7 @@
 
         ],
         "name":"Yuzuki Choco",
+        "tags":["癒月ちょこ", "Choco-sensei ちょこ先生"],
         "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
         "bgm":[
             "Cooking Time.mp3"
@@ -300,6 +314,7 @@
 
         ],
         "name":"Oozora Subaru",
+        "tags":["大空スバル", "Subachi スバち", "Subatani Subao スバタニスバオ", "Duck アヒル", "Bird 鳥"],
         "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
         "bgm":[
             "You and Me.mp3",
@@ -319,6 +334,7 @@
 
         ],
         "name":"Ookami Mio",
+        "tags":["大神ミオ", "Mion ミオン", "Mio Mama ミオママ", "Kurokami Omi 黒神臣"],
         "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
         "bgm":[
             "So Sweet.mp3",
@@ -340,6 +356,7 @@
 
         ],
         "name":"Nekomata Okayu",
+        "tags":["猫又おかゆ", "Okazu おかず", "Okayun おかゆん", "Okato おかと"],
         "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
         "bgm":[
             "Peaceful Treasure.mp3",
@@ -360,6 +377,7 @@
 
         ],
         "name":"Inugami Korone",
+        "tags":["戌神ころね", "Koro-san ころさん", "Koronen ころねん", "Doggo"],
         "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
         "bgm":[
             "えっさほいさ囃子.mp3",
@@ -379,6 +397,7 @@
 
         ],
         "name":"Houshou Marine",
+        "tags":["宝鐘マリン", "Senchou 船長", "Maririn マリリン", "Oneesan Gumi お姉さん組", "17 Seventeen 十七歳", "Baba ババ", "Horni Horny ムラムラ"],
         "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
         "bgm":[
             "Captain Beatbox II.mp3",
@@ -401,6 +420,7 @@
 
         ],
         "name":"Uruha Rushia",
+        "tags":["潤羽るしあ", "Ruu-chan るうちゃん", "Boing Boing ボインボイン", "Pettan Pettanko ぺったん ぺったん子", "Shogouki 初号機", "Cutting Board まな板"],
         "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
         "bgm":[
             "2_23 AM.mp3",
@@ -421,6 +441,7 @@
 
         ],
         "name":"Usada Pekora",
+        "tags":["兎田ぺこら", "Peko-chan ぺこちゃん", "Pekoracho ぺこらちょ", "Shachou 社長"],
         "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
         "bgm":[
             "おーたむうぉーきんぐ.mp3",
@@ -442,6 +463,7 @@
 
         ],
         "name":"Shiranui Flare",
+        "tags":["不知火フレア", "Fuu-tan ふうたん", "Oneesan Gumi お姉さん組", "Homura ほむら"],
         "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
         "bgm":[
             "カエルの勇者.mp3",
@@ -460,6 +482,7 @@
 
         ],
         "name":"Shirogane Noel",
+        "tags":["白銀ノエル", "Danchou 団長", "Noe-chan ノエちゃん", "Oneesan Gumi お姉さん組", "Boing Boing ボインボイン"],
         "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
         "bgm":[
             "You and Me.mp3",
@@ -480,6 +503,7 @@
 
         ],
         "name":"Tsunomaki Watame",
+        "tags":["角巻わため", "Wataoji わたおじ", "Watamelon わたメロン"],
         "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
         "bgm":[
             "Rainy Day ☔.mp3",
@@ -502,6 +526,7 @@
 
         ],
         "name":"Tokoyami Towa",
+        "tags":["常闇トワ", "Towa-sama トワさま トワ様", "TMT Tenshi トワまじ天使", "TCA Akuma トワ超悪魔"],
         "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
         "bgm":[
             "10℃.mp3",
@@ -522,6 +547,7 @@
 
         ],
         "name":"Kiryu Coco",
+        "tags":["桐生ココ", "Coco-chin Coco-chi ココちん ココち", "Kiryu-chan 桐生ちゃん", "Yuujin C 友人C", "Boing Boing ボインボイン"],
         "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
         "bgm":[
             "ガンギマリドラゴン.mp3",
@@ -543,6 +569,7 @@
 
         ],
         "name":"Amane Kanata",
+        "tags": ["天音かなた", "Kanatan かなたん", "PPT Tenshi 天使", "Kanataso かなたそ", "Gorilla ゴリラ", "Boing Boing ボインボイン", "Cutting Board まな板"],
         "channelId":"UCZlDXzGoo7d44bwdNObFacg",
         "bgm":[
             "元気いっぱい.mp3",
@@ -561,6 +588,7 @@
 
         ],
         "name":"Himemori Luna",
+        "tags": ["姫森ルーナ", "Luna-tan ルーナたん", "Luna-hime ルーナ姫"],
         "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
         "bgm":[
             "Lunar Light.mp3",
@@ -582,6 +610,7 @@
 
         ],
         "name":"Yukihana Lamy",
+        "tags":["雪花ラミィ", "Lamy Mama ラミィママ", "Lawnmower 芝刈り機 "],
         "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
         "bgm":[
             "A Meaningful Day.mp3",
@@ -601,6 +630,7 @@
 
         ],
         "name":"Momosuzu Nene",
+        "tags":["桃鈴ねね", "Nenechi ねねち", "Super Nenechi スパーねねち", "Seal"],
         "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
         "bgm":[
             "ジオラマパレード.mp3",
@@ -620,6 +650,7 @@
 
         ],
         "name":"Shishiro Botan",
+        "tags": ["獅白ぼたん", "Shishiron ししろん", "La-Lion ラライオン", "Botan Mama ぼたんママ"],
         "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
         "bgm":[
             "2_23 AM.mp3",
@@ -638,6 +669,7 @@
 
         ],
         "name":"Omaru Polka",
+        "tags":["尾丸ポルカ", "Omarun おまるん"],
         "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
         "bgm":[
             "Neu Kabuki.mp3",
@@ -658,6 +690,7 @@
 
         ],
         "name":"Watson Amelia",
+        "tags":["ワトソンアメリア", "Ame Amechan アメ　アメちゃん", "Ground Pound グラウンドポンド", "Gremlin グレムリン"],
         "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
         "bgm":[
             "Watson Amelia BGM 5 min.mp3",
@@ -676,6 +709,7 @@
 
         ],
         "name":"Ninomae Ina'nis",
+        "tags":["にのまえいなにす", "Ina いな", "Tako たこ", "Cutting Board まな板"],
         "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
         "bgm":[
             "ensolarado.mp3"
@@ -693,6 +727,7 @@
 
         ],
         "name":"Gawr Gura",
+        "tags":["がうるぐら", "Same-chan サメちゃん"],
         "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
         "bgm":[
             "Like the Snow.mp3",
@@ -714,6 +749,7 @@
 
         ],
         "name":"Mori Calliope",
+        "tags":["もりかりおぺ", "Dad"],
         "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
         "bgm":[
             "Nights With You.mp3"
@@ -738,6 +774,7 @@
 
         ],
         "name":"Takanashi Kiara",
+        "tags": ["小鳥遊キアラ", "Kusotori くそ鳥 クソトリ", "Tenchou 店長", "Bird 鳥", "Horni Horny ムラムラ", "Bottom left 左下"],
         "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
         "bgm":[
             "HOLOTALK with Takanashi Kiara - BGM.mp3",
@@ -759,6 +796,7 @@
 
         ],
         "name":"Moona Hoshinova",
+        "tags":["ムーナホシノヴァ", "Buchou 部長"],
         "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
         "bgm":[
             "Galaxy.mp3",
@@ -779,6 +817,7 @@
 
         ],
         "name":"Ayunda Risu",
+        "tags":["アユンダリス", "Alter Risu アルターリス", "Okakoro Child おかころの子"],
         "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
         "bgm":[
             "Brewing Coffee.mp3",
@@ -799,6 +838,7 @@
 
         ],
         "name":"Airani Iofifteen",
+        "tags":["アイラニイオフィフティーン", "Iofi イオフィ", "Erofi エロフィ"],
         "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
         "bgm":[
             "Funny and Cute music.mp3"
@@ -816,6 +856,7 @@
 
         ],
         "name":"Pavolia Reine",
+        "tags":["パヴォリアレイネ", "Reine Mama アレイネママ", "Turkey 七面鳥", "Bird 鳥"],
         "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
         "bgm":[
             "Peafowl Diva.mp3"
@@ -833,6 +874,7 @@
 
         ],
         "name":"Kureiji Ollie",
+        "tags":["クレイジーオリー", "Olivia オリヴィア", "Cutting Board まな板"],
         "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
         "bgm":[
             "swing swing.mp3"
@@ -850,6 +892,7 @@
 
         ],
         "name":"Anya Melfissa",
+        "tags":["アーニャメルフィッサ", "Arya Melvine アーリャメルヴィン"],
         "channelId":"UC727SQYUvx5pDDGQpTICNWg",
         "bgm":[
             "Energetic Day.mp3",

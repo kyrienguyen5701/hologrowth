@@ -74,4 +74,5 @@ export interface TalentDisplay {
   avatar: object;
   banner: object;
   dataAvailable: boolean;
+  shown: boolean;
 }
