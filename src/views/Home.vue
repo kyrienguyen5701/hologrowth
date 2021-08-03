@@ -2,13 +2,14 @@
   <div class="home">
     <div class="sidebar">
       <div class="searchbar">
-        <input type="text" />
+        <input type="text" v-on:keyup="search($event.target.value)"/>
       </div>
       <div class="members">
         <div
           class="member"
           v-for="mem in members"
           :key="mem.name"
+          v-show="mem.shown"
           v-on:click="toggleTalentSeries"
         >
           <div :id="mem.name + '-banner'" class="member-banner" :rel="mem.rel">
@@ -66,7 +67,8 @@ export default class Home extends Vue {
             name: talent.name,
             avatar: require(`@/assets/talentAvatars/medium/${talent.name}.png`),
             banner: require(`@/assets/talentBanners/medium/${talent.name}_320 x 52.png`),
-            dataAvailable: talent.name === "Tokino Sora" ? true : false
+            dataAvailable: talent.name === "Tokino Sora" ? true : false,
+            shown: true
           });
         });
         return res;
@@ -174,6 +176,29 @@ export default class Home extends Vue {
       );
     }
   }
+  search(input: string) {
+    const queries = input.split(" ");
+    const dp = Array<Array<boolean>>();
+    for (let i = 0; i < queries.length; i++) {
+      const query = queries[i];
+      console.log(query);
+      let countThisQuery = 0;
+      const shownThisQuery = Array<boolean>(this.$data.members.length);
+      this.$data.members = this.$data.members.map((member: TalentDisplay) => {
+        const talent = talents[member.rel];
+        const { branch, genNumber, genName, name, tags } = talent;
+        const meta = `${branch} ${genNumber} ${genName} ${name} ${tags.join(" ")}`.toLowerCase();
+        const shown = meta.includes(query);
+        shownThisQuery[member.rel] = shown;
+        shown && countThisQuery++;
+        return {...member, ...{
+          shown: i === 0 ? shown : shown && dp[i - 1][member.rel]
+        }};
+      });
+      if (!countThisQuery) break;
+      dp.push(shownThisQuery);
+    }
+  }
 }
 </script>
 
@@ -183,10 +208,10 @@ $bg_sidebar: #ccc;
   display: flex;
   .sidebar {
     max-width: 320px;
-    background: $bg_sidebar;
 
     .searchbar {
       padding: 10px;
+      background: $bg_sidebar;
       input {
         width: 100%;
         text-align: center;
