@@ -1,6 +1,46 @@
-$color_sora: #4886e8;
-$color_suisei: #4886e8;
-$color_fubuki: #16fefd;
+$color_sora: #008dd8;
+$color_roboco: #990305;
+$color_miko: #f8babb;
+$color_suisei: #5bb2f7;
+$color_azki: #ff0040;
+$color_mel: #ffdd06;
+$color_fubuki: #01bdeb;
+$color_matsuri: #fb7800;
+$color_akirose: #97fd41;
+$color_haato: #d30414;
+$color_aqua: #fe97a8;
+$color_shion: #8551f1;
+$color_ayame: #ff3d59;
+$color_choco: #fd64a7;
+$color_subaru: #01eee8;
+$color_mio: #ca0021;
+$color_okayu: #b834a2;
+$color_korone: #fab82e;
+$color_pekora: #c6e9ff;
+$color_rushia: #00d2b7;
+$color_flare: #f1642c;
+$color_noel: #d5dbdb;
+$color_marine: #e40b5a;
+$color_kanata: #9bccf7;
+$color_coco: #ff9631;
+$color_watame: #fbf4a4;
+$color_towa: #b096e0;
+$color_luna: #ff9adf;
+$color_lamy: #a3fbfc;
+$color_nene: #ffb45f;
+$color_botan: #a3e4ce;
+$color_polka: #fd0f81;
+$color_risu: #f2bcbc;
+$color_moona: #b19ede;
+$color_iofi: #b5ed56;
+$color_ollie: #d60e56;
+$color_anya: #ffce5f;
+$color_reine: #134db8;
+$color_calliope: #c61043;
+$color_kiara: #f15429;
+$color_inanis: #9274e4;
+$color_gura: #6679c8;
+$color_amelia: #f1df95;
 
 @function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
@@ -11,9 +51,49 @@ $color_fubuki: #16fefd;
 }
 
 $colors: (
-    "sora": $color_sora,
-    "suisei": $color_suisei,
-    "fubuki": $color_fubuki
+    "Sora": $color_sora,
+    "Roboco": $color_roboco,
+    "Miko": $color_miko,
+    "Suisei": $color_suisei,
+    "AZKi": $color_azki,
+    "Mel": $color_mel,
+    "Fubuki": $color_fubuki,
+    "Matsuri": $color_matsuri,
+    "Rosenthal": $color_akirose,
+    "Haato": $color_haato,
+    "Aqua": $color_aqua,
+    "Shion": $color_shion,
+    "Ayame": $color_ayame,
+    "Choco": $color_choco,
+    "Subaru": $color_subaru,
+    "Mio": $color_mio,
+    "Okayu": $color_okayu,
+    "Korone": $color_korone,
+    "Pekora": $color_pekora,
+    "Rushia": $color_rushia,
+    "Flare": $color_flare,
+    "Noel": $color_noel,
+    "Marine": $color_marine,
+    "Kanata": $color_kanata,
+    "Coco": $color_coco,
+    "Watame": $color_watame,
+    "Towa": $color_towa,
+    "Luna": $color_luna,
+    "Lamy": $color_lamy,
+    "Nene": $color_nene,
+    "Botan": $color_botan,
+    "Polka": $color_polka,
+    "Risu": $color_risu,
+    "Hoshinova": $color_moona,
+    "Iofifteen": $color_iofi,
+    "Ollie": $color_ollie,
+    "Melfissa": $color_anya,
+    "Reine": $color_reine,
+    "Calliope": $color_calliope,
+    "Kiara": $color_kiara,
+    "Inanis": $color_inanis,
+    "Gura": $color_gura,
+    "Amelia": $color_amelia,
 );
 
 :root {
@@ -30,12 +110,12 @@ $colors: (
         --color-#{$name}-shade-50: #{$shade-50};
         --color-#{$name}-complement: #{$complement};
     }
-    --color-current: var(--color-sora);
-    --color-current-tint-25: var(--color-sora-tint-25);
-    --color-current-tint-50: var(--color-sora-tint-50);
-    --color-current-shade-25: var(--color-sora-shade-25);
-    --color-current-shade-50: var(--color-sora-shade-50);
-    --color-current-complement: var(--color-sora-complement);
+    --color-current: var(--color-Sora);
+    --color-current-tint-25: var(--color-Sora-tint-25);
+    --color-current-tint-50: var(--color-Sora-tint-50);
+    --color-current-shade-25: var(--color-Sora-shade-25);
+    --color-current-shade-50: var(--color-Sora-shade-50);
+    --color-current-complement: var(--color-Sora-complement);
     --color-text: #fff;
 }
 
