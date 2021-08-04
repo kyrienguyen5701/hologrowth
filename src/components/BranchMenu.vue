@@ -71,11 +71,9 @@ export default class BranchMenu extends Vue {
 
             for (let i = 0; i < talents.length; i++) {
               const memberData = {} as MemberMenuData;
-              memberData.memberName = talents[i].name
-                .replaceAll(" ", "-")
-                .toLowerCase();
+              memberData.memberName = talents[i].name.replaceAll(" ", "-");
               memberData.memberDisplayName = Localization.GetLocalizedText(
-                `menu-${talents[i].name.replaceAll(" ", "-").toLowerCase()}`
+                `menu-${talents[i].name.replaceAll(" ", "-")}`
               );
               memberData.memberURL = GetYoutubeURL(talents[i].channelId);
 
@@ -106,7 +104,12 @@ export default class BranchMenu extends Vue {
   @Emit("setTalent")
   setTalent(memberName: string) {
     this.$data.selectedMember = memberName;
-    Colors.ChangeColor(memberName.split("-")[1]);
+    const _ = memberName.split("-");
+    let member = memberName;
+    if (_.length > 1) {
+      member = _[1]
+    }
+    Colors.ChangeColor(member);
   }
 }
 </script>
