@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div style="width: 100%">
     <chart
       class="member-chart"
-      height="350"
+      height="500"
       :options="chartOptions"
       :series="series"
     >
@@ -74,7 +74,8 @@ export default class MemberChart extends Vue {
       ],
       chartOptions: {
         chart: {
-          height: 350,
+          width: "100%",
+          height: 500,
           type: "line",
           zoom: {
             type: "x",
