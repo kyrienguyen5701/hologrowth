@@ -1,50 +1,46 @@
 <template>
   <div class="member-page" :key="$data.memberName">
-    <div id="section-1" class="section">
-      <b-carousel :interval="4000" background="#ababab">
-        <b-carousel-slide img-src=""></b-carousel-slide>
-        <!-- v-for member image use for background here -->
-      </b-carousel>
-      <div class="section-title section-title-right">
-        <div class="section-title-title">
-          {{ getMemberName() }}
-        </div>
-        <div class="section-title-subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    <div class="member-banner">
+      <img :src="getMemberBannerURL()" />
+    </div>
+    <div class="member-background">
+      <div class="overlay"></div>
+      <div class="member-background-col" v-for="i in $data.background.nCol" :key="i">
+        <div class="img-holder" v-for="j in $data.background.nRow" :key="j" style="width: 250px">
+          <img v-if="i % 2 == 0 && j % 2 == 0" :src="getMemberSignatureURL('random')" />
+          <img v-if="i % 2 == 0 && j % 2 != 0" :src="getMemberIconURL()" :height="250 / 3"/>
+          <img v-if="i % 2 != 0 && j % 2 != 0" :src="getMemberSignatureURL('random')" />
+          <img v-if="i % 2 != 0 && j % 2 == 0" :src="getMemberIconURL()" :height="250 / 3"/>
         </div>
       </div>
     </div>
-    <div id="section-2" class="section section-text-left">
-      <div class="section-image">
-        <img src="" alt="" />
-      </div>
-      <div class="section-text">
-        <div class="section-text-title">
-          {{ getMemberName() }}
+    <div class="member-content">
+      <div class="member-content-section">
+        <div class="member-content-info">
+          <div class="member-content-info-avatar">
+            <div class="img-holder">
+              <img :src="getMemberAvatarURL()" />
+            </div>
+          </div>
+          <div class="member-content-info-info">
+            <div class="member-name">{{ getMemberName() }}</div>
+            <div class="member-decription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+              perferendis reiciendis nobis ab facilis nostrum ratione, unde
+              architecto vero aut et pariatur velit explicabo officiis aspernatur
+              maxime fugiat. Iure, optio.
+            </div>
+          </div>
         </div>
-        <div class="section-text-description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          fugit sed cumque sit quisquam aspernatur et. Vitae provident labore ex
-          molestias, facilis voluptatum, beatae officiis placeat possimus quia,
-          assumenda exercitationem!
-        </div>
-      </div>
-    </div>
-    <div id="section-3" class="section section-text-right">
-      <div class="section-image">
-        <img src="" alt="" />
-      </div>
-      <div class="section-text">
-        <div class="section-text-title">
-          {{ getMemberName() }}
-        </div>
-        <div class="section-text-description">
-          <ChartSwiper
-            v-bind:memberData="{
-              name: getMemberName(),
-              CSSname: getMemberCSSName()
-            }"
-          ></ChartSwiper>
+        <div class="member-content-chart">
+          <div class="member-chart">
+            <ChartSwiper
+              v-bind:memberData="{
+                name: getMemberName(),
+                CSSname: getMemberCSSName()
+              }"
+            ></ChartSwiper>
+          </div>
         </div>
       </div>
     </div>
@@ -64,7 +60,11 @@ import * as Common from "@/assets/ts/common";
 export default class MemberPage extends Vue {
   data() {
     return {
-      memberName: this.$route.params.talentName
+      memberName: this.$route.params.talentName,
+      background: {
+        nCol: Math.round(window.innerWidth / 250),
+        nRow: Math.round(window.innerHeight / 250)
+      }
     };
   }
 
@@ -73,8 +73,45 @@ export default class MemberPage extends Vue {
     this.$data.memberName = this.$route.params.talentName;
   }
 
+  mounted() {
+    // this.createSignatureIconBackground();
+  }
+
+  getMemberBannerURL() {
+    return require(`@/assets/talentBanners/default/${this.getMemberName()}_2560 x 423.png`);
+  }
+
+  getMemberIconURL() {
+    try {
+      return require(`@/assets/talentIcons/default/${this.getMemberName()}.svg`);
+    } catch {
+      return "";
+    }
+  }
+
+  getMemberAvatarURL() {
+    try {
+      return require(`@/assets/talentAvatars/medium/${this.getMemberName()}.png`);
+    } catch {
+      return "";
+    }
+  }
+
   getMemberName() {
     return Common.GetTalentName(this.$data.memberName);
+  }
+
+  getMemberSignatureURL(res: string) {
+    if (res == undefined) res = "default";
+    if (res == "random") {
+      const arr = ["high", "medium", "default"];
+      res = arr[Math.floor(Math.random() * arr.length)];
+    }
+    try {
+      return require(`@/assets/talentSignatures/${res}/${this.getMemberName()}.png`);
+    } catch {
+      return "";
+    }
   }
 
   getMemberCSSName() {
@@ -84,68 +121,112 @@ export default class MemberPage extends Vue {
 </script>
 
 <style lang="scss" scoped>
-#section-1 {
-  position: relative;
+.member-banner {
+  img {
+    width: 100%;
+  }
+  border-bottom: 10px solid var(--color-current);
 }
-.section-title {
-  position: absolute;
-  bottom: 25%;
-  font-size: 150%;
+.member-background {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  display: flex;
 
-  &-right {
-    text-align: right;
-    right: 20%;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
   }
 
-  &-left {
-    text-align: left;
-    left: 20%;
-  }
+  &-col {
+    display: flex;
+    flex-direction: column;
 
-  &-title {
-    font-size: 200%;
-    color: var(--color-current);
-    -webkit-text-fill-color: var(--color-current);
-    -webkit-text-stroke-color: var(--color-text);
-    -webkit-text-stroke-width: 1px;
-  }
+    .img-holder {
+      margin: auto;
+      display: flex;
 
-  &-subtitle {
-    color: var(--color-text);
-  }
-}
-.section-text {
-  &-left {
-    background: var(--color-current);
-    clip-path: polygon(0 0, 33.33% 0, 58.33% 100%, 0% 100%);
-  }
-
-  &-right {
-    background: var(--color-current);
-    clip-path: polygon(66.66% 0, 100% 0, 100% 100%, 41.66% 100%);
-
-    .section-text {
-      margin-left: auto;
-      text-align: right;
+      img {
+        margin: auto;
+        transform: rotate(-45deg);
+      }
     }
   }
+}
+.member-content {
+  display: flex;
 
-  width: 40%;
-  padding: 0px 100px; // change to var(--lg) later
-  height: 100%;
-  text-align: left;
-
-  &-title {
-    font-size: 255%;
-    text-transform: capitalize;
-    color: var(--color-text);
-    margin-top: 30%;
+  &-section {
+    width: 70%;
+    padding: 20px 0px;
+    margin: auto;
+    background: white;
+    border: 10px solid var(--color-current);
+    border-top: 0;
+    border-bottom: 0;
   }
 
-  &-description {
-    font-size: 125%;
-    color: var(--color-text);
-    margin-top: 20%;
+  .member-content {
+    &-info {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-bottom: 20px;
+
+      &-avatar {
+        width: 20%;
+        display: flex;
+
+        .img-holder {
+          width: 80%;
+          margin: auto;
+
+          img {
+            width: 100%;
+            border: 5px solid var(--color-current);
+            border-radius: 50%;
+          }
+        }
+      }
+
+      &-info {
+        width: 80%;
+        text-align: right;
+        position: relative;
+        padding-left: 20px;
+
+        &:after {
+          content: "";
+          width: 70%;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          height: 5px;
+          background: var(--color-current);
+        }
+
+        .member {
+          &-name {
+            color: var(--color-current);
+            font-size: 300%;
+          }
+        }
+      }
+    }
+
+    &-chart {
+      .member-chart {
+        cursor: pointer;
+      }
+    }
   }
+}
+
+.member-chart {
+  height: 100vh;
 }
 </style>
