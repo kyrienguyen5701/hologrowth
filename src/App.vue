@@ -14,16 +14,8 @@
         <LanguageMenu v-on:setLang="changeLang($event)"></LanguageMenu>
       </div>
     </div>
-    <router-view />
-    <div class="body">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <!-- <router-link to="/member">Member</router-link> -->
-      <router-link to="/tests-color">Color Test</router-link>
-      <div class="color-change">
-        <button v-on:click="changeColor('fubuki')">Change color: FBK</button>
-        <button v-on:click="changeColor('sora')">Change color: Sora</button>
-      </div>
+    <div class="content">
+      <router-view />
     </div>
     <MusicPlayer v-bind:currentLang="currentLang"></MusicPlayer>
   </div>
@@ -67,6 +59,9 @@ export default Vue.extend({
 // }
 
 #navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: var(--color-current);
   color: var(--color-text);
   height: 80px;
@@ -94,5 +89,8 @@ export default Vue.extend({
     justify-content: space-between;
     width: 100%;
   }
+}
+.content {
+  margin-top: 80px;
 }
 </style>

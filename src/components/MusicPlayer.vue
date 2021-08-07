@@ -266,6 +266,7 @@ input.slider {
   bottom: 50px;
   right: 75px;
   display: flex;
+  z-index: 100;
 
   svg {
     width: 40px;
