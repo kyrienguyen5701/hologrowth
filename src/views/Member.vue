@@ -24,11 +24,18 @@
           </div>
           <div class="member-content-info-info">
             <div class="member-name">{{ getMemberName() }}</div>
-            <div class="member-decription">
+            <div class="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               perferendis reiciendis nobis ab facilis nostrum ratione, unde
               architecto vero aut et pariatur velit explicabo officiis aspernatur
               maxime fugiat. Iure, optio.
+            </div>
+            <div class="member-link">
+              <div v-for="link in $data.links" :key="link" class="link-logo">
+                <a :href="link.destination" class="img-holder">
+                  <img :src="getLinkTypeURL(link.type)" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -64,7 +71,21 @@ export default class MemberPage extends Vue {
       background: {
         nCol: Math.round(window.innerWidth / 250),
         nRow: Math.round(window.innerHeight / 250)
-      }
+      },
+      links: [
+        {
+          type: "youtube",
+          destination: ""
+        },
+        {
+          type: "twitter",
+          destination: ""
+        },
+        {
+          type: "hololive",
+          destination: ""
+        }
+      ]
     };
   }
 
@@ -117,6 +138,14 @@ export default class MemberPage extends Vue {
   getMemberCSSName() {
     return this.$data.memberName.split("-")[1];
   }
+
+  getLinkTypeURL(linkType: string) {
+    try {
+      return require(`@/assets/logos/${linkType}.png`);
+    } catch {
+      return "";
+    }
+  }
 }
 </script>
 
@@ -139,7 +168,7 @@ export default class MemberPage extends Vue {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: black;
+    background: var(--color-current);
     opacity: 0.3;
   }
 
@@ -175,7 +204,7 @@ export default class MemberPage extends Vue {
     &-info {
       display: flex;
       flex-direction: row-reverse;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 
       &-avatar {
         width: 20%;
@@ -196,23 +225,49 @@ export default class MemberPage extends Vue {
       &-info {
         width: 80%;
         text-align: right;
-        position: relative;
         padding-left: 20px;
-
-        &:after {
-          content: "";
-          width: 70%;
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          height: 5px;
-          background: var(--color-current);
-        }
 
         .member {
           &-name {
             color: var(--color-current);
             font-size: 300%;
+          }
+
+          &-description {
+            position: relative;
+            padding-bottom: 10px;
+
+            &:after {
+              content: "";
+              width: 70%;
+              position: absolute;
+              bottom: 0;
+              right: 0;
+              height: 5px;
+              background: var(--color-current);
+            }
+          }
+
+          &-link {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: row-reverse;
+
+            .link-logo {
+              margin: 5px;
+
+              .img-holder {
+                width: 50px;
+                height: 50px;
+                display: flex;
+
+                img {
+                  margin: auto;
+                  max-width: 50px;
+                  height: 100%;
+                }
+              }
+            }
           }
         }
       }

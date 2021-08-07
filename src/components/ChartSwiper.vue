@@ -65,17 +65,17 @@ export default class ChartSwiper extends Vue {
 
 <style lang="scss" scoped>
 .swiper {
-  height: 300px;
+  height: 500px;
   width: 100%;
 
   .swiper-slide {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 14 * 2;
-    background-color: #000000;
   }
 }
 
