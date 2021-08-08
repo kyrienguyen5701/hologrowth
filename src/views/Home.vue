@@ -2,7 +2,7 @@
   <div class="home">
     <div class="sidebar">
       <div class="searchbar">
-        <input type="text" v-on:keyup="search($event.target.value)"/>
+        <input type="text" v-on:keyup="search($event.target.value)" />
       </div>
       <div class="members">
         <div
@@ -150,14 +150,10 @@ export default class Home extends Vue {
       const color = this.$data.fullColors[talentRel];
       this.$data.sentSeries.push(series);
       this.$data.sentColors.push(color);
-      ApexCharts.exec(
-        `holochart-${this.$data.countType}`,
-        "updateOptions",
-        {
-          series: this.$data.sentSeries,
-          colors: this.$data.sentColors
-        },
-      );
+      ApexCharts.exec(`holochart-${this.$data.countType}`, "updateOptions", {
+        series: this.$data.sentSeries,
+        colors: this.$data.sentColors
+      });
       this.$data.members[talentRel].dataAvailable = true;
       if (this.$data.members[talentRel].dataAvailable) {
         ApexCharts.exec(
@@ -186,13 +182,18 @@ export default class Home extends Vue {
       this.$data.members = this.$data.members.map((member: TalentDisplay) => {
         const talent = talents[member.rel];
         const { branch, genNumber, genName, name, tags } = talent;
-        const meta = `${branch} ${genNumber} ${genName} ${name} ${tags.join(" ")}`.toLowerCase();
+        const meta = `${branch} ${genNumber} ${genName} ${name} ${tags.join(
+          " "
+        )}`.toLowerCase();
         const shown = meta.includes(query);
         shownThisQuery[member.rel] = shown;
         shown && countThisQuery++;
-        return {...member, ...{
-          shown: i === 0 ? shown : shown && dp[i - 1][member.rel]
-        }};
+        return {
+          ...member,
+          ...{
+            shown: i === 0 ? shown : shown && dp[i - 1][member.rel]
+          }
+        };
       });
       if (!countThisQuery) break;
       dp.push(shownThisQuery);
