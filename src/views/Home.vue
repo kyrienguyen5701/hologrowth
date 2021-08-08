@@ -24,8 +24,15 @@
     </div>
     <div class="chart flex-centered">
       <div class="col-11">
-        <div v-if="loading"></div>
-        <div v-else>
+        <div v-show="loading">
+          <div class="overlay-loading-container">
+            <div class="overlay-loading">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </div>
+        <div>
           <HoloChart
             v-bind:countType="countType"
             v-bind:sentSeries="[fullSeries[0]]"

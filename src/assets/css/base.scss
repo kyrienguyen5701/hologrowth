@@ -2,44 +2,90 @@
 @import 'layouts.scss';
 
 .section {
-    height: 100vh;
+  height: 100vh;
 }
 
 body {
-    // background-color: #333;
-    // width: 100vw;
-    // height: 100vh;
-    a {
-        text-decoration: none;
-    }
-    div {
-        padding: 0;
-    }
+  // background-color: #333;
+  // width: 100vw;
+  // height: 100vh;
+  a {
+    text-decoration: none;
+  }
+  div {
+    padding: 0;
+  }
 }
 
 * {
-    font-family: "Berlin FB";
-    font-weight: 100;
-    letter-spacing: .1ch;
-    line-height: 2;
+  font-family: "Berlin FB";
+  font-weight: 100;
+  letter-spacing: .1ch;
+  line-height: 2;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
   
-    &-track {
-      background: var(--color-current-tint-50);
-    }
+  &-track {
+    background: var(--color-current-tint-50);
+  }
   
-    &-thumb {
-      background: var(--color-current);
-  
-      &:hover {
-        background: var(--color-current-shade-25);
-      }
+  &-thumb {
+    background: var(--color-current);
+    
+    &:hover {
+      background: var(--color-current-shade-25);
     }
   }
+}
+
+.overlay-loading-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #00000030;
+  z-index: 1;
+
+  .overlay-loading {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    
+    .left, .right {
+      width: 20px;
+      height: 20px;
+      background: var(--color-current);
+    }
+  
+    .left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: loading 2s infinite ease-in-out;
+    }
+  
+    .right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: loading 2s infinite ease-in-out;
+      animation-delay: 1s;
+    }
+  }
+}
+
+@keyframes loading {
+  25% {transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% {transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% {transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% {transform: rotate(-360deg) }
+}
