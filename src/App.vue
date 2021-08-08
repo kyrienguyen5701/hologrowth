@@ -65,6 +65,7 @@ export default Vue.extend({
   background: var(--color-current);
   color: var(--color-text);
   height: 80px;
+  z-index: 100;
   @extend %flex;
 
   a {

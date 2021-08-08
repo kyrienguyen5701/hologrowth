@@ -2,7 +2,7 @@
   <div class="home">
     <div class="sidebar">
       <div class="searchbar">
-        <input type="text" v-on:keyup="search($event.target.value)"/>
+        <input type="text" v-on:keyup="search($event.target.value)" />
       </div>
       <div class="members">
         <div
@@ -100,11 +100,10 @@ export default class Home extends Vue {
             data: Object.values(countData as object).reverse()
           });
         });
-        this.$data.fullColors = Object.keys(res.data).map(talentName =>
-          GetCSSVar(
-            ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
-          ).trim()
-        );
+        this.$data.fullColors = Object.keys(res.data).map(talentName => {
+          const _ = talentName.split(" ");
+          return GetCSSVar("--color-" + _[_.length - 1]);
+        });
         this.$data.fullXAxis = {
           categories: Object.keys(res.data["Tokino Sora"])
             .reverse()
@@ -119,7 +118,7 @@ export default class Home extends Vue {
     this.$data.loading = false;
     const soraDiv = document.getElementById("Tokino Sora-banner")
       ?.parentElement as HTMLElement;
-    soraDiv.setAttribute("clicked", "");
+    soraDiv?.setAttribute("clicked", "");
   }
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
@@ -151,14 +150,10 @@ export default class Home extends Vue {
       const color = this.$data.fullColors[talentRel];
       this.$data.sentSeries.push(series);
       this.$data.sentColors.push(color);
-      ApexCharts.exec(
-        `holochart-${this.$data.countType}`,
-        "updateOptions",
-        {
-          series: this.$data.sentSeries,
-          colors: this.$data.sentColors
-        },
-      );
+      ApexCharts.exec(`holochart-${this.$data.countType}`, "updateOptions", {
+        series: this.$data.sentSeries,
+        colors: this.$data.sentColors
+      });
       this.$data.members[talentRel].dataAvailable = true;
       if (this.$data.members[talentRel].dataAvailable) {
         ApexCharts.exec(
@@ -187,13 +182,18 @@ export default class Home extends Vue {
       this.$data.members = this.$data.members.map((member: TalentDisplay) => {
         const talent = talents[member.rel];
         const { branch, genNumber, genName, name, tags } = talent;
-        const meta = `${branch} ${genNumber} ${genName} ${name} ${tags.join(" ")}`.toLowerCase();
+        const meta = `${branch} ${genNumber} ${genName} ${name} ${tags.join(
+          " "
+        )}`.toLowerCase();
         const shown = meta.includes(query);
         shownThisQuery[member.rel] = shown;
         shown && countThisQuery++;
-        return {...member, ...{
-          shown: i === 0 ? shown : shown && dp[i - 1][member.rel]
-        }};
+        return {
+          ...member,
+          ...{
+            shown: i === 0 ? shown : shown && dp[i - 1][member.rel]
+          }
+        };
       });
       if (!countThisQuery) break;
       dp.push(shownThisQuery);
@@ -206,6 +206,8 @@ export default class Home extends Vue {
 $bg_sidebar: #ccc;
 .home {
   display: flex;
+  height: calc(100vh - 80px);
+
   .sidebar {
     max-width: 320px;
 
@@ -219,7 +221,7 @@ $bg_sidebar: #ccc;
     }
 
     .members {
-      height: calc(90vh - 100px);
+      height: calc(100% - 60px);
       overflow-y: scroll;
       &::-webkit-scrollbar {
         display: none;

@@ -2,7 +2,7 @@ import * as interfaces from "./interfaces";
 import { format } from "date-fns";
 
 export function GetCSSVar(name: string) {
-  return getComputedStyle(document.documentElement).getPropertyValue(name);
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 }
 
 export function SetCSSVar(name: string, value: string) {
