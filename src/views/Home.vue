@@ -24,7 +24,7 @@
     </div>
     <div class="chart flex-centered">
       <div class="col-11">
-        <div v-show="loading">
+        <div v-if="loading">
           <div class="overlay-loading-container">
             <div class="overlay-loading">
               <div class="left"></div>
@@ -32,13 +32,12 @@
             </div>
           </div>
         </div>
-        <div>
+        <div v-else>
           <HoloChart
             v-bind:countType="countType"
             v-bind:sentSeries="[fullSeries[0]]"
             v-bind:sentColors="[fullColors[0]]"
             v-bind:xaxis="fullXAxis"
-            v-bind:draw="draw"
           ></HoloChart>
         </div>
       </div>
@@ -55,7 +54,6 @@ import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
 import axios from "axios";
-
 @Component({
   components: {
     Member,
@@ -86,11 +84,9 @@ export default class Home extends Vue {
       fullXAxis: [],
       sentSeries: [],
       sentColors: [],
-      shown: 1,
-      draw: false
+      shown: 1
     };
   }
-
   @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   async initializeData() {
     this.$data.loading = true;
@@ -110,6 +106,7 @@ export default class Home extends Vue {
           });
         });
         this.$data.fullColors = Object.keys(res.data).map(talentName => {
+          const _ = talentName.split(" ");
           return GetCSSVar("--color-" + GetTalentCSSName(talentName));
         });
         this.$data.fullXAxis = {
@@ -122,16 +119,11 @@ export default class Home extends Vue {
         this.$data.sentSeries.push(this.$data.fullSeries[0]);
         this.$data.sentColors.push(this.$data.fullColors[0]);
       })
-      .then(() => {
-        console.log("Done getting data");
-        this.$data.loading = false;
-        this.$data.draw = true;
-        const soraDiv = document.getElementById("Tokino Sora-banner")
-          ?.parentElement as HTMLElement;
-        soraDiv?.setAttribute("clicked", "");
-        // soraDiv?.dispatchEvent(new Event("click"));
-      })
       .catch(e => console.log(e));
+    this.$data.loading = false;
+    const soraDiv = document.getElementById("Tokino Sora-banner")
+      ?.parentElement as HTMLElement;
+    soraDiv?.setAttribute("clicked", "");
   }
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
@@ -219,10 +211,8 @@ $bg_sidebar: #ccc;
 .home {
   display: flex;
   height: calc(100vh - 80px);
-
   .sidebar {
     max-width: 320px;
-
     .searchbar {
       padding: 10px;
       background: $bg_sidebar;
@@ -231,7 +221,6 @@ $bg_sidebar: #ccc;
         text-align: center;
       }
     }
-
     .members {
       height: calc(100% - 60px);
       overflow-y: scroll;
@@ -239,11 +228,9 @@ $bg_sidebar: #ccc;
         display: none;
       }
       scrollbar-width: none;
-
       .member {
         position: relative;
         height: 105px;
-
         &[clicked] {
           .overlay {
             display: none;
@@ -252,7 +239,6 @@ $bg_sidebar: #ccc;
             opacity: 1;
           }
         }
-
         &:hover {
           cursor: pointer;
           background: mix(black, $bg_sidebar, 25);
@@ -268,7 +254,6 @@ $bg_sidebar: #ccc;
             opacity: 1;
           }
         }
-
         &-banner {
           position: relative;
           .overlay {
@@ -280,7 +265,6 @@ $bg_sidebar: #ccc;
             transition: all 0.75s ease;
           }
         }
-
         &-avatar {
           background: white;
           position: absolute;
@@ -298,11 +282,9 @@ $bg_sidebar: #ccc;
             border-radius: 50%;
           }
         }
-
         &-banner {
           display: flex;
           height: 100%;
-
           img {
             height: 100%;
           }

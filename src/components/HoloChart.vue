@@ -1,12 +1,11 @@
 <template>
-  <div v-if="draw">
+  <div>
     <chart
       class="holo-chart"
       height="500"
       :options="chartOptions"
       :series="series"
       type="line"
-      ref="chart"
     >
     </chart>
   </div>
@@ -16,19 +15,14 @@
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
 import { countFormatter, countTypesMap } from "@/assets/ts/common";
-import ApexCharts from "apexcharts";
-
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
-
 @Component
 export default class HoloChart extends Vue {
   @Prop() countType!: string;
   @Prop() sentSeries!: Array<object>;
   @Prop() sentColors!: Array<object>;
   @Prop() xaxis!: object;
-  @Prop({ default: false }) draw!: boolean;
-
   // @Watch("sentSeries", { immediate: true, deep: true }) // fetch data after navigation
   // async initializeData() {
   //   this.$data.series = this.sentSeries;
@@ -39,37 +33,16 @@ export default class HoloChart extends Vue {
   //     }
   //   }
   // }
-
-  // @Watch("sentSeries", { immediate: true, deep: true })
-  // updateSeries() {
-  //   this.$data.series = this.sentSeries[0] == undefined ? [{ data: [0], name: "null" }] : this.sentSeries;
-  //   console.log("Series: " + this.sentSeries);
-  //   // ApexCharts.exec(`holochart-${this.$data.countType}`, "render");
-  //   // if (this.sentSeries.length == 0) return;
-  //   // if (this.sentSeries[0] == undefined) return;
-  //   // this.$data.series = this.sentSeries;
-  //   // (this.$refs["chart"] as Vue).$forceUpdate();
-  // }
-
-  @Watch("draw", { immediate: true })
-  drawChart() {
-    if (this.draw) {
-      console.log("Drawing chart...");
-    }
-  }
-
   data() {
-    console.log("Data: ", this.sentSeries)
-    console.log("Colors: ", this.sentColors)
     return {
-      series: this.sentSeries[0] == undefined ? [{ data: [0], name: "null" }] : this.sentSeries,
+      series: this.sentSeries,
       chartOptions: {
         chart: {
           id: `holochart-${this.countType}`,
-          height: 350,
+          height: 500,
           type: "line"
         },
-        colors: this.sentColors[0] == undefined ? ['#ffffff'] : this.sentColors,
+        colors: this.sentColors,
         dataLabels: {
           enabled: false
         },
@@ -89,8 +62,7 @@ export default class HoloChart extends Vue {
             opacity: 0.5
           }
         },
-
-        xaxis: (this.xaxis as object[])[0] == undefined ? { categories: [] } : this.xaxis,
+        xaxis: this.xaxis,
         yaxis: {
           labels: {
             formatter: countFormatter
