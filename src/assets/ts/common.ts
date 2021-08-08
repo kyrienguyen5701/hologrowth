@@ -93,6 +93,7 @@ export function GetTalentCSSName(name: string)
 }
 
 export const countFormatter = (count: number) => {
+  if (count == undefined) return "";
   const thousand = 1000;
   const million = 1000000;
   if (count < thousand) return count;
