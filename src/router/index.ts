@@ -58,8 +58,8 @@ const router = new VueRouter({
 });
 
 router.afterEach((to, from) => {
-  console.log("a");
-  const _ = to.params.talentName.split("-");
+  const _ = to.params.talentName?.split("-");
+  if (_ == undefined) return;
   const talentName = _[_.length - 1];
   ChangeColor(talentName);
 })

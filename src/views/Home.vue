@@ -100,11 +100,10 @@ export default class Home extends Vue {
             data: Object.values(countData as object).reverse()
           });
         });
-        this.$data.fullColors = Object.keys(res.data).map(talentName =>
-          GetCSSVar(
-            ("--color-" + talentName.split(" ").slice(-1)).toLowerCase()
-          ).trim()
-        );
+        this.$data.fullColors = Object.keys(res.data).map(talentName => {
+          const _ = talentName.split(" ");
+          return GetCSSVar("--color-" + _[_.length - 1]);
+        });
         this.$data.fullXAxis = {
           categories: Object.keys(res.data["Tokino Sora"])
             .reverse()
@@ -119,7 +118,7 @@ export default class Home extends Vue {
     this.$data.loading = false;
     const soraDiv = document.getElementById("Tokino Sora-banner")
       ?.parentElement as HTMLElement;
-    soraDiv.setAttribute("clicked", "");
+    soraDiv?.setAttribute("clicked", "");
   }
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
@@ -206,6 +205,8 @@ export default class Home extends Vue {
 $bg_sidebar: #ccc;
 .home {
   display: flex;
+  height: calc(100vh - 80px);
+
   .sidebar {
     max-width: 320px;
 
@@ -219,7 +220,7 @@ $bg_sidebar: #ccc;
     }
 
     .members {
-      height: calc(90vh - 100px);
+      height: calc(100% - 60px);
       overflow-y: scroll;
       &::-webkit-scrollbar {
         display: none;
