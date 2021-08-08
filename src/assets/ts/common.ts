@@ -79,6 +79,19 @@ export function GetTalentName(name: string)
   return s.join(" ")
 }
 
+export function GetTalentCSSName(name: string)
+{
+  const s = name.replace(/ /g, "-");
+  const _ = s.split("-");
+  const result = _[_.length - 1];
+  switch (result)
+  {
+    case "Ina'nis":
+      return "Inanis";
+  }
+  return result;
+}
+
 export const countFormatter = (count: number) => {
   const thousand = 1000;
   const million = 1000000;

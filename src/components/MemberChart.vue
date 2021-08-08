@@ -83,7 +83,7 @@ export default class MemberChart extends Vue {
             autoScaleYaxis: true
           }
         },
-        colors: [GetCSSVar(`--color-${this.memberData.CSSname}`)],
+        colors: [GetCSSVar(`--color-${this.memberData.CSSname}-complement`)],
         dataLabels: {
           enabled: false
         },

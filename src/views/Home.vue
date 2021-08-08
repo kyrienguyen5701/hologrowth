@@ -49,7 +49,7 @@
 import { Component, Vue, Watch } from "vue-property-decorator";
 import Member from "@/components/MemberHome.vue";
 import Stats from "@/components/Stats.vue";
-import { GetCSSVar, dateFormatter } from "@/assets/ts/common";
+import { GetCSSVar, dateFormatter, GetTalentCSSName } from "@/assets/ts/common";
 import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
@@ -108,8 +108,7 @@ export default class Home extends Vue {
           });
         });
         this.$data.fullColors = Object.keys(res.data).map(talentName => {
-          const _ = talentName.split(" ");
-          return GetCSSVar("--color-" + _[_.length - 1]);
+          return GetCSSVar("--color-" + GetTalentCSSName(talentName));
         });
         this.$data.fullXAxis = {
           categories: Object.keys(res.data["Tokino Sora"])
@@ -129,7 +128,6 @@ export default class Home extends Vue {
   }
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
-    console.log(target);
     let talentName = "";
     let talentRel = 0;
     while (
