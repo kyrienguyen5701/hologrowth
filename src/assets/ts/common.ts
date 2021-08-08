@@ -2,7 +2,7 @@ import * as interfaces from "./interfaces";
 import { format } from "date-fns";
 
 export function GetCSSVar(name: string) {
-  return getComputedStyle(document.documentElement).getPropertyValue(name);
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
 }
 
 export function SetCSSVar(name: string, value: string) {
@@ -77,6 +77,19 @@ export function GetTalentName(name: string)
     s[i] = s[i].charAt(0).toUpperCase() + s[i].substring(1);
   }
   return s.join(" ")
+}
+
+export function GetTalentCSSName(name: string)
+{
+  const s = name.replace(/ /g, "-");
+  const _ = s.split("-");
+  const result = _[_.length - 1];
+  switch (result)
+  {
+    case "Ina'nis":
+      return "Inanis";
+  }
+  return result;
 }
 
 export const countFormatter = (count: number) => {

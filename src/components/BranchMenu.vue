@@ -36,7 +36,7 @@
 // import * as Localization from "@/assets/ts/localize";
 import { Component, Emit, Vue } from "vue-property-decorator";
 import talents from "@/assets/json/talents.json";
-import { Categorize, GetYoutubeURL } from "@/assets/ts/common";
+import { Categorize, GetTalentCSSName, GetYoutubeURL } from "@/assets/ts/common";
 import * as Localization from "@/assets/ts/localize";
 import {
   BranchMenuData,
@@ -104,12 +104,8 @@ export default class BranchMenu extends Vue {
   @Emit("setTalent")
   setTalent(memberName: string) {
     this.$data.selectedMember = memberName;
-    const _ = memberName.split("-");
-    let member = memberName;
-    if (_.length > 1) {
-      member = _[1]
-    }
-    Colors.ChangeColor(member);
+    const talentName = GetTalentCSSName(memberName);
+    Colors.ChangeColor(talentName);
   }
 }
 </script>

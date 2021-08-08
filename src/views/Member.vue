@@ -136,7 +136,7 @@ export default class MemberPage extends Vue {
   }
 
   getMemberCSSName() {
-    return this.$data.memberName.split("-")[1];
+    return Common.GetTalentCSSName(this.$data.memberName);
   }
 
   getLinkTypeURL(linkType: string) {

@@ -1,3 +1,5 @@
+import { ChangeColor } from "@/assets/ts/colors";
+import { GetTalentCSSName, GetTalentName } from "@/assets/ts/common";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
@@ -54,5 +56,10 @@ const router = new VueRouter({
   // base: process.env.BASE_URL,
   routes
 });
+
+router.afterEach((to, from) => {
+  if (to.params.talentName == undefined) return;
+  ChangeColor(GetTalentCSSName(to.params.talentName));
+})
 
 export default router;
