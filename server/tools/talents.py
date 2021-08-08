@@ -7,10 +7,10 @@ talentsDestPath = '../../src/assets/json/talents.json'
 bgmDir = '../../src/assets/sounds/bgm'
 soloDir = '../../src/assets/sounds/solo'
 
-with open(talentsFilePath) as f:
+with open(talentsFilePath, 'r', encoding='utf-8') as f:
     content = json.load(f)
 
-df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'channelId', 'bgm', 'solo'])
+df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'tags', 'channelId', 'bgm', 'solo'])
 
 i = 0
 for branch, branchInfo in content.items():
@@ -21,6 +21,7 @@ for branch, branchInfo in content.items():
         genNum = gens[0]
         genName = ''
         genOther = []
+        tags = talentInfo['tags']
 
         if not isinstance(genNum, int):
             genName = genNum
@@ -34,10 +35,10 @@ for branch, branchInfo in content.items():
         if len(gens) > 2:
             genOther = gens[2:]
 
-        bgm = os.listdir(f'{bgmDir}/{talentName}')
-        solo = os.listdir(f'{soloDir}/{talentName}')
+        bgm = os.listdir(f'{bgmDir}/{talentName}') if os.path.isdir(f'{bgmDir}/{talentName}') else []
+        solo = os.listdir(f'{soloDir}/{talentName}') if os.path.isdir(f'{soloDir}/{talentName}') else []
 
-        df.loc[i] = [idx, branch, genNum, genName, genOther, talentName, channelId, bgm, solo]
+        df.loc[i] = [idx, branch, genNum, genName, genOther, talentName, tags, channelId, bgm, solo]
         i += 1
 
 df['genNumber'] = df['genNumber'].astype('str')
