@@ -38,6 +38,7 @@
             v-bind:sentSeries="[fullSeries[0]]"
             v-bind:sentColors="[fullColors[0]]"
             v-bind:xaxis="fullXAxis"
+            v-bind:draw="draw"
           ></HoloChart>
         </div>
       </div>
@@ -85,7 +86,8 @@ export default class Home extends Vue {
       fullXAxis: [],
       sentSeries: [],
       sentColors: [],
-      shown: 1
+      shown: 1,
+      draw: false
     };
   }
 
@@ -120,11 +122,16 @@ export default class Home extends Vue {
         this.$data.sentSeries.push(this.$data.fullSeries[0]);
         this.$data.sentColors.push(this.$data.fullColors[0]);
       })
+      .then(() => {
+        console.log("Done getting data");
+        this.$data.loading = false;
+        this.$data.draw = true;
+        const soraDiv = document.getElementById("Tokino Sora-banner")
+          ?.parentElement as HTMLElement;
+        soraDiv?.setAttribute("clicked", "");
+        // soraDiv?.dispatchEvent(new Event("click"));
+      })
       .catch(e => console.log(e));
-    this.$data.loading = false;
-    const soraDiv = document.getElementById("Tokino Sora-banner")
-      ?.parentElement as HTMLElement;
-    soraDiv?.setAttribute("clicked", "");
   }
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
