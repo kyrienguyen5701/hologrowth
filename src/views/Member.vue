@@ -32,7 +32,7 @@
             </div>
             <div class="member-link">
               <div v-for="link in $data.links" :key="link" class="link-logo">
-                <a :href="link.destination" class="img-holder">
+                <a :href="link.destination" class="img-holder" target="_blank">
                   <img :src="getLinkTypeURL(link.type)" />
                 </a>
               </div>
@@ -58,6 +58,8 @@
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
+import talents from "@/assets/json/talents.json";
+import { TalentBasicInfo } from "@/assets/ts/interfaces";
 
 @Component({
   components: {
@@ -72,6 +74,7 @@ export default class MemberPage extends Vue {
         nCol: Math.round(window.innerWidth / 250),
         nRow: Math.round(window.innerHeight / 250)
       },
+      basicInfo: {} as TalentBasicInfo,
       links: [
         {
           type: "youtube",
@@ -85,13 +88,22 @@ export default class MemberPage extends Vue {
           type: "hololive",
           destination: ""
         }
-      ]
+      ],
+      officialBio: ""
     };
   }
 
-  @Watch("$route")
+  @Watch("$route", { immediate: true, deep: true })
   onMemberChange() {
     this.$data.memberName = this.$route.params.talentName;
+    const talentData = talents.find(talent => {
+      return talent.name === this.getMemberName();
+    })
+    this.$data.basicInfo = talentData?.basicInfo;
+    this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData?.channelId}`;
+    this.$data.links[1].destination = `https://twitter.com/${talentData?.twitter}`;
+    this.$data.links[2].destination = talentData?.basicInfo.officialWebsite[localStorage.getItem("lang")];
+    this.$data.officialBio = talentData?.officialBio;
   }
 
   mounted() {
