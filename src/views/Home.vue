@@ -22,8 +22,20 @@
         </div>
       </div>
     </div>
-    <div class="chart flex-centered">
-      <div class="col-11">
+    <div class="chart-placeholder flex-centered">
+      <div class="chart-background">
+        <div class="overlay"></div>
+        <div class="chart-background-col" v-for="i in background.nCol" :key="i">
+          <div class="img-holder" v-for="j in background.nRow" :key="j">
+            <img :src="getMemberIconURL(background.data[i][j])" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="chart"
+        ref="chart"
+        style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
+      >
         <div v-if="loading">
           <div class="overlay-loading-container">
             <div class="overlay-loading">
@@ -84,9 +96,15 @@ export default class Home extends Vue {
       fullXAxis: [],
       sentSeries: [],
       sentColors: [],
-      shown: 1
+      shown: 1,
+      background: {
+        nCol: 0, //Math.round(window.innerWidth / 250),
+        nRow: 0, //Math.round(window.innerHeight / 250),
+        data: [["Sora"]]
+      }
     };
   }
+
   @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   async initializeData() {
     this.$data.loading = true;
@@ -125,10 +143,12 @@ export default class Home extends Vue {
       ?.parentElement as HTMLElement;
     soraDiv?.setAttribute("clicked", "");
   }
+
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
     let talentName = "";
     let talentRel = 0;
+    let isShown = false;
     while (
       (target = target?.parentElement) &&
       !target.classList.contains("member")
@@ -145,9 +165,11 @@ export default class Home extends Vue {
       }
       --this.$data.shown;
       target?.removeAttribute("clicked");
+      isShown = false;
     } else {
       this.$data.shown++;
       target?.setAttribute("clicked", "");
+      isShown = true;
     }
     if (!this.$data.members[talentRel].dataAvailable) {
       const series = this.$data.fullSeries[talentRel];
@@ -174,7 +196,31 @@ export default class Home extends Vue {
         talentName
       );
     }
+    this.toggleChartBorder(talentName, isShown);
   }
+
+  toggleChartBorder(talentName: string, isShown: boolean) {
+    const cssVar = `var(--color-${GetTalentCSSName(talentName)})`;
+    const currentGrad = (this.$refs["chart"] as HTMLElement).style
+      .borderImageSource;
+    const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
+    if (matches.length == 2 && matches[0] == matches[1]) {
+      matches.pop();
+    }
+    if (isShown) {
+      matches.push(cssVar);
+    } else {
+      const i = matches.indexOf(cssVar);
+      matches.splice(i, 1);
+    }
+    if (matches.length == 1) matches.push(matches[0]);
+    (this.$refs[
+      "chart"
+    ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+      ","
+    )}`;
+  }
+
   search(input: string) {
     const queries = input.split(" ");
     const dp = Array<Array<boolean>>();
@@ -202,6 +248,10 @@ export default class Home extends Vue {
       if (!countThisQuery) break;
       dp.push(shownThisQuery);
     }
+  }
+
+  getMemberIconURL(memberName: string) {
+    return require(`@/assets/talentIcons/default/${memberName}.svg`);
   }
 }
 </script>
@@ -292,8 +342,47 @@ $bg_sidebar: #ccc;
       }
     }
   }
-  .chart {
-    width: calc(100% - 100px);
+}
+.chart-placeholder {
+  width: 100%;
+  position: relative;
+
+  .chart-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    .overlay {
+      height: 100%;
+      background: #00000030;
+    }
+
+    &-col {
+      cursor: pointer;
+    }
   }
+
+  .chart {
+    --angle: 0deg;
+    background: white;
+    padding: 2%;
+    width: calc(100% * 11 / 12);
+    border: 10px solid;
+    animation: rotate-border 5s infinite;
+  }
+}
+
+@keyframes rotate-border {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 </style>
