@@ -19,7 +19,7 @@
             "height":"160 cm",
             "zodiacSign":"Taurus"
         },
-        "officialBio":"Debuting on September 7, 2017, she is the first Virtual Idol of Hololive Production.\nShe loves singing and horror games, and her dream has been to hold a live concert at Yokohama Arena since the very beginning. She had her major debut at Victor Entertainment in March 2019. On her road to pro idol, she played a role in the TV show Watanuki-san Chi while also running a podcast known as SoraAoto! She also takes an active role in other genres. On October 6, 2019, she held her own live concert Dream!\n",
+        "officialBio":"bio-tokino-sora",
         "tags":[
             "ときのそら",
             "Soda ソーダ",
@@ -67,7 +67,7 @@
             "height":"154 cm",
             "zodiacSign":"Gemini"
         },
-        "officialBio":"A lonely, wimpy robot from a random wasteland. She is now hoping to contact and live with lots of people as a Virtual Liver.\n",
+        "officialBio":"bio-roboco",
         "tags":[
             "ロボ子",
             "Robocosan ロボ子さん",
@@ -101,10 +101,10 @@
             },
             "age":"18.2 years old",
             "birthday":"5 March",
-            "height":"152 cm (5')",
+            "height":"152 cm",
             "zodiacSign":"Pisces"
         },
-        "officialBio":"She has been working on religious services really hard as a miko in the computer world. With the revelation of the gods, she is now visiting Japan. While performing her errand, she has now decided to become and work hard as a virtual miko idol.\n",
+        "officialBio":"bio-sakura-miko",
         "tags":[
             "さくらみこ",
             "Miko-chi Mikochi みこち",
@@ -143,10 +143,10 @@
             },
             "age":"18 years old",
             "birthday":"22 March",
-            "height":"160 cm  (5'3)",
+            "height":"160 cm",
             "zodiacSign":"Aries"
         },
-        "officialBio":"A forever18 VTuber who deeply loves singing and idols. Her dream is to one day hold a live concert in Tokyo Budokan.\n",
+        "officialBio":"bio-hoshimachi-suisei",
         "tags":[
             "星街すいせい",
             "Sui-chan すいちゃん",
@@ -188,10 +188,10 @@
             },
             "age":"18 years old (forever)",
             "birthday":"1 July",
-            "height":"168 cm (with heels on)",
+            "height":"168 cm [with heels on]",
             "zodiacSign":"Cancer"
         },
-        "officialBio":"A diva who became reborn into the virtual world in order to fabricate a new world. No matter the time, place, or position, she warps through all the barricades with her dazzling talent.\n",
+        "officialBio":"bio-azki",
         "tags":[
             "AZKichi"
         ],
@@ -231,7 +231,7 @@
             "height":"154 cm",
             "zodiacSign":"Scorpio"
         },
-        "officialBio":"A vampire girl. Even though she is a vampire, she is not into blood, instead, she loves acerola juice the most.\n",
+        "officialBio":"bio-yozora-mel",
         "tags":[
             "夜空メル",
             "Merumeru メル",
@@ -267,7 +267,7 @@
             "height":"162 cm",
             "zodiacSign":"Aquarius"
         },
-        "officialBio":"A girl who traveled from a different universe. She has hyper curiosity and manages to reach out to all sorts of things. Her trademark pigtails float due to some sort of supernatural power.\n",
+        "officialBio":"bio-aki-rosenthal",
         "tags":[
             "アキローゼンタール",
             "Akirose アキローゼ",
@@ -306,7 +306,7 @@
             "height":"154 cm",
             "zodiacSign":"Leo"
         },
-        "officialBio":"Welcome to your rouge awakening! This is Akai Haato!\nA sassy kouhai. She is often prickly, however she manages to demand lots of attention from those with whom she has been getting along well. She loves red ribbons and heart shapes and often adds them to her hair and dresses.\n",
+        "officialBio":"bio-akai-haato",
         "tags":[
             "赤井はあと",
             "Haachama はあちゃま",
@@ -346,7 +346,7 @@
             "height":"155 cm",
             "zodiacSign":"Libra"
         },
-        "officialBio":"Foxy day to you! I'm Shirakami Fubuki!\nA white haired animal-eared highschool student. Although she is shy and mostly calm, she likes to talk to people. She would be very happy if you pay attention to her.\n",
+        "officialBio":"bio-shirakami-fubuki",
         "tags":[
             "白上フブキ",
             "FBK",
@@ -387,7 +387,7 @@
             "height":"152 cm",
             "zodiacSign":"Cancer"
         },
-        "officialBio":"Festival night! Natsuiro Matsuri is here!\nA rookie on the Cheerleading Team. Cheerful and affectionate, her pleasant attitude means she gets along with everyone. She has a lot of friends, and loves festivals and events.\n",
+        "officialBio":"bio-natsuiro-matsuri",
         "tags":[
             "夏色まつり",
             "Matsurin まつりん",
@@ -422,10 +422,10 @@
             },
             "age":"",
             "birthday":"1 December",
-            "height":"148 cm (4'10)",
+            "height":"148 cm",
             "zodiacSign":"Sagittarius"
         },
-        "officialBio":"「A-quality day to one and all! I'm Minato Aqua!」\nA marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.\n",
+        "officialBio":"bio-minato-aqua",
         "tags":[
             "港あくあ",
             "Akutan あくたん",
@@ -465,7 +465,7 @@
             "height":"145 cm",
             "zodiacSign":"Sagittarius"
         },
-        "officialBio":"Hellshio! Murasaki Shion here!\nA random self-proclaimed child (though she is probably an adult) who appears around the Demonic-Realm Academy. She calls herself a highborne black magician (probably). She can barely say her greeting, “Hellshio”.\n",
+        "officialBio":"bio-murasaki-shion",
         "tags":[
             "紫咲シオン",
             "Garlic ニンニク",
@@ -502,7 +502,7 @@
             "height":"152 cm",
             "zodiacSign":"Sagittarius"
         },
-        "officialBio":"Greetings, humans! Nakiri Ayame has arrived!\nA kimono-clad Oni girl from the Demonic-Realm Academy. As she loves to prank people, she always uses will-o’-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.\n",
+        "officialBio":"bio-nakiri-ayame",
         "tags":[
             "百鬼あやめ",
             "Ojou-sama お嬢さま お嬢様",
@@ -541,7 +541,7 @@
             "height":"165 cm",
             "zodiacSign":"Aquarius"
         },
-        "officialBio":"Good evening, my cute students! It's your teacher, Choco!\nA health doctor from the Demonic-Realm Academy. Has a high reputation around the school. It was told that the line of male students never ends. She loves snacks quite a lot, although one time her desk was caked with food wrappers, and she was then scolded badly.\n",
+        "officialBio":"bio-yuzuki-choco",
         "tags":[
             "癒月ちょこ",
             "Choco-sensei ちょこ先生"
@@ -575,7 +575,7 @@
             "height":"154 cm",
             "zodiacSign":"Cancer"
         },
-        "officialBio":"Sup? I'm Oozora Subaru!\nThe manager of an MMA club and an E-sports club. A supremely spirited, cheerful, lively girl who can talk to anyone without breaking a sweat. She’s currently practicing her pro-gamer skills.\n",
+        "officialBio":"bio-oozora-subaru",
         "tags":[
             "大空スバル",
             "Subachi スバち",
@@ -614,7 +614,7 @@
             "height":"155 cm",
             "zodiacSign":"Leo"
         },
-        "officialBio":"Hellooowl! It is Ookami Mio!\nA black haired kemomimi girl who appeared on our radar randomly. She often shows up around shrines. She likes gaming.\n",
+        "officialBio":"bio-ookami-mio",
         "tags":[
             "大神ミオ",
             "Mion ミオン",
@@ -654,7 +654,7 @@
             "height":"152 cm",
             "zodiacSign":"Pisces"
         },
-        "officialBio":"Om, nom, nom! Okayu time!\nA cat raised by a old woman from the onigiri store. She streams just because there is a PC in the old woman’s room.\n",
+        "officialBio":"bio-nekomata-okayu",
         "tags":[
             "猫又おかゆ",
             "Okazu おかず",
@@ -693,7 +693,7 @@
             "height":"156 cm",
             "zodiacSign":"Libra"
         },
-        "officialBio":"G'morning! Fingers! Give me your fingers!!\nThe dog from a random bakery. She likes to play games when she has free time while watchdogging.\n",
+        "officialBio":"bio-inugami-korone",
         "tags":[
             "戌神ころね",
             "Koro-san ころさん",
@@ -731,7 +731,7 @@
             "height":"150 cm",
             "zodiacSign":"Leo"
         },
-        "officialBio":"Ahoy! Houshou Pirate Captain, Houshou Marine here!\nLoves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do (which also means she is currently just a girl cosplayer). She acts like a big sis and sometimes seduces people like a succubus does.\n",
+        "officialBio":"bio-houshou-marine",
         "tags":[
             "宝鐘マリン",
             "Senchou 船長",
@@ -775,7 +775,7 @@
             "height":"143 cm",
             "zodiacSign":"Aquarius"
         },
-        "officialBio":"Hel-rushi! This is Uruha Rushia!\nA necromancer from the Demonic-Realm Academy who is not good at communicating with people. She does not want to be alone, however, which is why she talks to the spirits and the damned.\n",
+        "officialBio":"bio-uruha-rushia",
         "tags":[
             "潤羽るしあ",
             "Ruu-chan るうちゃん",
@@ -816,7 +816,7 @@
             "height":"153 cm (not including the ears)",
             "zodiacSign":"Capricorn"
         },
-        "officialBio":"Hiya-peko! Hiya-peko! Hiya-pekooo! I'm Usada Pekora, peko!\nA lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.\n",
+        "officialBio":"bio-usada-pekora",
         "tags":[
             "兎田ぺこら",
             "Peko-chan ぺこちゃん",
@@ -856,7 +856,7 @@
             "height":"158 cm",
             "zodiacSign":"Aries"
         },
-        "officialBio":"Noon-nui! This is Shiranui Flare!\nA half-elf who seems sloppy and undependable, however when it is time, she becomes an extremely reliable big sis. She is basically kind of drained. Her weakness is her emotions and she cries or gets embarrassed quite easily (Just praise her!). The fairy-like creature that looks like a panda is named “Kintsuba”.\n",
+        "officialBio":"bio-shiranui-flare",
         "tags":[
             "不知火フレア",
             "Fuu-tan ふうたん",
@@ -893,7 +893,7 @@
             "height":"158 cm",
             "zodiacSign":"Sagittarius"
         },
-        "officialBio":"Hey muscle! Shirogane Noel's here!\nWhile she is easy-going, she has a dangerous side where she attempts to solve all her problems with muscle power. As much as this fluffy, meatheaded knight hungers for power, she came to the world of VTubers where all the stronk people are, for training.\n",
+        "officialBio":"bio-shirogane-noel",
         "tags":[
             "白銀ノエル",
             "Danchou 団長",
@@ -933,7 +933,7 @@
             "height":"151 cm",
             "zodiacSign":"Gemini"
         },
-        "officialBio":"A sheep bard that goes around everywhere. She loves singing and is fluffy! YES! FLUFFY! Being a herbivore, she loves potato chips.\n",
+        "officialBio":"bio-tsunomaki-watame",
         "tags":[
             "角巻わため",
             "Wataoji わたおじ",
@@ -973,7 +973,7 @@
             "height":"150 cm",
             "zodiacSign":"Leo"
         },
-        "officialBio":"In order to become an archdemon, she joined the human society for further studies. She should be studying but is now addicted to gaming. She realized that the method commonly known as streaming is also a way to communicate with humans. She is now in the trial and error process.\n",
+        "officialBio":"bio-tokoyami-towa",
         "tags":[
             "常闇トワ",
             "Towa-sama トワさま トワ様",
@@ -1009,10 +1009,10 @@
             },
             "age":"3502 years old",
             "birthday":"17 June",
-            "height":"Human form: 180 cm (5'11) ",
+            "height":"Human form: 180 cm",
             "zodiacSign":"Gemini"
         },
-        "officialBio":"A child dragon (3,500 years old is young in dragon years) who is fond of human culture. She traveled from another universe to ours, just to study Japanese in a random language school. Also an honorable and heroic dragon who is filled with justice. She tries really hard to keep her human form.\n",
+        "officialBio":"bio-kiryu-coco",
         "tags":[
             "桐生ココ",
             "Coco-chin Coco-chi ココちん ココち",
@@ -1053,7 +1053,7 @@
             "height":"149 cm",
             "zodiacSign":"Taurus"
         },
-        "officialBio":"An angel from the Angelic-Realm Institution. She is now studying how to heal people.To hide her shyness, she pretends to be cool.\n",
+        "officialBio":"bio-amane-kanata",
         "tags":[
             "天音かなた",
             "Kanatan かなたん",
@@ -1090,10 +1090,10 @@
             },
             "age":"0 years old",
             "birthday":"10 October",
-            "height":"150 cm (4'11) (with crown)",
+            "height":"150 cm (with crown)",
             "zodiacSign":"Libra"
         },
-        "officialBio":"The princess of sweets. She sticks around people, and is easily impressed. However, when her childishness overloads, she will get scolded by her butler. It was also told that those moonshapes are the symbols of her country.\n",
+        "officialBio":"bio-himemori-luna",
         "tags":[
             "姫森ルーナ",
             "Luna-tan ルーナたん",
@@ -1132,7 +1132,7 @@
             "height":"158 cm",
             "zodiacSign":"Scorpio"
         },
-        "officialBio":"A snow elf from a noble family renowned in the remote Land of Silver. She decided to leave her home, along with her companion Daifuku, after her heart was touched by the fun and colorful streams from hololive. Her serious personality belies her naive, sheltered nature.\n",
+        "officialBio":"bio-yukihana-lamy",
         "tags":[
             "雪花ラミィ",
             "Lamy Mama ラミィママ",
@@ -1169,7 +1169,7 @@
             "height":"159 cm",
             "zodiacSign":"Pisces"
         },
-        "officialBio":"A girl who came from another world to chase after her idol dream. She likes singing, dancing, and drawing. She trains hard every day in order to win the hearts of even more people.\n",
+        "officialBio":"bio-momosuzu-nene",
         "tags":[
             "桃鈴ねね",
             "Nenechi ねねち",
@@ -1207,7 +1207,7 @@
             "height":"166 cm",
             "zodiacSign":"Virgo"
         },
-        "officialBio":"The mind of a lazy house cat in the body of a fearsome white lion. She’s conscientious and will finish what she has started, but good luck getting her to start. Her favorite phrase is, “Go big or go home!”\n",
+        "officialBio":"bio-shishiro-botan",
         "tags":[
             "獅白ぼたん",
             "Shishiron ししろん",
@@ -1244,7 +1244,7 @@
             "height":"153 cm",
             "zodiacSign":"Aquarius"
         },
-        "officialBio":"A circus performer who joined hololive in hopes of becoming the ringmaster of the VTuber world. She enjoys wowing audiences with acrobatics, and lives by the words, When the going gets tough, the tough get going. If you ask her, her occasional mess ups are also part of her charm.\n",
+        "officialBio":"bio-omaru-polka",
         "tags":[
             "尾丸ポルカ",
             "Omarun おまるん"
@@ -1278,10 +1278,10 @@
             },
             "age":"",
             "birthday":"6 January",
-            "height":"150 cm (4'11)",
+            "height":"150 cm",
             "zodiacSign":"Capricorn"
         },
-        "officialBio":"She heard strange rumors surrounding Hololive online:  ,  ,  , and more. Soon after beginning her investigation on Hololive, and just out of interest, she decided to become an idol herself! She loves to pass her time training her reflexes with FPS games, and challenging herself with puzzle games.\nIt's elementary, right?\n",
+        "officialBio":"bio-watson-amelia",
         "tags":[
             "ワトソンアメリア",
             "Ame Amechan アメ　アメちゃん",
@@ -1315,10 +1315,10 @@
             },
             "age":"████ (somebody spilled ink on the page!!)",
             "birthday":"20 May",
-            "height":"157 cm (5'2) [with shoes]",
+            "height":"157 cm [with shoes]",
             "zodiacSign":"Taurus"
         },
-        "officialBio":"One day, she picked up a strange book and then started to gain the power of controlling tentacles. To her, tentacles are just a part in her ordinary life; it has never been a big deal for her. However, her girly mind does want to get them dressed up and stay pretty.\nAfter gaining power, she started hearing Ancient Whispers and Revelations. Hence, she began her VTuber activities to deliver random sanity checks on humanity, as an ordinary girl.\n",
+        "officialBio":"bio-ninomae-ina'nis",
         "tags":[
             "にのまえいなにす",
             "Ina いな",
@@ -1351,10 +1351,10 @@
             },
             "age":"between 9,000 and 10,000 years old (has forgotten exact number after ~5,000 years)",
             "birthday":"20 June",
-            "height":"141 cm (4'7)",
+            "height":"141 cm",
             "zodiacSign":"Gemini"
         },
-        "officialBio":"A descendant of the Lost City of Atlantis, who swam to Earth while saying, It's so boring down there LOLOLOL! She bought her clothes (and her shark hat) in the human world and she really loves them. In her spare time, she enjoys talking to marine life.\n",
+        "officialBio":"bio-gawr-gura",
         "tags":[
             "がうるぐら",
             "Same-chan サメちゃん"
@@ -1389,10 +1389,10 @@
             },
             "age":"No",
             "birthday":"4 April",
-            "height":"167 cm (5'6)",
+            "height":"167 cm",
             "zodiacSign":"Aries"
         },
-        "officialBio":"The Grim Reaper's first apprentice. Because the world's medical system advanced so dramatically, she became a VTuber to collect souls. It seems that the lost souls vaporized by the wholesome relationships of VTubers flow through her as well. In the end, she's a gentle-hearted girl whose sweet voice contradicts the morbid things she tends to say, as well as her hardcore vocals.\n",
+        "officialBio":"bio-mori-calliope",
         "tags":[
             "もりかりおぺ",
             "Dad"
@@ -1430,10 +1430,10 @@
             },
             "age":"Eternal",
             "birthday":"6 July",
-            "height":"165 cm (5'5)",
+            "height":"165 cm",
             "zodiacSign":"Cancer"
         },
-        "officialBio":"An idol whose dream is to become a fast food shop owner. She is a phoenix, NOT a chicken or turkey. (Very important)\nShe works extremely hard since she will be reborn from ashes anyway.\n",
+        "officialBio":"bio-takanashi-kiara",
         "tags":[
             "小鳥遊キアラ",
             "Kusotori くそ鳥 クソトリ",
@@ -1472,10 +1472,10 @@
             },
             "age":"",
             "birthday":"15 February",
-            "height":"165 cm (5'5)",
+            "height":"165 cm",
             "zodiacSign":"Aquarius"
         },
-        "officialBio":"A university student who is also a model and idol. She became a VTuber as she was attracted by the virtual world. She seems to be calm and cool-headed, but scary things are not her cup of tea.\n",
+        "officialBio":"bio-moona-hoshinova",
         "tags":[
             "ムーナホシノヴァ",
             "Buchou 部長"
@@ -1509,10 +1509,10 @@
             },
             "age":"17 years old",
             "birthday":"15 January",
-            "height":"153 cm (5'0)",
+            "height":"153 cm",
             "zodiacSign":"Capricorn"
         },
-        "officialBio":"A squirrel girl who comes from the magicial forest. She once lost her way in the human realm, but was then saved by a kind-hearted woman with whom she is now living. She treats this woman as her big sis. She debuted as a VTuber just to repay her.\n",
+        "officialBio":"bio-ayunda-risu",
         "tags":[
             "アユンダリス",
             "Alter Risu アルターリス",
@@ -1547,10 +1547,10 @@
             },
             "age":"",
             "birthday":"15 July",
-            "height":"150 cm (4'11)",
+            "height":"150 cm",
             "zodiacSign":"Cancer"
         },
-        "officialBio":"A breed of aliens who enjoys drawing. She loves the Earth so much that she successfully entered the school of Virtual Communication and Designs in a university here.\n",
+        "officialBio":"bio-airani-iofifteen",
         "tags":[
             "アイラニイオフィフティーン",
             "Iofi イオフィ",
@@ -1585,7 +1585,7 @@
             "height":"172 cm",
             "zodiacSign":"Virgo"
         },
-        "officialBio":"Lady of the Peafowl. While studying at a magic academy, she was involved in an incident and transferred to the human world. Since then, she has been unable to use much of her magic.\nAlthough appearing elegant and calm, she can become very emotional when angered.\n",
+        "officialBio":"bio-pavolia-reine",
         "tags":[
             "パヴォリアレイネ",
             "Reine Mama アレイネママ",
@@ -1621,7 +1621,7 @@
             "height":"162 cm",
             "zodiacSign":"Libra"
         },
-        "officialBio":"A zombie high school girl risen from her grave. She headed home, relying on memories retained from when she was still alive. Upon arriving, she discovered it had turned into a ramen shop! And so, in order to reclaim her house, she decided to become a VTuber.\n",
+        "officialBio":"bio-kureiji-ollie",
         "tags":[
             "クレイジーオリー",
             "Olivia オリヴィア",
@@ -1656,7 +1656,7 @@
             "height":"147 cm",
             "zodiacSign":"Pisces"
         },
-        "officialBio":"An ancient weapon known as Keris, she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.\n",
+        "officialBio":"bio-anya-melfissa",
         "tags":[
             "アーニャメルフィッサ",
             "Arya Melvine アーリャメルヴィン"
