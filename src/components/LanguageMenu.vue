@@ -27,7 +27,7 @@ import * as Config from "@/assets/ts/config";
 export default class LanguageMenu extends Vue {
   data() {
     return {
-      selectedLang: "en",
+      selectedLang: localStorage.getItem("lang") ? localStorage.getItem("lang") : "en",
       languages: (() => {
         const result = [];
         const languages = Config.GetConfig().languages;
