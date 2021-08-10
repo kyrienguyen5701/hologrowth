@@ -50,15 +50,29 @@
           </div>
         </div>
         <div class="member-content-more-info">
-          <div v-for="info in moreInfo" :key="info" class="more-info">
-            <div class="more-info-key">
-              <div class="more-info-key-text">
-                {{ info.key }}
+          <div class="more-info-images">
+            <div class="more-info-avatar">
+              <div class="img-holder">
+                <img :src="getMemberAvatarURL()" />
               </div>
             </div>
-            <div class="more-info-value">
-              <div class="more-info-value-text">
-                {{ info.value }}
+            <div class="more-info-signature">
+              <div class="img-holder">
+                <img :src="getMemberSignatureURL('default')" />
+              </div>
+            </div>
+          </div>
+          <div class="more-info-text">
+            <div v-for="info in moreInfo" :key="info.key" class="more-info">
+              <div class="more-info-key">
+                <div class="more-info-key-text">
+                  {{ info.key }}
+                </div>
+              </div>
+              <div class="more-info-value">
+                <div class="more-info-value-text">
+                  {{ info.value }}
+                </div>
               </div>
             </div>
           </div>
@@ -312,16 +326,73 @@ export default class MemberPage extends Vue {
         }
       }
     }
-
-    &-chart {
-      .member-chart {
-        cursor: pointer;
-      }
-    }
   }
 }
 
-.member-chart {
-  height: 520px;
+.member-content-chart {
+  margin: 30px 0;
+  .member-chart {
+    height: 520px;
+  }
+}
+
+.member-content-more-info {
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+  .more-info-images {
+    width: 30%;
+    .more-info {
+      &-avatar {
+        img {
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+      }
+      &-signature {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .more-info-text {
+    width: 70%;
+    .more-info {
+      display: flex;
+      height: 50px;
+
+      &-key {
+        width: 50%;
+
+        &-text {
+          text-align: left;
+        }
+      }
+      &-value {
+        width: 50%;
+        position: relative;
+        display: flex;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          width: 150%;
+          height: 3px;
+          background: var(--color-current);
+        }
+
+        &-text {
+          margin-top: auto;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
 </style>
