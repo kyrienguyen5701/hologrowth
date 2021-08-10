@@ -19,7 +19,7 @@ df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', '
 i = 0
 for branch, branchInfo in content.items():
     for talentName, talentInfo in branchInfo.items():
-        twitter = talentInfo['twitter']
+        twitter = talentInfo['twitter'].replace("https://twitter.com/", "")
         channelId = talentInfo['channelId']
         gens = talentInfo['generation']
         idx = i
@@ -42,8 +42,9 @@ for branch, branchInfo in content.items():
 
         basicInfo = {
             "debutDate": talentInfo["debutDate"],
-            "officialWebsite": talentInfo["officialWebsite"],
-            "age": talentInfo["age"] if "age" in talentInfo.keys() else '',
+            "officialWebsiteEN": talentInfo["officialWebsite"]["en"],
+            "officialWebsiteJP": talentInfo["officialWebsite"]["jp"],
+            "age": talentInfo["age"].replace(" years old", "") if "age" in talentInfo.keys() else '',
             "birthday": talentInfo["birthday"],
             "height": talentInfo["height"],
             "zodiacSign": talentInfo["zodiacSign"],
@@ -63,5 +64,9 @@ for branch, branchInfo in content.items():
         i += 1
 
 df['genNumber'] = df['genNumber'].astype('str')
-df.to_json(talentsDestPath, orient='records', force_ascii=False, indent=4)
-json.dump(localize, open(localizeFilePath, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+jsonStr = df.to_json(orient='records', force_ascii=False, indent=2)
+jsonStr = jsonStr.replace("\\/", "/")
+with open(talentsDestPath, mode='w+', encoding='utf-8') as f:
+    f.writelines(jsonStr)
+
+# json.dump(localize, open(localizeFilePath, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)

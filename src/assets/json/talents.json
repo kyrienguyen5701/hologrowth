@@ -1,1674 +1,1588 @@
 [
-    {
-        "id":0,
-        "branch":"jp",
-        "genNumber":"0",
-        "genName":"3D Talents",
-        "genOther":[
+  {
+    "id":0,
+    "branch":"jp",
+    "genNumber":"0",
+    "genName":"3D Talents",
+    "genOther":[
 
-        ],
-        "name":"Tokino Sora",
-        "basicInfo":{
-            "debutDate":"2017/09/07",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433553",
-                "jp":"https://www.hololive.tv/portfolio/items/336222"
-            },
-            "age":"20 years old",
-            "birthday":"15 May 2000",
-            "height":"160 cm",
-            "zodiacSign":"Taurus"
-        },
-        "officialBio":"bio-tokino-sora",
-        "tags":[
-            "ときのそら",
-            "Soda ソーダ",
-            "Cola コーラ ",
-            "Sofa ソファー",
-            "Soy ソイ",
-            "Soka Souka そうか",
-            "Tokyo 東京",
-            "Goddess"
-        ],
-        "channelId":"UCp6993wxpyDPHUpavwDFqgg",
-        "twitter":"https://twitter.com/tokino_sora",
-        "bgm":[
-            "Under the Clear Sky.mp3",
-            "夕べの星.mp3"
-        ],
-        "solo":[
-            "Step and Go.mp3",
-            "わたしとあなたと皆さまと.mp3",
-            "フレーフレーLOVE.mp3",
-            "ブルーベリームーン.mp3",
-            "好き、泣いちゃいそうだ.mp3",
-            "木の芽時の空.mp3",
-            "未練レコード.mp3",
-            "青空のシンフォニー.mp3"
-        ]
+    ],
+    "name":"Tokino Sora",
+    "basicInfo":{
+      "debutDate":"2017/09/07",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433553",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336222",
+      "age":"20",
+      "birthday":"15 May 2000",
+      "height":"160 cm",
+      "zodiacSign":"Taurus"
     },
-    {
-        "id":1,
-        "branch":"jp",
-        "genNumber":"0",
-        "genName":"3D Talents",
-        "genOther":[
+    "officialBio":"bio-tokino-sora",
+    "tags":[
+      "ときのそら",
+      "Soda ソーダ",
+      "Cola コーラ ",
+      "Sofa ソファー",
+      "Soy ソイ",
+      "Soka Souka そうか",
+      "Tokyo 東京",
+      "Goddess"
+    ],
+    "channelId":"UCp6993wxpyDPHUpavwDFqgg",
+    "twitter":"tokino_sora",
+    "bgm":[
+      "Under the Clear Sky.mp3",
+      "夕べの星.mp3"
+    ],
+    "solo":[
+      "Step and Go.mp3",
+      "わたしとあなたと皆さまと.mp3",
+      "フレーフレーLOVE.mp3",
+      "ブルーベリームーン.mp3",
+      "好き、泣いちゃいそうだ.mp3",
+      "木の芽時の空.mp3",
+      "未練レコード.mp3",
+      "青空のシンフォニー.mp3"
+    ]
+  },
+  {
+    "id":1,
+    "branch":"jp",
+    "genNumber":"0",
+    "genName":"3D Talents",
+    "genOther":[
 
-        ],
-        "name":"Roboco",
-        "basicInfo":{
-            "debutDate":"2018/03/04",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433579",
-                "jp":"https://www.hololive.tv/portfolio/items/336223"
-            },
-            "age":"17 years old",
-            "birthday":"23 May",
-            "height":"154 cm",
-            "zodiacSign":"Gemini"
-        },
-        "officialBio":"bio-roboco",
-        "tags":[
-            "ロボ子",
-            "Robocosan ロボ子さん",
-            "Roborobo ロボロボ"
-        ],
-        "channelId":"UCDqI2jOz0weumE8s7paEk6g",
-        "twitter":"https://twitter.com/robocosan",
-        "bgm":[
-            "Next Wednesday 魂音泉.mp3"
-        ],
-        "solo":[
-            "FICTION.mp3",
-            "アザミナ.mp3",
-            "社畜の歌.mp3"
-        ]
+    ],
+    "name":"Roboco",
+    "basicInfo":{
+      "debutDate":"2018/03/04",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433579",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336223",
+      "age":"17",
+      "birthday":"23 May",
+      "height":"154 cm",
+      "zodiacSign":"Gemini"
     },
-    {
-        "id":2,
-        "branch":"jp",
-        "genNumber":"0",
-        "genName":"3D Talents",
-        "genOther":[
+    "officialBio":"bio-roboco",
+    "tags":[
+      "ロボ子",
+      "Robocosan ロボ子さん",
+      "Roborobo ロボロボ"
+    ],
+    "channelId":"UCDqI2jOz0weumE8s7paEk6g",
+    "twitter":"robocosan",
+    "bgm":[
+      "Next Wednesday 魂音泉.mp3"
+    ],
+    "solo":[
+      "FICTION.mp3",
+      "アザミナ.mp3",
+      "社畜の歌.mp3"
+    ]
+  },
+  {
+    "id":2,
+    "branch":"jp",
+    "genNumber":"0",
+    "genName":"3D Talents",
+    "genOther":[
 
-        ],
-        "name":"Sakura Miko",
-        "basicInfo":{
-            "debutDate":"2018/08/01",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433578",
-                "jp":"https://www.hololive.tv/portfolio/items/336371"
-            },
-            "age":"18.2 years old",
-            "birthday":"5 March",
-            "height":"152 cm",
-            "zodiacSign":"Pisces"
-        },
-        "officialBio":"bio-sakura-miko",
-        "tags":[
-            "さくらみこ",
-            "Miko-chi Mikochi みこち",
-            "Mikomiko みこみこ",
-            "Mikodanye みこだにぇ"
-        ],
-        "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
-        "twitter":"https://twitter.com/sakuramiko35",
-        "bgm":[
-            "Sakura Miko Ending BGM.mp3",
-            "Sakura Miko Opening BGM.mp3",
-            "いたずらキッズ.mp3",
-            "ロバでも眺めながら.mp3",
-            "ワクワク楽しいクリスマス.mp3"
-        ],
-        "solo":[
-            "さくら色ハイテンション.mp3",
-            "サクラカゼ.mp3",
-            "マイネームイズエリート☆.mp3"
-        ]
+    ],
+    "name":"Sakura Miko",
+    "basicInfo":{
+      "debutDate":"2018/08/01",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433578",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336371",
+      "age":"18.2",
+      "birthday":"5 March",
+      "height":"152 cm",
+      "zodiacSign":"Pisces"
     },
-    {
-        "id":3,
-        "branch":"jp",
-        "genNumber":"0",
-        "genName":"3D Talents",
-        "genOther":[
+    "officialBio":"bio-sakura-miko",
+    "tags":[
+      "さくらみこ",
+      "Miko-chi Mikochi みこち",
+      "Mikomiko みこみこ",
+      "Mikodanye みこだにぇ"
+    ],
+    "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
+    "twitter":"sakuramiko35",
+    "bgm":[
+      "Sakura Miko Ending BGM.mp3",
+      "Sakura Miko Opening BGM.mp3",
+      "いたずらキッズ.mp3",
+      "ロバでも眺めながら.mp3",
+      "ワクワク楽しいクリスマス.mp3"
+    ],
+    "solo":[
+      "さくら色ハイテンション.mp3",
+      "サクラカゼ.mp3",
+      "マイネームイズエリート☆.mp3"
+    ]
+  },
+  {
+    "id":3,
+    "branch":"jp",
+    "genNumber":"0",
+    "genName":"3D Talents",
+    "genOther":[
 
-        ],
-        "name":"Hoshimachi Suisei",
-        "basicInfo":{
-            "debutDate":"2018/03/22",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433550",
-                "jp":"https://www.hololive.tv/portfolio/items/345947"
-            },
-            "age":"18 years old",
-            "birthday":"22 March",
-            "height":"160 cm",
-            "zodiacSign":"Aries"
-        },
-        "officialBio":"bio-hoshimachi-suisei",
-        "tags":[
-            "星街すいせい",
-            "Sui-chan すいちゃん",
-            "Suicopath スイコパス",
-            "Suisui すいすい",
-            "Meteor メテオ",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
-        "twitter":"https://twitter.com/suisei_hosimati",
-        "bgm":[
-            "かえるのピアノ.mp3",
-            "ごろごろゲームする日.mp3",
-            "わくわくクッキングタイム的な.mp3",
-            "良心が強すぎる泥棒的な.mp3"
-        ],
-        "solo":[
-            "Bluerose.mp3",
-            "comet.mp3",
-            "GHOST.mp3",
-            "NEXT COLOR PLANET.mp3",
-            "天球、彗星は夜を跨いで.mp3"
-        ]
+    ],
+    "name":"Hoshimachi Suisei",
+    "basicInfo":{
+      "debutDate":"2018/03/22",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433550",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/345947",
+      "age":"18",
+      "birthday":"22 March",
+      "height":"160 cm",
+      "zodiacSign":"Aries"
     },
-    {
-        "id":4,
-        "branch":"jp",
-        "genNumber":"",
-        "genName":"INoNaKa Music",
-        "genOther":[
+    "officialBio":"bio-hoshimachi-suisei",
+    "tags":[
+      "星街すいせい",
+      "Sui-chan すいちゃん",
+      "Suicopath スイコパス",
+      "Suisui すいすい",
+      "Meteor メテオ",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
+    "twitter":"suisei_hosimati",
+    "bgm":[
+      "かえるのピアノ.mp3",
+      "ごろごろゲームする日.mp3",
+      "わくわくクッキングタイム的な.mp3",
+      "良心が強すぎる泥棒的な.mp3"
+    ],
+    "solo":[
+      "Bluerose.mp3",
+      "comet.mp3",
+      "GHOST.mp3",
+      "NEXT COLOR PLANET.mp3",
+      "天球、彗星は夜を跨いで.mp3"
+    ]
+  },
+  {
+    "id":4,
+    "branch":"jp",
+    "genNumber":"",
+    "genName":"INoNaKa Music",
+    "genOther":[
 
-        ],
-        "name":"AZKi",
-        "basicInfo":{
-            "debutDate":"2018/11/15",
-            "officialWebsite":{
-                "en":"http://azki-official.com/",
-                "jp":"https://www.hololive.tv/portfolio/items/336226"
-            },
-            "age":"18 years old (forever)",
-            "birthday":"1 July",
-            "height":"168 cm [with heels on]",
-            "zodiacSign":"Cancer"
-        },
-        "officialBio":"bio-azki",
-        "tags":[
-            "AZKichi"
-        ],
-        "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
-        "twitter":"https://twitter.com/AZKi_VDiVA",
-        "bgm":[
-            "Bougainvillea.mp3"
-        ],
-        "solo":[
-            "Creating world【開拓するの私の世界】.mp3",
-            "Eternity Bright.mp3",
-            "From A to Z.mp3",
-            "Take me to Heaven【連れて行って、あのメロディへ】.mp3",
-            "いのち.mp3",
-            "ひかりのまち.mp3",
-            "フェリシア.mp3",
-            "リアルメランコリー【私と似てる気持ちの君へ】.mp3"
-        ]
+    ],
+    "name":"AZKi",
+    "basicInfo":{
+      "debutDate":"2018/11/15",
+      "officialWebsiteEN":"http://azki-official.com/",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336226",
+      "age":"18 (forever)",
+      "birthday":"1 July",
+      "height":"168 cm [with heels on]",
+      "zodiacSign":"Cancer"
     },
-    {
-        "id":5,
-        "branch":"jp",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-azki",
+    "tags":[
+      "AZKichi"
+    ],
+    "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
+    "twitter":"AZKi_VDiVA",
+    "bgm":[
+      "Bougainvillea.mp3"
+    ],
+    "solo":[
+      "Creating world【開拓するの私の世界】.mp3",
+      "Eternity Bright.mp3",
+      "From A to Z.mp3",
+      "Take me to Heaven【連れて行って、あのメロディへ】.mp3",
+      "いのち.mp3",
+      "ひかりのまち.mp3",
+      "フェリシア.mp3",
+      "リアルメランコリー【私と似てる気持ちの君へ】.mp3"
+    ]
+  },
+  {
+    "id":5,
+    "branch":"jp",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Yozora Mel",
-        "basicInfo":{
-            "debutDate":"2018/05/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433549",
-                "jp":"https://www.hololive.tv/portfolio/items/336404"
-            },
-            "age":"",
-            "birthday":"31 October",
-            "height":"154 cm",
-            "zodiacSign":"Scorpio"
-        },
-        "officialBio":"bio-yozora-mel",
-        "tags":[
-            "夜空メル",
-            "Merumeru メル",
-            "BANPire バンパイア"
-        ],
-        "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
-        "twitter":"https://twitter.com/yozoramel",
-        "bgm":[
-            "カフェでひと休み.mp3",
-            "ポップキャンディ.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Yozora Mel",
+    "basicInfo":{
+      "debutDate":"2018/05/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433549",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336404",
+      "age":"",
+      "birthday":"31 October",
+      "height":"154 cm",
+      "zodiacSign":"Scorpio"
     },
-    {
-        "id":6,
-        "branch":"jp",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-yozora-mel",
+    "tags":[
+      "夜空メル",
+      "Merumeru メル",
+      "BANPire バンパイア"
+    ],
+    "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
+    "twitter":"yozoramel",
+    "bgm":[
+      "カフェでひと休み.mp3",
+      "ポップキャンディ.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Aki Rosenthal",
-        "basicInfo":{
-            "debutDate":"2018/06/07",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433574",
-                "jp":"https://www.hololive.tv/portfolio/items/336382"
-            },
-            "age":"",
-            "birthday":"17 February",
-            "height":"162 cm",
-            "zodiacSign":"Aquarius"
-        },
-        "officialBio":"bio-aki-rosenthal",
-        "tags":[
-            "アキローゼンタール",
-            "Akirose アキローゼ",
-            "Akipella アキぺラ"
-        ],
-        "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
-        "twitter":"https://twitter.com/akirosenthal",
-        "bgm":[
-            "Lights Out.mp3",
-            "Numbers.mp3"
-        ],
-        "solo":[
-            "Chocolate Pandemic【キミの元に出荷します】.mp3",
-            "シャルイース.mp3",
-            "ヒロインオーディション.mp3",
-            "輪廻るセカイと罪ノ果実.mp3"
-        ]
+    ]
+  },
+  {
+    "id":6,
+    "branch":"jp",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Aki Rosenthal",
+    "basicInfo":{
+      "debutDate":"2018/06/07",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433574",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336382",
+      "age":"",
+      "birthday":"17 February",
+      "height":"162 cm",
+      "zodiacSign":"Aquarius"
     },
-    {
-        "id":7,
-        "branch":"jp",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-aki-rosenthal",
+    "tags":[
+      "アキローゼンタール",
+      "Akirose アキローゼ",
+      "Akipella アキぺラ"
+    ],
+    "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
+    "twitter":"akirosenthal",
+    "bgm":[
+      "Lights Out.mp3",
+      "Numbers.mp3"
+    ],
+    "solo":[
+      "Chocolate Pandemic【キミの元に出荷します】.mp3",
+      "シャルイース.mp3",
+      "ヒロインオーディション.mp3",
+      "輪廻るセカイと罪ノ果実.mp3"
+    ]
+  },
+  {
+    "id":7,
+    "branch":"jp",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Akai Haato",
-        "basicInfo":{
-            "debutDate":"2018/06/02",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433551",
-                "jp":"https://www.hololive.tv/portfolio/items/336380"
-            },
-            "age":"19 years old",
-            "birthday":"10 August 2001",
-            "height":"154 cm",
-            "zodiacSign":"Leo"
-        },
-        "officialBio":"bio-akai-haato",
-        "tags":[
-            "赤井はあと",
-            "Haachama はあちゃま",
-            "GOD"
-        ],
-        "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
-        "twitter":"https://twitter.com/akaihaato",
-        "bgm":[
-            "はあちゃまっちゃま.mp3",
-            "まったりゆらゆら.mp3",
-            "ダークメルヘンコーラス.mp3",
-            "優しいギターソロ.mp3",
-            "赤井２分クッキング.mp3"
-        ],
-        "solo":[
-            "Infinity.mp3",
-            "REDHEART.mp3"
-        ]
+    ],
+    "name":"Akai Haato",
+    "basicInfo":{
+      "debutDate":"2018/06/02",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433551",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336380",
+      "age":"19",
+      "birthday":"10 August 2001",
+      "height":"154 cm",
+      "zodiacSign":"Leo"
     },
-    {
-        "id":8,
-        "branch":"jp",
-        "genNumber":"1",
-        "genName":"GAMERS",
-        "genOther":[
+    "officialBio":"bio-akai-haato",
+    "tags":[
+      "赤井はあと",
+      "Haachama はあちゃま",
+      "GOD"
+    ],
+    "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
+    "twitter":"akaihaato",
+    "bgm":[
+      "はあちゃまっちゃま.mp3",
+      "まったりゆらゆら.mp3",
+      "ダークメルヘンコーラス.mp3",
+      "優しいギターソロ.mp3",
+      "赤井２分クッキング.mp3"
+    ],
+    "solo":[
+      "Infinity.mp3",
+      "REDHEART.mp3"
+    ]
+  },
+  {
+    "id":8,
+    "branch":"jp",
+    "genNumber":"1",
+    "genName":"GAMERS",
+    "genOther":[
 
-        ],
-        "name":"Shirakami Fubuki",
-        "basicInfo":{
-            "debutDate":"2018/06/01",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433587",
-                "jp":"https://www.hololive.tv/portfolio/items/336378"
-            },
-            "age":"18 years old (Human years)",
-            "birthday":"5 October",
-            "height":"155 cm",
-            "zodiacSign":"Libra"
-        },
-        "officialBio":"bio-shirakami-fubuki",
-        "tags":[
-            "白上フブキ",
-            "FBK",
-            "Kurokami Fubuki 黒上フブキ",
-            "Friend フレンド",
-            "Waifriend ワイフレンド"
-        ],
-        "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
-        "twitter":"https://twitter.com/shirakamifubuki",
-        "bgm":[
-            "Beachside Fox.mp3",
-            "桜色コントレイル.mp3",
-            "靴下をはいた猫.mp3",
-            "香りのやる気スイッチ.mp3"
-        ],
-        "solo":[
-            "Say - ファンファーレ.mp3",
-            "【13日の金曜日】ハム＆ナゴ.mp3"
-        ]
+    ],
+    "name":"Shirakami Fubuki",
+    "basicInfo":{
+      "debutDate":"2018/06/01",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433587",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336378",
+      "age":"18 (Human years)",
+      "birthday":"5 October",
+      "height":"155 cm",
+      "zodiacSign":"Libra"
     },
-    {
-        "id":9,
-        "branch":"jp",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-shirakami-fubuki",
+    "tags":[
+      "白上フブキ",
+      "FBK",
+      "Kurokami Fubuki 黒上フブキ",
+      "Friend フレンド",
+      "Waifriend ワイフレンド"
+    ],
+    "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
+    "twitter":"shirakamifubuki",
+    "bgm":[
+      "Beachside Fox.mp3",
+      "桜色コントレイル.mp3",
+      "靴下をはいた猫.mp3",
+      "香りのやる気スイッチ.mp3"
+    ],
+    "solo":[
+      "Say - ファンファーレ.mp3",
+      "【13日の金曜日】ハム＆ナゴ.mp3"
+    ]
+  },
+  {
+    "id":9,
+    "branch":"jp",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Natsuiro Matsuri",
-        "basicInfo":{
-            "debutDate":"2018/06/01",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433575",
-                "jp":"https://www.hololive.tv/portfolio/items/336381"
-            },
-            "age":"16 years old",
-            "birthday":"22 July",
-            "height":"152 cm",
-            "zodiacSign":"Cancer"
-        },
-        "officialBio":"bio-natsuiro-matsuri",
-        "tags":[
-            "夏色まつり",
-            "Matsurin まつりん",
-            "GOD",
-            "Horni Horny ムラムラ",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
-        "twitter":"https://twitter.com/natsuiromatsuri",
-        "bgm":[
-            "Matsuri's Day Off.mp3",
-            "鈴色日和.mp3"
-        ],
-        "solo":[
-            "君と眺める夏の花.mp3"
-        ]
+    ],
+    "name":"Natsuiro Matsuri",
+    "basicInfo":{
+      "debutDate":"2018/06/01",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433575",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336381",
+      "age":"16",
+      "birthday":"22 July",
+      "height":"152 cm",
+      "zodiacSign":"Cancer"
     },
-    {
-        "id":10,
-        "branch":"jp",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-natsuiro-matsuri",
+    "tags":[
+      "夏色まつり",
+      "Matsurin まつりん",
+      "GOD",
+      "Horni Horny ムラムラ",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
+    "twitter":"natsuiromatsuri",
+    "bgm":[
+      "Matsuri's Day Off.mp3",
+      "鈴色日和.mp3"
+    ],
+    "solo":[
+      "君と眺める夏の花.mp3"
+    ]
+  },
+  {
+    "id":10,
+    "branch":"jp",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Minato Aqua",
-        "basicInfo":{
-            "debutDate":"2018/08/08",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433565",
-                "jp":"https://www.hololive.tv/portfolio/items/336383"
-            },
-            "age":"",
-            "birthday":"1 December",
-            "height":"148 cm",
-            "zodiacSign":"Sagittarius"
-        },
-        "officialBio":"bio-minato-aqua",
-        "tags":[
-            "港あくあ",
-            "Akutan あくたん",
-            "Onion 玉ねぎ",
-            "Baqua ばくあ"
-        ],
-        "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
-        "twitter":"https://twitter.com/minatoaqua",
-        "bgm":[
-            "Marine Maid.mp3",
-            "Radio#16.mp3",
-            "リコーダービート2.mp3",
-            "子猫のお散歩.mp3"
-        ],
-        "solo":[
-            "For the Win.mp3",
-            "あくあ色ぱれっと.mp3"
-        ]
+    ],
+    "name":"Minato Aqua",
+    "basicInfo":{
+      "debutDate":"2018/08/08",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433565",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336383",
+      "age":"",
+      "birthday":"1 December",
+      "height":"148 cm",
+      "zodiacSign":"Sagittarius"
     },
-    {
-        "id":11,
-        "branch":"jp",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-minato-aqua",
+    "tags":[
+      "港あくあ",
+      "Akutan あくたん",
+      "Onion 玉ねぎ",
+      "Baqua ばくあ"
+    ],
+    "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
+    "twitter":"minatoaqua",
+    "bgm":[
+      "Marine Maid.mp3",
+      "Radio#16.mp3",
+      "リコーダービート2.mp3",
+      "子猫のお散歩.mp3"
+    ],
+    "solo":[
+      "For the Win.mp3",
+      "あくあ色ぱれっと.mp3"
+    ]
+  },
+  {
+    "id":11,
+    "branch":"jp",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Murasaki Shion",
-        "basicInfo":{
-            "debutDate":"2018/08/17",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433577",
-                "jp":"https://www.hololive.tv/portfolio/items/336387"
-            },
-            "age":"",
-            "birthday":"8 December",
-            "height":"145 cm",
-            "zodiacSign":"Sagittarius"
-        },
-        "officialBio":"bio-murasaki-shion",
-        "tags":[
-            "紫咲シオン",
-            "Garlic ニンニク",
-            "Kusogaki クソガキ",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
-        "twitter":"https://twitter.com/murasakishionch",
-        "bgm":[
-            "Virtual Magician.mp3",
-            "紫咲詩音正月.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Murasaki Shion",
+    "basicInfo":{
+      "debutDate":"2018/08/17",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433577",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336387",
+      "age":"",
+      "birthday":"8 December",
+      "height":"145 cm",
+      "zodiacSign":"Sagittarius"
     },
-    {
-        "id":12,
-        "branch":"jp",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-murasaki-shion",
+    "tags":[
+      "紫咲シオン",
+      "Garlic ニンニク",
+      "Kusogaki クソガキ",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
+    "twitter":"murasakishionch",
+    "bgm":[
+      "Virtual Magician.mp3",
+      "紫咲詩音正月.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Nakiri Ayame",
-        "basicInfo":{
-            "debutDate":"2018/09/03",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433583",
-                "jp":"https://www.hololive.tv/portfolio/items/336384"
-            },
-            "age":"1500+ years old",
-            "birthday":"13 December",
-            "height":"152 cm",
-            "zodiacSign":"Sagittarius"
-        },
-        "officialBio":"bio-nakiri-ayame",
-        "tags":[
-            "百鬼あやめ",
-            "Ojou-sama お嬢さま お嬢様",
-            "Kijin Hyakki 鬼神百鬼"
-        ],
-        "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
-        "twitter":"https://twitter.com/nakiriayame",
-        "bgm":[
-            "Chrono.mp3",
-            "Summertime Nakiri.mp3",
-            "VANKETT.mp3",
-            "夢見るひつじ.mp3",
-            "神秘的で切ない曲.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":12,
+    "branch":"jp",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Nakiri Ayame",
+    "basicInfo":{
+      "debutDate":"2018/09/03",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433583",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336384",
+      "age":"1500+",
+      "birthday":"13 December",
+      "height":"152 cm",
+      "zodiacSign":"Sagittarius"
     },
-    {
-        "id":13,
-        "branch":"jp",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-nakiri-ayame",
+    "tags":[
+      "百鬼あやめ",
+      "Ojou-sama お嬢さま お嬢様",
+      "Kijin Hyakki 鬼神百鬼"
+    ],
+    "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
+    "twitter":"nakiriayame",
+    "bgm":[
+      "Chrono.mp3",
+      "Summertime Nakiri.mp3",
+      "VANKETT.mp3",
+      "夢見るひつじ.mp3",
+      "神秘的で切ない曲.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Yuzuki Choco",
-        "basicInfo":{
-            "debutDate":"2018/09/05",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433552",
-                "jp":"https://www.hololive.tv/portfolio/items/336386"
-            },
-            "age":"",
-            "birthday":"14 February",
-            "height":"165 cm",
-            "zodiacSign":"Aquarius"
-        },
-        "officialBio":"bio-yuzuki-choco",
-        "tags":[
-            "癒月ちょこ",
-            "Choco-sensei ちょこ先生"
-        ],
-        "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
-        "twitter":"https://twitter.com/yuzukichococh",
-        "bgm":[
-            "Cooking Time.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":13,
+    "branch":"jp",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Yuzuki Choco",
+    "basicInfo":{
+      "debutDate":"2018/09/05",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433552",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336386",
+      "age":"",
+      "birthday":"14 February",
+      "height":"165 cm",
+      "zodiacSign":"Aquarius"
     },
-    {
-        "id":14,
-        "branch":"jp",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-yuzuki-choco",
+    "tags":[
+      "癒月ちょこ",
+      "Choco-sensei ちょこ先生"
+    ],
+    "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
+    "twitter":"yuzukichococh",
+    "bgm":[
+      "Cooking Time.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Oozora Subaru",
-        "basicInfo":{
-            "debutDate":"2018/09/16",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433593",
-                "jp":"https://www.hololive.tv/portfolio/items/336385"
-            },
-            "age":"17 years old",
-            "birthday":"2 July",
-            "height":"154 cm",
-            "zodiacSign":"Cancer"
-        },
-        "officialBio":"bio-oozora-subaru",
-        "tags":[
-            "大空スバル",
-            "Subachi スバち",
-            "Subatani Subao スバタニスバオ",
-            "Duck アヒル",
-            "Bird 鳥"
-        ],
-        "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
-        "twitter":"https://twitter.com/oozorasubaru",
-        "bgm":[
-            "You and Me.mp3",
-            "まったりしましょ.mp3",
-            "極東の羊、テレキャスターと踊る.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":14,
+    "branch":"jp",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Oozora Subaru",
+    "basicInfo":{
+      "debutDate":"2018/09/16",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433593",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336385",
+      "age":"17",
+      "birthday":"2 July",
+      "height":"154 cm",
+      "zodiacSign":"Cancer"
     },
-    {
-        "id":15,
-        "branch":"jp",
-        "genNumber":"",
-        "genName":"GAMERS",
-        "genOther":[
+    "officialBio":"bio-oozora-subaru",
+    "tags":[
+      "大空スバル",
+      "Subachi スバち",
+      "Subatani Subao スバタニスバオ",
+      "Duck アヒル",
+      "Bird 鳥"
+    ],
+    "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
+    "twitter":"oozorasubaru",
+    "bgm":[
+      "You and Me.mp3",
+      "まったりしましょ.mp3",
+      "極東の羊、テレキャスターと踊る.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Ookami Mio",
-        "basicInfo":{
-            "debutDate":"2018/12/07",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433580",
-                "jp":"https://www.hololive.tv/portfolio/items/336400"
-            },
-            "age":"",
-            "birthday":"20 August",
-            "height":"155 cm",
-            "zodiacSign":"Leo"
-        },
-        "officialBio":"bio-ookami-mio",
-        "tags":[
-            "大神ミオ",
-            "Mion ミオン",
-            "Mio Mama ミオママ",
-            "Kurokami Omi 黒神臣"
-        ],
-        "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
-        "twitter":"https://twitter.com/ookamimio",
-        "bgm":[
-            "So Sweet.mp3",
-            "Summer Vacation.mp3",
-            "優しいケルト曲.mp3",
-            "昼下がり気分.mp3",
-            "野良猫は宇宙を目指した.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":15,
+    "branch":"jp",
+    "genNumber":"",
+    "genName":"GAMERS",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Ookami Mio",
+    "basicInfo":{
+      "debutDate":"2018/12/07",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433580",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336400",
+      "age":"",
+      "birthday":"20 August",
+      "height":"155 cm",
+      "zodiacSign":"Leo"
     },
-    {
-        "id":16,
-        "branch":"jp",
-        "genNumber":"",
-        "genName":"GAMERS",
-        "genOther":[
+    "officialBio":"bio-ookami-mio",
+    "tags":[
+      "大神ミオ",
+      "Mion ミオン",
+      "Mio Mama ミオママ",
+      "Kurokami Omi 黒神臣"
+    ],
+    "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
+    "twitter":"ookamimio",
+    "bgm":[
+      "So Sweet.mp3",
+      "Summer Vacation.mp3",
+      "優しいケルト曲.mp3",
+      "昼下がり気分.mp3",
+      "野良猫は宇宙を目指した.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Nekomata Okayu",
-        "basicInfo":{
-            "debutDate":"2019/04/06",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433581",
-                "jp":"https://www.hololive.tv/portfolio/items/336402"
-            },
-            "age":"16 years old(80 in Cat Years)",
-            "birthday":"22 February",
-            "height":"152 cm",
-            "zodiacSign":"Pisces"
-        },
-        "officialBio":"bio-nekomata-okayu",
-        "tags":[
-            "猫又おかゆ",
-            "Okazu おかず",
-            "Okayun おかゆん",
-            "Okato おかと"
-        ],
-        "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
-        "twitter":"https://twitter.com/nekomataokayu",
-        "bgm":[
-            "Peaceful Treasure.mp3",
-            "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3",
-            "木漏れ日.mp3",
-            "楽しい帰り道.mp3"
-        ],
-        "solo":[
-            "もぐもぐYUMMY.mp3"
-        ]
+    ]
+  },
+  {
+    "id":16,
+    "branch":"jp",
+    "genNumber":"",
+    "genName":"GAMERS",
+    "genOther":[
+
+    ],
+    "name":"Nekomata Okayu",
+    "basicInfo":{
+      "debutDate":"2019/04/06",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433581",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336402",
+      "age":"16(80 in Cat Years)",
+      "birthday":"22 February",
+      "height":"152 cm",
+      "zodiacSign":"Pisces"
     },
-    {
-        "id":17,
-        "branch":"jp",
-        "genNumber":"",
-        "genName":"GAMERS",
-        "genOther":[
+    "officialBio":"bio-nekomata-okayu",
+    "tags":[
+      "猫又おかゆ",
+      "Okazu おかず",
+      "Okayun おかゆん",
+      "Okato おかと"
+    ],
+    "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
+    "twitter":"nekomataokayu",
+    "bgm":[
+      "Peaceful Treasure.mp3",
+      "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3",
+      "木漏れ日.mp3",
+      "楽しい帰り道.mp3"
+    ],
+    "solo":[
+      "もぐもぐYUMMY.mp3"
+    ]
+  },
+  {
+    "id":17,
+    "branch":"jp",
+    "genNumber":"",
+    "genName":"GAMERS",
+    "genOther":[
 
-        ],
-        "name":"Inugami Korone",
-        "basicInfo":{
-            "debutDate":"2019/04/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433592",
-                "jp":"https://www.hololive.tv/portfolio/items/336401"
-            },
-            "age":"92 years old (dog years)",
-            "birthday":"1 October",
-            "height":"156 cm",
-            "zodiacSign":"Libra"
-        },
-        "officialBio":"bio-inugami-korone",
-        "tags":[
-            "戌神ころね",
-            "Koro-san ころさん",
-            "Koronen ころねん",
-            "Doggo"
-        ],
-        "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
-        "twitter":"https://twitter.com/inugamikorone",
-        "bgm":[
-            "えっさほいさ囃子.mp3",
-            "ひたひたと迫る影.mp3",
-            "ほんわかぷっぷー.mp3"
-        ],
-        "solo":[
-            "ころねの最凶天災☆わんだふぉー❤わーるど.mp3"
-        ]
+    ],
+    "name":"Inugami Korone",
+    "basicInfo":{
+      "debutDate":"2019/04/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433592",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336401",
+      "age":"92 (dog years)",
+      "birthday":"1 October",
+      "height":"156 cm",
+      "zodiacSign":"Libra"
     },
-    {
-        "id":18,
-        "branch":"jp",
-        "genNumber":"3",
-        "genName":"Fantasy",
-        "genOther":[
+    "officialBio":"bio-inugami-korone",
+    "tags":[
+      "戌神ころね",
+      "Koro-san ころさん",
+      "Koronen ころねん",
+      "Doggo"
+    ],
+    "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
+    "twitter":"inugamikorone",
+    "bgm":[
+      "えっさほいさ囃子.mp3",
+      "ひたひたと迫る影.mp3",
+      "ほんわかぷっぷー.mp3"
+    ],
+    "solo":[
+      "ころねの最凶天災☆わんだふぉー❤わーるど.mp3"
+    ]
+  },
+  {
+    "id":18,
+    "branch":"jp",
+    "genNumber":"3",
+    "genName":"Fantasy",
+    "genOther":[
 
-        ],
-        "name":"Houshou Marine",
-        "basicInfo":{
-            "debutDate":"2019/08/11",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433586",
-                "jp":"https://www.hololive.tv/portfolio/items/336351"
-            },
-            "age":"17 years old (season 2)",
-            "birthday":"30 July",
-            "height":"150 cm",
-            "zodiacSign":"Leo"
-        },
-        "officialBio":"bio-houshou-marine",
-        "tags":[
-            "宝鐘マリン",
-            "Senchou 船長",
-            "Maririn マリリン",
-            "Oneesan Gumi お姉さん組",
-            "17 Seventeen 十七歳",
-            "Baba ババ",
-            "Horni Horny ムラムラ"
-        ],
-        "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
-        "twitter":"https://twitter.com/houshoumarine",
-        "bgm":[
-            "Captain Beatbox II.mp3",
-            "Senchou's Comfy BGM.mp3",
-            "妖精のキッチン.mp3",
-            "💘 宝鐘マリン (@2ncooh) 💘.mp3"
-        ],
-        "solo":[
-            "Ahoy - 我ら宝鐘海賊団☆.mp3",
-            "Hoihoi☆Gensou Holoism.mp3",
-            "キャプテンマリンのケツアンカ.mp3"
-        ]
+    ],
+    "name":"Houshou Marine",
+    "basicInfo":{
+      "debutDate":"2019/08/11",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433586",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336351",
+      "age":"17 (season 2)",
+      "birthday":"30 July",
+      "height":"150 cm",
+      "zodiacSign":"Leo"
     },
-    {
-        "id":19,
-        "branch":"jp",
-        "genNumber":"3",
-        "genName":"Fantasy",
-        "genOther":[
+    "officialBio":"bio-houshou-marine",
+    "tags":[
+      "宝鐘マリン",
+      "Senchou 船長",
+      "Maririn マリリン",
+      "Oneesan Gumi お姉さん組",
+      "17 Seventeen 十七歳",
+      "Baba ババ",
+      "Horni Horny ムラムラ"
+    ],
+    "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
+    "twitter":"houshoumarine",
+    "bgm":[
+      "Captain Beatbox II.mp3",
+      "Senchou's Comfy BGM.mp3",
+      "妖精のキッチン.mp3",
+      "💘 宝鐘マリン (@2ncooh) 💘.mp3"
+    ],
+    "solo":[
+      "Ahoy - 我ら宝鐘海賊団☆.mp3",
+      "Hoihoi☆Gensou Holoism.mp3",
+      "キャプテンマリンのケツアンカ.mp3"
+    ]
+  },
+  {
+    "id":19,
+    "branch":"jp",
+    "genNumber":"3",
+    "genName":"Fantasy",
+    "genOther":[
 
-        ],
-        "name":"Uruha Rushia",
-        "basicInfo":{
-            "debutDate":"2019/07/18",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433576",
-                "jp":"https://www.hololive.tv/portfolio/items/336265"
-            },
-            "age":"1600 years old",
-            "birthday":"22 January",
-            "height":"143 cm",
-            "zodiacSign":"Aquarius"
-        },
-        "officialBio":"bio-uruha-rushia",
-        "tags":[
-            "潤羽るしあ",
-            "Ruu-chan るうちゃん",
-            "Boing Boing ボインボイン",
-            "Pettan Pettanko ぺったん ぺったん子",
-            "Shogouki 初号機",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
-        "twitter":"https://twitter.com/uruharushia",
-        "bgm":[
-            "2_23 AM.mp3",
-            "Be Happy.mp3",
-            "Guitar Gentle.mp3",
-            "SUMMER TRIANGLE.mp3"
-        ],
-        "solo":[
-            "アイリス.mp3"
-        ]
+    ],
+    "name":"Uruha Rushia",
+    "basicInfo":{
+      "debutDate":"2019/07/18",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433576",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336265",
+      "age":"1600",
+      "birthday":"22 January",
+      "height":"143 cm",
+      "zodiacSign":"Aquarius"
     },
-    {
-        "id":20,
-        "branch":"jp",
-        "genNumber":"3",
-        "genName":"Fantasy",
-        "genOther":[
+    "officialBio":"bio-uruha-rushia",
+    "tags":[
+      "潤羽るしあ",
+      "Ruu-chan るうちゃん",
+      "Boing Boing ボインボイン",
+      "Pettan Pettanko ぺったん ぺったん子",
+      "Shogouki 初号機",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
+    "twitter":"uruharushia",
+    "bgm":[
+      "2_23 AM.mp3",
+      "Be Happy.mp3",
+      "Guitar Gentle.mp3",
+      "SUMMER TRIANGLE.mp3"
+    ],
+    "solo":[
+      "アイリス.mp3"
+    ]
+  },
+  {
+    "id":20,
+    "branch":"jp",
+    "genNumber":"3",
+    "genName":"Fantasy",
+    "genOther":[
 
-        ],
-        "name":"Usada Pekora",
-        "basicInfo":{
-            "debutDate":"2019/07/17",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433585",
-                "jp":"https://www.hololive.tv/portfolio/items/336270"
-            },
-            "age":"111 years old",
-            "birthday":"12 January",
-            "height":"153 cm (not including the ears)",
-            "zodiacSign":"Capricorn"
-        },
-        "officialBio":"bio-usada-pekora",
-        "tags":[
-            "兎田ぺこら",
-            "Peko-chan ぺこちゃん",
-            "Pekoracho ぺこらちょ",
-            "Shachou 社長"
-        ],
-        "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
-        "twitter":"https://twitter.com/usadapekora",
-        "bgm":[
-            "おーたむうぉーきんぐ.mp3",
-            "たぬきちの冒険.mp3",
-            "ジオラマパレード.mp3",
-            "人参.mp3"
-        ],
-        "solo":[
-            "ぺこらんだむぶれいん.mp3",
-            "ぺこラップ.mp3"
-        ]
+    ],
+    "name":"Usada Pekora",
+    "basicInfo":{
+      "debutDate":"2019/07/17",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433585",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336270",
+      "age":"111",
+      "birthday":"12 January",
+      "height":"153 cm (not including the ears)",
+      "zodiacSign":"Capricorn"
     },
-    {
-        "id":21,
-        "branch":"jp",
-        "genNumber":"3",
-        "genName":"Fantasy",
-        "genOther":[
+    "officialBio":"bio-usada-pekora",
+    "tags":[
+      "兎田ぺこら",
+      "Peko-chan ぺこちゃん",
+      "Pekoracho ぺこらちょ",
+      "Shachou 社長"
+    ],
+    "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
+    "twitter":"usadapekora",
+    "bgm":[
+      "おーたむうぉーきんぐ.mp3",
+      "たぬきちの冒険.mp3",
+      "ジオラマパレード.mp3",
+      "人参.mp3"
+    ],
+    "solo":[
+      "ぺこらんだむぶれいん.mp3",
+      "ぺこラップ.mp3"
+    ]
+  },
+  {
+    "id":21,
+    "branch":"jp",
+    "genNumber":"3",
+    "genName":"Fantasy",
+    "genOther":[
 
-        ],
-        "name":"Shiranui Flare",
-        "basicInfo":{
-            "debutDate":"2019/08/07",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433584",
-                "jp":"https://www.hololive.tv/portfolio/items/336354"
-            },
-            "age":"221 years old",
-            "birthday":"2 April 1798",
-            "height":"158 cm",
-            "zodiacSign":"Aries"
-        },
-        "officialBio":"bio-shiranui-flare",
-        "tags":[
-            "不知火フレア",
-            "Fuu-tan ふうたん",
-            "Oneesan Gumi お姉さん組",
-            "Homura ほむら"
-        ],
-        "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
-        "twitter":"https://twitter.com/shiranuiflare",
-        "bgm":[
-            "カエルの勇者.mp3",
-            "風がはじめに寄る街的なBGM.mp3"
-        ],
-        "solo":[
-            "​Smile & Go.mp3"
-        ]
+    ],
+    "name":"Shiranui Flare",
+    "basicInfo":{
+      "debutDate":"2019/08/07",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433584",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336354",
+      "age":"221",
+      "birthday":"2 April 1798",
+      "height":"158 cm",
+      "zodiacSign":"Aries"
     },
-    {
-        "id":22,
-        "branch":"jp",
-        "genNumber":"3",
-        "genName":"Fantasy",
-        "genOther":[
+    "officialBio":"bio-shiranui-flare",
+    "tags":[
+      "不知火フレア",
+      "Fuu-tan ふうたん",
+      "Oneesan Gumi お姉さん組",
+      "Homura ほむら"
+    ],
+    "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
+    "twitter":"shiranuiflare",
+    "bgm":[
+      "カエルの勇者.mp3",
+      "風がはじめに寄る街的なBGM.mp3"
+    ],
+    "solo":[
+      "​Smile & Go.mp3"
+    ]
+  },
+  {
+    "id":22,
+    "branch":"jp",
+    "genNumber":"3",
+    "genName":"Fantasy",
+    "genOther":[
 
-        ],
-        "name":"Shirogane Noel",
-        "basicInfo":{
-            "debutDate":"2019/08/08",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433582",
-                "jp":"https://www.hololive.tv/portfolio/items/336353"
-            },
-            "age":"18 (+ ２〇 months) years old",
-            "birthday":"24 November",
-            "height":"158 cm",
-            "zodiacSign":"Sagittarius"
-        },
-        "officialBio":"bio-shirogane-noel",
-        "tags":[
-            "白銀ノエル",
-            "Danchou 団長",
-            "Noe-chan ノエちゃん",
-            "Oneesan Gumi お姉さん組",
-            "Boing Boing ボインボイン"
-        ],
-        "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
-        "twitter":"https://twitter.com/shiroganenoel",
-        "bgm":[
-            "You and Me.mp3",
-            "こんばんマスルー.mp3",
-            "ひみつ基地.mp3",
-            "午後のカフェ.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Shirogane Noel",
+    "basicInfo":{
+      "debutDate":"2019/08/08",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433582",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336353",
+      "age":"18 (+ ２〇 months)",
+      "birthday":"24 November",
+      "height":"158 cm",
+      "zodiacSign":"Sagittarius"
     },
-    {
-        "id":23,
-        "branch":"jp",
-        "genNumber":"4",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-shirogane-noel",
+    "tags":[
+      "白銀ノエル",
+      "Danchou 団長",
+      "Noe-chan ノエちゃん",
+      "Oneesan Gumi お姉さん組",
+      "Boing Boing ボインボイン"
+    ],
+    "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
+    "twitter":"shiroganenoel",
+    "bgm":[
+      "You and Me.mp3",
+      "こんばんマスルー.mp3",
+      "ひみつ基地.mp3",
+      "午後のカフェ.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Tsunomaki Watame",
-        "basicInfo":{
-            "debutDate":"2019/12/29",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433561",
-                "jp":"https://www.hololive.tv/portfolio/items/360919"
-            },
-            "age":"4 years old (sheep years)",
-            "birthday":"6 June",
-            "height":"151 cm",
-            "zodiacSign":"Gemini"
-        },
-        "officialBio":"bio-tsunomaki-watame",
-        "tags":[
-            "角巻わため",
-            "Wataoji わたおじ",
-            "Watamelon わたメロン"
-        ],
-        "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
-        "twitter":"https://twitter.com/tsunomakiwatame",
-        "bgm":[
-            "Rainy Day ☔.mp3",
-            "ドドドホリデ.mp3"
-        ],
-        "solo":[
-            "はらぺこのうた.mp3",
-            "わための子守唄.mp3",
-            "わためラップ.mp3",
-            "キミだけのメロディ.mp3",
-            "愛昧ショコラーテ.mp3"
-        ]
+    ]
+  },
+  {
+    "id":23,
+    "branch":"jp",
+    "genNumber":"4",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Tsunomaki Watame",
+    "basicInfo":{
+      "debutDate":"2019/12/29",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433561",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360919",
+      "age":"4 (sheep years)",
+      "birthday":"6 June",
+      "height":"151 cm",
+      "zodiacSign":"Gemini"
     },
-    {
-        "id":24,
-        "branch":"jp",
-        "genNumber":"4",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-tsunomaki-watame",
+    "tags":[
+      "角巻わため",
+      "Wataoji わたおじ",
+      "Watamelon わたメロン"
+    ],
+    "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
+    "twitter":"tsunomakiwatame",
+    "bgm":[
+      "Rainy Day ☔.mp3",
+      "ドドドホリデ.mp3"
+    ],
+    "solo":[
+      "はらぺこのうた.mp3",
+      "わための子守唄.mp3",
+      "わためラップ.mp3",
+      "キミだけのメロディ.mp3",
+      "愛昧ショコラーテ.mp3"
+    ]
+  },
+  {
+    "id":24,
+    "branch":"jp",
+    "genNumber":"4",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Tokoyami Towa",
-        "basicInfo":{
-            "debutDate":"2020/01/03",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433567",
-                "jp":"https://www.hololive.tv/portfolio/items/360920"
-            },
-            "age":"17 years old",
-            "birthday":"8 August ",
-            "height":"150 cm",
-            "zodiacSign":"Leo"
-        },
-        "officialBio":"bio-tokoyami-towa",
-        "tags":[
-            "常闇トワ",
-            "Towa-sama トワさま トワ様",
-            "TMT Tenshi トワまじ天使",
-            "TCA Akuma トワ超悪魔"
-        ],
-        "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
-        "twitter":"https://twitter.com/tokoyamitowa",
-        "bgm":[
-            "10℃.mp3",
-            "YouTube向けまったりした日常曲.mp3",
-            "YouTube向けコミカルでかわいい、ちょっととぼけた曲.mp3",
-            "明日も元気に.mp3"
-        ],
-        "solo":[
-            "Palette.mp3"
-        ]
+    ],
+    "name":"Tokoyami Towa",
+    "basicInfo":{
+      "debutDate":"2020/01/03",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433567",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360920",
+      "age":"17",
+      "birthday":"8 August ",
+      "height":"150 cm",
+      "zodiacSign":"Leo"
     },
-    {
-        "id":25,
-        "branch":"jp",
-        "genNumber":"4",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-tokoyami-towa",
+    "tags":[
+      "常闇トワ",
+      "Towa-sama トワさま トワ様",
+      "TMT Tenshi トワまじ天使",
+      "TCA Akuma トワ超悪魔"
+    ],
+    "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
+    "twitter":"tokoyamitowa",
+    "bgm":[
+      "10℃.mp3",
+      "YouTube向けまったりした日常曲.mp3",
+      "YouTube向けコミカルでかわいい、ちょっととぼけた曲.mp3",
+      "明日も元気に.mp3"
+    ],
+    "solo":[
+      "Palette.mp3"
+    ]
+  },
+  {
+    "id":25,
+    "branch":"jp",
+    "genNumber":"4",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Kiryu Coco",
-        "basicInfo":{
-            "debutDate":"2019/12/28",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433563",
-                "jp":"https://www.hololive.tv/portfolio/items/360918"
-            },
-            "age":"3502 years old",
-            "birthday":"17 June",
-            "height":"Human form: 180 cm",
-            "zodiacSign":"Gemini"
-        },
-        "officialBio":"bio-kiryu-coco",
-        "tags":[
-            "桐生ココ",
-            "Coco-chin Coco-chi ココちん ココち",
-            "Kiryu-chan 桐生ちゃん",
-            "Yuujin C 友人C",
-            "Boing Boing ボインボイン"
-        ],
-        "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
-        "twitter":"https://twitter.com/kiryucoco",
-        "bgm":[
-            "ガンギマリドラゴン.mp3",
-            "フラット気分.mp3",
-            "桐生ココED.mp3",
-            "近未来なお知らせ.mp3"
-        ],
-        "solo":[
-            "Weather Hackers☆.mp3",
-            "ココおねえさんといっしょ.mp3"
-        ]
+    ],
+    "name":"Kiryu Coco",
+    "basicInfo":{
+      "debutDate":"2019/12/28",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433563",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360918",
+      "age":"3502",
+      "birthday":"17 June",
+      "height":"Human form: 180 cm",
+      "zodiacSign":"Gemini"
     },
-    {
-        "id":26,
-        "branch":"jp",
-        "genNumber":"4",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-kiryu-coco",
+    "tags":[
+      "桐生ココ",
+      "Coco-chin Coco-chi ココちん ココち",
+      "Kiryu-chan 桐生ちゃん",
+      "Yuujin C 友人C",
+      "Boing Boing ボインボイン"
+    ],
+    "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
+    "twitter":"kiryucoco",
+    "bgm":[
+      "ガンギマリドラゴン.mp3",
+      "フラット気分.mp3",
+      "桐生ココED.mp3",
+      "近未来なお知らせ.mp3"
+    ],
+    "solo":[
+      "Weather Hackers☆.mp3",
+      "ココおねえさんといっしょ.mp3"
+    ]
+  },
+  {
+    "id":26,
+    "branch":"jp",
+    "genNumber":"4",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Amane Kanata",
-        "basicInfo":{
-            "debutDate":"2019/12/27",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433562",
-                "jp":"https://www.hololive.tv/portfolio/items/360916"
-            },
-            "age":"18 years old (angel age)",
-            "birthday":"22 April",
-            "height":"149 cm",
-            "zodiacSign":"Taurus"
-        },
-        "officialBio":"bio-amane-kanata",
-        "tags":[
-            "天音かなた",
-            "Kanatan かなたん",
-            "PPT Tenshi 天使",
-            "Kanataso かなたそ",
-            "Gorilla ゴリラ",
-            "Boing Boing ボインボイン",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCZlDXzGoo7d44bwdNObFacg",
-        "twitter":"https://twitter.com/amanekanatach",
-        "bgm":[
-            "元気いっぱい.mp3",
-            "楽しい帰り道.mp3"
-        ],
-        "solo":[
-            "ソーラン節.mp3"
-        ]
+    ],
+    "name":"Amane Kanata",
+    "basicInfo":{
+      "debutDate":"2019/12/27",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433562",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360916",
+      "age":"18 (angel age)",
+      "birthday":"22 April",
+      "height":"149 cm",
+      "zodiacSign":"Taurus"
     },
-    {
-        "id":27,
-        "branch":"jp",
-        "genNumber":"4",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-amane-kanata",
+    "tags":[
+      "天音かなた",
+      "Kanatan かなたん",
+      "PPT Tenshi 天使",
+      "Kanataso かなたそ",
+      "Gorilla ゴリラ",
+      "Boing Boing ボインボイン",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCZlDXzGoo7d44bwdNObFacg",
+    "twitter":"amanekanatach",
+    "bgm":[
+      "元気いっぱい.mp3",
+      "楽しい帰り道.mp3"
+    ],
+    "solo":[
+      "ソーラン節.mp3"
+    ]
+  },
+  {
+    "id":27,
+    "branch":"jp",
+    "genNumber":"4",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Himemori Luna",
-        "basicInfo":{
-            "debutDate":"2020/01/04",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/433566",
-                "jp":"https://www.hololive.tv/portfolio/items/360921"
-            },
-            "age":"0 years old",
-            "birthday":"10 October",
-            "height":"150 cm (with crown)",
-            "zodiacSign":"Libra"
-        },
-        "officialBio":"bio-himemori-luna",
-        "tags":[
-            "姫森ルーナ",
-            "Luna-tan ルーナたん",
-            "Luna-hime ルーナ姫"
-        ],
-        "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
-        "twitter":"https://twitter.com/himemoriluna",
-        "bgm":[
-            "Lunar Light.mp3",
-            "スケーターズ - ワルツ.mp3",
-            "古びたメロディ.mp3",
-            "妖精さんこんにちは.mp3",
-            "妖精達の初雪物語.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Himemori Luna",
+    "basicInfo":{
+      "debutDate":"2020/01/04",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433566",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360921",
+      "age":"0",
+      "birthday":"10 October",
+      "height":"150 cm (with crown)",
+      "zodiacSign":"Libra"
     },
-    {
-        "id":28,
-        "branch":"jp",
-        "genNumber":"5",
-        "genName":"HoloFive",
-        "genOther":[
+    "officialBio":"bio-himemori-luna",
+    "tags":[
+      "姫森ルーナ",
+      "Luna-tan ルーナたん",
+      "Luna-hime ルーナ姫"
+    ],
+    "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
+    "twitter":"himemoriluna",
+    "bgm":[
+      "Lunar Light.mp3",
+      "スケーターズ - ワルツ.mp3",
+      "古びたメロディ.mp3",
+      "妖精さんこんにちは.mp3",
+      "妖精達の初雪物語.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Yukihana Lamy",
-        "basicInfo":{
-            "debutDate":"2020/08/12",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/554781",
-                "jp":"https://www.hololive.tv/portfolio/items/554688"
-            },
-            "age":"210 years old",
-            "birthday":"15 November 1810",
-            "height":"158 cm",
-            "zodiacSign":"Scorpio"
-        },
-        "officialBio":"bio-yukihana-lamy",
-        "tags":[
-            "雪花ラミィ",
-            "Lamy Mama ラミィママ",
-            "Lawnmower 芝刈り機 "
-        ],
-        "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
-        "twitter":"https://twitter.com/yukihanalamy",
-        "bgm":[
-            "A Meaningful Day.mp3",
-            "On A Snowy Day.mp3",
-            "Waltz of Snowflake.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":28,
+    "branch":"jp",
+    "genNumber":"5",
+    "genName":"HoloFive",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Yukihana Lamy",
+    "basicInfo":{
+      "debutDate":"2020/08/12",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554781",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554688",
+      "age":"210",
+      "birthday":"15 November 1810",
+      "height":"158 cm",
+      "zodiacSign":"Scorpio"
     },
-    {
-        "id":29,
-        "branch":"jp",
-        "genNumber":"5",
-        "genName":"HoloFive",
-        "genOther":[
+    "officialBio":"bio-yukihana-lamy",
+    "tags":[
+      "雪花ラミィ",
+      "Lamy Mama ラミィママ",
+      "Lawnmower 芝刈り機 "
+    ],
+    "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
+    "twitter":"yukihanalamy",
+    "bgm":[
+      "A Meaningful Day.mp3",
+      "On A Snowy Day.mp3",
+      "Waltz of Snowflake.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Momosuzu Nene",
-        "basicInfo":{
-            "debutDate":"YouTube:2020/08/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/554783",
-                "jp":"https://www.hololive.tv/portfolio/items/554694"
-            },
-            "age":"19 years old",
-            "birthday":"2 March",
-            "height":"159 cm",
-            "zodiacSign":"Pisces"
-        },
-        "officialBio":"bio-momosuzu-nene",
-        "tags":[
-            "桃鈴ねね",
-            "Nenechi ねねち",
-            "Super Nenechi スパーねねち",
-            "Seal"
-        ],
-        "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
-        "twitter":"https://twitter.com/momosuzunene",
-        "bgm":[
-            "ジオラマパレード.mp3",
-            "ベリーベリーパンケーキ.mp3",
-            "夢の中.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":29,
+    "branch":"jp",
+    "genNumber":"5",
+    "genName":"HoloFive",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Momosuzu Nene",
+    "basicInfo":{
+      "debutDate":"YouTube:2020/08/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554783",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554694",
+      "age":"19",
+      "birthday":"2 March",
+      "height":"159 cm",
+      "zodiacSign":"Pisces"
     },
-    {
-        "id":30,
-        "branch":"jp",
-        "genNumber":"5",
-        "genName":"HoloFive",
-        "genOther":[
+    "officialBio":"bio-momosuzu-nene",
+    "tags":[
+      "桃鈴ねね",
+      "Nenechi ねねち",
+      "Super Nenechi スパーねねち",
+      "Seal"
+    ],
+    "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
+    "twitter":"momosuzunene",
+    "bgm":[
+      "ジオラマパレード.mp3",
+      "ベリーベリーパンケーキ.mp3",
+      "夢の中.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Shishiro Botan",
-        "basicInfo":{
-            "debutDate":"2020/08/14",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/554786",
-                "jp":"https://www.hololive.tv/portfolio/items/554695"
-            },
-            "age":"",
-            "birthday":"8 September",
-            "height":"166 cm",
-            "zodiacSign":"Virgo"
-        },
-        "officialBio":"bio-shishiro-botan",
-        "tags":[
-            "獅白ぼたん",
-            "Shishiron ししろん",
-            "La-Lion ラライオン",
-            "Botan Mama ぼたんママ"
-        ],
-        "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
-        "twitter":"https://twitter.com/shishirobotan",
-        "bgm":[
-            "2_23 AM.mp3",
-            "Kawaii White Lion.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":30,
+    "branch":"jp",
+    "genNumber":"5",
+    "genName":"HoloFive",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Shishiro Botan",
+    "basicInfo":{
+      "debutDate":"2020/08/14",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554786",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554695",
+      "age":"",
+      "birthday":"8 September",
+      "height":"166 cm",
+      "zodiacSign":"Virgo"
     },
-    {
-        "id":31,
-        "branch":"jp",
-        "genNumber":"5",
-        "genName":"HoloFive",
-        "genOther":[
+    "officialBio":"bio-shishiro-botan",
+    "tags":[
+      "獅白ぼたん",
+      "Shishiron ししろん",
+      "La-Lion ラライオン",
+      "Botan Mama ぼたんママ"
+    ],
+    "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
+    "twitter":"shishirobotan",
+    "bgm":[
+      "2_23 AM.mp3",
+      "Kawaii White Lion.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Omaru Polka",
-        "basicInfo":{
-            "debutDate":"YouTube:2020/08/16",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/554793",
-                "jp":"https://www.hololive.tv/portfolio/items/554697"
-            },
-            "age":"Secret",
-            "birthday":"30 January",
-            "height":"153 cm",
-            "zodiacSign":"Aquarius"
-        },
-        "officialBio":"bio-omaru-polka",
-        "tags":[
-            "尾丸ポルカ",
-            "Omarun おまるん"
-        ],
-        "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
-        "twitter":"https://twitter.com/omarupolka",
-        "bgm":[
-            "Neu Kabuki.mp3",
-            "ひらひらり.mp3",
-            "ポルカオワルカ国歌.mp3",
-            "目指せKIRAKIRAアイドル.mp3"
-        ],
-        "solo":[
-            "HOLOGRAM CIRCUS.mp3"
-        ]
+    ]
+  },
+  {
+    "id":31,
+    "branch":"jp",
+    "genNumber":"5",
+    "genName":"HoloFive",
+    "genOther":[
+
+    ],
+    "name":"Omaru Polka",
+    "basicInfo":{
+      "debutDate":"YouTube:2020/08/16",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554793",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554697",
+      "age":"Secret",
+      "birthday":"30 January",
+      "height":"153 cm",
+      "zodiacSign":"Aquarius"
     },
-    {
-        "id":32,
-        "branch":"en",
-        "genNumber":"1",
-        "genName":"HoloMyth",
-        "genOther":[
+    "officialBio":"bio-omaru-polka",
+    "tags":[
+      "尾丸ポルカ",
+      "Omarun おまるん"
+    ],
+    "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
+    "twitter":"omarupolka",
+    "bgm":[
+      "Neu Kabuki.mp3",
+      "ひらひらり.mp3",
+      "ポルカオワルカ国歌.mp3",
+      "目指せKIRAKIRAアイドル.mp3"
+    ],
+    "solo":[
+      "HOLOGRAM CIRCUS.mp3"
+    ]
+  },
+  {
+    "id":32,
+    "branch":"en",
+    "genNumber":"1",
+    "genName":"HoloMyth",
+    "genOther":[
 
-        ],
-        "name":"Watson Amelia",
-        "basicInfo":{
-            "debutDate":"2020/09/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/584534",
-                "jp":"https://www.hololive.tv/portfolio/items/584546"
-            },
-            "age":"",
-            "birthday":"6 January",
-            "height":"150 cm",
-            "zodiacSign":"Capricorn"
-        },
-        "officialBio":"bio-watson-amelia",
-        "tags":[
-            "ワトソンアメリア",
-            "Ame Amechan アメ　アメちゃん",
-            "Ground Pound グラウンドポンド",
-            "Gremlin グレムリン"
-        ],
-        "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
-        "twitter":"https://twitter.com/watsonameliaEN",
-        "bgm":[
-            "Watson Amelia BGM 5 min.mp3",
-            "おもちゃのダンス.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Watson Amelia",
+    "basicInfo":{
+      "debutDate":"2020/09/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584534",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584546",
+      "age":"",
+      "birthday":"6 January",
+      "height":"150 cm",
+      "zodiacSign":"Capricorn"
     },
-    {
-        "id":33,
-        "branch":"en",
-        "genNumber":"1",
-        "genName":"HoloMyth",
-        "genOther":[
+    "officialBio":"bio-watson-amelia",
+    "tags":[
+      "ワトソンアメリア",
+      "Ame Amechan アメ　アメちゃん",
+      "Ground Pound グラウンドポンド",
+      "Gremlin グレムリン"
+    ],
+    "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
+    "twitter":"watsonameliaEN",
+    "bgm":[
+      "Watson Amelia BGM 5 min.mp3",
+      "おもちゃのダンス.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Ninomae Ina'nis",
-        "basicInfo":{
-            "debutDate":"2020/09/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/584532",
-                "jp":"https://www.hololive.tv/portfolio/items/584542"
-            },
-            "age":"████ (somebody spilled ink on the page!!)",
-            "birthday":"20 May",
-            "height":"157 cm [with shoes]",
-            "zodiacSign":"Taurus"
-        },
-        "officialBio":"bio-ninomae-ina'nis",
-        "tags":[
-            "にのまえいなにす",
-            "Ina いな",
-            "Tako たこ",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
-        "twitter":"https://twitter.com/ninomaeinanis",
-        "bgm":[
-            "ensolarado.mp3"
-        ],
-        "solo":[
+    ]
+  },
+  {
+    "id":33,
+    "branch":"en",
+    "genNumber":"1",
+    "genName":"HoloMyth",
+    "genOther":[
 
-        ]
+    ],
+    "name":"Ninomae Ina'nis",
+    "basicInfo":{
+      "debutDate":"2020/09/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584532",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584542",
+      "age":"████ (somebody spilled ink on the page!!)",
+      "birthday":"20 May",
+      "height":"157 cm [with shoes]",
+      "zodiacSign":"Taurus"
     },
-    {
-        "id":34,
-        "branch":"en",
-        "genNumber":"1",
-        "genName":"HoloMyth",
-        "genOther":[
+    "officialBio":"bio-ninomae-ina'nis",
+    "tags":[
+      "にのまえいなにす",
+      "Ina いな",
+      "Tako たこ",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
+    "twitter":"ninomaeinanis",
+    "bgm":[
+      "ensolarado.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Gawr Gura",
-        "basicInfo":{
-            "debutDate":"2020/09/13",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/584533",
-                "jp":"https://www.hololive.tv/portfolio/items/584544"
-            },
-            "age":"between 9,000 and 10,000 years old (has forgotten exact number after ~5,000 years)",
-            "birthday":"20 June",
-            "height":"141 cm",
-            "zodiacSign":"Gemini"
-        },
-        "officialBio":"bio-gawr-gura",
-        "tags":[
-            "がうるぐら",
-            "Same-chan サメちゃん"
-        ],
-        "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
-        "twitter":"https://twitter.com/gawrgura",
-        "bgm":[
-            "Like the Snow.mp3",
-            "おもちゃの行進曲.mp3",
-            "ゆるゆるタイム.mp3",
-            "アトリエと電脳世界.mp3",
-            "新しい季節.mp3"
-        ],
-        "solo":[
-            "REFLECT.mp3"
-        ]
+    ]
+  },
+  {
+    "id":34,
+    "branch":"en",
+    "genNumber":"1",
+    "genName":"HoloMyth",
+    "genOther":[
+
+    ],
+    "name":"Gawr Gura",
+    "basicInfo":{
+      "debutDate":"2020/09/13",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584533",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584544",
+      "age":"between 9,000 and 10,000 (has forgotten exact number after ~5,000 years)",
+      "birthday":"20 June",
+      "height":"141 cm",
+      "zodiacSign":"Gemini"
     },
-    {
-        "id":35,
-        "branch":"en",
-        "genNumber":"1",
-        "genName":"HoloMyth",
-        "genOther":[
+    "officialBio":"bio-gawr-gura",
+    "tags":[
+      "がうるぐら",
+      "Same-chan サメちゃん"
+    ],
+    "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
+    "twitter":"gawrgura",
+    "bgm":[
+      "Like the Snow.mp3",
+      "おもちゃの行進曲.mp3",
+      "ゆるゆるタイム.mp3",
+      "アトリエと電脳世界.mp3",
+      "新しい季節.mp3"
+    ],
+    "solo":[
+      "REFLECT.mp3"
+    ]
+  },
+  {
+    "id":35,
+    "branch":"en",
+    "genNumber":"1",
+    "genName":"HoloMyth",
+    "genOther":[
 
-        ],
-        "name":"Mori Calliope",
-        "basicInfo":{
-            "debutDate":"2020/09/12",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/584527",
-                "jp":"https://www.hololive.tv/portfolio/items/584535"
-            },
-            "age":"No",
-            "birthday":"4 April",
-            "height":"167 cm",
-            "zodiacSign":"Aries"
-        },
-        "officialBio":"bio-mori-calliope",
-        "tags":[
-            "もりかりおぺ",
-            "Dad"
-        ],
-        "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
-        "twitter":"https://twitter.com/moricalliope",
-        "bgm":[
-            "Nights With You.mp3"
-        ],
-        "solo":[
-            "Cursed Night.mp3",
-            "Dawn Blue.mp3",
-            "DEAD BEATS.mp3",
-            "Live Again.mp3",
-            "Off With Their Heads.mp3",
-            "ReaperかRapper 自己紹介ラップ.mp3",
-            "Red.mp3",
-            "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP.mp3"
-        ]
+    ],
+    "name":"Mori Calliope",
+    "basicInfo":{
+      "debutDate":"2020/09/12",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584527",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584535",
+      "age":"No",
+      "birthday":"4 April",
+      "height":"167 cm",
+      "zodiacSign":"Aries"
     },
-    {
-        "id":36,
-        "branch":"en",
-        "genNumber":"1",
-        "genName":"HoloMyth",
-        "genOther":[
+    "officialBio":"bio-mori-calliope",
+    "tags":[
+      "もりかりおぺ",
+      "Dad"
+    ],
+    "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
+    "twitter":"moricalliope",
+    "bgm":[
+      "Nights With You.mp3"
+    ],
+    "solo":[
+      "Cursed Night.mp3",
+      "Dawn Blue.mp3",
+      "DEAD BEATS.mp3",
+      "Live Again.mp3",
+      "Off With Their Heads.mp3",
+      "ReaperかRapper 自己紹介ラップ.mp3",
+      "Red.mp3",
+      "失礼しますが、RIP♡ _ Excuse My Rudeness, But Could You Please RIP.mp3"
+    ]
+  },
+  {
+    "id":36,
+    "branch":"en",
+    "genNumber":"1",
+    "genName":"HoloMyth",
+    "genOther":[
 
-        ],
-        "name":"Takanashi Kiara",
-        "basicInfo":{
-            "debutDate":"2020/09/12",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/584528",
-                "jp":"https://www.hololive.tv/portfolio/items/584540"
-            },
-            "age":"Eternal",
-            "birthday":"6 July",
-            "height":"165 cm",
-            "zodiacSign":"Cancer"
-        },
-        "officialBio":"bio-takanashi-kiara",
-        "tags":[
-            "小鳥遊キアラ",
-            "Kusotori くそ鳥 クソトリ",
-            "Tenchou 店長",
-            "Bird 鳥",
-            "Horni Horny ムラムラ",
-            "Bottom left 左下"
-        ],
-        "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
-        "twitter":"https://twitter.com/takanashikiara",
-        "bgm":[
-            "HOLOTALK with Takanashi Kiara - BGM.mp3",
-            "Majestic Phoenix.mp3",
-            "Part-Time Warrior.mp3",
-            "少年達の夏休み的なBGM.mp3"
-        ],
-        "solo":[
-            "Heart Challenger.mp3",
-            "HINOTORI.mp3"
-        ]
+    ],
+    "name":"Takanashi Kiara",
+    "basicInfo":{
+      "debutDate":"2020/09/12",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584528",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584540",
+      "age":"Eternal",
+      "birthday":"6 July",
+      "height":"165 cm",
+      "zodiacSign":"Cancer"
     },
-    {
-        "id":37,
-        "branch":"id",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-takanashi-kiara",
+    "tags":[
+      "小鳥遊キアラ",
+      "Kusotori くそ鳥 クソトリ",
+      "Tenchou 店長",
+      "Bird 鳥",
+      "Horni Horny ムラムラ",
+      "Bottom left 左下"
+    ],
+    "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
+    "twitter":"takanashikiara",
+    "bgm":[
+      "HOLOTALK with Takanashi Kiara - BGM.mp3",
+      "Majestic Phoenix.mp3",
+      "Part-Time Warrior.mp3",
+      "少年達の夏休み的なBGM.mp3"
+    ],
+    "solo":[
+      "Heart Challenger.mp3",
+      "HINOTORI.mp3"
+    ]
+  },
+  {
+    "id":37,
+    "branch":"id",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Moona Hoshinova",
-        "basicInfo":{
-            "debutDate":"2020/04/11",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/438286",
-                "jp":"https://www.hololive.tv/portfolio/items/440320"
-            },
-            "age":"",
-            "birthday":"15 February",
-            "height":"165 cm",
-            "zodiacSign":"Aquarius"
-        },
-        "officialBio":"bio-moona-hoshinova",
-        "tags":[
-            "ムーナホシノヴァ",
-            "Buchou 部長"
-        ],
-        "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
-        "twitter":"https://twitter.com/moonahoshinova",
-        "bgm":[
-            "Galaxy.mp3",
-            "Moona Hoshinova Intro.mp3",
-            "のんびり昼休み.mp3",
-            "ほのぼの.mp3"
-        ],
-        "solo":[
-            "愛の小さな歌.mp3"
-        ]
+    ],
+    "name":"Moona Hoshinova",
+    "basicInfo":{
+      "debutDate":"2020/04/11",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438286",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440320",
+      "age":"",
+      "birthday":"15 February",
+      "height":"165 cm",
+      "zodiacSign":"Aquarius"
     },
-    {
-        "id":38,
-        "branch":"id",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-moona-hoshinova",
+    "tags":[
+      "ムーナホシノヴァ",
+      "Buchou 部長"
+    ],
+    "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
+    "twitter":"moonahoshinova",
+    "bgm":[
+      "Galaxy.mp3",
+      "Moona Hoshinova Intro.mp3",
+      "のんびり昼休み.mp3",
+      "ほのぼの.mp3"
+    ],
+    "solo":[
+      "愛の小さな歌.mp3"
+    ]
+  },
+  {
+    "id":38,
+    "branch":"id",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Ayunda Risu",
-        "basicInfo":{
-            "debutDate":"2020/04/10",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/438283",
-                "jp":"https://www.hololive.tv/portfolio/items/440312"
-            },
-            "age":"17 years old",
-            "birthday":"15 January",
-            "height":"153 cm",
-            "zodiacSign":"Capricorn"
-        },
-        "officialBio":"bio-ayunda-risu",
-        "tags":[
-            "アユンダリス",
-            "Alter Risu アルターリス",
-            "Okakoro Child おかころの子"
-        ],
-        "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
-        "twitter":"https://twitter.com/ayunda_risu",
-        "bgm":[
-            "Brewing Coffee.mp3",
-            "はざまりす.mp3",
-            "ぼくはへなちょこ.mp3",
-            "ポピポ.mp3"
-        ],
-        "solo":[
-
-        ]
+    ],
+    "name":"Ayunda Risu",
+    "basicInfo":{
+      "debutDate":"2020/04/10",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438283",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440312",
+      "age":"17",
+      "birthday":"15 January",
+      "height":"153 cm",
+      "zodiacSign":"Capricorn"
     },
-    {
-        "id":39,
-        "branch":"id",
-        "genNumber":"1",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-ayunda-risu",
+    "tags":[
+      "アユンダリス",
+      "Alter Risu アルターリス",
+      "Okakoro Child おかころの子"
+    ],
+    "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
+    "twitter":"ayunda_risu",
+    "bgm":[
+      "Brewing Coffee.mp3",
+      "はざまりす.mp3",
+      "ぼくはへなちょこ.mp3",
+      "ポピポ.mp3"
+    ],
+    "solo":[
 
-        ],
-        "name":"Airani Iofifteen",
-        "basicInfo":{
-            "debutDate":"2020/04/12",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/438288",
-                "jp":"https://www.hololive.tv/portfolio/items/440326"
-            },
-            "age":"",
-            "birthday":"15 July",
-            "height":"150 cm",
-            "zodiacSign":"Cancer"
-        },
-        "officialBio":"bio-airani-iofifteen",
-        "tags":[
-            "アイラニイオフィフティーン",
-            "Iofi イオフィ",
-            "Erofi エロフィ"
-        ],
-        "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
-        "twitter":"https://twitter.com/airaniiofifteen",
-        "bgm":[
-            "Funny and Cute music.mp3"
-        ],
-        "solo":[
-            "Bersama Ioforia.mp3"
-        ]
+    ]
+  },
+  {
+    "id":39,
+    "branch":"id",
+    "genNumber":"1",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Airani Iofifteen",
+    "basicInfo":{
+      "debutDate":"2020/04/12",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438288",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440326",
+      "age":"",
+      "birthday":"15 July",
+      "height":"150 cm",
+      "zodiacSign":"Cancer"
     },
-    {
-        "id":40,
-        "branch":"id",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-airani-iofifteen",
+    "tags":[
+      "アイラニイオフィフティーン",
+      "Iofi イオフィ",
+      "Erofi エロフィ"
+    ],
+    "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
+    "twitter":"airaniiofifteen",
+    "bgm":[
+      "Funny and Cute music.mp3"
+    ],
+    "solo":[
+      "Bersama Ioforia.mp3"
+    ]
+  },
+  {
+    "id":40,
+    "branch":"id",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Pavolia Reine",
-        "basicInfo":{
-            "debutDate":"2020/12/06",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/684689",
-                "jp":"https://www.hololive.tv/portfolio/items/684666"
-            },
-            "age":"",
-            "birthday":"9 September",
-            "height":"172 cm",
-            "zodiacSign":"Virgo"
-        },
-        "officialBio":"bio-pavolia-reine",
-        "tags":[
-            "パヴォリアレイネ",
-            "Reine Mama アレイネママ",
-            "Turkey 七面鳥",
-            "Bird 鳥"
-        ],
-        "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
-        "twitter":"https://twitter.com/pavoliareine",
-        "bgm":[
-            "Peafowl Diva.mp3"
-        ],
-        "solo":[
-            "Gate Open - START.mp3"
-        ]
+    ],
+    "name":"Pavolia Reine",
+    "basicInfo":{
+      "debutDate":"2020/12/06",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684689",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684666",
+      "age":"",
+      "birthday":"9 September",
+      "height":"172 cm",
+      "zodiacSign":"Virgo"
     },
-    {
-        "id":41,
-        "branch":"id",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-pavolia-reine",
+    "tags":[
+      "パヴォリアレイネ",
+      "Reine Mama アレイネママ",
+      "Turkey 七面鳥",
+      "Bird 鳥"
+    ],
+    "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
+    "twitter":"pavoliareine",
+    "bgm":[
+      "Peafowl Diva.mp3"
+    ],
+    "solo":[
+      "Gate Open - START.mp3"
+    ]
+  },
+  {
+    "id":41,
+    "branch":"id",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Kureiji Ollie",
-        "basicInfo":{
-            "debutDate":"2020/12/04",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/684687",
-                "jp":"https://www.hololive.tv/portfolio/items/684664"
-            },
-            "age":"17 forever (age of death)",
-            "birthday":"13 October",
-            "height":"162 cm",
-            "zodiacSign":"Libra"
-        },
-        "officialBio":"bio-kureiji-ollie",
-        "tags":[
-            "クレイジーオリー",
-            "Olivia オリヴィア",
-            "Cutting Board まな板"
-        ],
-        "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
-        "twitter":"https://twitter.com/kureijiollie",
-        "bgm":[
-            "swing swing.mp3"
-        ],
-        "solo":[
-            "アニキへ.mp3"
-        ]
+    ],
+    "name":"Kureiji Ollie",
+    "basicInfo":{
+      "debutDate":"2020/12/04",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684687",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684664",
+      "age":"17 forever (age of death)",
+      "birthday":"13 October",
+      "height":"162 cm",
+      "zodiacSign":"Libra"
     },
-    {
-        "id":42,
-        "branch":"id",
-        "genNumber":"2",
-        "genName":"",
-        "genOther":[
+    "officialBio":"bio-kureiji-ollie",
+    "tags":[
+      "クレイジーオリー",
+      "Olivia オリヴィア",
+      "Cutting Board まな板"
+    ],
+    "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
+    "twitter":"kureijiollie",
+    "bgm":[
+      "swing swing.mp3"
+    ],
+    "solo":[
+      "アニキへ.mp3"
+    ]
+  },
+  {
+    "id":42,
+    "branch":"id",
+    "genNumber":"2",
+    "genName":"",
+    "genOther":[
 
-        ],
-        "name":"Anya Melfissa",
-        "basicInfo":{
-            "debutDate":"2020/12/05",
-            "officialWebsite":{
-                "en":"https://en.hololive.tv/portfolio/items/684688",
-                "jp":"https://www.hololive.tv/portfolio/items/684665"
-            },
-            "age":"Confidential",
-            "birthday":"12 March",
-            "height":"147 cm",
-            "zodiacSign":"Pisces"
-        },
-        "officialBio":"bio-anya-melfissa",
-        "tags":[
-            "アーニャメルフィッサ",
-            "Arya Melvine アーリャメルヴィン"
-        ],
-        "channelId":"UC727SQYUvx5pDDGQpTICNWg",
-        "twitter":"https://twitter.com/anyamelfissa",
-        "bgm":[
-            "Energetic Day.mp3",
-            "Yawning at Dusk.mp3"
-        ],
-        "solo":[
+    ],
+    "name":"Anya Melfissa",
+    "basicInfo":{
+      "debutDate":"2020/12/05",
+      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684688",
+      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684665",
+      "age":"Confidential",
+      "birthday":"12 March",
+      "height":"147 cm",
+      "zodiacSign":"Pisces"
+    },
+    "officialBio":"bio-anya-melfissa",
+    "tags":[
+      "アーニャメルフィッサ",
+      "Arya Melvine アーリャメルヴィン"
+    ],
+    "channelId":"UC727SQYUvx5pDDGQpTICNWg",
+    "twitter":"anyamelfissa",
+    "bgm":[
+      "Energetic Day.mp3",
+      "Yawning at Dusk.mp3"
+    ],
+    "solo":[
 
-        ]
-    }
+    ]
+  }
 ]
