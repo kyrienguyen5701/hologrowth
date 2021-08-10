@@ -10,8 +10,6 @@
     "name":"Tokino Sora",
     "basicInfo":{
       "debutDate":"2017/09/07",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433553",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336222",
       "age":"20",
       "birthday":"15 May 2000",
       "height":"160 cm",
@@ -30,6 +28,8 @@
     ],
     "channelId":"UCp6993wxpyDPHUpavwDFqgg",
     "twitter":"tokino_sora",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433553",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336222",
     "bgm":[
       "Under the Clear Sky.mp3",
       "夕べの星.mp3"
@@ -56,8 +56,6 @@
     "name":"Roboco",
     "basicInfo":{
       "debutDate":"2018/03/04",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433579",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336223",
       "age":"17",
       "birthday":"23 May",
       "height":"154 cm",
@@ -71,6 +69,8 @@
     ],
     "channelId":"UCDqI2jOz0weumE8s7paEk6g",
     "twitter":"robocosan",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433579",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336223",
     "bgm":[
       "Next Wednesday 魂音泉.mp3"
     ],
@@ -91,8 +91,6 @@
     "name":"Sakura Miko",
     "basicInfo":{
       "debutDate":"2018/08/01",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433578",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336371",
       "age":"18.2",
       "birthday":"5 March",
       "height":"152 cm",
@@ -107,6 +105,8 @@
     ],
     "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
     "twitter":"sakuramiko35",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433578",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336371",
     "bgm":[
       "Sakura Miko Ending BGM.mp3",
       "Sakura Miko Opening BGM.mp3",
@@ -131,8 +131,6 @@
     "name":"Hoshimachi Suisei",
     "basicInfo":{
       "debutDate":"2018/03/22",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433550",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/345947",
       "age":"18",
       "birthday":"22 March",
       "height":"160 cm",
@@ -149,6 +147,8 @@
     ],
     "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
     "twitter":"suisei_hosimati",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433550",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/345947",
     "bgm":[
       "かえるのピアノ.mp3",
       "ごろごろゲームする日.mp3",
@@ -174,8 +174,6 @@
     "name":"AZKi",
     "basicInfo":{
       "debutDate":"2018/11/15",
-      "officialWebsiteEN":"http://azki-official.com/",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336226",
       "age":"18 (forever)",
       "birthday":"1 July",
       "height":"168 cm [with heels on]",
@@ -187,6 +185,8 @@
     ],
     "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
     "twitter":"AZKi_VDiVA",
+    "officialWebsiteEN":"http://azki-official.com/",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336226",
     "bgm":[
       "Bougainvillea.mp3"
     ],
@@ -212,8 +212,6 @@
     "name":"Yozora Mel",
     "basicInfo":{
       "debutDate":"2018/05/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433549",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336404",
       "age":"",
       "birthday":"31 October",
       "height":"154 cm",
@@ -227,6 +225,8 @@
     ],
     "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
     "twitter":"yozoramel",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433549",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336404",
     "bgm":[
       "カフェでひと休み.mp3",
       "ポップキャンディ.mp3"
@@ -246,8 +246,6 @@
     "name":"Aki Rosenthal",
     "basicInfo":{
       "debutDate":"2018/06/07",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433574",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336382",
       "age":"",
       "birthday":"17 February",
       "height":"162 cm",
@@ -261,6 +259,8 @@
     ],
     "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
     "twitter":"akirosenthal",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433574",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336382",
     "bgm":[
       "Lights Out.mp3",
       "Numbers.mp3"
@@ -283,8 +283,6 @@
     "name":"Akai Haato",
     "basicInfo":{
       "debutDate":"2018/06/02",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433551",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336380",
       "age":"19",
       "birthday":"10 August 2001",
       "height":"154 cm",
@@ -298,6 +296,8 @@
     ],
     "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
     "twitter":"akaihaato",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433551",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336380",
     "bgm":[
       "はあちゃまっちゃま.mp3",
       "まったりゆらゆら.mp3",
@@ -321,8 +321,6 @@
     "name":"Shirakami Fubuki",
     "basicInfo":{
       "debutDate":"2018/06/01",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433587",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336378",
       "age":"18 (Human years)",
       "birthday":"5 October",
       "height":"155 cm",
@@ -338,6 +336,8 @@
     ],
     "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
     "twitter":"shirakamifubuki",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433587",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336378",
     "bgm":[
       "Beachside Fox.mp3",
       "桜色コントレイル.mp3",
@@ -360,8 +360,6 @@
     "name":"Natsuiro Matsuri",
     "basicInfo":{
       "debutDate":"2018/06/01",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433575",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336381",
       "age":"16",
       "birthday":"22 July",
       "height":"152 cm",
@@ -377,6 +375,8 @@
     ],
     "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
     "twitter":"natsuiromatsuri",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433575",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336381",
     "bgm":[
       "Matsuri's Day Off.mp3",
       "鈴色日和.mp3"
@@ -396,8 +396,6 @@
     "name":"Minato Aqua",
     "basicInfo":{
       "debutDate":"2018/08/08",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433565",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336383",
       "age":"",
       "birthday":"1 December",
       "height":"148 cm",
@@ -412,6 +410,8 @@
     ],
     "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
     "twitter":"minatoaqua",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433565",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336383",
     "bgm":[
       "Marine Maid.mp3",
       "Radio#16.mp3",
@@ -434,8 +434,6 @@
     "name":"Murasaki Shion",
     "basicInfo":{
       "debutDate":"2018/08/17",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433577",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336387",
       "age":"",
       "birthday":"8 December",
       "height":"145 cm",
@@ -450,6 +448,8 @@
     ],
     "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
     "twitter":"murasakishionch",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433577",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336387",
     "bgm":[
       "Virtual Magician.mp3",
       "紫咲詩音正月.mp3"
@@ -469,8 +469,6 @@
     "name":"Nakiri Ayame",
     "basicInfo":{
       "debutDate":"2018/09/03",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433583",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336384",
       "age":"1500+",
       "birthday":"13 December",
       "height":"152 cm",
@@ -484,6 +482,8 @@
     ],
     "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
     "twitter":"nakiriayame",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433583",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336384",
     "bgm":[
       "Chrono.mp3",
       "Summertime Nakiri.mp3",
@@ -506,8 +506,6 @@
     "name":"Yuzuki Choco",
     "basicInfo":{
       "debutDate":"2018/09/05",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433552",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336386",
       "age":"",
       "birthday":"14 February",
       "height":"165 cm",
@@ -520,6 +518,8 @@
     ],
     "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
     "twitter":"yuzukichococh",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433552",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336386",
     "bgm":[
       "Cooking Time.mp3"
     ],
@@ -538,8 +538,6 @@
     "name":"Oozora Subaru",
     "basicInfo":{
       "debutDate":"2018/09/16",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433593",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336385",
       "age":"17",
       "birthday":"2 July",
       "height":"154 cm",
@@ -555,6 +553,8 @@
     ],
     "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
     "twitter":"oozorasubaru",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433593",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336385",
     "bgm":[
       "You and Me.mp3",
       "まったりしましょ.mp3",
@@ -575,8 +575,6 @@
     "name":"Ookami Mio",
     "basicInfo":{
       "debutDate":"2018/12/07",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433580",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336400",
       "age":"",
       "birthday":"20 August",
       "height":"155 cm",
@@ -591,6 +589,8 @@
     ],
     "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
     "twitter":"ookamimio",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433580",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336400",
     "bgm":[
       "So Sweet.mp3",
       "Summer Vacation.mp3",
@@ -613,8 +613,6 @@
     "name":"Nekomata Okayu",
     "basicInfo":{
       "debutDate":"2019/04/06",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433581",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336402",
       "age":"16(80 in Cat Years)",
       "birthday":"22 February",
       "height":"152 cm",
@@ -629,6 +627,8 @@
     ],
     "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
     "twitter":"nekomataokayu",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433581",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336402",
     "bgm":[
       "Peaceful Treasure.mp3",
       "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3",
@@ -650,8 +650,6 @@
     "name":"Inugami Korone",
     "basicInfo":{
       "debutDate":"2019/04/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433592",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336401",
       "age":"92 (dog years)",
       "birthday":"1 October",
       "height":"156 cm",
@@ -666,6 +664,8 @@
     ],
     "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
     "twitter":"inugamikorone",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433592",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336401",
     "bgm":[
       "えっさほいさ囃子.mp3",
       "ひたひたと迫る影.mp3",
@@ -686,8 +686,6 @@
     "name":"Houshou Marine",
     "basicInfo":{
       "debutDate":"2019/08/11",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433586",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336351",
       "age":"17 (season 2)",
       "birthday":"30 July",
       "height":"150 cm",
@@ -705,6 +703,8 @@
     ],
     "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
     "twitter":"houshoumarine",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433586",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336351",
     "bgm":[
       "Captain Beatbox II.mp3",
       "Senchou's Comfy BGM.mp3",
@@ -728,8 +728,6 @@
     "name":"Uruha Rushia",
     "basicInfo":{
       "debutDate":"2019/07/18",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433576",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336265",
       "age":"1600",
       "birthday":"22 January",
       "height":"143 cm",
@@ -746,6 +744,8 @@
     ],
     "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
     "twitter":"uruharushia",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433576",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336265",
     "bgm":[
       "2_23 AM.mp3",
       "Be Happy.mp3",
@@ -767,8 +767,6 @@
     "name":"Usada Pekora",
     "basicInfo":{
       "debutDate":"2019/07/17",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433585",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336270",
       "age":"111",
       "birthday":"12 January",
       "height":"153 cm (not including the ears)",
@@ -783,6 +781,8 @@
     ],
     "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
     "twitter":"usadapekora",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433585",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336270",
     "bgm":[
       "おーたむうぉーきんぐ.mp3",
       "たぬきちの冒険.mp3",
@@ -805,8 +805,6 @@
     "name":"Shiranui Flare",
     "basicInfo":{
       "debutDate":"2019/08/07",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433584",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336354",
       "age":"221",
       "birthday":"2 April 1798",
       "height":"158 cm",
@@ -821,6 +819,8 @@
     ],
     "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
     "twitter":"shiranuiflare",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433584",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336354",
     "bgm":[
       "カエルの勇者.mp3",
       "風がはじめに寄る街的なBGM.mp3"
@@ -840,8 +840,6 @@
     "name":"Shirogane Noel",
     "basicInfo":{
       "debutDate":"2019/08/08",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433582",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336353",
       "age":"18 (+ ２〇 months)",
       "birthday":"24 November",
       "height":"158 cm",
@@ -857,6 +855,8 @@
     ],
     "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
     "twitter":"shiroganenoel",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433582",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/336353",
     "bgm":[
       "You and Me.mp3",
       "こんばんマスルー.mp3",
@@ -878,8 +878,6 @@
     "name":"Tsunomaki Watame",
     "basicInfo":{
       "debutDate":"2019/12/29",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433561",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360919",
       "age":"4 (sheep years)",
       "birthday":"6 June",
       "height":"151 cm",
@@ -893,6 +891,8 @@
     ],
     "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
     "twitter":"tsunomakiwatame",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433561",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360919",
     "bgm":[
       "Rainy Day ☔.mp3",
       "ドドドホリデ.mp3"
@@ -916,8 +916,6 @@
     "name":"Tokoyami Towa",
     "basicInfo":{
       "debutDate":"2020/01/03",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433567",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360920",
       "age":"17",
       "birthday":"8 August ",
       "height":"150 cm",
@@ -932,6 +930,8 @@
     ],
     "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
     "twitter":"tokoyamitowa",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433567",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360920",
     "bgm":[
       "10℃.mp3",
       "YouTube向けまったりした日常曲.mp3",
@@ -953,8 +953,6 @@
     "name":"Kiryu Coco",
     "basicInfo":{
       "debutDate":"2019/12/28",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433563",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360918",
       "age":"3502",
       "birthday":"17 June",
       "height":"Human form: 180 cm",
@@ -970,6 +968,8 @@
     ],
     "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
     "twitter":"kiryucoco",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433563",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360918",
     "bgm":[
       "ガンギマリドラゴン.mp3",
       "フラット気分.mp3",
@@ -992,8 +992,6 @@
     "name":"Amane Kanata",
     "basicInfo":{
       "debutDate":"2019/12/27",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433562",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360916",
       "age":"18 (angel age)",
       "birthday":"22 April",
       "height":"149 cm",
@@ -1011,6 +1009,8 @@
     ],
     "channelId":"UCZlDXzGoo7d44bwdNObFacg",
     "twitter":"amanekanatach",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433562",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360916",
     "bgm":[
       "元気いっぱい.mp3",
       "楽しい帰り道.mp3"
@@ -1030,8 +1030,6 @@
     "name":"Himemori Luna",
     "basicInfo":{
       "debutDate":"2020/01/04",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433566",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360921",
       "age":"0",
       "birthday":"10 October",
       "height":"150 cm (with crown)",
@@ -1045,6 +1043,8 @@
     ],
     "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
     "twitter":"himemoriluna",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/433566",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/360921",
     "bgm":[
       "Lunar Light.mp3",
       "スケーターズ - ワルツ.mp3",
@@ -1067,8 +1067,6 @@
     "name":"Yukihana Lamy",
     "basicInfo":{
       "debutDate":"2020/08/12",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554781",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554688",
       "age":"210",
       "birthday":"15 November 1810",
       "height":"158 cm",
@@ -1082,6 +1080,8 @@
     ],
     "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
     "twitter":"yukihanalamy",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554781",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554688",
     "bgm":[
       "A Meaningful Day.mp3",
       "On A Snowy Day.mp3",
@@ -1102,8 +1102,6 @@
     "name":"Momosuzu Nene",
     "basicInfo":{
       "debutDate":"YouTube:2020/08/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554783",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554694",
       "age":"19",
       "birthday":"2 March",
       "height":"159 cm",
@@ -1118,6 +1116,8 @@
     ],
     "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
     "twitter":"momosuzunene",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554783",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554694",
     "bgm":[
       "ジオラマパレード.mp3",
       "ベリーベリーパンケーキ.mp3",
@@ -1138,8 +1138,6 @@
     "name":"Shishiro Botan",
     "basicInfo":{
       "debutDate":"2020/08/14",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554786",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554695",
       "age":"",
       "birthday":"8 September",
       "height":"166 cm",
@@ -1154,6 +1152,8 @@
     ],
     "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
     "twitter":"shishirobotan",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554786",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554695",
     "bgm":[
       "2_23 AM.mp3",
       "Kawaii White Lion.mp3"
@@ -1173,8 +1173,6 @@
     "name":"Omaru Polka",
     "basicInfo":{
       "debutDate":"YouTube:2020/08/16",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554793",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554697",
       "age":"Secret",
       "birthday":"30 January",
       "height":"153 cm",
@@ -1187,6 +1185,8 @@
     ],
     "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
     "twitter":"omarupolka",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/554793",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/554697",
     "bgm":[
       "Neu Kabuki.mp3",
       "ひらひらり.mp3",
@@ -1208,8 +1208,6 @@
     "name":"Watson Amelia",
     "basicInfo":{
       "debutDate":"2020/09/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584534",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584546",
       "age":"",
       "birthday":"6 January",
       "height":"150 cm",
@@ -1224,6 +1222,8 @@
     ],
     "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
     "twitter":"watsonameliaEN",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584534",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584546",
     "bgm":[
       "Watson Amelia BGM 5 min.mp3",
       "おもちゃのダンス.mp3"
@@ -1243,8 +1243,6 @@
     "name":"Ninomae Ina'nis",
     "basicInfo":{
       "debutDate":"2020/09/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584532",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584542",
       "age":"████ (somebody spilled ink on the page!!)",
       "birthday":"20 May",
       "height":"157 cm [with shoes]",
@@ -1259,6 +1257,8 @@
     ],
     "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
     "twitter":"ninomaeinanis",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584532",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584542",
     "bgm":[
       "ensolarado.mp3"
     ],
@@ -1277,8 +1277,6 @@
     "name":"Gawr Gura",
     "basicInfo":{
       "debutDate":"2020/09/13",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584533",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584544",
       "age":"between 9,000 and 10,000 (has forgotten exact number after ~5,000 years)",
       "birthday":"20 June",
       "height":"141 cm",
@@ -1291,6 +1289,8 @@
     ],
     "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
     "twitter":"gawrgura",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584533",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584544",
     "bgm":[
       "Like the Snow.mp3",
       "おもちゃの行進曲.mp3",
@@ -1313,8 +1313,6 @@
     "name":"Mori Calliope",
     "basicInfo":{
       "debutDate":"2020/09/12",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584527",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584535",
       "age":"No",
       "birthday":"4 April",
       "height":"167 cm",
@@ -1327,6 +1325,8 @@
     ],
     "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
     "twitter":"moricalliope",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584527",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584535",
     "bgm":[
       "Nights With You.mp3"
     ],
@@ -1352,8 +1352,6 @@
     "name":"Takanashi Kiara",
     "basicInfo":{
       "debutDate":"2020/09/12",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584528",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584540",
       "age":"Eternal",
       "birthday":"6 July",
       "height":"165 cm",
@@ -1370,6 +1368,8 @@
     ],
     "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
     "twitter":"takanashikiara",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/584528",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/584540",
     "bgm":[
       "HOLOTALK with Takanashi Kiara - BGM.mp3",
       "Majestic Phoenix.mp3",
@@ -1392,8 +1392,6 @@
     "name":"Moona Hoshinova",
     "basicInfo":{
       "debutDate":"2020/04/11",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438286",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440320",
       "age":"",
       "birthday":"15 February",
       "height":"165 cm",
@@ -1406,6 +1404,8 @@
     ],
     "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
     "twitter":"moonahoshinova",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438286",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440320",
     "bgm":[
       "Galaxy.mp3",
       "Moona Hoshinova Intro.mp3",
@@ -1427,8 +1427,6 @@
     "name":"Ayunda Risu",
     "basicInfo":{
       "debutDate":"2020/04/10",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438283",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440312",
       "age":"17",
       "birthday":"15 January",
       "height":"153 cm",
@@ -1442,6 +1440,8 @@
     ],
     "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
     "twitter":"ayunda_risu",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438283",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440312",
     "bgm":[
       "Brewing Coffee.mp3",
       "はざまりす.mp3",
@@ -1463,8 +1463,6 @@
     "name":"Airani Iofifteen",
     "basicInfo":{
       "debutDate":"2020/04/12",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438288",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440326",
       "age":"",
       "birthday":"15 July",
       "height":"150 cm",
@@ -1478,6 +1476,8 @@
     ],
     "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
     "twitter":"airaniiofifteen",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/438288",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/440326",
     "bgm":[
       "Funny and Cute music.mp3"
     ],
@@ -1496,8 +1496,6 @@
     "name":"Pavolia Reine",
     "basicInfo":{
       "debutDate":"2020/12/06",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684689",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684666",
       "age":"",
       "birthday":"9 September",
       "height":"172 cm",
@@ -1512,6 +1510,8 @@
     ],
     "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
     "twitter":"pavoliareine",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684689",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684666",
     "bgm":[
       "Peafowl Diva.mp3"
     ],
@@ -1530,8 +1530,6 @@
     "name":"Kureiji Ollie",
     "basicInfo":{
       "debutDate":"2020/12/04",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684687",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684664",
       "age":"17 forever (age of death)",
       "birthday":"13 October",
       "height":"162 cm",
@@ -1545,6 +1543,8 @@
     ],
     "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
     "twitter":"kureijiollie",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684687",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684664",
     "bgm":[
       "swing swing.mp3"
     ],
@@ -1563,8 +1563,6 @@
     "name":"Anya Melfissa",
     "basicInfo":{
       "debutDate":"2020/12/05",
-      "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684688",
-      "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684665",
       "age":"Confidential",
       "birthday":"12 March",
       "height":"147 cm",
@@ -1577,6 +1575,8 @@
     ],
     "channelId":"UC727SQYUvx5pDDGQpTICNWg",
     "twitter":"anyamelfissa",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/684688",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/684665",
     "bgm":[
       "Energetic Day.mp3",
       "Yawning at Dusk.mp3"
