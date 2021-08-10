@@ -76,3 +76,13 @@ export interface TalentDisplay {
   dataAvailable: boolean;
   shown: boolean;
 }
+
+export interface TalentBasicInfo {
+  debutDate: string;
+  officialWebsiteEN: string;
+  officialWebsiteJP: string;
+  age: string;
+  birthday: string;
+  height: string;
+  zodiacSign: string;
+}

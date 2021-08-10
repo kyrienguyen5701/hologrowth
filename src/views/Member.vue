@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="member-content-info-info">
-            <div class="member-name">{{ getMemberName() }}</div>
+            <div class="member-name">{{ getLocalizedMemberName() }}</div>
             <div class="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               perferendis reiciendis nobis ab facilis nostrum ratione, unde
@@ -32,7 +32,7 @@
             </div>
             <div class="member-link">
               <div v-for="link in $data.links" :key="link" class="link-logo">
-                <a :href="link.destination" class="img-holder">
+                <a :href="link.destination" class="img-holder" target="_blank">
                   <img :src="getLinkTypeURL(link.type)" />
                 </a>
               </div>
@@ -49,6 +49,34 @@
             ></ChartSwiper>
           </div>
         </div>
+        <div class="member-content-more-info">
+          <div class="more-info-images">
+            <div class="more-info-avatar">
+              <div class="img-holder">
+                <img :src="getMemberAvatarURL()" />
+              </div>
+            </div>
+            <div class="more-info-signature">
+              <div class="img-holder">
+                <img :src="getMemberSignatureURL('default')" />
+              </div>
+            </div>
+          </div>
+          <div class="more-info-text">
+            <div v-for="info in moreInfo" :key="info.key" class="more-info">
+              <div class="more-info-key">
+                <div class="more-info-key-text">
+                  {{ info.key }}
+                </div>
+              </div>
+              <div class="more-info-value">
+                <div class="more-info-value-text">
+                  {{ info.value }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -58,6 +86,9 @@
 import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
+import talents from "@/assets/json/talents.json";
+import { TalentBasicInfo } from "@/assets/ts/interfaces";
+import { GetLocalizedText } from "@/assets/ts/localize";
 
 @Component({
   components: {
@@ -72,6 +103,7 @@ export default class MemberPage extends Vue {
         nCol: Math.round(window.innerWidth / 250),
         nRow: Math.round(window.innerHeight / 250)
       },
+      basicInfo: {} as TalentBasicInfo,
       links: [
         {
           type: "youtube",
@@ -85,17 +117,35 @@ export default class MemberPage extends Vue {
           type: "hololive",
           destination: ""
         }
-      ]
+      ],
+      officialBio: "",
+      moreInfo: [] as Array<{ key: string; value: string }>
     };
   }
 
-  @Watch("$route")
+  @Watch("$route", { immediate: true, deep: true })
   onMemberChange() {
     this.$data.memberName = this.$route.params.talentName;
-  }
+    const talentData = talents.find(talent => {
+      return talent.name === this.getMemberName();
+    })
+    this.$data.basicInfo = talentData?.basicInfo;
+    this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData?.channelId}`;
+    this.$data.links[1].destination = `https://twitter.com/${talentData?.twitter}`;
+    this.$data.links[2].destination =
+      localStorage.getItem("lang") == "en"
+        ? talentData?.basicInfo.officialWebsiteEN
+        : talentData?.basicInfo.officialWebsiteJP;
+    this.$data.officialBio = talentData?.officialBio;
 
-  mounted() {
-    // this.createSignatureIconBackground();
+    let k: keyof TalentBasicInfo;
+    for (k in talentData?.basicInfo) {
+      const v = talentData?.basicInfo[k];
+      this.$data.moreInfo.push({
+        key: GetLocalizedText(k),
+        value: GetLocalizedText(v || "")
+      })
+    }
   }
 
   getMemberBannerURL() {
@@ -120,6 +170,10 @@ export default class MemberPage extends Vue {
 
   getMemberName() {
     return Common.GetTalentName(this.$data.memberName);
+  }
+
+  getLocalizedMemberName() {
+    return GetLocalizedText(this.getMemberName());
   }
 
   getMemberSignatureURL(res: string) {
@@ -272,16 +326,73 @@ export default class MemberPage extends Vue {
         }
       }
     }
-
-    &-chart {
-      .member-chart {
-        cursor: pointer;
-      }
-    }
   }
 }
 
-.member-chart {
-  height: 100vh;
+.member-content-chart {
+  margin: 30px 0;
+  .member-chart {
+    height: 520px;
+  }
+}
+
+.member-content-more-info {
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+  .more-info-images {
+    width: 30%;
+    .more-info {
+      &-avatar {
+        img {
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+      }
+      &-signature {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .more-info-text {
+    width: 70%;
+    .more-info {
+      display: flex;
+      height: 50px;
+
+      &-key {
+        width: 50%;
+
+        &-text {
+          text-align: left;
+        }
+      }
+      &-value {
+        width: 50%;
+        position: relative;
+        display: flex;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+          width: 150%;
+          height: 3px;
+          background: var(--color-current);
+        }
+
+        &-text {
+          margin-top: auto;
+          margin-left: auto;
+        }
+      }
+    }
+  }
 }
 </style>
