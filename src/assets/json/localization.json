@@ -4,18 +4,254 @@
         "en": "Japanese"
     },
     "menu-jp-gen-0": {
+        "jp": "",
         "en": "3D Talents"
     },
-    "menu-tokino-sora": {
-        "jp": "ときのそら",
-        "en": "Tokino Sora"
+    "menu-jp-gen-1": {
+        "jp": "",
+        "en": "1st Generation"
+    },
+    "menu-jp-gen-2": {
+        "jp": "",
+        "en": "2nd Generation"
+    },
+    "menu-jp-gen-3": {
+        "jp": "",
+        "en": "3rd Generation"
+    },
+    "menu-jp-gen-4": {
+        "jp": "",
+        "en": "4th Generation"
+    },
+    "menu-jp-gen-5": {
+        "jp": "",
+        "en": "5th Generation"
+    },
+    "menu-jp-gen-": {
+        "jp": "",
+        "en": "Others"
     },
     "menu-en": {
         "jp": "英語",
         "en": "English"
     },
+    "menu-en-gen-1": {
+        "jp": "",
+        "en": "1st Generation"
+    },
+    "menu-id": {
+        "jp": "",
+        "en": "Indonesian"
+    },
+    "menu-id-gen-1": {
+        "jp": "",
+        "en":"1st Generation"
+    },
+    "menu-id-gen-2": {
+        "jp": "",
+        "en":"2nd Generation"
+    },
+
+    "menu-Tokino-Sora": {
+        "jp": "ときのそら",
+        "en": "Tokino Sora"
+    },
+    "menu-Roboco": {
+        "jp": "",
+        "en": "Roboco"
+    },
+    "menu-Sakura-Miko": {
+        "jp": "",
+        "en": "Sakura Miko"
+    },
+    "menu-Hoshimachi-Suisei": {
+        "jp": "",
+        "en": "Hoshimachi Suisei"
+    },
+    "menu-Yozora-Mel": {
+        "jp": "",
+        "en": "Yozora Mel"
+    },
+    "menu-Aki-Rosenthal": {
+        "jp": "",
+        "en": "Aki Rosenthal"
+    },
+    "menu-Akai-Haato": {
+        "jp": "",
+        "en": "Akai Haato"
+    },
+    "menu-Shirakami-Fubuki": {
+        "jp": "",
+        "en": "Shirakami Fubuki"
+    },
+    "menu-Minato-Aqua": {
+        "jp": "",
+        "en": "Minato Aqua"
+    },
+    "menu-Murasaki-Shion": {
+        "jp": "",
+        "en": "Murasaki Shion"
+    },
+    "menu-Nakiri-Ayame": {
+        "jp": "",
+        "en": "Nakiri Ayame"
+    },
+    "menu-Yuzuki-Choco": {
+        "jp": "",
+        "en": "Yuzuki Choco"
+    },
+    "menu-Oozora-Subaru": {
+        "jp": "",
+        "en": "Oozora Subaru"
+    },
+    "menu-Houshou-Marine": {
+        "jp": "",
+        "en": "Houshou Marine"
+    },
+    "menu-Uruha-Rushia": {
+        "jp": "",
+        "en": "Uruha Rushia"
+    },
+    "menu-Usada-Pekora": {
+        "jp": "",
+        "en": "Usada Pekora"
+    },
+    "menu-Shiranui-Flare": {
+        "jp": "",
+        "en": "Shiranui Flare"
+    },
+    "menu-Shirogane-Noel": {
+        "jp": "",
+        "en": "Shirogane Noel"
+    },
+    "menu-Tsunomaki-Watame": {
+        "jp": "",
+        "en": "Tsunomaki Watame"
+    },
+    "menu-Tokoyami-Towa": {
+        "jp": "",
+        "en": "Tokoyami Towa"
+    },
+    "menu-Kiryu-Coco": {
+        "jp": "",
+        "en": "Kiryu Coco"
+    },
+    "menu-Amane-Kanata": {
+        "jp": "",
+        "en": "Amane Kanata"
+    },
+    "menu-Himemori-Luna": {
+        "jp": "",
+        "en": "Himemori Luna"
+    },
+    "menu-Yukihana-Lamy": {
+        "jp": "",
+        "en": "Yukihana Lamy"
+    },
+    "menu-Momosuzu-Nene": {
+        "jp": "",
+        "en": "Momosuzu Nene"
+    },
+    "menu-Shishiro-Botan": {
+        "jp": "",
+        "en": "Shishiro Botan"
+    },
+    "menu-Omaru-Polka": {
+        "jp": "",
+        "en": "Omaru Polka"
+    },
+    "menu-AZKi": {
+        "jp": "",
+        "en": "AZKi"
+    },
+    "menu-Ookami-Mio": {
+        "jp": "",
+        "en": "Ookami Mio"
+    },
+    "menu-Nekomata-Okayu": {
+        "jp": "",
+        "en": "Nekomata Okayu"
+    },
+    "menu-Inugami-Korone": {
+        "jp": "",
+        "en": "Inugami Korone"
+    },
+    "menu-Watson-Amelia": {
+        "jp": "",
+        "en": "Watson Amelia"
+    },
+    "menu-Ninomae-Ina'nis": {
+        "jp": "",
+        "en": "Ninomae Ina'nis"
+    },
+    "menu-Gawr-Gura": {
+        "jp": "",
+        "en": "Gawr Gura"
+    },
+    "menu-Mori-Calliope": {
+        "jp": "",
+        "en": "Mori Calliope"
+    },
+    "menu-Takanashi-Kiara": {
+        "jp": "",
+        "en": "Takanashi Kiara"
+    },
+    "menu-Moona-Hoshinova": {
+        "jp": "",
+        "en": "Moona Hoshinova"
+    },
+    "menu-Ayunda-Risu": {
+        "jp": "",
+        "en": "Ayunda Risu"
+    },
+    "menu-Airani-Iofifteen": {
+        "jp": "",
+        "en": "Airani Iofifteen"
+    },
+    "menu-Pavolia-Reine": {
+        "jp": "",
+        "en": "Pavolia Reine"
+    },
+    "menu-Kureiji-Ollie": {
+        "jp": "",
+        "en": "Kureiji Ollie"
+    },
+    "menu-Anya-Melfissa": {
+        "jp": "",
+        "en": "Anya Melfissa"
+    },
+
     "Tokino Sora": {
         "jp": "ときのそら",
         "en": "Tokino Sora"
+    },
+
+    "debutDate": {
+        "jp": "",
+        "en": "Debut Date"
+    },
+    "officialWebsiteEN": {
+        "jp": "",
+        "en": "Official Website (English)"
+    },
+    "officialWebsiteJP": {
+        "jp": "",
+        "en": "Official Website (Japanese)"
+    },
+    "age": {
+        "jp": "",
+        "en": "Age"
+    },
+    "birthday": {
+        "jp": "",
+        "en": "Birthday"
+    },
+    "height": {
+        "jp": "",
+        "en": "Height"
+    },
+    "zodiacSign": {
+        "jp": "",
+        "en": "Zodiac Sign"
     }
 }

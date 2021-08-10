@@ -24,20 +24,24 @@ export function GetLocalizedText(text: string, localizationType = LocalizationTy
     lang = "en";
     localStorage.setItem("lang", "en");
   }
+
+  let result = "";
   if (Object.keys(data).indexOf(text) != -1) {
     const textData = (data as Record<string, LanguageData>)[text];
     if (Object.keys(textData).indexOf(lang) != -1) {
       switch (lang) {
         case "en":
-          return textData.en || "";
+          result = textData.en || "";
+          break;
 
         case "jp":
-          return textData.jp || "";
+          result = textData.jp || "";
+          break;
       }
     }
-    return text;
   }
-  return text;
+
+  return result == "" ? text : result;
 }
 
 export function GetLocalizedSong(text: string) {
