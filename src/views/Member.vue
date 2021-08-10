@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="member-content-info-info">
-            <div class="member-name">{{ getMemberName() }}</div>
+            <div class="member-name">{{ getLocalizedMemberName() }}</div>
             <div class="member-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. In
               perferendis reiciendis nobis ab facilis nostrum ratione, unde
@@ -60,6 +60,7 @@ import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
 import talents from "@/assets/json/talents.json";
 import { TalentBasicInfo } from "@/assets/ts/interfaces";
+import { GetLocalizedText } from "@/assets/ts/localize";
 
 @Component({
   components: {
@@ -132,6 +133,11 @@ export default class MemberPage extends Vue {
 
   getMemberName() {
     return Common.GetTalentName(this.$data.memberName);
+  }
+
+  getLocalizedMemberName() {
+    console.log("A")
+    return GetLocalizedText(this.getMemberName());
   }
 
   getMemberSignatureURL(res: string) {

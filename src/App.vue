@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="content">
-      <router-view />
+      <router-view :key="currentLang" />
     </div>
     <MusicPlayer v-bind:currentLang="currentLang"></MusicPlayer>
   </div>
