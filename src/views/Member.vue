@@ -49,6 +49,20 @@
             ></ChartSwiper>
           </div>
         </div>
+        <div class="member-content-more-info">
+          <div v-for="info in moreInfo" :key="info" class="more-info">
+            <div class="more-info-key">
+              <div class="more-info-key-text">
+                {{ info.key }}
+              </div>
+            </div>
+            <div class="more-info-value">
+              <div class="more-info-value-text">
+                {{ info.value }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -90,7 +104,8 @@ export default class MemberPage extends Vue {
           destination: ""
         }
       ],
-      officialBio: ""
+      officialBio: "",
+      moreInfo: [] as Array<{ key: string; value: string }>
     };
   }
 
@@ -103,12 +118,20 @@ export default class MemberPage extends Vue {
     this.$data.basicInfo = talentData?.basicInfo;
     this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData?.channelId}`;
     this.$data.links[1].destination = `https://twitter.com/${talentData?.twitter}`;
-    this.$data.links[2].destination = talentData?.basicInfo.officialWebsite[localStorage.getItem("lang")];
+    this.$data.links[2].destination =
+      localStorage.getItem("lang") == "en"
+        ? talentData?.basicInfo.officialWebsiteEN
+        : talentData?.basicInfo.officialWebsiteJP;
     this.$data.officialBio = talentData?.officialBio;
-  }
 
-  mounted() {
-    // this.createSignatureIconBackground();
+    let k: keyof TalentBasicInfo;
+    for (k in talentData?.basicInfo) {
+      const v = talentData?.basicInfo[k];
+      this.$data.moreInfo.push({
+        key: GetLocalizedText(k),
+        value: GetLocalizedText(v || "")
+      })
+    }
   }
 
   getMemberBannerURL() {
@@ -136,7 +159,6 @@ export default class MemberPage extends Vue {
   }
 
   getLocalizedMemberName() {
-    console.log("A")
     return GetLocalizedText(this.getMemberName());
   }
 
@@ -300,6 +322,6 @@ export default class MemberPage extends Vue {
 }
 
 .member-chart {
-  height: 100vh;
+  height: 520px;
 }
 </style>

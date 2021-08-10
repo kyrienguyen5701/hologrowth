@@ -77,14 +77,10 @@ export interface TalentDisplay {
   shown: boolean;
 }
 
-export interface OfficialWebsite {
-  en: string;
-  jp: string;
-}
-
 export interface TalentBasicInfo {
   debutDate: string;
-  officialWebsite: OfficialWebsite;
+  officialWebsiteEN: string;
+  officialWebsiteJP: string;
   age: string;
   birthday: string;
   height: string;
