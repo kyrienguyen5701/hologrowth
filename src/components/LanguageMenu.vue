@@ -37,10 +37,10 @@ export default class LanguageMenu extends Vue {
         return result;
       })(),
       getLangText(langCode: string) {
-        return Localization.GetLocalizedText(`menu-${langCode}`);
+        return Localization.GetLocalizedText(`lang-${langCode}`);
       },
       getSelectedLang() {
-        return Localization.GetLocalizedText(`menu-${this.selectedLang}`);
+        return Localization.GetLocalizedText(`lang-${this.selectedLang}`);
       }
     };
   }

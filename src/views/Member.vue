@@ -87,7 +87,7 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
 import talents from "@/assets/json/talents.json";
-import { TalentBasicInfo } from "@/assets/ts/interfaces";
+import { TalentBasicInfo, TalentData } from "@/assets/ts/interfaces";
 import { GetLocalizedText } from "@/assets/ts/localize";
 
 @Component({
@@ -125,26 +125,29 @@ export default class MemberPage extends Vue {
 
   @Watch("$route", { immediate: true, deep: true })
   onMemberChange() {
+    this.$data.moreInfo = []; // reset info to avoid stacking when navigating within router
     this.$data.memberName = this.$route.params.talentName;
     const talentData = talents.find(talent => {
       return talent.name === this.getMemberName();
-    })
-    this.$data.basicInfo = talentData?.basicInfo;
-    this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData?.channelId}`;
-    this.$data.links[1].destination = `https://twitter.com/${talentData?.twitter}`;
+    }) as TalentData;
+    this.$data.basicInfo = talentData.basicInfo;
+    this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData.channelId}`;
+    this.$data.links[1].destination = `https://twitter.com/${talentData.twitter}`;
     this.$data.links[2].destination =
       localStorage.getItem("lang") == "en"
-        ? talentData?.basicInfo.officialWebsiteEN
-        : talentData?.basicInfo.officialWebsiteJP;
-    this.$data.officialBio = talentData?.officialBio;
+        ? talentData.officialWebsiteEN
+        : talentData.officialWebsiteJP;
+    this.$data.officialBio = talentData.officialBio;
 
     let k: keyof TalentBasicInfo;
-    for (k in talentData?.basicInfo) {
-      const v = talentData?.basicInfo[k];
-      this.$data.moreInfo.push({
-        key: GetLocalizedText(k),
-        value: GetLocalizedText(v || "")
-      })
+    for (k in talentData.basicInfo) {
+      if (!k.includes("officialWebsite")) {
+        const v = talentData.basicInfo[k];
+        this.$data.moreInfo.push({
+          key: GetLocalizedText(k),
+          value: GetLocalizedText(v || "")
+        })
+      }
     }
   }
 
