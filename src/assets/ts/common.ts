@@ -63,7 +63,6 @@ export function Categorize(
     }
     // temporary fix: add Fubuki for GAMERS
     if (data[i].name === "Shirakami Fubuki" && findKey === "genNumber") {
-      console.log("Burah")
       result["GAMERS"] = [data[i]];
     }
     if (!ContainsKey(result, key)) {
@@ -72,7 +71,6 @@ export function Categorize(
       result[key].push(data[i]);
     }
   }
-  console.log(result);
   return result;
 }
 
