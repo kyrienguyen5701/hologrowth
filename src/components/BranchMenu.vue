@@ -73,7 +73,7 @@ export default class BranchMenu extends Vue {
               const memberData = {} as MemberMenuData;
               memberData.memberName = talents[i].name.replaceAll(" ", "-");
               memberData.memberDisplayName = Localization.GetLocalizedText(
-                `menu-${talents[i].name.replaceAll(" ", "-")}`
+                `menu-${talents[i].name.toLowerCase().replaceAll(" ", "-")}`
               );
               memberData.memberURL = GetYoutubeURL(talents[i].channelId);
 
@@ -81,7 +81,7 @@ export default class BranchMenu extends Vue {
             }
 
             genData.genName = Localization.GetLocalizedText(
-              `menu-${branch}-gen-${gen}`
+              `menu-${branch}-gen-${gen.toLowerCase().replaceAll(" ", "-")}`
             );
             genData.genMember = memberMenuData;
 
@@ -149,7 +149,7 @@ export default class BranchMenu extends Vue {
       }
 
       .gen-name {
-        min-width: 150px;
+        min-width: 220px;
         height: 40px;
         background: var(--color-current);
         padding: 5px 0px;
@@ -163,7 +163,7 @@ export default class BranchMenu extends Vue {
 
       .member {
         background: var(--color-current);
-        width: 200px;
+        width: 220px;
         height: 40px;
         margin: 0 0 5px 5px;
         display: flex;

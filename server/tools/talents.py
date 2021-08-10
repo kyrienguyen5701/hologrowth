@@ -1,3 +1,4 @@
+  
 import os
 import json
 import pandas as pd
@@ -6,9 +7,13 @@ talentsFilePath = '../../public/talents.json'
 talentsDestPath = '../../src/assets/json/talents.json'
 bgmDir = '../../src/assets/sounds/bgm'
 soloDir = '../../src/assets/sounds/solo'
+localizeFilePath = '../../src/assets/json/localization.json'
 
 with open(talentsFilePath, 'r', encoding='utf-8') as f:
     content = json.load(f)
+
+with open(localizeFilePath, 'r', encoding='utf-8') as f:
+    localize = json.load(f)
 
 df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'basicInfo', 'officialBio', 'tags', 'channelId', 'twitter', 'bgm', 'solo'])
 
@@ -45,7 +50,17 @@ for branch, branchInfo in content.items():
             "zodiacSign": talentInfo["zodiacSign"],
         }
 
-        officialBio = talentInfo["officialBio"]
+        localize[talentName] = localize[f'menu-{"-".join(talentName.lower().split(" "))}'] = {
+            "en": talentName,
+            "jp": tags[0]
+        }
+
+        localize_key = f'bio-{"-".join(talentName.lower().split(" "))}'
+        officialBio = localize_key
+        localize[localize_key] = {
+            "en": talentInfo["officialBio"],
+            "jp": ''
+        }
 
         bgm = os.listdir(f'{bgmDir}/{talentName}') if os.path.isdir(f'{bgmDir}/{talentName}') else []
         solo = os.listdir(f'{soloDir}/{talentName}') if os.path.isdir(f'{soloDir}/{talentName}') else []
@@ -54,4 +69,5 @@ for branch, branchInfo in content.items():
         i += 1
 
 df['genNumber'] = df['genNumber'].astype('str')
-df.to_json(talentsDestPath, orient='records', force_ascii=False, indent=4)
+# df.to_json(talentsDestPath, orient='records', force_ascii=False, indent=4)
+json.dump(localize, open(localizeFilePath, 'w', encoding='utf-8'), ensure_ascii=False, indent=4)

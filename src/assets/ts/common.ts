@@ -57,15 +57,22 @@ export function Categorize(
   }
 
   for (let i = 0; i < data.length; i++) {
-    const key = GetProperty(data[i], findKey) as string;
-    // if (!data[i].ContainsKey(key)) {
+    let key = GetProperty(data[i], findKey) as string;
+    if (key === '' && findKey === "genNumber") {
+      key = GetProperty(data[i], "genName") as string;
+    }
+    // temporary fix: add Fubuki for GAMERS
+    if (data[i].name === "Shirakami Fubuki" && findKey === "genNumber") {
+      console.log("Burah")
+      result["GAMERS"] = [data[i]];
+    }
     if (!ContainsKey(result, key)) {
       result[key] = [data[i]];
     } else {
       result[key].push(data[i]);
     }
   }
-
+  console.log(result);
   return result;
 }
 
