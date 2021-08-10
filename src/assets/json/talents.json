@@ -8,8 +8,30 @@
 
         ],
         "name":"Tokino Sora",
-        "tags":["ときのそら", "Soda ソーダ", "Cola コーラ ", "Sofa ソファー", "Soy ソイ", "Soka Souka そうか", "Tokyo 東京", "Goddess"],
+        "basicInfo":{
+            "debutDate":"2017/09/07",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433553",
+                "jp":"https://www.hololive.tv/portfolio/items/336222"
+            },
+            "age":"20 years old",
+            "birthday":"15 May 2000",
+            "height":"160 cm",
+            "zodiacSign":"Taurus"
+        },
+        "officialBio":"Debuting on September 7, 2017, she is the first Virtual Idol of Hololive Production.\nShe loves singing and horror games, and her dream has been to hold a live concert at Yokohama Arena since the very beginning. She had her major debut at Victor Entertainment in March 2019. On her road to pro idol, she played a role in the TV show Watanuki-san Chi while also running a podcast known as SoraAoto! She also takes an active role in other genres. On October 6, 2019, she held her own live concert Dream!\n",
+        "tags":[
+            "ときのそら",
+            "Soda ソーダ",
+            "Cola コーラ ",
+            "Sofa ソファー",
+            "Soy ソイ",
+            "Soka Souka そうか",
+            "Tokyo 東京",
+            "Goddess"
+        ],
         "channelId":"UCp6993wxpyDPHUpavwDFqgg",
+        "twitter":"https://twitter.com/tokino_sora",
         "bgm":[
             "Under the Clear Sky.mp3",
             "夕べの星.mp3"
@@ -34,8 +56,25 @@
 
         ],
         "name":"Roboco",
-        "tags":["ロボ子", "Robocosan ロボ子さん", "Roborobo ロボロボ"],
+        "basicInfo":{
+            "debutDate":"2018/03/04",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433579",
+                "jp":"https://www.hololive.tv/portfolio/items/336223"
+            },
+            "age":"17 years old",
+            "birthday":"23 May",
+            "height":"154 cm",
+            "zodiacSign":"Gemini"
+        },
+        "officialBio":"A lonely, wimpy robot from a random wasteland. She is now hoping to contact and live with lots of people as a Virtual Liver.\n",
+        "tags":[
+            "ロボ子",
+            "Robocosan ロボ子さん",
+            "Roborobo ロボロボ"
+        ],
         "channelId":"UCDqI2jOz0weumE8s7paEk6g",
+        "twitter":"https://twitter.com/robocosan",
         "bgm":[
             "Next Wednesday 魂音泉.mp3"
         ],
@@ -54,8 +93,26 @@
 
         ],
         "name":"Sakura Miko",
-        "tags":["さくらみこ", "Miko-chi Mikochi みこち", "Mikomiko みこみこ", "Mikodanye みこだにぇ"],
+        "basicInfo":{
+            "debutDate":"2018/08/01",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433578",
+                "jp":"https://www.hololive.tv/portfolio/items/336371"
+            },
+            "age":"18.2 years old",
+            "birthday":"5 March",
+            "height":"152 cm (5')",
+            "zodiacSign":"Pisces"
+        },
+        "officialBio":"She has been working on religious services really hard as a miko in the computer world. With the revelation of the gods, she is now visiting Japan. While performing her errand, she has now decided to become and work hard as a virtual miko idol.\n",
+        "tags":[
+            "さくらみこ",
+            "Miko-chi Mikochi みこち",
+            "Mikomiko みこみこ",
+            "Mikodanye みこだにぇ"
+        ],
         "channelId":"UC-hM6YJuNYVAmUWxeIr9FeA",
+        "twitter":"https://twitter.com/sakuramiko35",
         "bgm":[
             "Sakura Miko Ending BGM.mp3",
             "Sakura Miko Opening BGM.mp3",
@@ -78,8 +135,28 @@
 
         ],
         "name":"Hoshimachi Suisei",
-        "tags":["星街すいせい", "Sui-chan すいちゃん", "Suicopath スイコパス", "Suisui すいすい", "Meteor メテオ", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2018/03/22",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433550",
+                "jp":"https://www.hololive.tv/portfolio/items/345947"
+            },
+            "age":"18 years old",
+            "birthday":"22 March",
+            "height":"160 cm  (5'3)",
+            "zodiacSign":"Aries"
+        },
+        "officialBio":"A forever18 VTuber who deeply loves singing and idols. Her dream is to one day hold a live concert in Tokyo Budokan.\n",
+        "tags":[
+            "星街すいせい",
+            "Sui-chan すいちゃん",
+            "Suicopath スイコパス",
+            "Suisui すいすい",
+            "Meteor メテオ",
+            "Cutting Board まな板"
+        ],
         "channelId":"UC5CwaMl1eIgY8h02uZw7u8A",
+        "twitter":"https://twitter.com/suisei_hosimati",
         "bgm":[
             "かえるのピアノ.mp3",
             "ごろごろゲームする日.mp3",
@@ -97,14 +174,29 @@
     {
         "id":4,
         "branch":"jp",
-        "genNumber":"0",
+        "genNumber":"",
         "genName":"INoNaKa Music",
         "genOther":[
 
         ],
         "name":"AZKi",
-        "tags":["AZKichi"],
+        "basicInfo":{
+            "debutDate":"2018/11/15",
+            "officialWebsite":{
+                "en":"http://azki-official.com/",
+                "jp":"https://www.hololive.tv/portfolio/items/336226"
+            },
+            "age":"18 years old (forever)",
+            "birthday":"1 July",
+            "height":"168 cm (with heels on)",
+            "zodiacSign":"Cancer"
+        },
+        "officialBio":"A diva who became reborn into the virtual world in order to fabricate a new world. No matter the time, place, or position, she warps through all the barricades with her dazzling talent.\n",
+        "tags":[
+            "AZKichi"
+        ],
         "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
+        "twitter":"https://twitter.com/AZKi_VDiVA",
         "bgm":[
             "Bougainvillea.mp3"
         ],
@@ -128,8 +220,25 @@
 
         ],
         "name":"Yozora Mel",
-        "tags":["夜空メル", "Merumeru メル", "BANPire バンパイア"],
+        "basicInfo":{
+            "debutDate":"2018/05/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433549",
+                "jp":"https://www.hololive.tv/portfolio/items/336404"
+            },
+            "age":"",
+            "birthday":"31 October",
+            "height":"154 cm",
+            "zodiacSign":"Scorpio"
+        },
+        "officialBio":"A vampire girl. Even though she is a vampire, she is not into blood, instead, she loves acerola juice the most.\n",
+        "tags":[
+            "夜空メル",
+            "Merumeru メル",
+            "BANPire バンパイア"
+        ],
         "channelId":"UCD8HOxPs4Xvsm8H0ZxXGiBw",
+        "twitter":"https://twitter.com/yozoramel",
         "bgm":[
             "カフェでひと休み.mp3",
             "ポップキャンディ.mp3"
@@ -147,8 +256,25 @@
 
         ],
         "name":"Aki Rosenthal",
-        "tags":["アキローゼンタール", "Akirose アキローゼ", "Akipella アキぺラ"],
+        "basicInfo":{
+            "debutDate":"2018/06/07",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433574",
+                "jp":"https://www.hololive.tv/portfolio/items/336382"
+            },
+            "age":"",
+            "birthday":"17 February",
+            "height":"162 cm",
+            "zodiacSign":"Aquarius"
+        },
+        "officialBio":"A girl who traveled from a different universe. She has hyper curiosity and manages to reach out to all sorts of things. Her trademark pigtails float due to some sort of supernatural power.\n",
+        "tags":[
+            "アキローゼンタール",
+            "Akirose アキローゼ",
+            "Akipella アキぺラ"
+        ],
         "channelId":"UCFTLzh12_nrtzqBPsTCqenA",
+        "twitter":"https://twitter.com/akirosenthal",
         "bgm":[
             "Lights Out.mp3",
             "Numbers.mp3"
@@ -169,8 +295,25 @@
 
         ],
         "name":"Akai Haato",
-        "tags":["赤井はあと", "Haachama はあちゃま", "GOD"],
+        "basicInfo":{
+            "debutDate":"2018/06/02",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433551",
+                "jp":"https://www.hololive.tv/portfolio/items/336380"
+            },
+            "age":"19 years old",
+            "birthday":"10 August 2001",
+            "height":"154 cm",
+            "zodiacSign":"Leo"
+        },
+        "officialBio":"Welcome to your rouge awakening! This is Akai Haato!\nA sassy kouhai. She is often prickly, however she manages to demand lots of attention from those with whom she has been getting along well. She loves red ribbons and heart shapes and often adds them to her hair and dresses.\n",
+        "tags":[
+            "赤井はあと",
+            "Haachama はあちゃま",
+            "GOD"
+        ],
         "channelId":"UC1CfXB_kRs3C-zaeTG3oGyg",
+        "twitter":"https://twitter.com/akaihaato",
         "bgm":[
             "はあちゃまっちゃま.mp3",
             "まったりゆらゆら.mp3",
@@ -192,8 +335,27 @@
 
         ],
         "name":"Shirakami Fubuki",
-        "tags":["白上フブキ", "FBK", "Kurokami Fubuki 黒上フブキ", "Friend フレンド", "Waifriend ワイフレンド"], 
+        "basicInfo":{
+            "debutDate":"2018/06/01",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433587",
+                "jp":"https://www.hololive.tv/portfolio/items/336378"
+            },
+            "age":"18 years old (Human years)",
+            "birthday":"5 October",
+            "height":"155 cm",
+            "zodiacSign":"Libra"
+        },
+        "officialBio":"Foxy day to you! I'm Shirakami Fubuki!\nA white haired animal-eared highschool student. Although she is shy and mostly calm, she likes to talk to people. She would be very happy if you pay attention to her.\n",
+        "tags":[
+            "白上フブキ",
+            "FBK",
+            "Kurokami Fubuki 黒上フブキ",
+            "Friend フレンド",
+            "Waifriend ワイフレンド"
+        ],
         "channelId":"UCdn5BQ06XqgXoAxIhbqw5Rg",
+        "twitter":"https://twitter.com/shirakamifubuki",
         "bgm":[
             "Beachside Fox.mp3",
             "桜色コントレイル.mp3",
@@ -214,8 +376,27 @@
 
         ],
         "name":"Natsuiro Matsuri",
-        "tags":["夏色まつり", "Matsurin まつりん", "GOD", "Horni Horny ムラムラ", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2018/06/01",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433575",
+                "jp":"https://www.hololive.tv/portfolio/items/336381"
+            },
+            "age":"16 years old",
+            "birthday":"22 July",
+            "height":"152 cm",
+            "zodiacSign":"Cancer"
+        },
+        "officialBio":"Festival night! Natsuiro Matsuri is here!\nA rookie on the Cheerleading Team. Cheerful and affectionate, her pleasant attitude means she gets along with everyone. She has a lot of friends, and loves festivals and events.\n",
+        "tags":[
+            "夏色まつり",
+            "Matsurin まつりん",
+            "GOD",
+            "Horni Horny ムラムラ",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCQ0UDLQCjY0rmuxCDE38FGg",
+        "twitter":"https://twitter.com/natsuiromatsuri",
         "bgm":[
             "Matsuri's Day Off.mp3",
             "鈴色日和.mp3"
@@ -233,8 +414,26 @@
 
         ],
         "name":"Minato Aqua",
-        "tags":["港あくあ", "Akutan あくたん", "Onion 玉ねぎ", "Baqua ばくあ"],
+        "basicInfo":{
+            "debutDate":"2018/08/08",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433565",
+                "jp":"https://www.hololive.tv/portfolio/items/336383"
+            },
+            "age":"",
+            "birthday":"1 December",
+            "height":"148 cm (4'10)",
+            "zodiacSign":"Sagittarius"
+        },
+        "officialBio":"「A-quality day to one and all! I'm Minato Aqua!」\nA marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.\n",
+        "tags":[
+            "港あくあ",
+            "Akutan あくたん",
+            "Onion 玉ねぎ",
+            "Baqua ばくあ"
+        ],
         "channelId":"UC1opHUrw8rvnsadT-iGp7Cg",
+        "twitter":"https://twitter.com/minatoaqua",
         "bgm":[
             "Marine Maid.mp3",
             "Radio#16.mp3",
@@ -255,8 +454,26 @@
 
         ],
         "name":"Murasaki Shion",
-        "tags":["紫咲シオン", "Garlic ニンニク", "Kusogaki クソガキ", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2018/08/17",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433577",
+                "jp":"https://www.hololive.tv/portfolio/items/336387"
+            },
+            "age":"",
+            "birthday":"8 December",
+            "height":"145 cm",
+            "zodiacSign":"Sagittarius"
+        },
+        "officialBio":"Hellshio! Murasaki Shion here!\nA random self-proclaimed child (though she is probably an adult) who appears around the Demonic-Realm Academy. She calls herself a highborne black magician (probably). She can barely say her greeting, “Hellshio”.\n",
+        "tags":[
+            "紫咲シオン",
+            "Garlic ニンニク",
+            "Kusogaki クソガキ",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCXTpFs_3PqI41qX2d9tL2Rw",
+        "twitter":"https://twitter.com/murasakishionch",
         "bgm":[
             "Virtual Magician.mp3",
             "紫咲詩音正月.mp3"
@@ -274,8 +491,25 @@
 
         ],
         "name":"Nakiri Ayame",
-        "tags":["百鬼あやめ", "Ojou-sama お嬢さま お嬢様", "Kijin Hyakki 鬼神百鬼"],
+        "basicInfo":{
+            "debutDate":"2018/09/03",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433583",
+                "jp":"https://www.hololive.tv/portfolio/items/336384"
+            },
+            "age":"1500+ years old",
+            "birthday":"13 December",
+            "height":"152 cm",
+            "zodiacSign":"Sagittarius"
+        },
+        "officialBio":"Greetings, humans! Nakiri Ayame has arrived!\nA kimono-clad Oni girl from the Demonic-Realm Academy. As she loves to prank people, she always uses will-o’-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.\n",
+        "tags":[
+            "百鬼あやめ",
+            "Ojou-sama お嬢さま お嬢様",
+            "Kijin Hyakki 鬼神百鬼"
+        ],
         "channelId":"UC7fk0CB07ly8oSl0aqKkqFg",
+        "twitter":"https://twitter.com/nakiriayame",
         "bgm":[
             "Chrono.mp3",
             "Summertime Nakiri.mp3",
@@ -296,8 +530,24 @@
 
         ],
         "name":"Yuzuki Choco",
-        "tags":["癒月ちょこ", "Choco-sensei ちょこ先生"],
+        "basicInfo":{
+            "debutDate":"2018/09/05",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433552",
+                "jp":"https://www.hololive.tv/portfolio/items/336386"
+            },
+            "age":"",
+            "birthday":"14 February",
+            "height":"165 cm",
+            "zodiacSign":"Aquarius"
+        },
+        "officialBio":"Good evening, my cute students! It's your teacher, Choco!\nA health doctor from the Demonic-Realm Academy. Has a high reputation around the school. It was told that the line of male students never ends. She loves snacks quite a lot, although one time her desk was caked with food wrappers, and she was then scolded badly.\n",
+        "tags":[
+            "癒月ちょこ",
+            "Choco-sensei ちょこ先生"
+        ],
         "channelId":"UC1suqwovbL1kzsoaZgFZLKg",
+        "twitter":"https://twitter.com/yuzukichococh",
         "bgm":[
             "Cooking Time.mp3"
         ],
@@ -314,8 +564,27 @@
 
         ],
         "name":"Oozora Subaru",
-        "tags":["大空スバル", "Subachi スバち", "Subatani Subao スバタニスバオ", "Duck アヒル", "Bird 鳥"],
+        "basicInfo":{
+            "debutDate":"2018/09/16",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433593",
+                "jp":"https://www.hololive.tv/portfolio/items/336385"
+            },
+            "age":"17 years old",
+            "birthday":"2 July",
+            "height":"154 cm",
+            "zodiacSign":"Cancer"
+        },
+        "officialBio":"Sup? I'm Oozora Subaru!\nThe manager of an MMA club and an E-sports club. A supremely spirited, cheerful, lively girl who can talk to anyone without breaking a sweat. She’s currently practicing her pro-gamer skills.\n",
+        "tags":[
+            "大空スバル",
+            "Subachi スバち",
+            "Subatani Subao スバタニスバオ",
+            "Duck アヒル",
+            "Bird 鳥"
+        ],
         "channelId":"UCvzGlP9oQwU--Y0r9id_jnA",
+        "twitter":"https://twitter.com/oozorasubaru",
         "bgm":[
             "You and Me.mp3",
             "まったりしましょ.mp3",
@@ -334,8 +603,26 @@
 
         ],
         "name":"Ookami Mio",
-        "tags":["大神ミオ", "Mion ミオン", "Mio Mama ミオママ", "Kurokami Omi 黒神臣"],
+        "basicInfo":{
+            "debutDate":"2018/12/07",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433580",
+                "jp":"https://www.hololive.tv/portfolio/items/336400"
+            },
+            "age":"",
+            "birthday":"20 August",
+            "height":"155 cm",
+            "zodiacSign":"Leo"
+        },
+        "officialBio":"Hellooowl! It is Ookami Mio!\nA black haired kemomimi girl who appeared on our radar randomly. She often shows up around shrines. She likes gaming.\n",
+        "tags":[
+            "大神ミオ",
+            "Mion ミオン",
+            "Mio Mama ミオママ",
+            "Kurokami Omi 黒神臣"
+        ],
         "channelId":"UCp-5t9SrOQwXMU7iIjQfARg",
+        "twitter":"https://twitter.com/ookamimio",
         "bgm":[
             "So Sweet.mp3",
             "Summer Vacation.mp3",
@@ -356,8 +643,26 @@
 
         ],
         "name":"Nekomata Okayu",
-        "tags":["猫又おかゆ", "Okazu おかず", "Okayun おかゆん", "Okato おかと"],
+        "basicInfo":{
+            "debutDate":"2019/04/06",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433581",
+                "jp":"https://www.hololive.tv/portfolio/items/336402"
+            },
+            "age":"16 years old(80 in Cat Years)",
+            "birthday":"22 February",
+            "height":"152 cm",
+            "zodiacSign":"Pisces"
+        },
+        "officialBio":"Om, nom, nom! Okayu time!\nA cat raised by a old woman from the onigiri store. She streams just because there is a PC in the old woman’s room.\n",
+        "tags":[
+            "猫又おかゆ",
+            "Okazu おかず",
+            "Okayun おかゆん",
+            "Okato おかと"
+        ],
         "channelId":"UCvaTdHTWBGv3MKj3KVqJVCw",
+        "twitter":"https://twitter.com/nekomataokayu",
         "bgm":[
             "Peaceful Treasure.mp3",
             "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3",
@@ -377,8 +682,26 @@
 
         ],
         "name":"Inugami Korone",
-        "tags":["戌神ころね", "Koro-san ころさん", "Koronen ころねん", "Doggo"],
+        "basicInfo":{
+            "debutDate":"2019/04/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433592",
+                "jp":"https://www.hololive.tv/portfolio/items/336401"
+            },
+            "age":"92 years old (dog years)",
+            "birthday":"1 October",
+            "height":"156 cm",
+            "zodiacSign":"Libra"
+        },
+        "officialBio":"G'morning! Fingers! Give me your fingers!!\nThe dog from a random bakery. She likes to play games when she has free time while watchdogging.\n",
+        "tags":[
+            "戌神ころね",
+            "Koro-san ころさん",
+            "Koronen ころねん",
+            "Doggo"
+        ],
         "channelId":"UChAnqc_AY5_I3Px5dig3X1Q",
+        "twitter":"https://twitter.com/inugamikorone",
         "bgm":[
             "えっさほいさ囃子.mp3",
             "ひたひたと迫る影.mp3",
@@ -397,8 +720,29 @@
 
         ],
         "name":"Houshou Marine",
-        "tags":["宝鐘マリン", "Senchou 船長", "Maririn マリリン", "Oneesan Gumi お姉さん組", "17 Seventeen 十七歳", "Baba ババ", "Horni Horny ムラムラ"],
+        "basicInfo":{
+            "debutDate":"2019/08/11",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433586",
+                "jp":"https://www.hololive.tv/portfolio/items/336351"
+            },
+            "age":"17 years old (season 2)",
+            "birthday":"30 July",
+            "height":"150 cm",
+            "zodiacSign":"Leo"
+        },
+        "officialBio":"Ahoy! Houshou Pirate Captain, Houshou Marine here!\nLoves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do (which also means she is currently just a girl cosplayer). She acts like a big sis and sometimes seduces people like a succubus does.\n",
+        "tags":[
+            "宝鐘マリン",
+            "Senchou 船長",
+            "Maririn マリリン",
+            "Oneesan Gumi お姉さん組",
+            "17 Seventeen 十七歳",
+            "Baba ババ",
+            "Horni Horny ムラムラ"
+        ],
         "channelId":"UCCzUftO8KOVkV4wQG1vkUvg",
+        "twitter":"https://twitter.com/houshoumarine",
         "bgm":[
             "Captain Beatbox II.mp3",
             "Senchou's Comfy BGM.mp3",
@@ -420,8 +764,28 @@
 
         ],
         "name":"Uruha Rushia",
-        "tags":["潤羽るしあ", "Ruu-chan るうちゃん", "Boing Boing ボインボイン", "Pettan Pettanko ぺったん ぺったん子", "Shogouki 初号機", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2019/07/18",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433576",
+                "jp":"https://www.hololive.tv/portfolio/items/336265"
+            },
+            "age":"1600 years old",
+            "birthday":"22 January",
+            "height":"143 cm",
+            "zodiacSign":"Aquarius"
+        },
+        "officialBio":"Hel-rushi! This is Uruha Rushia!\nA necromancer from the Demonic-Realm Academy who is not good at communicating with people. She does not want to be alone, however, which is why she talks to the spirits and the damned.\n",
+        "tags":[
+            "潤羽るしあ",
+            "Ruu-chan るうちゃん",
+            "Boing Boing ボインボイン",
+            "Pettan Pettanko ぺったん ぺったん子",
+            "Shogouki 初号機",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCl_gCybOJRIgOXw6Qb4qJzQ",
+        "twitter":"https://twitter.com/uruharushia",
         "bgm":[
             "2_23 AM.mp3",
             "Be Happy.mp3",
@@ -441,8 +805,26 @@
 
         ],
         "name":"Usada Pekora",
-        "tags":["兎田ぺこら", "Peko-chan ぺこちゃん", "Pekoracho ぺこらちょ", "Shachou 社長"],
+        "basicInfo":{
+            "debutDate":"2019/07/17",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433585",
+                "jp":"https://www.hololive.tv/portfolio/items/336270"
+            },
+            "age":"111 years old",
+            "birthday":"12 January",
+            "height":"153 cm (not including the ears)",
+            "zodiacSign":"Capricorn"
+        },
+        "officialBio":"Hiya-peko! Hiya-peko! Hiya-pekooo! I'm Usada Pekora, peko!\nA lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.\n",
+        "tags":[
+            "兎田ぺこら",
+            "Peko-chan ぺこちゃん",
+            "Pekoracho ぺこらちょ",
+            "Shachou 社長"
+        ],
         "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
+        "twitter":"https://twitter.com/usadapekora",
         "bgm":[
             "おーたむうぉーきんぐ.mp3",
             "たぬきちの冒険.mp3",
@@ -463,8 +845,26 @@
 
         ],
         "name":"Shiranui Flare",
-        "tags":["不知火フレア", "Fuu-tan ふうたん", "Oneesan Gumi お姉さん組", "Homura ほむら"],
+        "basicInfo":{
+            "debutDate":"2019/08/07",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433584",
+                "jp":"https://www.hololive.tv/portfolio/items/336354"
+            },
+            "age":"221 years old",
+            "birthday":"2 April 1798",
+            "height":"158 cm",
+            "zodiacSign":"Aries"
+        },
+        "officialBio":"Noon-nui! This is Shiranui Flare!\nA half-elf who seems sloppy and undependable, however when it is time, she becomes an extremely reliable big sis. She is basically kind of drained. Her weakness is her emotions and she cries or gets embarrassed quite easily (Just praise her!). The fairy-like creature that looks like a panda is named “Kintsuba”.\n",
+        "tags":[
+            "不知火フレア",
+            "Fuu-tan ふうたん",
+            "Oneesan Gumi お姉さん組",
+            "Homura ほむら"
+        ],
         "channelId":"UCvInZx9h3jC2JzsIzoOebWg",
+        "twitter":"https://twitter.com/shiranuiflare",
         "bgm":[
             "カエルの勇者.mp3",
             "風がはじめに寄る街的なBGM.mp3"
@@ -482,8 +882,27 @@
 
         ],
         "name":"Shirogane Noel",
-        "tags":["白銀ノエル", "Danchou 団長", "Noe-chan ノエちゃん", "Oneesan Gumi お姉さん組", "Boing Boing ボインボイン"],
+        "basicInfo":{
+            "debutDate":"2019/08/08",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433582",
+                "jp":"https://www.hololive.tv/portfolio/items/336353"
+            },
+            "age":"18 (+ ２〇 months) years old",
+            "birthday":"24 November",
+            "height":"158 cm",
+            "zodiacSign":"Sagittarius"
+        },
+        "officialBio":"Hey muscle! Shirogane Noel's here!\nWhile she is easy-going, she has a dangerous side where she attempts to solve all her problems with muscle power. As much as this fluffy, meatheaded knight hungers for power, she came to the world of VTubers where all the stronk people are, for training.\n",
+        "tags":[
+            "白銀ノエル",
+            "Danchou 団長",
+            "Noe-chan ノエちゃん",
+            "Oneesan Gumi お姉さん組",
+            "Boing Boing ボインボイン"
+        ],
         "channelId":"UCdyqAaZDKHXg4Ahi7VENThQ",
+        "twitter":"https://twitter.com/shiroganenoel",
         "bgm":[
             "You and Me.mp3",
             "こんばんマスルー.mp3",
@@ -503,8 +922,25 @@
 
         ],
         "name":"Tsunomaki Watame",
-        "tags":["角巻わため", "Wataoji わたおじ", "Watamelon わたメロン"],
+        "basicInfo":{
+            "debutDate":"2019/12/29",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433561",
+                "jp":"https://www.hololive.tv/portfolio/items/360919"
+            },
+            "age":"4 years old (sheep years)",
+            "birthday":"6 June",
+            "height":"151 cm",
+            "zodiacSign":"Gemini"
+        },
+        "officialBio":"A sheep bard that goes around everywhere. She loves singing and is fluffy! YES! FLUFFY! Being a herbivore, she loves potato chips.\n",
+        "tags":[
+            "角巻わため",
+            "Wataoji わたおじ",
+            "Watamelon わたメロン"
+        ],
         "channelId":"UCqm3BQLlJfvkTsX_hvm0UmA",
+        "twitter":"https://twitter.com/tsunomakiwatame",
         "bgm":[
             "Rainy Day ☔.mp3",
             "ドドドホリデ.mp3"
@@ -526,8 +962,26 @@
 
         ],
         "name":"Tokoyami Towa",
-        "tags":["常闇トワ", "Towa-sama トワさま トワ様", "TMT Tenshi トワまじ天使", "TCA Akuma トワ超悪魔"],
+        "basicInfo":{
+            "debutDate":"2020/01/03",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433567",
+                "jp":"https://www.hololive.tv/portfolio/items/360920"
+            },
+            "age":"17 years old",
+            "birthday":"8 August ",
+            "height":"150 cm",
+            "zodiacSign":"Leo"
+        },
+        "officialBio":"In order to become an archdemon, she joined the human society for further studies. She should be studying but is now addicted to gaming. She realized that the method commonly known as streaming is also a way to communicate with humans. She is now in the trial and error process.\n",
+        "tags":[
+            "常闇トワ",
+            "Towa-sama トワさま トワ様",
+            "TMT Tenshi トワまじ天使",
+            "TCA Akuma トワ超悪魔"
+        ],
         "channelId":"UC1uv2Oq6kNxgATlCiez59hw",
+        "twitter":"https://twitter.com/tokoyamitowa",
         "bgm":[
             "10℃.mp3",
             "YouTube向けまったりした日常曲.mp3",
@@ -547,8 +1001,27 @@
 
         ],
         "name":"Kiryu Coco",
-        "tags":["桐生ココ", "Coco-chin Coco-chi ココちん ココち", "Kiryu-chan 桐生ちゃん", "Yuujin C 友人C", "Boing Boing ボインボイン"],
+        "basicInfo":{
+            "debutDate":"2019/12/28",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433563",
+                "jp":"https://www.hololive.tv/portfolio/items/360918"
+            },
+            "age":"3502 years old",
+            "birthday":"17 June",
+            "height":"Human form: 180 cm (5'11) ",
+            "zodiacSign":"Gemini"
+        },
+        "officialBio":"A child dragon (3,500 years old is young in dragon years) who is fond of human culture. She traveled from another universe to ours, just to study Japanese in a random language school. Also an honorable and heroic dragon who is filled with justice. She tries really hard to keep her human form.\n",
+        "tags":[
+            "桐生ココ",
+            "Coco-chin Coco-chi ココちん ココち",
+            "Kiryu-chan 桐生ちゃん",
+            "Yuujin C 友人C",
+            "Boing Boing ボインボイン"
+        ],
         "channelId":"UCS9uQI-jC3DE0L4IpXyvr6w",
+        "twitter":"https://twitter.com/kiryucoco",
         "bgm":[
             "ガンギマリドラゴン.mp3",
             "フラット気分.mp3",
@@ -569,8 +1042,29 @@
 
         ],
         "name":"Amane Kanata",
-        "tags": ["天音かなた", "Kanatan かなたん", "PPT Tenshi 天使", "Kanataso かなたそ", "Gorilla ゴリラ", "Boing Boing ボインボイン", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2019/12/27",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433562",
+                "jp":"https://www.hololive.tv/portfolio/items/360916"
+            },
+            "age":"18 years old (angel age)",
+            "birthday":"22 April",
+            "height":"149 cm",
+            "zodiacSign":"Taurus"
+        },
+        "officialBio":"An angel from the Angelic-Realm Institution. She is now studying how to heal people.To hide her shyness, she pretends to be cool.\n",
+        "tags":[
+            "天音かなた",
+            "Kanatan かなたん",
+            "PPT Tenshi 天使",
+            "Kanataso かなたそ",
+            "Gorilla ゴリラ",
+            "Boing Boing ボインボイン",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCZlDXzGoo7d44bwdNObFacg",
+        "twitter":"https://twitter.com/amanekanatach",
         "bgm":[
             "元気いっぱい.mp3",
             "楽しい帰り道.mp3"
@@ -588,8 +1082,25 @@
 
         ],
         "name":"Himemori Luna",
-        "tags": ["姫森ルーナ", "Luna-tan ルーナたん", "Luna-hime ルーナ姫"],
+        "basicInfo":{
+            "debutDate":"2020/01/04",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/433566",
+                "jp":"https://www.hololive.tv/portfolio/items/360921"
+            },
+            "age":"0 years old",
+            "birthday":"10 October",
+            "height":"150 cm (4'11) (with crown)",
+            "zodiacSign":"Libra"
+        },
+        "officialBio":"The princess of sweets. She sticks around people, and is easily impressed. However, when her childishness overloads, she will get scolded by her butler. It was also told that those moonshapes are the symbols of her country.\n",
+        "tags":[
+            "姫森ルーナ",
+            "Luna-tan ルーナたん",
+            "Luna-hime ルーナ姫"
+        ],
         "channelId":"UCa9Y57gfeY0Zro_noHRVrnw",
+        "twitter":"https://twitter.com/himemoriluna",
         "bgm":[
             "Lunar Light.mp3",
             "スケーターズ - ワルツ.mp3",
@@ -610,8 +1121,25 @@
 
         ],
         "name":"Yukihana Lamy",
-        "tags":["雪花ラミィ", "Lamy Mama ラミィママ", "Lawnmower 芝刈り機 "],
+        "basicInfo":{
+            "debutDate":"2020/08/12",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/554781",
+                "jp":"https://www.hololive.tv/portfolio/items/554688"
+            },
+            "age":"210 years old",
+            "birthday":"15 November 1810",
+            "height":"158 cm",
+            "zodiacSign":"Scorpio"
+        },
+        "officialBio":"A snow elf from a noble family renowned in the remote Land of Silver. She decided to leave her home, along with her companion Daifuku, after her heart was touched by the fun and colorful streams from hololive. Her serious personality belies her naive, sheltered nature.\n",
+        "tags":[
+            "雪花ラミィ",
+            "Lamy Mama ラミィママ",
+            "Lawnmower 芝刈り機 "
+        ],
         "channelId":"UCFKOVgVbGmX65RxO3EtH3iw",
+        "twitter":"https://twitter.com/yukihanalamy",
         "bgm":[
             "A Meaningful Day.mp3",
             "On A Snowy Day.mp3",
@@ -630,8 +1158,26 @@
 
         ],
         "name":"Momosuzu Nene",
-        "tags":["桃鈴ねね", "Nenechi ねねち", "Super Nenechi スパーねねち", "Seal"],
+        "basicInfo":{
+            "debutDate":"YouTube:2020/08/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/554783",
+                "jp":"https://www.hololive.tv/portfolio/items/554694"
+            },
+            "age":"19 years old",
+            "birthday":"2 March",
+            "height":"159 cm",
+            "zodiacSign":"Pisces"
+        },
+        "officialBio":"A girl who came from another world to chase after her idol dream. She likes singing, dancing, and drawing. She trains hard every day in order to win the hearts of even more people.\n",
+        "tags":[
+            "桃鈴ねね",
+            "Nenechi ねねち",
+            "Super Nenechi スパーねねち",
+            "Seal"
+        ],
         "channelId":"UCAWSyEs_Io8MtpY3m-zqILA",
+        "twitter":"https://twitter.com/momosuzunene",
         "bgm":[
             "ジオラマパレード.mp3",
             "ベリーベリーパンケーキ.mp3",
@@ -650,8 +1196,26 @@
 
         ],
         "name":"Shishiro Botan",
-        "tags": ["獅白ぼたん", "Shishiron ししろん", "La-Lion ラライオン", "Botan Mama ぼたんママ"],
+        "basicInfo":{
+            "debutDate":"2020/08/14",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/554786",
+                "jp":"https://www.hololive.tv/portfolio/items/554695"
+            },
+            "age":"",
+            "birthday":"8 September",
+            "height":"166 cm",
+            "zodiacSign":"Virgo"
+        },
+        "officialBio":"The mind of a lazy house cat in the body of a fearsome white lion. She’s conscientious and will finish what she has started, but good luck getting her to start. Her favorite phrase is, “Go big or go home!”\n",
+        "tags":[
+            "獅白ぼたん",
+            "Shishiron ししろん",
+            "La-Lion ラライオン",
+            "Botan Mama ぼたんママ"
+        ],
         "channelId":"UCUKD-uaobj9jiqB-VXt71mA",
+        "twitter":"https://twitter.com/shishirobotan",
         "bgm":[
             "2_23 AM.mp3",
             "Kawaii White Lion.mp3"
@@ -669,8 +1233,24 @@
 
         ],
         "name":"Omaru Polka",
-        "tags":["尾丸ポルカ", "Omarun おまるん"],
+        "basicInfo":{
+            "debutDate":"YouTube:2020/08/16",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/554793",
+                "jp":"https://www.hololive.tv/portfolio/items/554697"
+            },
+            "age":"Secret",
+            "birthday":"30 January",
+            "height":"153 cm",
+            "zodiacSign":"Aquarius"
+        },
+        "officialBio":"A circus performer who joined hololive in hopes of becoming the ringmaster of the VTuber world. She enjoys wowing audiences with acrobatics, and lives by the words, When the going gets tough, the tough get going. If you ask her, her occasional mess ups are also part of her charm.\n",
+        "tags":[
+            "尾丸ポルカ",
+            "Omarun おまるん"
+        ],
         "channelId":"UCK9V2B22uJYu3N7eR_BT9QA",
+        "twitter":"https://twitter.com/omarupolka",
         "bgm":[
             "Neu Kabuki.mp3",
             "ひらひらり.mp3",
@@ -690,8 +1270,26 @@
 
         ],
         "name":"Watson Amelia",
-        "tags":["ワトソンアメリア", "Ame Amechan アメ　アメちゃん", "Ground Pound グラウンドポンド", "Gremlin グレムリン"],
+        "basicInfo":{
+            "debutDate":"2020/09/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/584534",
+                "jp":"https://www.hololive.tv/portfolio/items/584546"
+            },
+            "age":"",
+            "birthday":"6 January",
+            "height":"150 cm (4'11)",
+            "zodiacSign":"Capricorn"
+        },
+        "officialBio":"She heard strange rumors surrounding Hololive online:  ,  ,  , and more. Soon after beginning her investigation on Hololive, and just out of interest, she decided to become an idol herself! She loves to pass her time training her reflexes with FPS games, and challenging herself with puzzle games.\nIt's elementary, right?\n",
+        "tags":[
+            "ワトソンアメリア",
+            "Ame Amechan アメ　アメちゃん",
+            "Ground Pound グラウンドポンド",
+            "Gremlin グレムリン"
+        ],
         "channelId":"UCyl1z3jo3XHR1riLFKG5UAg",
+        "twitter":"https://twitter.com/watsonameliaEN",
         "bgm":[
             "Watson Amelia BGM 5 min.mp3",
             "おもちゃのダンス.mp3"
@@ -709,8 +1307,26 @@
 
         ],
         "name":"Ninomae Ina'nis",
-        "tags":["にのまえいなにす", "Ina いな", "Tako たこ", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2020/09/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/584532",
+                "jp":"https://www.hololive.tv/portfolio/items/584542"
+            },
+            "age":"████ (somebody spilled ink on the page!!)",
+            "birthday":"20 May",
+            "height":"157 cm (5'2) [with shoes]",
+            "zodiacSign":"Taurus"
+        },
+        "officialBio":"One day, she picked up a strange book and then started to gain the power of controlling tentacles. To her, tentacles are just a part in her ordinary life; it has never been a big deal for her. However, her girly mind does want to get them dressed up and stay pretty.\nAfter gaining power, she started hearing Ancient Whispers and Revelations. Hence, she began her VTuber activities to deliver random sanity checks on humanity, as an ordinary girl.\n",
+        "tags":[
+            "にのまえいなにす",
+            "Ina いな",
+            "Tako たこ",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCMwGHR0BTZuLsmjY_NT5Pwg",
+        "twitter":"https://twitter.com/ninomaeinanis",
         "bgm":[
             "ensolarado.mp3"
         ],
@@ -727,8 +1343,24 @@
 
         ],
         "name":"Gawr Gura",
-        "tags":["がうるぐら", "Same-chan サメちゃん"],
+        "basicInfo":{
+            "debutDate":"2020/09/13",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/584533",
+                "jp":"https://www.hololive.tv/portfolio/items/584544"
+            },
+            "age":"between 9,000 and 10,000 years old (has forgotten exact number after ~5,000 years)",
+            "birthday":"20 June",
+            "height":"141 cm (4'7)",
+            "zodiacSign":"Gemini"
+        },
+        "officialBio":"A descendant of the Lost City of Atlantis, who swam to Earth while saying, It's so boring down there LOLOLOL! She bought her clothes (and her shark hat) in the human world and she really loves them. In her spare time, she enjoys talking to marine life.\n",
+        "tags":[
+            "がうるぐら",
+            "Same-chan サメちゃん"
+        ],
         "channelId":"UCoSrY_IQQVpmIRZ9Xf-y93g",
+        "twitter":"https://twitter.com/gawrgura",
         "bgm":[
             "Like the Snow.mp3",
             "おもちゃの行進曲.mp3",
@@ -749,8 +1381,24 @@
 
         ],
         "name":"Mori Calliope",
-        "tags":["もりかりおぺ", "Dad"],
+        "basicInfo":{
+            "debutDate":"2020/09/12",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/584527",
+                "jp":"https://www.hololive.tv/portfolio/items/584535"
+            },
+            "age":"No",
+            "birthday":"4 April",
+            "height":"167 cm (5'6)",
+            "zodiacSign":"Aries"
+        },
+        "officialBio":"The Grim Reaper's first apprentice. Because the world's medical system advanced so dramatically, she became a VTuber to collect souls. It seems that the lost souls vaporized by the wholesome relationships of VTubers flow through her as well. In the end, she's a gentle-hearted girl whose sweet voice contradicts the morbid things she tends to say, as well as her hardcore vocals.\n",
+        "tags":[
+            "もりかりおぺ",
+            "Dad"
+        ],
         "channelId":"UCL_qhgtOy0dy1Agp8vkySQg",
+        "twitter":"https://twitter.com/moricalliope",
         "bgm":[
             "Nights With You.mp3"
         ],
@@ -774,8 +1422,28 @@
 
         ],
         "name":"Takanashi Kiara",
-        "tags": ["小鳥遊キアラ", "Kusotori くそ鳥 クソトリ", "Tenchou 店長", "Bird 鳥", "Horni Horny ムラムラ", "Bottom left 左下"],
+        "basicInfo":{
+            "debutDate":"2020/09/12",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/584528",
+                "jp":"https://www.hololive.tv/portfolio/items/584540"
+            },
+            "age":"Eternal",
+            "birthday":"6 July",
+            "height":"165 cm (5'5)",
+            "zodiacSign":"Cancer"
+        },
+        "officialBio":"An idol whose dream is to become a fast food shop owner. She is a phoenix, NOT a chicken or turkey. (Very important)\nShe works extremely hard since she will be reborn from ashes anyway.\n",
+        "tags":[
+            "小鳥遊キアラ",
+            "Kusotori くそ鳥 クソトリ",
+            "Tenchou 店長",
+            "Bird 鳥",
+            "Horni Horny ムラムラ",
+            "Bottom left 左下"
+        ],
         "channelId":"UCHsx4Hqa-1ORjQTh9TYDhww",
+        "twitter":"https://twitter.com/takanashikiara",
         "bgm":[
             "HOLOTALK with Takanashi Kiara - BGM.mp3",
             "Majestic Phoenix.mp3",
@@ -796,8 +1464,24 @@
 
         ],
         "name":"Moona Hoshinova",
-        "tags":["ムーナホシノヴァ", "Buchou 部長"],
+        "basicInfo":{
+            "debutDate":"2020/04/11",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/438286",
+                "jp":"https://www.hololive.tv/portfolio/items/440320"
+            },
+            "age":"",
+            "birthday":"15 February",
+            "height":"165 cm (5'5)",
+            "zodiacSign":"Aquarius"
+        },
+        "officialBio":"A university student who is also a model and idol. She became a VTuber as she was attracted by the virtual world. She seems to be calm and cool-headed, but scary things are not her cup of tea.\n",
+        "tags":[
+            "ムーナホシノヴァ",
+            "Buchou 部長"
+        ],
         "channelId":"UCP0BspO_AMEe3aQqqpo89Dg",
+        "twitter":"https://twitter.com/moonahoshinova",
         "bgm":[
             "Galaxy.mp3",
             "Moona Hoshinova Intro.mp3",
@@ -817,8 +1501,25 @@
 
         ],
         "name":"Ayunda Risu",
-        "tags":["アユンダリス", "Alter Risu アルターリス", "Okakoro Child おかころの子"],
+        "basicInfo":{
+            "debutDate":"2020/04/10",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/438283",
+                "jp":"https://www.hololive.tv/portfolio/items/440312"
+            },
+            "age":"17 years old",
+            "birthday":"15 January",
+            "height":"153 cm (5'0)",
+            "zodiacSign":"Capricorn"
+        },
+        "officialBio":"A squirrel girl who comes from the magicial forest. She once lost her way in the human realm, but was then saved by a kind-hearted woman with whom she is now living. She treats this woman as her big sis. She debuted as a VTuber just to repay her.\n",
+        "tags":[
+            "アユンダリス",
+            "Alter Risu アルターリス",
+            "Okakoro Child おかころの子"
+        ],
         "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
+        "twitter":"https://twitter.com/ayunda_risu",
         "bgm":[
             "Brewing Coffee.mp3",
             "はざまりす.mp3",
@@ -838,8 +1539,25 @@
 
         ],
         "name":"Airani Iofifteen",
-        "tags":["アイラニイオフィフティーン", "Iofi イオフィ", "Erofi エロフィ"],
+        "basicInfo":{
+            "debutDate":"2020/04/12",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/438288",
+                "jp":"https://www.hololive.tv/portfolio/items/440326"
+            },
+            "age":"",
+            "birthday":"15 July",
+            "height":"150 cm (4'11)",
+            "zodiacSign":"Cancer"
+        },
+        "officialBio":"A breed of aliens who enjoys drawing. She loves the Earth so much that she successfully entered the school of Virtual Communication and Designs in a university here.\n",
+        "tags":[
+            "アイラニイオフィフティーン",
+            "Iofi イオフィ",
+            "Erofi エロフィ"
+        ],
         "channelId":"UCAoy6rzhSf4ydcYjJw3WoVg",
+        "twitter":"https://twitter.com/airaniiofifteen",
         "bgm":[
             "Funny and Cute music.mp3"
         ],
@@ -856,8 +1574,26 @@
 
         ],
         "name":"Pavolia Reine",
-        "tags":["パヴォリアレイネ", "Reine Mama アレイネママ", "Turkey 七面鳥", "Bird 鳥"],
+        "basicInfo":{
+            "debutDate":"2020/12/06",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/684689",
+                "jp":"https://www.hololive.tv/portfolio/items/684666"
+            },
+            "age":"",
+            "birthday":"9 September",
+            "height":"172 cm",
+            "zodiacSign":"Virgo"
+        },
+        "officialBio":"Lady of the Peafowl. While studying at a magic academy, she was involved in an incident and transferred to the human world. Since then, she has been unable to use much of her magic.\nAlthough appearing elegant and calm, she can become very emotional when angered.\n",
+        "tags":[
+            "パヴォリアレイネ",
+            "Reine Mama アレイネママ",
+            "Turkey 七面鳥",
+            "Bird 鳥"
+        ],
         "channelId":"UChgTyjG-pdNvxxhdsXfHQ5Q",
+        "twitter":"https://twitter.com/pavoliareine",
         "bgm":[
             "Peafowl Diva.mp3"
         ],
@@ -874,8 +1610,25 @@
 
         ],
         "name":"Kureiji Ollie",
-        "tags":["クレイジーオリー", "Olivia オリヴィア", "Cutting Board まな板"],
+        "basicInfo":{
+            "debutDate":"2020/12/04",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/684687",
+                "jp":"https://www.hololive.tv/portfolio/items/684664"
+            },
+            "age":"17 forever (age of death)",
+            "birthday":"13 October",
+            "height":"162 cm",
+            "zodiacSign":"Libra"
+        },
+        "officialBio":"A zombie high school girl risen from her grave. She headed home, relying on memories retained from when she was still alive. Upon arriving, she discovered it had turned into a ramen shop! And so, in order to reclaim her house, she decided to become a VTuber.\n",
+        "tags":[
+            "クレイジーオリー",
+            "Olivia オリヴィア",
+            "Cutting Board まな板"
+        ],
         "channelId":"UCYz_5n-uDuChHtLo7My1HnQ",
+        "twitter":"https://twitter.com/kureijiollie",
         "bgm":[
             "swing swing.mp3"
         ],
@@ -892,8 +1645,24 @@
 
         ],
         "name":"Anya Melfissa",
-        "tags":["アーニャメルフィッサ", "Arya Melvine アーリャメルヴィン"],
+        "basicInfo":{
+            "debutDate":"2020/12/05",
+            "officialWebsite":{
+                "en":"https://en.hololive.tv/portfolio/items/684688",
+                "jp":"https://www.hololive.tv/portfolio/items/684665"
+            },
+            "age":"Confidential",
+            "birthday":"12 March",
+            "height":"147 cm",
+            "zodiacSign":"Pisces"
+        },
+        "officialBio":"An ancient weapon known as Keris, she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.\n",
+        "tags":[
+            "アーニャメルフィッサ",
+            "Arya Melvine アーリャメルヴィン"
+        ],
         "channelId":"UC727SQYUvx5pDDGQpTICNWg",
+        "twitter":"https://twitter.com/anyamelfissa",
         "bgm":[
             "Energetic Day.mp3",
             "Yawning at Dusk.mp3"

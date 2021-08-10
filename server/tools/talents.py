@@ -10,11 +10,12 @@ soloDir = '../../src/assets/sounds/solo'
 with open(talentsFilePath, 'r', encoding='utf-8') as f:
     content = json.load(f)
 
-df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'tags', 'channelId', 'bgm', 'solo'])
+df = pd.DataFrame(columns=['id', 'branch', 'genNumber', 'genName', 'genOther', 'name', 'basicInfo', 'officialBio', 'tags', 'channelId', 'twitter', 'bgm', 'solo'])
 
 i = 0
 for branch, branchInfo in content.items():
     for talentName, talentInfo in branchInfo.items():
+        twitter = talentInfo['twitter']
         channelId = talentInfo['channelId']
         gens = talentInfo['generation']
         idx = i
@@ -35,10 +36,21 @@ for branch, branchInfo in content.items():
         if len(gens) > 2:
             genOther = gens[2:]
 
+        basicInfo = {
+            "debutDate": talentInfo["debutDate"],
+            "officialWebsite": talentInfo["officialWebsite"],
+            "age": talentInfo["age"] if "age" in talentInfo.keys() else '',
+            "birthday": talentInfo["birthday"],
+            "height": talentInfo["height"],
+            "zodiacSign": talentInfo["zodiacSign"],
+        }
+
+        officialBio = talentInfo["officialBio"]
+
         bgm = os.listdir(f'{bgmDir}/{talentName}') if os.path.isdir(f'{bgmDir}/{talentName}') else []
         solo = os.listdir(f'{soloDir}/{talentName}') if os.path.isdir(f'{soloDir}/{talentName}') else []
 
-        df.loc[i] = [idx, branch, genNum, genName, genOther, talentName, tags, channelId, bgm, solo]
+        df.loc[i] = [idx, branch, genNum, genName, genOther, talentName, basicInfo, officialBio, tags, channelId, twitter, bgm, solo]
         i += 1
 
 df['genNumber'] = df['genNumber'].astype('str')
