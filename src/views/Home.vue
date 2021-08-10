@@ -34,7 +34,7 @@
       <div
         class="chart"
         ref="chart"
-        style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
+        style="border-image-slice: 1;border-image-source: conic-gradient(from var(--angle),var(--color-Sora),var(--color-Sora))"
       >
         <div v-if="loading">
           <div class="overlay-loading-container">
@@ -216,7 +216,7 @@ export default class Home extends Vue {
     if (matches.length == 1) matches.push(matches[0]);
     (this.$refs[
       "chart"
-    ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+    ] as HTMLElement).style.borderImageSource = `conic-gradient(from var(--angle),${matches.join(
       ","
     )}`;
   }
@@ -370,7 +370,7 @@ $bg_sidebar: #ccc;
     padding: 2%;
     width: calc(100% * 11 / 12);
     border: 10px solid;
-    animation: rotate-border 5s infinite;
+    animation: rotate-border 8s linear infinite;
   }
 }
 
