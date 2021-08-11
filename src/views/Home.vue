@@ -2,7 +2,11 @@
   <div class="home">
     <div class="sidebar">
       <div class="searchbar">
-        <input type="text" v-on:keyup="search($event.target.value)" />
+        <input
+          type="text"
+          v-on:keyup="search($event.target.value)"
+          placeholder="Enter your thoughts of Idol..."
+        />
       </div>
       <div class="members">
         <div
@@ -22,7 +26,11 @@
         </div>
       </div>
     </div>
-    <div class="chart-placeholder flex-centered">
+    <div
+      class="chart-placeholder flex-centered"
+      ref="chart-holder"
+      style="border-left: 10px solid;border-image-slice: 1;border-image-source: linear-gradient(var(--color-Sora),var(--color-Sora))"
+    >
       <div class="chart-background">
         <div class="overlay"></div>
         <div class="chart-background-col" v-for="i in background.nCol" :key="i">
@@ -34,7 +42,7 @@
       <div
         class="chart"
         ref="chart"
-        style="border-image-slice: 1;border-image-source: conic-gradient(from var(--angle),var(--color-Sora),var(--color-Sora))"
+        style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
       >
         <div v-if="loading">
           <div class="overlay-loading-container">
@@ -216,7 +224,12 @@ export default class Home extends Vue {
     if (matches.length == 1) matches.push(matches[0]);
     (this.$refs[
       "chart"
-    ] as HTMLElement).style.borderImageSource = `conic-gradient(from var(--angle),${matches.join(
+    ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+      ","
+    )}`;
+    (this.$refs[
+      "chart-holder"
+    ] as HTMLElement).style.borderImageSource = `linear-gradient(${matches.join(
       ","
     )}`;
   }
@@ -264,11 +277,11 @@ $bg_sidebar: #ccc;
   .sidebar {
     max-width: 320px;
     .searchbar {
-      padding: 10px;
       background: $bg_sidebar;
       input {
         width: 100%;
         text-align: center;
+        height: 60px;
       }
     }
     .members {
@@ -356,7 +369,7 @@ $bg_sidebar: #ccc;
 
     .overlay {
       height: 100%;
-      background: #00000030;
+      // background: #00000030;
     }
 
     &-col {
