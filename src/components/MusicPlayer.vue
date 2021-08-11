@@ -407,3 +407,16 @@ input.slider {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .music-player {
+    width: 100%;
+    bottom: 0;
+    right: initial;
+
+    .player-info {
+      width: inherit;
+    }
+  }
+}
+</style>

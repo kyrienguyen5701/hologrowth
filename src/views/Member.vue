@@ -478,6 +478,11 @@ export default class MemberPage extends Vue {
           &-info {
             width: 100%;
             text-align: center;
+            padding: 0px 15px;
+
+            .member-name {
+              line-height: 1.5;
+            }
 
             .member-description {
               &:after {
@@ -507,6 +512,19 @@ export default class MemberPage extends Vue {
           &-text {
             width: 100%;
             margin: 0px;
+
+            .more-info {
+              &-key {
+                &-text {
+                  padding-left: 10px;
+                }
+              }
+              &-value {
+                &-text {
+                  padding-right: 10px;
+                }
+              }
+            }
           }
         }
       }

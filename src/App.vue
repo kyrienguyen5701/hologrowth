@@ -96,3 +96,10 @@ export default Vue.extend({
   margin-top: 80px;
 }
 </style>
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .content {
+    margin-bottom: 40px;
+  }
+}
+</style>
