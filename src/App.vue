@@ -62,6 +62,7 @@ export default Vue.extend({
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 0px 10px var(--color-current-shade-50);
   background: var(--color-current);
   color: var(--color-text);
   height: 80px;
@@ -81,7 +82,7 @@ export default Vue.extend({
       margin: auto;
     }
     a {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 

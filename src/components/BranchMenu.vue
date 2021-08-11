@@ -118,6 +118,7 @@ export default class BranchMenu extends Vue {
   .branch {
     cursor: pointer;
     width: 100px;
+    margin: 0px 10px;
 
     &:hover {
       background: var(--color-current-shade-25);
@@ -130,7 +131,7 @@ export default class BranchMenu extends Vue {
 
     .branch-gens {
       display: none;
-      width: 150px;
+      width: 220px;
     }
 
     .gen-members {

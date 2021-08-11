@@ -9,10 +9,10 @@
     ],
     "name":"Tokino Sora",
     "basicInfo":{
-      "debutDate":"2017/09/07",
       "age":"20",
-      "birthday":"15 May 2000",
       "height":"160 cm",
+      "birthday":"15 May 2000",
+      "debutDate":"2017/09/07",
       "zodiacSign":"Taurus"
     },
     "officialBio":"bio-tokino-sora",
@@ -55,10 +55,10 @@
     ],
     "name":"Roboco",
     "basicInfo":{
-      "debutDate":"2018/03/04",
       "age":"17",
-      "birthday":"23 May",
       "height":"154 cm",
+      "birthday":"23 May",
+      "debutDate":"2018/03/04",
       "zodiacSign":"Gemini"
     },
     "officialBio":"bio-roboco",
@@ -90,10 +90,10 @@
     ],
     "name":"Sakura Miko",
     "basicInfo":{
-      "debutDate":"2018/08/01",
       "age":"18.2",
-      "birthday":"5 March",
       "height":"152 cm",
+      "birthday":"5 March",
+      "debutDate":"2018/08/01",
       "zodiacSign":"Pisces"
     },
     "officialBio":"bio-sakura-miko",
@@ -130,10 +130,10 @@
     ],
     "name":"Hoshimachi Suisei",
     "basicInfo":{
-      "debutDate":"2018/03/22",
       "age":"18",
-      "birthday":"22 March",
       "height":"160 cm",
+      "birthday":"22 March",
+      "debutDate":"2018/03/22",
       "zodiacSign":"Aries"
     },
     "officialBio":"bio-hoshimachi-suisei",
@@ -173,10 +173,10 @@
     ],
     "name":"AZKi",
     "basicInfo":{
-      "debutDate":"2018/11/15",
       "age":"18 (forever)",
-      "birthday":"1 July",
       "height":"168 cm [with heels on]",
+      "birthday":"1 July",
+      "debutDate":"2018/11/15",
       "zodiacSign":"Cancer"
     },
     "officialBio":"bio-azki",
@@ -211,10 +211,10 @@
     ],
     "name":"Yozora Mel",
     "basicInfo":{
-      "debutDate":"2018/05/13",
       "age":"",
-      "birthday":"31 October",
       "height":"154 cm",
+      "birthday":"31 October",
+      "debutDate":"2018/05/13",
       "zodiacSign":"Scorpio"
     },
     "officialBio":"bio-yozora-mel",
@@ -245,10 +245,10 @@
     ],
     "name":"Aki Rosenthal",
     "basicInfo":{
-      "debutDate":"2018/06/07",
       "age":"",
-      "birthday":"17 February",
       "height":"162 cm",
+      "birthday":"17 February",
+      "debutDate":"2018/06/07",
       "zodiacSign":"Aquarius"
     },
     "officialBio":"bio-aki-rosenthal",
@@ -282,10 +282,10 @@
     ],
     "name":"Akai Haato",
     "basicInfo":{
-      "debutDate":"2018/06/02",
       "age":"19",
-      "birthday":"10 August 2001",
       "height":"154 cm",
+      "birthday":"10 August 2001",
+      "debutDate":"2018/06/02",
       "zodiacSign":"Leo"
     },
     "officialBio":"bio-akai-haato",
@@ -320,10 +320,10 @@
     ],
     "name":"Shirakami Fubuki",
     "basicInfo":{
-      "debutDate":"2018/06/01",
       "age":"18 (Human years)",
-      "birthday":"5 October",
       "height":"155 cm",
+      "birthday":"5 October",
+      "debutDate":"2018/06/01",
       "zodiacSign":"Libra"
     },
     "officialBio":"bio-shirakami-fubuki",
@@ -359,10 +359,10 @@
     ],
     "name":"Natsuiro Matsuri",
     "basicInfo":{
-      "debutDate":"2018/06/01",
       "age":"16",
-      "birthday":"22 July",
       "height":"152 cm",
+      "birthday":"22 July",
+      "debutDate":"2018/06/01",
       "zodiacSign":"Cancer"
     },
     "officialBio":"bio-natsuiro-matsuri",
@@ -395,10 +395,10 @@
     ],
     "name":"Minato Aqua",
     "basicInfo":{
-      "debutDate":"2018/08/08",
       "age":"",
-      "birthday":"1 December",
       "height":"148 cm",
+      "birthday":"1 December",
+      "debutDate":"2018/08/08",
       "zodiacSign":"Sagittarius"
     },
     "officialBio":"bio-minato-aqua",
@@ -433,10 +433,10 @@
     ],
     "name":"Murasaki Shion",
     "basicInfo":{
-      "debutDate":"2018/08/17",
       "age":"",
-      "birthday":"8 December",
       "height":"145 cm",
+      "birthday":"8 December",
+      "debutDate":"2018/08/17",
       "zodiacSign":"Sagittarius"
     },
     "officialBio":"bio-murasaki-shion",
@@ -468,10 +468,10 @@
     ],
     "name":"Nakiri Ayame",
     "basicInfo":{
-      "debutDate":"2018/09/03",
       "age":"1500+",
-      "birthday":"13 December",
       "height":"152 cm",
+      "birthday":"13 December",
+      "debutDate":"2018/09/03",
       "zodiacSign":"Sagittarius"
     },
     "officialBio":"bio-nakiri-ayame",
@@ -505,10 +505,10 @@
     ],
     "name":"Yuzuki Choco",
     "basicInfo":{
-      "debutDate":"2018/09/05",
       "age":"",
-      "birthday":"14 February",
       "height":"165 cm",
+      "birthday":"14 February",
+      "debutDate":"2018/09/05",
       "zodiacSign":"Aquarius"
     },
     "officialBio":"bio-yuzuki-choco",
@@ -537,10 +537,10 @@
     ],
     "name":"Oozora Subaru",
     "basicInfo":{
-      "debutDate":"2018/09/16",
       "age":"17",
-      "birthday":"2 July",
       "height":"154 cm",
+      "birthday":"2 July",
+      "debutDate":"2018/09/16",
       "zodiacSign":"Cancer"
     },
     "officialBio":"bio-oozora-subaru",
@@ -574,10 +574,10 @@
     ],
     "name":"Ookami Mio",
     "basicInfo":{
-      "debutDate":"2018/12/07",
       "age":"",
-      "birthday":"20 August",
       "height":"155 cm",
+      "birthday":"20 August",
+      "debutDate":"2018/12/07",
       "zodiacSign":"Leo"
     },
     "officialBio":"bio-ookami-mio",
@@ -612,10 +612,10 @@
     ],
     "name":"Nekomata Okayu",
     "basicInfo":{
-      "debutDate":"2019/04/06",
       "age":"16(80 in Cat Years)",
-      "birthday":"22 February",
       "height":"152 cm",
+      "birthday":"22 February",
+      "debutDate":"2019/04/06",
       "zodiacSign":"Pisces"
     },
     "officialBio":"bio-nekomata-okayu",
@@ -649,10 +649,10 @@
     ],
     "name":"Inugami Korone",
     "basicInfo":{
-      "debutDate":"2019/04/13",
       "age":"92 (dog years)",
-      "birthday":"1 October",
       "height":"156 cm",
+      "birthday":"1 October",
+      "debutDate":"2019/04/13",
       "zodiacSign":"Libra"
     },
     "officialBio":"bio-inugami-korone",
@@ -685,10 +685,10 @@
     ],
     "name":"Houshou Marine",
     "basicInfo":{
-      "debutDate":"2019/08/11",
       "age":"17 (season 2)",
-      "birthday":"30 July",
       "height":"150 cm",
+      "birthday":"30 July",
+      "debutDate":"2019/08/11",
       "zodiacSign":"Leo"
     },
     "officialBio":"bio-houshou-marine",
@@ -727,10 +727,10 @@
     ],
     "name":"Uruha Rushia",
     "basicInfo":{
-      "debutDate":"2019/07/18",
       "age":"1600",
-      "birthday":"22 January",
       "height":"143 cm",
+      "birthday":"22 January",
+      "debutDate":"2019/07/18",
       "zodiacSign":"Aquarius"
     },
     "officialBio":"bio-uruha-rushia",
@@ -766,10 +766,10 @@
     ],
     "name":"Usada Pekora",
     "basicInfo":{
-      "debutDate":"2019/07/17",
       "age":"111",
-      "birthday":"12 January",
       "height":"153 cm (not including the ears)",
+      "birthday":"12 January",
+      "debutDate":"2019/07/17",
       "zodiacSign":"Capricorn"
     },
     "officialBio":"bio-usada-pekora",
@@ -804,10 +804,10 @@
     ],
     "name":"Shiranui Flare",
     "basicInfo":{
-      "debutDate":"2019/08/07",
       "age":"221",
-      "birthday":"2 April 1798",
       "height":"158 cm",
+      "birthday":"2 April 1798",
+      "debutDate":"2019/08/07",
       "zodiacSign":"Aries"
     },
     "officialBio":"bio-shiranui-flare",
@@ -839,10 +839,10 @@
     ],
     "name":"Shirogane Noel",
     "basicInfo":{
-      "debutDate":"2019/08/08",
       "age":"18 (+ ２〇 months)",
-      "birthday":"24 November",
       "height":"158 cm",
+      "birthday":"24 November",
+      "debutDate":"2019/08/08",
       "zodiacSign":"Sagittarius"
     },
     "officialBio":"bio-shirogane-noel",
@@ -877,10 +877,10 @@
     ],
     "name":"Tsunomaki Watame",
     "basicInfo":{
-      "debutDate":"2019/12/29",
       "age":"4 (sheep years)",
-      "birthday":"6 June",
       "height":"151 cm",
+      "birthday":"6 June",
+      "debutDate":"2019/12/29",
       "zodiacSign":"Gemini"
     },
     "officialBio":"bio-tsunomaki-watame",
@@ -915,10 +915,10 @@
     ],
     "name":"Tokoyami Towa",
     "basicInfo":{
-      "debutDate":"2020/01/03",
       "age":"17",
-      "birthday":"8 August ",
       "height":"150 cm",
+      "birthday":"8 August ",
+      "debutDate":"2020/01/03",
       "zodiacSign":"Leo"
     },
     "officialBio":"bio-tokoyami-towa",
@@ -952,10 +952,10 @@
     ],
     "name":"Kiryu Coco",
     "basicInfo":{
-      "debutDate":"2019/12/28",
       "age":"3502",
-      "birthday":"17 June",
       "height":"Human form: 180 cm",
+      "birthday":"17 June",
+      "debutDate":"2019/12/28",
       "zodiacSign":"Gemini"
     },
     "officialBio":"bio-kiryu-coco",
@@ -991,10 +991,10 @@
     ],
     "name":"Amane Kanata",
     "basicInfo":{
-      "debutDate":"2019/12/27",
       "age":"18 (angel age)",
-      "birthday":"22 April",
       "height":"149 cm",
+      "birthday":"22 April",
+      "debutDate":"2019/12/27",
       "zodiacSign":"Taurus"
     },
     "officialBio":"bio-amane-kanata",
@@ -1029,10 +1029,10 @@
     ],
     "name":"Himemori Luna",
     "basicInfo":{
-      "debutDate":"2020/01/04",
       "age":"0",
-      "birthday":"10 October",
       "height":"150 cm (with crown)",
+      "birthday":"10 October",
+      "debutDate":"2020/01/04",
       "zodiacSign":"Libra"
     },
     "officialBio":"bio-himemori-luna",
@@ -1066,10 +1066,10 @@
     ],
     "name":"Yukihana Lamy",
     "basicInfo":{
-      "debutDate":"2020/08/12",
       "age":"210",
-      "birthday":"15 November 1810",
       "height":"158 cm",
+      "birthday":"15 November 1810",
+      "debutDate":"2020/08/12",
       "zodiacSign":"Scorpio"
     },
     "officialBio":"bio-yukihana-lamy",
@@ -1101,10 +1101,10 @@
     ],
     "name":"Momosuzu Nene",
     "basicInfo":{
-      "debutDate":"YouTube:2020/08/13",
       "age":"19",
-      "birthday":"2 March",
       "height":"159 cm",
+      "birthday":"2 March",
+      "debutDate":"YouTube:2020/08/13",
       "zodiacSign":"Pisces"
     },
     "officialBio":"bio-momosuzu-nene",
@@ -1137,10 +1137,10 @@
     ],
     "name":"Shishiro Botan",
     "basicInfo":{
-      "debutDate":"2020/08/14",
       "age":"",
-      "birthday":"8 September",
       "height":"166 cm",
+      "birthday":"8 September",
+      "debutDate":"2020/08/14",
       "zodiacSign":"Virgo"
     },
     "officialBio":"bio-shishiro-botan",
@@ -1172,10 +1172,10 @@
     ],
     "name":"Omaru Polka",
     "basicInfo":{
-      "debutDate":"YouTube:2020/08/16",
       "age":"Secret",
-      "birthday":"30 January",
       "height":"153 cm",
+      "birthday":"30 January",
+      "debutDate":"YouTube:2020/08/16",
       "zodiacSign":"Aquarius"
     },
     "officialBio":"bio-omaru-polka",
@@ -1207,10 +1207,10 @@
     ],
     "name":"Watson Amelia",
     "basicInfo":{
-      "debutDate":"2020/09/13",
       "age":"",
-      "birthday":"6 January",
       "height":"150 cm",
+      "birthday":"6 January",
+      "debutDate":"2020/09/13",
       "zodiacSign":"Capricorn"
     },
     "officialBio":"bio-watson-amelia",
@@ -1242,10 +1242,10 @@
     ],
     "name":"Ninomae Ina'nis",
     "basicInfo":{
-      "debutDate":"2020/09/13",
       "age":"████ (somebody spilled ink on the page!!)",
-      "birthday":"20 May",
       "height":"157 cm [with shoes]",
+      "birthday":"20 May",
+      "debutDate":"2020/09/13",
       "zodiacSign":"Taurus"
     },
     "officialBio":"bio-ninomae-ina'nis",
@@ -1276,10 +1276,10 @@
     ],
     "name":"Gawr Gura",
     "basicInfo":{
-      "debutDate":"2020/09/13",
       "age":"between 9,000 and 10,000 (has forgotten exact number after ~5,000 years)",
-      "birthday":"20 June",
       "height":"141 cm",
+      "birthday":"20 June",
+      "debutDate":"2020/09/13",
       "zodiacSign":"Gemini"
     },
     "officialBio":"bio-gawr-gura",
@@ -1312,10 +1312,10 @@
     ],
     "name":"Mori Calliope",
     "basicInfo":{
-      "debutDate":"2020/09/12",
       "age":"No",
-      "birthday":"4 April",
       "height":"167 cm",
+      "birthday":"4 April",
+      "debutDate":"2020/09/12",
       "zodiacSign":"Aries"
     },
     "officialBio":"bio-mori-calliope",
@@ -1351,10 +1351,10 @@
     ],
     "name":"Takanashi Kiara",
     "basicInfo":{
-      "debutDate":"2020/09/12",
       "age":"Eternal",
-      "birthday":"6 July",
       "height":"165 cm",
+      "birthday":"6 July",
+      "debutDate":"2020/09/12",
       "zodiacSign":"Cancer"
     },
     "officialBio":"bio-takanashi-kiara",
@@ -1391,10 +1391,10 @@
     ],
     "name":"Moona Hoshinova",
     "basicInfo":{
-      "debutDate":"2020/04/11",
       "age":"",
-      "birthday":"15 February",
       "height":"165 cm",
+      "birthday":"15 February",
+      "debutDate":"2020/04/11",
       "zodiacSign":"Aquarius"
     },
     "officialBio":"bio-moona-hoshinova",
@@ -1426,10 +1426,10 @@
     ],
     "name":"Ayunda Risu",
     "basicInfo":{
-      "debutDate":"2020/04/10",
       "age":"17",
-      "birthday":"15 January",
       "height":"153 cm",
+      "birthday":"15 January",
+      "debutDate":"2020/04/10",
       "zodiacSign":"Capricorn"
     },
     "officialBio":"bio-ayunda-risu",
@@ -1462,10 +1462,10 @@
     ],
     "name":"Airani Iofifteen",
     "basicInfo":{
-      "debutDate":"2020/04/12",
       "age":"",
-      "birthday":"15 July",
       "height":"150 cm",
+      "birthday":"15 July",
+      "debutDate":"2020/04/12",
       "zodiacSign":"Cancer"
     },
     "officialBio":"bio-airani-iofifteen",
@@ -1495,10 +1495,10 @@
     ],
     "name":"Pavolia Reine",
     "basicInfo":{
-      "debutDate":"2020/12/06",
       "age":"",
-      "birthday":"9 September",
       "height":"172 cm",
+      "birthday":"9 September",
+      "debutDate":"2020/12/06",
       "zodiacSign":"Virgo"
     },
     "officialBio":"bio-pavolia-reine",
@@ -1529,10 +1529,10 @@
     ],
     "name":"Kureiji Ollie",
     "basicInfo":{
-      "debutDate":"2020/12/04",
       "age":"17 forever (age of death)",
-      "birthday":"13 October",
       "height":"162 cm",
+      "birthday":"13 October",
+      "debutDate":"2020/12/04",
       "zodiacSign":"Libra"
     },
     "officialBio":"bio-kureiji-ollie",
@@ -1562,10 +1562,10 @@
     ],
     "name":"Anya Melfissa",
     "basicInfo":{
-      "debutDate":"2020/12/05",
       "age":"Confidential",
-      "birthday":"12 March",
       "height":"147 cm",
+      "birthday":"12 March",
+      "debutDate":"2020/12/05",
       "zodiacSign":"Pisces"
     },
     "officialBio":"bio-anya-melfissa",
