@@ -44,10 +44,10 @@ for branch, branchInfo in content.items():
             genOther = gens[2:]
 
         basicInfo = {
-            "debutDate": talentInfo["debutDate"],
             "age": talentInfo["age"].replace(" years old", "") if "age" in talentInfo.keys() else '',
-            "birthday": talentInfo["birthday"],
             "height": talentInfo["height"],
+            "birthday": talentInfo["birthday"],
+            "debutDate": talentInfo["debutDate"],
             "zodiacSign": talentInfo["zodiacSign"],
         }
 

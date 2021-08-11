@@ -25,10 +25,7 @@
           <div class="member-content-info-info">
             <div class="member-name">{{ getLocalizedMemberName() }}</div>
             <div class="member-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-              perferendis reiciendis nobis ab facilis nostrum ratione, unde
-              architecto vero aut et pariatur velit explicabo officiis aspernatur
-              maxime fugiat. Iure, optio.
+              {{ getLocalizedMemberBio() }}
             </div>
             <div class="member-link">
               <div v-for="link in $data.links" :key="link" class="link-logo">
@@ -51,14 +48,17 @@
         </div>
         <div class="member-content-more-info">
           <div class="more-info-images">
-            <div class="more-info-avatar">
-              <div class="img-holder">
-                <img :src="getMemberAvatarURL()" />
+            <div class="more-info-title">
+              <!-- <div class="title-member">
+                {{ getLocalizedMemberName() }}
+              </div> -->
+              <div class="title-text">
+                Basic Information
               </div>
             </div>
-            <div class="more-info-signature">
+            <div class="more-info-banner">
               <div class="img-holder">
-                <img :src="getMemberSignatureURL('default')" />
+                <img :src="getMemberBannerURL('medium')" />
               </div>
             </div>
           </div>
@@ -151,8 +151,19 @@ export default class MemberPage extends Vue {
     }
   }
 
-  getMemberBannerURL() {
-    return require(`@/assets/talentBanners/default/${this.getMemberName()}_2560 x 423.png`);
+  getMemberBannerURL(res: string) {
+    if (res == undefined) res = "default";
+    let size = "2560 x 423";
+    switch (res) {
+      case "medium":
+        size = "640 x 105";
+        break;
+    }
+    try {
+      return require(`@/assets/talentBanners/${res}/${this.getMemberName()}_${size}.png`);
+    } catch {
+      return "";
+    }
   }
 
   getMemberIconURL() {
@@ -177,6 +188,10 @@ export default class MemberPage extends Vue {
 
   getLocalizedMemberName() {
     return GetLocalizedText(this.getMemberName());
+  }
+
+  getLocalizedMemberBio() {
+    return GetLocalizedText(this.$data.officialBio);
   }
 
   getMemberSignatureURL(res: string) {
@@ -280,9 +295,10 @@ export default class MemberPage extends Vue {
       }
 
       &-info {
-        width: 80%;
+        width: 90%;
         text-align: right;
-        padding-left: 20px;
+        padding-left: 40px;
+        padding-right: 10px;
 
         .member {
           &-name {
@@ -341,58 +357,95 @@ export default class MemberPage extends Vue {
 
 .member-content-more-info {
   margin-top: 20px;
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
 
   .more-info-images {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px 0;
+
     .more-info {
-      &-avatar {
-        img {
-          border-radius: 50%;
-          width: 200px;
-          height: 200px;
+      &-title {
+        .title {
+          &-member {
+            font-size: 2rem;
+            color: var(--color-current);
+          }
+          &-text {
+            font-size: 1.5rem;
+            color: var(--color-current-complement);
+          }
         }
       }
-      &-signature {
-        img {
-          width: 200px;
+      &-banner {
+        .img-holder {
+          img {
+            width: 100%;
+          }
         }
       }
     }
   }
   .more-info-text {
     width: 70%;
+    margin-left: 20px;
     .more-info {
       display: flex;
       height: 50px;
+      margin: 5px 0;
 
       &-key {
-        width: 50%;
-
-        &-text {
-          text-align: left;
-        }
-      }
-      &-value {
         width: 50%;
         position: relative;
         display: flex;
 
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          height: 80%;
+          background: var(--color-current);
+          border-radius: 0 100px 0 0;
+        }
         &:after {
           content: "";
           position: absolute;
           bottom: 0px;
-          right: 0px;
-          width: 150%;
-          height: 3px;
+          left: 0px;
+          width: 200%;
+          height: 5px;
           background: var(--color-current);
         }
 
         &-text {
           margin-top: auto;
+          text-align: left;
+          padding-left: 15px;
+          z-index: 1;
+        }
+      }
+
+      &-value {
+        width: 50%;
+        position: relative;
+        display: flex;
+
+        &-text {
+          margin-top: auto;
           margin-left: auto;
+          padding-right: 15px;
+          z-index: 1;
+        }
+      }
+
+      @for $i from 1 to 6 {
+        &:nth-child(#{$i}) .more-info-key:before {
+          width: percentage($i * 0.3);
         }
       }
     }
