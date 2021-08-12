@@ -18,7 +18,7 @@
         >
           <div :id="mem.name + '-banner'" class="member-banner" :rel="mem.rel">
             <div :id="mem.name + ' overlay'" class="overlay"></div>
-            <img :src="mem.banner" width="320" height="105" :alt="mem.name" />
+            <img :src="mem.banner" width="320" :alt="mem.name" />
           </div>
           <div :id="mem.name + '-avatar'" class="member-avatar" :rel="mem.rel">
             <img :src="mem.avatar" :alt="mem.name" />
@@ -29,7 +29,7 @@
     <div
       class="chart-placeholder flex-centered"
       ref="chart-holder"
-      style="border-left: 10px solid;border-image-slice: 1;border-image-source: linear-gradient(var(--color-Sora),var(--color-Sora))"
+      style="border-left: 10px solid;border-image-slice: 1;border-image-source: linear-gradient(45deg,var(--color-Sora),var(--color-Sora))"
     >
       <div class="chart-background">
         <div class="overlay"></div>
@@ -227,9 +227,11 @@ export default class Home extends Vue {
     ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
       ","
     )}`;
+    let direction = "to bottom";
+    if (window.innerWidth <= 600) direction = "to right";
     (this.$refs[
       "chart-holder"
-    ] as HTMLElement).style.borderImageSource = `linear-gradient(${matches.join(
+    ] as HTMLElement).style.borderImageSource = `linear-gradient(${direction},${matches.join(
       ","
     )}`;
   }
@@ -327,6 +329,10 @@ $bg_sidebar: #ccc;
             opacity: 0.6;
             transition: all 0.75s ease;
           }
+
+          img {
+            height: 105px;
+          }
         }
         &-avatar {
           background: white;
@@ -397,5 +403,49 @@ $bg_sidebar: #ccc;
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+</style>
+
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .home {
+    height: initial;
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+      max-width: initial;
+
+      .searchbar {
+        input {
+          height: 40px;
+        }
+      }
+
+      .members {
+        height: 30vh;
+
+        .member {
+          &-banner {
+            img {
+              width: 100%;
+              height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chart-placeholder {
+    border-left: none !important;
+    border-top: 10px solid;
+    // height: calc(70vh - 140px);
+
+    .chart {
+      height: 100%;
+      padding: 0;
+      border: none;
+    }
+  }
 }
 </style>
