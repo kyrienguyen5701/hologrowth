@@ -99,7 +99,28 @@ export default Vue.extend({
 <style lang="scss" scoped>
 @media (max-width: 600px) {
   .content {
+    margin-top: 60px;
     margin-bottom: 40px;
+  }
+
+  #navbar {
+    height: 60px;
+
+    .logo {
+      width: 100%;
+      display: flex;
+
+      a {
+        margin: auto;
+        font-size: 1.25rem;
+      }
+    }
+
+    .menus {
+      position: absolute;
+      top: 60px;
+      flex-direction: column;
+    }
   }
 }
 </style>
