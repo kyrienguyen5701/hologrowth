@@ -452,3 +452,83 @@ export default class MemberPage extends Vue {
   }
 }
 </style>
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .member {
+    &-background {
+      &-col {
+        display: none;
+      }
+    }
+
+    &-content {
+      &-section {
+        margin: 0;
+        width: 100%;
+        border: none;
+      }
+
+      .member-content {
+        &-info {
+          flex-direction: column;
+          &-avatar {
+            width: 60%;
+            margin: auto;
+          }
+          &-info {
+            width: 100%;
+            text-align: center;
+            padding: 0px 15px;
+
+            .member-name {
+              line-height: 1.5;
+            }
+
+            .member-description {
+              &:after {
+                right: 15%;
+              }
+            }
+
+            .member-link {
+              .link-logo {
+                &:first-child {
+                  margin-right: auto;
+                }
+                &:last-child {
+                  margin-left: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-more-info {
+        .more-info {
+          &-images {
+            display: none;
+          }
+          &-text {
+            width: 100%;
+            margin: 0px;
+
+            .more-info {
+              &-key {
+                &-text {
+                  padding-left: 10px;
+                }
+              }
+              &-value {
+                &-text {
+                  padding-right: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</style>
