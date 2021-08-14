@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
 import { countFormatter, countTypesMap } from "@/assets/ts/common";
 Vue.use(VueApexCharts);
@@ -23,16 +23,7 @@ export default class HoloChart extends Vue {
   @Prop() sentSeries!: Array<object>;
   @Prop() sentColors!: Array<object>;
   @Prop() xaxis!: object;
-  // @Watch("sentSeries", { immediate: true, deep: true }) // fetch data after navigation
-  // async initializeData() {
-  //   this.$data.series = this.sentSeries;
-  //   this.$data.chartOptions = {
-  //     ...this.$data.chartOptions, ...{
-  //       colors: this.sentColors,
-  //       xaxis: this.xaxis
-  //     }
-  //   }
-  // }
+
   data() {
     return {
       series: this.sentSeries,
@@ -74,7 +65,7 @@ export default class HoloChart extends Vue {
         tooltip: {
           shared: false,
           y: {
-            formatter: countFormatter
+            formatter: this.countType === "sub" ? countFormatter : (val: number) => {return val}
           }
         }
       }

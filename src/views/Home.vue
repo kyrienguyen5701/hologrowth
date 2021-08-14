@@ -33,7 +33,9 @@
       </div>
       <div
         class="chart"
-        ref="chart"
+        v-for="countType in countTypes"
+        :key="countType"
+        :ref="`holochart-${countType}`"
         style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
       >
         <div v-if="loading">
@@ -47,7 +49,7 @@
         <div v-else>
           <HoloChart
             v-bind:countType="countType"
-            v-bind:sentSeries="[fullSeries[0]]"
+            v-bind:sentSeries="[fullSeries[countType][0]]"
             v-bind:sentColors="[fullColors[0]]"
             v-bind:xaxis="fullXAxis"
           ></HoloChart>
@@ -62,6 +64,7 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 import Member from "@/components/MemberHome.vue";
 import Stats from "@/components/Stats.vue";
 import { GetCSSVar, dateFormatter, GetTalentCSSName } from "@/assets/ts/common";
+import { countTypesMap } from "@/assets/ts/common";
 import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
@@ -76,7 +79,7 @@ export default class Home extends Vue {
   data() {
     return {
       loading: false,
-      countType: "sub",
+      countTypes: ["sub", "view"],
       members: (() => {
         const res = Array<TalentDisplay>();
         talents.forEach(talent => {
@@ -91,10 +94,19 @@ export default class Home extends Vue {
         });
         return res;
       })(),
-      fullSeries: [],
+      fullSeries: {
+        "sub": [],
+        "view": []
+      },
       fullColors: [],
-      fullXAxis: [],
-      sentSeries: [],
+      fullXAxis: {
+        "categories": [],
+        tickAmount: 15
+      },
+      sentSeries: {
+        "sub": [],
+        "view": []
+      },
       sentColors: [],
       shown: 1,
       background: {
@@ -108,40 +120,47 @@ export default class Home extends Vue {
   @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   async initializeData() {
     this.$data.loading = true;
-    await axios({
+    for (let i = 0; i < 2; i++) {
+      const countType = this.$data.countTypes[i];
+      await axios({
       method: "POST",
       url: "http://127.0.0.1:8000/get-holo-data",
       headers: { "content-type": "application/json" },
       data: {
-        countType: this.$data.countType
+        countType: countType
       }
     })
       .then(res => {
         Object.entries(res.data).forEach(([talent, countData]) => {
-          this.$data.fullSeries.push({
+          this.$data.fullSeries[countType].push({
             name: talent,
             data: Object.values(countData as object).reverse()
           });
         });
-        this.$data.fullColors = Object.keys(res.data).map(talentName => {
+        this.$data.fullColors = this.$data.fullColors.length === 0 ? Object.keys(res.data).map(talentName => {
           const _ = talentName.split(" ");
           return GetCSSVar("--color-" + GetTalentCSSName(talentName));
-        });
-        this.$data.fullXAxis = {
+        }) : this.$data.fullColors;
+        this.$data.fullXAxis = this.$data.fullXAxis.categories.length === 0 ? {
           categories: Object.keys(res.data["Tokino Sora"])
             .reverse()
             .map(dateFormatter),
-          tickAmount: 15
+          tickAmount: window.innerWidth <= 600 ? 8 : 15
           // type: "datetime"
-        };
-        this.$data.sentSeries.push(this.$data.fullSeries[0]);
-        this.$data.sentColors.push(this.$data.fullColors[0]);
+        } : this.$data.fullXAxis ;
+        this.$data.sentSeries[countType].push(this.$data.fullSeries[countType][0]);
       })
-      .catch(e => console.log(e));
+      .catch(e => console.log(e)); 
+    }
+    this.$data.sentColors.push(this.$data.fullColors[0]);
     this.$data.loading = false;
     const soraDiv = document.getElementById("Tokino Sora-banner")
       ?.parentElement as HTMLElement;
     soraDiv?.setAttribute("clicked", "");
+  }
+
+  getTabName(countType: "sub" | "view") {
+    return countTypesMap(countType);
   }
 
   toggleTalentSeries(event: Event) {
@@ -172,53 +191,59 @@ export default class Home extends Vue {
       isShown = true;
     }
     if (!this.$data.members[talentRel].dataAvailable) {
-      const series = this.$data.fullSeries[talentRel];
       const color = this.$data.fullColors[talentRel];
-      this.$data.sentSeries.push(series);
       this.$data.sentColors.push(color);
-      ApexCharts.exec(`holochart-${this.$data.countType}`, "updateOptions", {
-        series: this.$data.sentSeries,
-        colors: this.$data.sentColors
-      });
-      this.$data.members[talentRel].dataAvailable = true;
-      if (this.$data.members[talentRel].dataAvailable) {
+      this.$data.countTypes.forEach((countType: "sub" | "view")  => {
+        const series = this.$data.fullSeries[countType][talentRel];
+        this.$data.sentSeries[countType].push(series);
+        ApexCharts.exec(`holochart-${countType}`, "updateOptions", {
+          series: this.$data.sentSeries[countType],
+          colors: this.$data.sentColors
+        });
+        this.$data.members[talentRel].dataAvailable = true;
+        if (this.$data.members[talentRel].dataAvailable) {
+          ApexCharts.exec(
+            `holochart-${countType}`,
+            "toggleSeries",
+            talentName
+          );
+        }
+      })
+    }
+    // if (this.$data.members[talentRel].dataAvailable) {
+      this.$data.countTypes.forEach((countType: "sub" | "view") => {
         ApexCharts.exec(
-          `holochart-${this.$data.countType}`,
+          `holochart-${countType}`,
           "toggleSeries",
-          talentName
-        );
-      }
-    }
-    if (this.$data.members[talentRel].dataAvailable) {
-      ApexCharts.exec(
-        `holochart-${this.$data.countType}`,
-        "toggleSeries",
         talentName
-      );
-    }
+        );
+      });
+    // }
     this.toggleChartBorder(talentName, isShown);
   }
 
   toggleChartBorder(talentName: string, isShown: boolean) {
     const cssVar = `var(--color-${GetTalentCSSName(talentName)})`;
-    const currentGrad = (this.$refs["chart"] as HTMLElement).style
-      .borderImageSource;
-    const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
-    if (matches.length == 2 && matches[0] == matches[1]) {
-      matches.pop();
-    }
-    if (isShown) {
-      matches.push(cssVar);
-    } else {
-      const i = matches.indexOf(cssVar);
-      matches.splice(i, 1);
-    }
-    if (matches.length == 1) matches.push(matches[0]);
-    (this.$refs[
-      "chart"
-    ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
-      ","
-    )}`;
+    this.$data.countTypes.forEach((countType: "sub" | "view") => {
+      const currentGrad = (this.$refs[`holochart-${countType}`] as HTMLElement).style
+        .borderImageSource;
+      const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
+      if (matches.length == 2 && matches[0] == matches[1]) {
+        matches.pop();
+      }
+      if (isShown) {
+        matches.push(cssVar);
+      } else {
+        const i = matches.indexOf(cssVar);
+        matches.splice(i, 1);
+      }
+      if (matches.length == 1) matches.push(matches[0]);
+      (this.$refs[
+        `holochart-${countType}`
+      ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+        ","
+      )}`;
+    })
   }
 
   search(input: string) {
