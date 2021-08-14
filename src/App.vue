@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class="content">
-      <router-view />
+      <router-view :key="currentLang" />
     </div>
     <MusicPlayer v-bind:currentLang="currentLang"></MusicPlayer>
   </div>
@@ -62,6 +62,7 @@ export default Vue.extend({
   position: fixed;
   top: 0;
   width: 100%;
+  box-shadow: 0px 0px 10px var(--color-current-shade-50);
   background: var(--color-current);
   color: var(--color-text);
   height: 80px;
@@ -81,7 +82,7 @@ export default Vue.extend({
       margin: auto;
     }
     a {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -93,5 +94,33 @@ export default Vue.extend({
 }
 .content {
   margin-top: 80px;
+}
+</style>
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .content {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  #navbar {
+    height: 60px;
+
+    .logo {
+      width: 100%;
+      display: flex;
+
+      a {
+        margin: auto;
+        font-size: 1.25rem;
+      }
+    }
+
+    .menus {
+      position: absolute;
+      top: 60px;
+      flex-direction: column;
+    }
+  }
 }
 </style>

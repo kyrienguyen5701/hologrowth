@@ -2,7 +2,11 @@
   <div class="home">
     <div class="sidebar">
       <div class="searchbar">
-        <input type="text" v-on:keyup="search($event.target.value)" />
+        <input
+          type="text"
+          v-on:keyup="search($event.target.value)"
+          placeholder="Enter name, generation, nickname, etc."
+        />
       </div>
       <div class="members">
         <div
@@ -14,7 +18,7 @@
         >
           <div :id="mem.name + '-banner'" class="member-banner" :rel="mem.rel">
             <div :id="mem.name + ' overlay'" class="overlay"></div>
-            <img :src="mem.banner" width="320" height="105" :alt="mem.name" />
+            <img :src="mem.banner" width="320" :alt="mem.name" />
           </div>
           <div :id="mem.name + '-avatar'" class="member-avatar" :rel="mem.rel">
             <img :src="mem.avatar" :alt="mem.name" />
@@ -22,7 +26,11 @@
         </div>
       </div>
     </div>
-    <div class="chart-placeholder flex-centered">
+    <div
+      class="chart-placeholder flex-centered"
+      ref="chart-holder"
+      style="border-left: 10px solid;border-image-slice: 1;border-image-source: linear-gradient(45deg,var(--color-Sora),var(--color-Sora))"
+    >
       <div class="chart-background">
         <div class="overlay"></div>
         <div class="chart-background-col" v-for="i in background.nCol" :key="i">
@@ -159,9 +167,9 @@ export default class Home extends Vue {
     soraDiv?.setAttribute("clicked", "");
   }
 
-  getTabName(countType: "sub" | "view") {
-    return countTypesMap(countType);
-  }
+  // getTabName(countType: "sub" | "view") {
+  //   return countTypesMap(countType);
+  // }
 
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
@@ -225,7 +233,7 @@ export default class Home extends Vue {
   toggleChartBorder(talentName: string, isShown: boolean) {
     const cssVar = `var(--color-${GetTalentCSSName(talentName)})`;
     this.$data.countTypes.forEach((countType: "sub" | "view") => {
-      const currentGrad = (this.$refs[`holochart-${countType}`] as HTMLElement).style
+      const currentGrad = (this.$refs[`holochart-${countType}`] as Array<HTMLElement>)[0].style
         .borderImageSource;
       const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
       if (matches.length == 2 && matches[0] == matches[1]) {
@@ -240,7 +248,7 @@ export default class Home extends Vue {
       if (matches.length == 1) matches.push(matches[0]);
       (this.$refs[
         `holochart-${countType}`
-      ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+      ] as Array<HTMLElement>)[0].style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
         ","
       )}`;
     })
@@ -251,7 +259,6 @@ export default class Home extends Vue {
     const dp = Array<Array<boolean>>();
     for (let i = 0; i < queries.length; i++) {
       const query = queries[i];
-      console.log(query);
       let countThisQuery = 0;
       const shownThisQuery = Array<boolean>(this.$data.members.length);
       this.$data.members = this.$data.members.map((member: TalentDisplay) => {
@@ -289,11 +296,11 @@ $bg_sidebar: #ccc;
   .sidebar {
     max-width: 320px;
     .searchbar {
-      padding: 10px;
       background: $bg_sidebar;
       input {
         width: 100%;
         text-align: center;
+        height: 60px;
       }
     }
     .members {
@@ -339,6 +346,10 @@ $bg_sidebar: #ccc;
             opacity: 0.6;
             transition: all 0.75s ease;
           }
+
+          img {
+            height: 105px;
+          }
         }
         &-avatar {
           background: white;
@@ -381,7 +392,7 @@ $bg_sidebar: #ccc;
 
     .overlay {
       height: 100%;
-      background: #00000030;
+      // background: #00000030;
     }
 
     &-col {
@@ -395,7 +406,7 @@ $bg_sidebar: #ccc;
     padding: 2%;
     width: calc(100% * 11 / 12);
     border: 10px solid;
-    animation: rotate-border 5s infinite;
+    animation: rotate-border 8s linear infinite;
   }
 }
 
@@ -409,5 +420,49 @@ $bg_sidebar: #ccc;
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+</style>
+
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .home {
+    height: initial;
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+      max-width: initial;
+
+      .searchbar {
+        input {
+          height: 40px;
+        }
+      }
+
+      .members {
+        height: 30vh;
+
+        .member {
+          &-banner {
+            img {
+              width: 100%;
+              height: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chart-placeholder {
+    border-left: none !important;
+    border-top: 10px solid;
+    // height: calc(70vh - 140px);
+
+    .chart {
+      height: 100%;
+      padding: 0;
+      border: none;
+    }
+  }
 }
 </style>

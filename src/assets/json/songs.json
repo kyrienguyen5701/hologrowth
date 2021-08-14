@@ -11,7 +11,7 @@
     },
     "miren": {
         "jp": "未練レコード",
-        "en": "Miren Rekōdo",
+        "en": "Miren Rekoudo",
         "path": "未練レコード.mp3"
     },
     "hurray": {
@@ -21,7 +21,7 @@
     },
     "aoi": {
         "jp": "青空のシンフォニー",
-        "en": "Aoi Sora no Shinfonī",
+        "en": "Aoi Sora no Shinfonii",
         "path": "青空のシンフォニー.mp3"
     },
     "step": {
@@ -31,7 +31,7 @@
     },
     "blueberry": {
         "jp": "ブルーベリームーン",
-        "en": "Burūberīmūn",
+        "en": "Buruuberiimuun",
         "path": "ブルーベリームーン.mp3"
     },
     "suki": {
@@ -91,7 +91,7 @@
     },
     "wakuwaku-tanoshi": {
         "jp": "ワクワク楽しいクリスマス",
-        "en": "Wakuwaku Tanoshī Kurisumasu",
+        "en": "Wakuwaku Tanoshii Kurisumasu",
         "path": "ワクワク楽しいクリスマス.mp3"
     },
     "itazura": {
@@ -151,7 +151,7 @@
     },
     "ryoshin": {
         "jp": "良心が強すぎる泥棒的な",
-        "en": "Ryōshin ga Tsuyo sugiru Dorobō-tekina",
+        "en": "Ryoushin ga Tsuyo sugiru Dorobou-tekina",
         "path": "良心が強すぎる泥棒的な.mp3"
     },
     "creating": {
@@ -261,7 +261,7 @@
     },
     "yasashi": {
         "jp": "優しいギターソロ",
-        "en": "Yasashī Guitar Solo",
+        "en": "Yasashii Guitar Solo",
         "path": "優しいギターソロ.mp3"
     },
     "mattari": {
@@ -276,7 +276,7 @@
     },
     "friday": {
         "jp": "【13日の金曜日!】ハム＆ナゴ",
-        "en": "[13-nichi no Kinyōbi!] Ham & Nago",
+        "en": "[13-nichi no Kinyoubi!] Ham & Nago",
         "path": "【13日の金曜日】ハム＆ナゴ.mp3"
     },
     "fanfare": {
@@ -401,7 +401,7 @@
     },
     "telecaster": {
         "jp": "極東の羊、テレキャスターと踊る",
-        "en": "Kyokutō no Hitsuji, Telecaster to Odoru",
+        "en": "Kyokutou no Hitsuji, Telecaster to Odoru",
         "path": "極東の羊、テレキャスターと踊る.mp3"
     },
     "summer": {
@@ -416,7 +416,7 @@
     },
     "celtic": {
         "jp": "優しいケルト曲",
-        "en": "Yasashī Celtic Kyoku",
+        "en": "Yasashii Celtic Kyoku",
         "path": "優しいケルト曲.mp3"
     },
     "so-sweet": {
@@ -426,7 +426,7 @@
     },
     "noraneko": {
         "jp": "野良猫は宇宙を目指した",
-        "en": "Noraneko wa Uchū o Mezashita",
+        "en": "Noraneko wa Uchuu o Mezashita",
         "path": "野良猫は宇宙を目指した.mp3"
     },
     "mogumogu": {
@@ -441,12 +441,12 @@
     },
     "kurumi": {
         "jp": "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop",
-        "en": "Kurumiwariningyō [Ashibue no Odori] Inu no Otōsan VerLoop",
+        "en": "Kurumiwariningyou [Ashibue no Odori] Inu no Otousan VerLoop",
         "path": "くるみ割り人形「葦笛の踊り」犬のお父さんVerLoop.mp3"
     },
     "kaerimichi": {
         "jp": "楽しい帰り道",
-        "en": "Tanoshī Kaerimichi",
+        "en": "Tanoshii Kaerimichi",
         "path": "楽しい帰り道.mp3"
     },
     "komorebi": {
@@ -456,7 +456,7 @@
     },
     "saikyo": {
         "jp": "ころねの最凶天災☆わんだふぉー❤わーるど",
-        "en": "Korone no Saikyō Tensai ☆ Wonderful ̄❤ World",
+        "en": "Korone no Saikyou Tensai ☆ Wonderful ̄❤ World",
         "path": "ころねの最凶天災☆わんだふぉー❤わーるど.mp3"
     },
     "essa": {
@@ -501,7 +501,7 @@
     },
     "fairy": {
         "jp": "妖精のキッチン",
-        "en": "Yōsei no Kitchen",
+        "en": "Yousei no Kitchen",
         "path": "妖精のキッチン.mp3"
     },
     "beatbox": {
@@ -546,7 +546,7 @@
     },
     "tanukichi": {
         "jp": "たぬきちの冒険",
-        "en": "Tanukichi no Bōken",
+        "en": "Tanukichi no Bouken",
         "path": "たぬきちの冒険.mp3"
     },
     "diorama": {
@@ -571,7 +571,7 @@
     },
     "yusha": {
         "jp": "カエルの勇者",
-        "en": "Kaeru no Yūsha",
+        "en": "Kaeru no Yuusha",
         "path": "カエルの勇者.mp3"
     },
     "kaze": {
@@ -646,7 +646,7 @@
     },
     "nichijo": {
         "jp": "YouTube向けまったりした日常曲",
-        "en": "Youtube-muke Mattari shita Nichijō Kyoku",
+        "en": "Youtube-muke Mattari shita Nichijou Kyoku",
         "path": "YouTube向けまったりした日常曲.mp3"
     },
     "genki": {
@@ -691,17 +691,17 @@
     },
     "soran": {
         "jp": "ソーラン節",
-        "en": "Sōran Bushi",
+        "en": "Souran Bushi",
         "path": "ソーラン節.mp3"
     },
     "yosei-san": {
         "jp": "妖精さんこんにちは",
-        "en": "Yōsei-san Konnichiwa",
+        "en": "Yousei-san Konnichiwa",
         "path": "妖精さんこんにちは.mp3"
     },
     "hatsuyuki": {
         "jp": "妖精達の初雪物語",
-        "en": "Yōsei-tachi no Hatsuyuki Monogatari",
+        "en": "Yousei-tachi no Hatsuyuki Monogatari",
         "path": "妖精達の初雪物語.mp3"
     },
     "furubita": {
@@ -796,12 +796,12 @@
     },
     "atelier": {
         "jp": "アトリエと電脳世界",
-        "en": "Atelier to Dennō Sekai",
+        "en": "Atelier to Dennou Sekai",
         "path": "アトリエと電脳世界.mp3"
     },
     "koshin": {
         "jp": "おもちゃの行進曲",
-        "en": "Omocha no Kōshin Kyoku",
+        "en": "Omocha no Koushin Kyoku",
         "path": "おもちゃの行進曲.mp3"
     },
     "like-the-snow": {
@@ -816,7 +816,7 @@
     },
     "atarashi": {
         "jp": "新しい季節",
-        "en": "Atarashī Kisetsu",
+        "en": "Atarashii Kisetsu",
         "path": "新しい季節.mp3"
     },
     "rip": {
@@ -851,7 +851,7 @@
     },
     "reaper": {
         "jp": "ReaperかRapper 自己紹介ラップ",
-        "en": "Reaper ka Rapper Jiko Shōkai Rap",
+        "en": "Reaper ka Rapper Jiko Shoukai Rap",
         "path": "ReaperかRapper 自己紹介ラップ.mp3"
     },
     "red": {
@@ -891,7 +891,7 @@
     },
     "shonen": {
         "jp": "少年達の夏休み的なBGM",
-        "en": "Shōnen-tachi no Natsu Yasumi-tekina BGM",
+        "en": "Shounen-tachi no Natsu Yasumi-tekina BGM",
         "path": "少年達の夏休み的なBGM.mp3"
     },
     "chisana": {
@@ -1001,7 +1001,7 @@
     },
     "pekomiko": {
         "jp": "ぺこみこ大戦争",
-        "en": "Peko Miko Daisensō",
+        "en": "Peko Miko Daisensou",
         "path": "ぺこみこ大戦争.mp3"
     },
     "clapper": {
@@ -1011,7 +1011,7 @@
     },
     "can-you": {
         "jp": "ホロライブ言えるかな?",
-        "en": "Hololive Ierukana>",
+        "en": "Hololive Ierukana?",
         "path": "ホロライブ言えるかな.mp3"
     },
     "daily": {

@@ -105,8 +105,23 @@ import { Component, Prop, Vue, Watch } from "vue-property-decorator";
 import { CurrentSong } from "@/assets/ts/interfaces";
 import * as Localization from "@/assets/ts/localize";
 import { GetTalentName } from "@/assets/ts/common";
-import songData from "@/assets/json/songs.json";
-import talentData from "@/assets/json/talents.json";
+import songs from "@/assets/json/songs.json";
+import talents from "@/assets/json/talents.json";
+
+const groupSongs = [
+  "Shiny Smily Story.mp3",
+  "夢見る空へ.mp3",
+  "キラメキライダー☆.mp3",
+  "今宵はHalloween Night.mp3",
+  "ぺこみこ大戦争.mp3",
+  "BLUE CLAPPER.mp3",
+  "ホロライブ言えるかな.mp3",
+  "でいり～だいあり～.mp3",
+  "Suspect.mp3",
+  "id-entity voices.mp3",
+  "Plasmagic Seasons.mp3",
+  "キセキ結び.mp3"
+];
 
 @Component
 export default class MusicPlayer extends Vue {
@@ -114,20 +129,16 @@ export default class MusicPlayer extends Vue {
 
   data() {
     return {
-      // currentTalent: Object.prototype.hasOwnProperty.call(
-      //   this.$route.params, 
-      //   "talentName"
-      // ) ? this.$route.params.talentName : "hololive",
       currentTalent: "hololive",
       songList: Array<string>(),
       currentSong: {
         name: "",
         audio: new Audio()
       } as CurrentSong,
-      isPlaying: true,
+      isPlaying: false,
       currentSongIndex: 0,
       currentVolume: 0
-    }
+    };
   }
 
   @Watch("currentLang")
@@ -135,26 +146,32 @@ export default class MusicPlayer extends Vue {
     this.getCurrentSongName();
   }
 
-  @Watch("$route") // fetch data after navigation
+  @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   initializePlayer() {
     this.$data.currentSong.audio.pause();
     this.$data.currentTalent = Object.prototype.hasOwnProperty.call(
-      this.$route.params, 
+      this.$route.params,
       "talentName"
     ) ? this.$route.params.talentName : "hololive";
-    this.$data.isPlaying = true;
     this.$data.currentSongIndex = 0;
     this.$data.currentVolume = Number(localStorage.getItem("player-volume"));
     const res = Array<string>();
-    const talent = talentData.find(
+    const talent = talents.find(
       e => e.name === GetTalentName(this.$data.currentTalent)
     );
+    // found talent in database
     if (talent) {
       talent?.bgm.forEach(file => {
         res.push(`bgm/${GetTalentName(this.$data.currentTalent)}/${file}`);
       });
       talent?.solo.forEach(file => {
         res.push(`solo/${GetTalentName(this.$data.currentTalent)}/${file}`);
+      });
+    }
+    // not found => hololive
+    else {
+      groupSongs.forEach(groupSong => {
+        res.push(`group/${groupSong}`);
       });
     }
     this.$data.songList = res;
@@ -165,14 +182,22 @@ export default class MusicPlayer extends Vue {
     const songPath = this.$data.songList[this.$data.currentSongIndex];
     const song = new Audio(require(`@/assets/sounds/${songPath}`));
     if (song) {
-      song.play();
+      // temporary solution. TODO: move to catch interaction
+      song
+        .play()
+        .then(() => {
+          this.$data.isPlaying = true;
+        })
+        .catch();
       song.volume = this.$data.currentVolume;
       song.onended = () => this.nextSong();
     }
     // get the song name
-    const data = Object.entries(songData).find(
-      kv => kv[1].path === songPath.split("/")[2]
-    );
+    const data = Object.entries(songs).find(kv => {
+      const idx = this.$data.currentTalent === "hololive" ? 1 : 2;
+      return kv[1].path === songPath.split("/")[idx];
+    });
+    console.log(data);
     if (data) {
       this.$data.currentSong = {
         name: data[0],
@@ -379,6 +404,19 @@ input.slider {
   }
   100% {
     transform: translateX(0%);
+  }
+}
+</style>
+<style lang="scss" scoped>
+@media (max-width: 600px) {
+  .music-player {
+    width: 100%;
+    bottom: 0;
+    right: initial;
+
+    .player-info {
+      width: inherit;
+    }
   }
 }
 </style>

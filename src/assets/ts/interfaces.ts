@@ -16,7 +16,13 @@ export interface TalentData {
   genName: string;
   genOther: string[];
   name: string;
+  basicInfo: TalentBasicInfo;
+  officialBio: string;
+  tags: Array<string>;
   channelId: string;
+  twitter: string;
+  officialWebsiteEN: string;
+  officialWebsiteJP: string;
 }
 
 export enum DataType {
@@ -75,4 +81,12 @@ export interface TalentDisplay {
   banner: object;
   dataAvailable: boolean;
   shown: boolean;
+}
+
+export interface TalentBasicInfo {
+  debutDate: string;
+  age: string;
+  birthday: string;
+  height: string;
+  zodiacSign: string;
 }
