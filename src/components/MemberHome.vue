@@ -10,9 +10,7 @@ import { Component, Vue } from "vue-property-decorator";
 @Component
 export default class MemberHome extends Vue {
   data() {
-    return {
-
-    }
+    return {};
   }
 }
 </script>
