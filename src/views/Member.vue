@@ -1,16 +1,39 @@
 <template>
-  <div class="member-page" :key="$data.memberName">
+  <div class="member-page" :key="memberName">
     <div class="member-banner">
-      <img :src="getMemberBannerURL()" />
+      <img :src="getMemberBannerURL()" :lazy="getMemberBannerURL(true)" />
     </div>
     <div class="member-background">
       <div class="overlay"></div>
-      <div class="member-background-col" v-for="i in $data.background.nCol" :key="i">
-        <div class="img-holder" v-for="j in $data.background.nRow" :key="j" style="width: 250px">
-          <img v-if="i % 2 == 0 && j % 2 == 0" :src="getMemberSignatureURL('random')" />
-          <img v-if="i % 2 == 0 && j % 2 != 0" :src="getMemberIconURL()" :height="250 / 3"/>
-          <img v-if="i % 2 != 0 && j % 2 != 0" :src="getMemberSignatureURL('random')" />
-          <img v-if="i % 2 != 0 && j % 2 == 0" :src="getMemberIconURL()" :height="250 / 3"/>
+      <div
+        class="member-background-col"
+        v-for="i in background.nCol"
+        :key="`col-${i}`"
+      >
+        <div
+          class="img-holder"
+          v-for="j in background.nRow"
+          :key="`row-${j}`"
+          style="width: 250px"
+        >
+          <img
+            v-if="i % 2 == 0 && j % 2 == 0"
+            :src="getMemberSignatureURL('random')"
+          />
+          <img
+            v-if="i % 2 == 0 && j % 2 != 0"
+            :src="getMemberIconURL()"
+            :height="250 / 3"
+          />
+          <img
+            v-if="i % 2 != 0 && j % 2 != 0"
+            :src="getMemberSignatureURL('random')"
+          />
+          <img
+            v-if="i % 2 != 0 && j % 2 == 0"
+            :src="getMemberIconURL()"
+            :height="250 / 3"
+          />
         </div>
       </div>
     </div>
@@ -28,7 +51,7 @@
               {{ getLocalizedMemberBio() }}
             </div>
             <div class="member-link">
-              <div v-for="link in $data.links" :key="link" class="link-logo">
+              <div v-for="link in links" :key="link.type" class="link-logo">
                 <a :href="link.destination" class="img-holder" target="_blank">
                   <img :src="getLinkTypeURL(link.type)" />
                 </a>
@@ -49,9 +72,6 @@
         <div class="member-content-more-info">
           <div class="more-info-images">
             <div class="more-info-title">
-              <!-- <div class="title-member">
-                {{ getLocalizedMemberName() }}
-              </div> -->
               <div class="title-text">
                 Basic Information
               </div>
@@ -83,7 +103,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
 import talents from "@/assets/json/talents.json";
@@ -146,17 +166,16 @@ export default class MemberPage extends Vue {
         this.$data.moreInfo.push({
           key: GetLocalizedText(k),
           value: GetLocalizedText(v || "")
-        })
+        });
       }
     }
   }
 
-  getMemberBannerURL(res: string) {
-    if (res == undefined) res = "default";
-    let size = "2560 x 423";
+  getMemberBannerURL(placeholder = false, res = "default") {
+    let size = placeholder ? "1138 x 188" : "2560 x 423";
     switch (res) {
       case "medium":
-        size = "640 x 105";
+        size = placeholder ? "320 x 52" : "640 x 105";
         break;
     }
     try {
