@@ -11,16 +11,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+import { Component, Prop, Vue } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
 import {
   GetCSSVar,
   countFormatter,
-  dateFormatter,
   availableRangesMap,
   countTypesMap
 } from "@/assets/ts/common";
-import axios from "axios";
 
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
@@ -33,45 +31,15 @@ export default class MemberChart extends Vue {
   };
 
   @Prop() chartData!: {
+    countType: "sub" | "view";
     range: number;
-    countType: string;
+    seriesData: Array<{ name: string; data: Array<number> }>;
+    xaxis: Array<string>;
   };
-
-  @Watch("memberData", { immediate: true, deep: true })
-  async initializeData() {
-    await axios({
-      method: "POST",
-      url: "http://127.0.0.1:8000/get-member-data",
-      headers: { "content-type": "application/json" },
-      data: {
-        range: this.chartData.range,
-        talent: this.memberData.name,
-        countType: this.chartData.countType
-      }
-    })
-      .then(res => {
-        this.$data.series = [
-          {
-            data: Object.values(res.data)
-          }
-        ];
-        this.$data.chartOptions = {
-          xaxis: {
-            categories: Object.keys(res.data).map(dateFormatter)
-          }
-        };
-      })
-      .catch(e => console.log(e));
-  }
 
   data() {
     return {
-      series: [
-        {
-          name: `${countTypesMap(this.chartData.countType)} Count`,
-          data: []
-        }
-      ],
+      series: this.chartData.seriesData,
       chartOptions: {
         chart: {
           width: "100%",
@@ -91,7 +59,9 @@ export default class MemberChart extends Vue {
           curve: "smooth"
         },
         title: {
-          text: `${this.memberData.name}'s ${availableRangesMap(this.chartData.range)} ${countTypesMap(this.chartData.countType)} Counts`,
+          text: `${this.memberData.name}'s ${availableRangesMap(
+            this.chartData.range
+          )} ${countTypesMap(this.chartData.countType)} Counts`,
           align: "center"
         },
         grid: {
@@ -103,9 +73,7 @@ export default class MemberChart extends Vue {
             opacity: 0.5
           }
         },
-        xaxis: {
-          categories: []
-        },
+        xaxis: this.chartData.xaxis,
         yaxis: {
           labels: {
             formatter: countFormatter
@@ -117,7 +85,12 @@ export default class MemberChart extends Vue {
         tooltip: {
           shared: false,
           y: {
-            formatter: countFormatter
+            formatter:
+              this.chartData.countType === "sub"
+                ? countFormatter
+                : (val: number) => {
+                    return val;
+                  }
           }
         }
       }

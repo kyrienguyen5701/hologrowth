@@ -3,16 +3,28 @@
     <swiper-slide v-for="countType in countTypes" :key="countType">
       <swiper class="swiper vertical" :options="swiperOptionv">
         <swiper-slide v-for="range in ranges" :key="range">
-          <MemberChart
-            v-bind:memberData="{
-              name: memberData.name,
-              CSSname: memberData.CSSname
-            }"
-            v-bind:chartData="{
-              range: range,
-              countType: countType
-            }"
-          ></MemberChart>
+          <div v-if="loading">
+            <div class="overlay-loading-container">
+              <div class="overlay-loading">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+            </div>
+          </div>
+          <div v-else style="width: 100%">
+            <MemberChart
+              v-bind:memberData="{
+                name: memberData.name,
+                CSSname: memberData.CSSname
+              }"
+              v-bind:chartData="{
+                countType: countType,
+                range: range,
+                seriesData: allSeries[`${countType}-${range}`],
+                xaxis: xaxis
+              }"
+            ></MemberChart>
+          </div>
         </swiper-slide>
         <div
           class="swiper-pagination swiper-pagination-v"
@@ -25,12 +37,17 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Component, Prop, Watch, Vue } from "vue-property-decorator";
+import { dateFormatter, countTypesMap } from "@/assets/ts/common";
+import axios from "axios";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
 
 Vue.component("swiper", Swiper);
 Vue.component("swiper-slide", SwiperSlide);
+
+const ranges = [7, 30, 365, 0];
+const countTypes = ["sub", "view"];
 
 @Component
 export default class ChartSwiper extends Vue {
@@ -39,10 +56,60 @@ export default class ChartSwiper extends Vue {
     CSSname: string;
   };
 
+  @Watch("memberData", { immediate: true, deep: true })
+  async initializeData() {
+    this.$data.loading = true;
+    for (let i = 0; i < countTypes.length; i++) {
+      const countType = countTypes[i];
+      for (let j = 0; j < ranges.length; j++) {
+        const range = ranges[j];
+        await axios({
+          method: "POST",
+          url: "http://127.0.0.1:8000/get-member-data",
+          headers: { "content-type": "application/json" },
+          data: {
+            range: range,
+            talent: this.memberData.name,
+            countType: countType
+          }
+        })
+          .then(res => {
+            this.$data.allSeries[`${countType}-${range}`] = [
+              {
+                name: `${countTypesMap(countType)} Count`,
+                data: Object.values(res.data)
+              }
+            ];
+            this.$data.xaxis = {
+              categories: Object.keys(res.data).map(dateFormatter),
+              tickAmount:
+                window.innerWidth <= 600
+                  ? 7
+                  : Math.min(15, Object.keys(res.data).length)
+            };
+          })
+          .catch(e => console.log(e));
+      }
+    }
+    this.$data.loading = false;
+  }
+
   data() {
     return {
-      ranges: [7, 30, 365, 0],
-      countTypes: ["sub", "view"],
+      loading: false,
+      ranges: ranges,
+      countTypes: countTypes,
+      allSeries: {
+        "sub-7": [],
+        "sub-30": [],
+        "sub-365": [],
+        "sub-0": [],
+        "view-7": [],
+        "view-30": [],
+        "view-365": [],
+        "view-0": []
+      },
+      xaxis: [],
       swiperOptionh: {
         spaceBetween: 50,
         pagination: {
