@@ -144,9 +144,12 @@ export default class ChartSwiper extends Vue {
     font-weight: bold;
     font-size: 14 * 2;
   }
-}
 
-.swiper.vertical {
-  background-color: var(--color-current);
+  &.vertical {
+    background-color: #fff;
+  }
+}
+.overlay-loading-container {
+  background: #fff;
 }
 </style>
