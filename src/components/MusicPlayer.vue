@@ -42,7 +42,17 @@
         <span class="inner" :key="currentLang">{{ getCurrentSongName() }}</span>
       </div>
       <div class="player-seek">
-        <input class="slider" type="range" />
+        <input
+          ref="player-seek"
+          class="slider"
+          type="range"
+          step="0.01"
+          min="0"
+          max="1"
+          value="0"
+          @mousedown="onSeeking()"
+          @mouseup="seek()"
+        />
       </div>
     </div>
     <div class="player-button" v-on:click="nextSong()">
@@ -93,7 +103,7 @@
           min="0"
           max="100"
           value="0"
-          @mousemove="volumeChange()"
+          @mousemove="changeVolume()"
         />
       </div>
     </div>
@@ -136,6 +146,7 @@ export default class MusicPlayer extends Vue {
         audio: new Audio()
       } as CurrentSong,
       isPlaying: false,
+      isSeeking: false,
       currentSongIndex: 0,
       currentVolume: 0
     };
@@ -148,11 +159,14 @@ export default class MusicPlayer extends Vue {
 
   @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   initializePlayer() {
+    this.setSeek(0);
     this.$data.currentSong.audio.pause();
     this.$data.currentTalent = Object.prototype.hasOwnProperty.call(
       this.$route.params,
       "talentName"
-    ) ? this.$route.params.talentName : "hololive";
+    )
+      ? this.$route.params.talentName
+      : "hololive";
     this.$data.currentSongIndex = 0;
     this.$data.currentVolume = Number(localStorage.getItem("player-volume"));
     const res = Array<string>();
@@ -179,17 +193,21 @@ export default class MusicPlayer extends Vue {
   }
 
   setCurrentSong() {
+    this.setSeek(0);
     const songPath = this.$data.songList[this.$data.currentSongIndex];
     const song = new Audio(require(`@/assets/sounds/${songPath}`));
     if (song) {
-      // temporary solution. TODO: move to catch interaction
-      song
-        .play()
-        .then(() => {
-          this.$data.isPlaying = true;
-        })
-        .catch();
+      if (this.$data.isPlaying) {
+        song.play();
+      }
       song.volume = this.$data.currentVolume;
+      song.onloadedmetadata = () => {
+        song.ontimeupdate = () => {
+          if (!this.$data.isSeeking) {
+            this.setSeek(song.currentTime / song.duration);
+          }
+        };
+      };
       song.onended = () => this.nextSong();
     }
     // get the song name
@@ -197,7 +215,6 @@ export default class MusicPlayer extends Vue {
       const idx = this.$data.currentTalent === "hololive" ? 1 : 2;
       return kv[1].path === songPath.split("/")[idx];
     });
-    console.log(data);
     if (data) {
       this.$data.currentSong = {
         name: data[0],
@@ -213,6 +230,7 @@ export default class MusicPlayer extends Vue {
       this.$data.currentSong.audio.play();
     }
     this.$data.isPlaying = !this.$data.isPlaying;
+    this.$data.currentSong.audio.currentTime;
   }
 
   getCurrentSongName(): string {
@@ -228,10 +246,8 @@ export default class MusicPlayer extends Vue {
       : this.$data.currentSongIndex;
     this.$data.currentSongIndex--;
     this.setCurrentSong();
-    this.$data.currentSong.audio.play();
-    this.$data.isPlaying = true;
-    this.setSliderValue();
-    this.volumeChange();
+    this.setVolume();
+    this.changeVolume();
   }
 
   nextSong() {
@@ -242,24 +258,40 @@ export default class MusicPlayer extends Vue {
       : this.$data.currentSongIndex;
     this.$data.currentSongIndex++;
     this.setCurrentSong();
-    this.$data.currentSong.audio.play();
-    this.$data.isPlaying = true;
-    this.setSliderValue();
-    this.volumeChange();
+    this.setVolume();
+    this.changeVolume();
   }
 
-  volumeChange() {
+  changeVolume() {
     const value =
       1 - Number((this.$refs["player-volume"] as HTMLInputElement).value) / 100;
     this.$data.currentSong.audio.volume = value;
     localStorage.setItem("player-volume", String(value));
   }
 
-  setSliderValue() {
+  setVolume() {
     (this.$refs["player-volume"] as HTMLInputElement).value = (
       (1 - this.$data.currentVolume) *
       100
     ).toString();
+  }
+
+  setSeek(value: number) {
+    if (this.$refs["player-seek"]) {
+      (this.$refs["player-seek"] as HTMLInputElement).value = value.toString();
+    }
+  }
+
+  onSeeking() {
+    this.$data.isSeeking = true;
+  }
+
+  seek() {
+    this.$data.isSeeking = false;
+    const currentTime = 
+      parseFloat((this.$refs["player-seek"] as HTMLInputElement).value) *
+      this.$data.currentSong.audio.duration;
+    this.$data.currentSong.audio.currentTime = currentTime;
   }
 }
 </script>
