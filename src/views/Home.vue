@@ -449,3 +449,32 @@ $bg_sidebar: #ccc;
   }
 }
 </style>
+<style lang="scss" scoped>
+@media (min-width: 601px) and (max-width: 768px) {
+  .home {
+    .sidebar {
+      width: 250px;
+
+      .members {
+        .member {
+          height: 80px;
+
+          &-banner {
+            img {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .chart-placeholder {
+    border-left: 5px solid !important;
+
+    .chart {
+      width: calc(100% - 15px);
+      border-width: 5px;
+    }
+  }
+}
+</style>

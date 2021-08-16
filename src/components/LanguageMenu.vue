@@ -103,7 +103,7 @@ export default class LanguageMenu extends Vue {
 }
 </style>
 <style lang="scss" scoped>
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu-language {
     position: absolute;
 
