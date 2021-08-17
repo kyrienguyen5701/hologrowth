@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import json
-META = json.load(open(os.path.join(os.path.dirname(__file__), '../public/talents.json'), 'r'))
+META = json.load(open(os.path.join(os.path.dirname(__file__), '../public/talents.json'), 'r', encoding='utf-8'))
 END_INTERPOLATE = '2021-03-23'
 months = {
     "Jan.": "01",
@@ -17,7 +17,9 @@ months = {
     "May": "05",
     "May.": "05",
     "June": "06",
+    "Jun ": "06",
     "Jun.": "06",
+    "Jul.": "07",
     "Jule": "07",
     "July": "07",
     "Aug.": "08",
@@ -55,17 +57,22 @@ for branch in META.items():
                 year = re.findall(r'\d{4}', content)[0]
                 timestamps = str(h3.find_next_sibling())
 
-                pattern = '<b>(.{7})</b> Achieved a (\d.*) You'
+                pattern = '<b>(.{7})</b> Achieved a (\d.*) You' if talent_name != 'Yuzuki Choco' else '<b>(.{7})</b> The main YouTube channel achieved a (\d.*) YouTube'
                 matches = re.findall(pattern, timestamps)
+                end_interpolate = '2021-03-23' if talent_name != 'IRyS' else '2021-07-25'
                 for match in matches:
                     date = match[0]
                     milestone = padding(int(match[1].split()[0].replace(',', '')))
+                    if f'{year}-{months[date[:4]]}-{date[5:]}' >= end_interpolate:
+                        continue
                     milestones[milestone] = f'{year}-{months[date[:4]]}-{date[5:]}'
 
         df = pd.DataFrame({
             'Date': milestones.values(),
-            'Subscriber count': milestones.keys()
+            talent_name: milestones.keys()
         })
+        interpolatePath = f'../archive/temp/{talent_name}.csv'
+        # df = pd.read_csv(interpolatePath, parse_dates=['Date'], encoding='utf-8')
         df.set_index('Date', inplace=True)
         df.index = pd.to_datetime(df.index)
         number_of_milestones = len(df.index)
@@ -73,15 +80,20 @@ for branch in META.items():
             if idx >= 2:
                 previous_day = date - datetime.timedelta(days=1)
                 dist = (date - df.index[idx - 1]).days
-                current_milestone = df.loc[date]['Subscriber count']
-                previous_milestone = df.loc[df.index[idx - 1]]['Subscriber count']
+                if dist == 1:
+                    continue
+                current_milestone = df.loc[date][talent_name]
+                previous_milestone = df.loc[df.index[idx - 1]][talent_name]
                 spike = int((current_milestone - previous_milestone) / dist * 2)
                 df.loc[previous_day] = df.loc[date] - spike 
         df = df.resample('D').interpolate('spline', order=1.2)
-        df.loc['2019-08-01':]['Subscriber count'] = df['Subscriber count'] // 1000 * 1000
-        df.loc[:'2019-08-01']['Subscriber count'] = df['Subscriber count'] // 1
-        df.to_csv(os.path.join(os.path.dirname(__file__), f'../public/temp/{talent_name}.csv'))
-        # plt.plot(df.index, df['Subscriber count'], color='red')
+        df[talent_name] //= 1
+        df.loc['2019-08-01':][talent_name][df[talent_name] >= 1000] = df[talent_name] // 100 * 100
+        df.loc['2019-08-01':][talent_name][df[talent_name] >= 100000] = df[talent_name] // 1000 * 1000
+        # print(df.head())
+        df[talent_name] = df[talent_name].astype('int64')
+        df.to_csv(os.path.join(os.path.dirname(__file__), interpolatePath))
+        # plt.plot(df.index, df[talent_name], color='red')
         # plt.title(r'Houshou Ichimi Count since debut')
         # plt.xticks(rotation=45)
         # plt.ylabel('Overseas Sexy Guys & Ladies Count')
