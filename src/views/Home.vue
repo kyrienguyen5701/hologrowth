@@ -64,6 +64,23 @@
         </div>
       </div>
     </div>
+    <div class="section-2">
+      <div class="section-inner">
+        <div class="title-section">
+          <div class="title-section-title">
+            {{ aboutSection.aboutText }}
+          </div>
+        </div>
+        <div
+          class="text-section"
+          v-for="text in aboutSection.data"
+          v-bind:key="text.title"
+        >
+          <div class="text-section-title">{{ text.title }}</div>
+          <div class="text-section-description">{{ text.description }}</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -77,6 +94,7 @@ import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
 import axios from "axios";
+import { GetLocalizedText } from "@/assets/ts/localize";
 @Component({
   components: {
     Member,
@@ -121,6 +139,19 @@ export default class Home extends Vue {
         nCol: 0, //Math.round(window.innerWidth / 250),
         nRow: 0, //Math.round(window.innerHeight / 250),
         data: [["Sora"]]
+      },
+      aboutSection: {
+        aboutText: GetLocalizedText("About this website"),
+        data: [
+          {
+            title: GetLocalizedText("OwO what's this?"),
+            description: GetLocalizedText("It's a website")
+          },
+          {
+            title: GetLocalizedText("About what?"),
+            description: GetLocalizedText("Hololive")
+          }
+        ]
       }
     };
   }
@@ -420,6 +451,68 @@ $bg_sidebar: #ccc;
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+
+.section-2 {
+  position: absolute;
+  top: 100vh;
+  border-top: 10px solid var(--color-current);
+  width: 100%;
+  background: var(--color-current-tint-50);
+
+  .section-inner {
+    width: calc(100% - 320px * 2);
+    margin: auto;
+    border-left: 10px solid var(--color-current);
+    border-right: 10px solid var(--color-current);
+    background: #fff;
+    padding: 40px 30px;
+  }
+
+  .title-section {
+    &-title {
+      color: var(--color-current);
+      font-size: 2.5rem;
+    }
+    margin-bottom: 30px;
+  }
+
+  .text-section {
+    text-align: left;
+    &-title {
+      position: relative;
+      width: 50%;
+      margin-left: -30px;
+      padding: 10px 0px 10px 30px;
+      background: var(--color-current);
+      color: var(--color-text);
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // border-right: 52px solid white;
+        // border-bottom: 52px solid transparent;
+        border-top-right-radius: 100px;
+        background: var(--color-current);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(200% + 60px);
+        height: 3px;
+        background: var(--color-current);
+      }
+    }
+
+    &-description {
+      margin-bottom: 15px;
+    }
+  }
 }
 </style>
 
