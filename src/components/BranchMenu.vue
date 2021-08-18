@@ -197,7 +197,7 @@ export default class BranchMenu extends Vue {
 }
 </style>
 <style lang="scss" scoped>
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu-button {
     display: flex;
     position: fixed;
