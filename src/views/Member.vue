@@ -421,6 +421,7 @@ export default class MemberPage extends Vue {
         width: 50%;
         position: relative;
         display: flex;
+        color: var(--color-text);
 
         &:before {
           content: "";
@@ -437,7 +438,7 @@ export default class MemberPage extends Vue {
           bottom: 0px;
           left: 0px;
           width: 200%;
-          height: 5px;
+          height: 3px;
           background: var(--color-current);
         }
 

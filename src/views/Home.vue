@@ -5,7 +5,7 @@
         <input
           type="text"
           v-on:keyup="search($event.target.value)"
-          placeholder="Enter your thoughts of Idol..."
+          placeholder="Enter name, generation, nickname, etc."
         />
       </div>
       <div class="members">
@@ -39,26 +39,57 @@
           </div>
         </div>
       </div>
-      <div
-        class="chart"
-        ref="chart"
+      <div class="chart-swiper" ref="swiper"
         style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
       >
-        <div v-if="loading">
-          <div class="overlay-loading-container">
-            <div class="overlay-loading">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
+        <div class="overlay-loading-container" v-if="loading">
+          <div class="overlay-loading">
+            <div class="left"></div>
+            <div class="right"></div>
           </div>
         </div>
-        <div v-else>
-          <HoloChart
-            v-bind:countType="countType"
-            v-bind:sentSeries="[fullSeries[0]]"
-            v-bind:sentColors="[fullColors[0]]"
-            v-bind:xaxis="fullXAxis"
-          ></HoloChart>
+        <swiper class="swiper" :options="swiperOptionh">
+          <swiper-slide v-for="countType in countTypes" :key="countType">
+            <div
+              class="chart"
+              :ref="`holochart-${countType}`"
+            >
+              <div v-if="loading">
+                <div class="overlay-loading-container">
+                  <div class="overlay-loading">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                  </div>
+                </div>
+              </div>
+              <div v-else>
+                <HoloChart
+                  v-bind:countType="countType"
+                  v-bind:sentSeries="[fullSeries[countType][0]]"
+                  v-bind:sentColors="[fullColors[0]]"
+                  v-bind:xaxis="fullXAxis"
+                ></HoloChart>
+              </div>
+            </div>
+          </swiper-slide>
+          <div class="swiper-pagination swiper-pagination-h" slot="pagination"></div>
+        </swiper>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="section-inner">
+        <div class="title-section">
+          <div class="title-section-title">
+            {{ aboutSection.aboutText }}
+          </div>
+        </div>
+        <div
+          class="text-section"
+          v-for="text in aboutSection.data"
+          v-bind:key="text.title"
+        >
+          <div class="text-section-title">{{ text.title }}</div>
+          <div class="text-section-description">{{ text.description }}</div>
         </div>
       </div>
     </div>
@@ -74,6 +105,15 @@ import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
 import axios from "axios";
+import { GetLocalizedText } from "@/assets/ts/localize";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/swiper-bundle.css";
+
+const about = ["what", "how", "why", "disclaimer", "who", "license"];
+
+Vue.component("swiper", Swiper);
+Vue.component("swiper-slide", SwiperSlide);
+
 @Component({
   components: {
     Member,
@@ -84,7 +124,7 @@ export default class Home extends Vue {
   data() {
     return {
       loading: false,
-      countType: "sub",
+      countTypes: ["sub", "view"],
       members: (() => {
         const res = Array<TalentDisplay>();
         talents.forEach(talent => {
@@ -99,16 +139,45 @@ export default class Home extends Vue {
         });
         return res;
       })(),
-      fullSeries: [],
+      fullSeries: {
+        "sub": [],
+        "view": []
+      },
       fullColors: [],
-      fullXAxis: [],
-      sentSeries: [],
+      fullXAxis: {
+        "categories": [],
+        tickAmount: 15
+      },
+      sentSeries: {
+        "sub": [],
+        "view": []
+      },
       sentColors: [],
       shown: 1,
       background: {
         nCol: 0, //Math.round(window.innerWidth / 250),
         nRow: 0, //Math.round(window.innerHeight / 250),
         data: [["Sora"]]
+      },
+      aboutSection: {
+        aboutText: GetLocalizedText("about"),
+        data: (() => {
+          const res = [] as Array<{title: string, description: string}>;
+          about.forEach(part => {
+            res.push({
+              title: GetLocalizedText(part),
+              description: GetLocalizedText(`${part}-content`)
+            });
+          });
+          return res;
+        })()
+      },
+      swiperOptionh: {
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination-h",
+          clickable: true
+        }
       }
     };
   }
@@ -116,36 +185,39 @@ export default class Home extends Vue {
   @Watch("$route", { immediate: true, deep: true }) // fetch data after navigation
   async initializeData() {
     this.$data.loading = true;
-    await axios({
+    for (let i = 0; i < 2; i++) {
+      const countType = this.$data.countTypes[i];
+      await axios({
       method: "POST",
       url: "http://127.0.0.1:8000/get-holo-data",
       headers: { "content-type": "application/json" },
       data: {
-        countType: this.$data.countType
+        countType: countType
       }
     })
       .then(res => {
         Object.entries(res.data).forEach(([talent, countData]) => {
-          this.$data.fullSeries.push({
+          this.$data.fullSeries[countType].push({
             name: talent,
             data: Object.values(countData as object).reverse()
           });
         });
-        this.$data.fullColors = Object.keys(res.data).map(talentName => {
+        this.$data.fullColors = this.$data.fullColors.length === 0 ? Object.keys(res.data).map(talentName => {
           const _ = talentName.split(" ");
           return GetCSSVar("--color-" + GetTalentCSSName(talentName));
-        });
-        this.$data.fullXAxis = {
+        }) : this.$data.fullColors;
+        this.$data.fullXAxis = this.$data.fullXAxis.categories.length === 0 ? {
           categories: Object.keys(res.data["Tokino Sora"])
             .reverse()
             .map(dateFormatter),
-          tickAmount: 15
+          tickAmount: window.innerWidth <= 600 ? 8 : 15
           // type: "datetime"
-        };
-        this.$data.sentSeries.push(this.$data.fullSeries[0]);
-        this.$data.sentColors.push(this.$data.fullColors[0]);
+        } : this.$data.fullXAxis ;
+        this.$data.sentSeries[countType].push(this.$data.fullSeries[countType][0]);
       })
-      .catch(e => console.log(e));
+      .catch(e => console.log(e)); 
+    }
+    this.$data.sentColors.push(this.$data.fullColors[0]);
     this.$data.loading = false;
     const soraDiv = document.getElementById("Tokino Sora-banner")
       ?.parentElement as HTMLElement;
@@ -179,37 +251,34 @@ export default class Home extends Vue {
       target?.setAttribute("clicked", "");
       isShown = true;
     }
-    if (!this.$data.members[talentRel].dataAvailable) {
-      const series = this.$data.fullSeries[talentRel];
-      const color = this.$data.fullColors[talentRel];
-      this.$data.sentSeries.push(series);
-      this.$data.sentColors.push(color);
-      ApexCharts.exec(`holochart-${this.$data.countType}`, "updateOptions", {
-        series: this.$data.sentSeries,
-        colors: this.$data.sentColors
-      });
-      this.$data.members[talentRel].dataAvailable = true;
-      if (this.$data.members[talentRel].dataAvailable) {
-        ApexCharts.exec(
-          `holochart-${this.$data.countType}`,
-          "toggleSeries",
-          talentName
-        );
-      }
-    }
-    if (this.$data.members[talentRel].dataAvailable) {
-      ApexCharts.exec(
-        `holochart-${this.$data.countType}`,
-        "toggleSeries",
-        talentName
-      );
-    }
     this.toggleChartBorder(talentName, isShown);
+    if (!this.$data.members[talentRel].dataAvailable) {
+      const color = this.$data.fullColors[talentRel];
+      this.$data.sentColors.push(color);
+      this.$data.countTypes.forEach((countType: "sub" | "view")  => {
+        const series = this.$data.fullSeries[countType][talentRel];
+        this.$data.sentSeries[countType].push(series);
+        ApexCharts.exec(`holochart-${countType}`, "updateOptions", {
+          series: this.$data.sentSeries[countType],
+          colors: this.$data.sentColors
+        });
+        this.$data.members[talentRel].dataAvailable = true;
+      })
+    }
+    else {
+      this.$data.countTypes.forEach((countType: "sub" | "view") => {
+        ApexCharts.exec(
+          `holochart-${countType}`,
+          "toggleSeries",
+        talentName
+        );
+      });
+    }
   }
 
   toggleChartBorder(talentName: string, isShown: boolean) {
     const cssVar = `var(--color-${GetTalentCSSName(talentName)})`;
-    const currentGrad = (this.$refs["chart"] as HTMLElement).style
+    const currentGrad = (this.$refs[`swiper`] as HTMLElement).style
       .borderImageSource;
     const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
     if (matches.length == 2 && matches[0] == matches[1]) {
@@ -223,15 +292,8 @@ export default class Home extends Vue {
     }
     if (matches.length == 1) matches.push(matches[0]);
     (this.$refs[
-      "chart"
+      'swiper'
     ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
-      ","
-    )}`;
-    let direction = "to bottom";
-    if (window.innerWidth <= 600) direction = "to right";
-    (this.$refs[
-      "chart-holder"
-    ] as HTMLElement).style.borderImageSource = `linear-gradient(${direction},${matches.join(
       ","
     )}`;
   }
@@ -241,7 +303,6 @@ export default class Home extends Vue {
     const dp = Array<Array<boolean>>();
     for (let i = 0; i < queries.length; i++) {
       const query = queries[i];
-      console.log(query);
       let countThisQuery = 0;
       const shownThisQuery = Array<boolean>(this.$data.members.length);
       this.$data.members = this.$data.members.map((member: TalentDisplay) => {
@@ -363,7 +424,7 @@ $bg_sidebar: #ccc;
   }
 }
 .chart-placeholder {
-  width: 100%;
+  width: calc(100% - 320px);
   position: relative;
 
   .chart-background {
@@ -383,13 +444,15 @@ $bg_sidebar: #ccc;
     }
   }
 
-  .chart {
+  .chart-swiper {
     --angle: 0deg;
     background: white;
-    padding: 2%;
     width: calc(100% * 11 / 12);
+    padding: 2%;
     border: 10px solid;
     animation: rotate-border 8s linear infinite;
+    position: relative;
+    min-height: 200px;
   }
 }
 
@@ -403,6 +466,69 @@ $bg_sidebar: #ccc;
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
+}
+
+.section-2 {
+  position: absolute;
+  top: 100vh;
+  border-top: 10px solid var(--color-current);
+  width: 100%;
+  background: var(--color-current-tint-50);
+
+  .section-inner {
+    width: calc(100% - 320px * 2);
+    margin: auto;
+    border-left: 10px solid var(--color-current);
+    border-right: 10px solid var(--color-current);
+    background: #fff;
+    padding: 40px 30px;
+  }
+
+  .title-section {
+    &-title {
+      color: var(--color-current);
+      font-size: 2.5rem;
+    }
+    margin-bottom: 30px;
+  }
+
+  .text-section {
+    text-align: left;
+    &-title {
+      position: relative;
+      width: 50%;
+      margin-left: -30px;
+      padding: 10px 0px 10px 30px;
+      background: var(--color-current);
+      color: var(--color-text);
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // border-right: 52px solid white;
+        // border-bottom: 52px solid transparent;
+        border-top-right-radius: 100px;
+        background: var(--color-current);
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(200% + 60px);
+        height: 3px;
+        background: var(--color-current);
+      }
+    }
+
+    &-description {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+  }
 }
 </style>
 
@@ -437,14 +563,50 @@ $bg_sidebar: #ccc;
     }
   }
   .chart-placeholder {
+    width: 100%;
     border-left: none !important;
     border-top: 10px solid;
     // height: calc(70vh - 140px);
 
-    .chart {
+    .chart-swiper {
       height: 100%;
       padding: 0;
       border: none;
+    }
+  }
+  .section-2 {
+    top: calc(100vh + 70px);
+
+    .section-inner {
+      width: 100%;
+      margin: auto;
+      border: none;
+      background: #fff;
+      padding: 20px 0;
+    }
+
+    .title-section {
+      &-title {
+        font-size: 2rem;
+      }
+    }
+
+    .text-section {
+      text-align: left;
+      &-title {
+        width: 100%;
+        margin-left: 0px;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &-description {
+        text-align: right;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -471,7 +633,7 @@ $bg_sidebar: #ccc;
   .chart-placeholder {
     border-left: 5px solid !important;
 
-    .chart {
+    .chart-swiper {
       width: calc(100% - 15px);
       border-width: 5px;
     }
