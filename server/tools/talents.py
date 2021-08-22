@@ -1,4 +1,4 @@
-  
+
 import os
 import json
 import pandas as pd
@@ -45,18 +45,30 @@ for branch, branchInfo in content.items():
 
         basicInfo = {
             "age": talentInfo["age"].replace(" years old", "") if "age" in talentInfo.keys() else '',
-            "height": talentInfo["height"],
-            "birthday": talentInfo["birthday"],
+            "height": talentInfo["height"] if "height" in talentInfo.keys() else '',
+            "birthday": talentInfo["birthday"] if "birthday" in talentInfo.keys() else '',
             "debutDate": talentInfo["debutDate"],
-            "zodiacSign": talentInfo["zodiacSign"],
+            "zodiacSign": talentInfo["zodiacSign"] if "zodiacSign" in talentInfo.keys() else ''
         }
 
-        localize_key = f'bio-{"-".join(talentName.lower().split(" "))}'
-        officialBio = localize_key
-        localize[localize_key] = {
-            "en": talentInfo["officialBio"],
-            "jp": ''
-        }
+        if talentName not in localize.keys():
+            localize[talentName] = {
+                "en": talentName,
+                "jp": tags[0]
+            }
+        menu_localize_key = f'menu-{"-".join(talentName.lower().split(" "))}'
+        if menu_localize_key not in localize.keys():
+            localize[menu_localize_key] = {
+                "en": talentName,
+                "jp": tags[0]
+            }
+        bio_localize_key = f'bio-{"-".join(talentName.lower().split(" "))}'
+        officialBio = bio_localize_key
+        if bio_localize_key not in localize.keys():
+            localize[bio_localize_key] = {
+                "en": talentInfo["officialBio"],
+                "jp": ''
+            }
 
         bgm = os.listdir(f'{bgmDir}/{talentName}') if os.path.isdir(f'{bgmDir}/{talentName}') else []
         solo = os.listdir(f'{soloDir}/{talentName}') if os.path.isdir(f'{soloDir}/{talentName}') else []
@@ -70,4 +82,4 @@ jsonStr = jsonStr.replace("\\/", "/")
 with open(talentsDestPath, mode='w+', encoding='utf-8') as f:
     f.writelines(jsonStr)
 
-# json.dump(localize, open(localizeFilePath, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+json.dump(localize, open(localizeFilePath, 'w', encoding='utf-8'), ensure_ascii=False, indent=2)

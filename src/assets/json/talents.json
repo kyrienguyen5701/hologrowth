@@ -181,6 +181,7 @@
     },
     "officialBio":"bio-azki",
     "tags":[
+      "AZKi",
       "AZKichi"
     ],
     "channelId":"UC0TXe_LYZ4scaW2XMyi5_kw",
@@ -1383,6 +1384,194 @@
   },
   {
     "id":37,
+    "branch":"en",
+    "genNumber":"",
+    "genName":"Project HOPE",
+    "genOther":[
+
+    ],
+    "name":"IRyS",
+    "basicInfo":{
+      "age":"As long as hope has been in your heart",
+      "height":"166 cm (with heels)",
+      "birthday":"7 March",
+      "debutDate":"2021/07/11",
+      "zodiacSign":"Pisces"
+    },
+    "officialBio":"bio-irys",
+    "tags":[
+      "IRyS"
+    ],
+    "channelId":"UC8rcEBzJSleTkf_-agPM20g",
+    "twitter":"irys_en",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/irys",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/irys",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":38,
+    "branch":"en",
+    "genNumber":"2",
+    "genName":"HoloCouncil",
+    "genOther":[
+
+    ],
+    "name":"Hakos Baelz",
+    "basicInfo":{
+      "age":"",
+      "height":"",
+      "birthday":"",
+      "debutDate":"2021/08/22",
+      "zodiacSign":""
+    },
+    "officialBio":"bio-hakos-baelz",
+    "tags":[
+      "ハコスベールズ"
+    ],
+    "channelId":"UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+    "twitter":"hakosbaelz",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/hakos-baelz",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/hakos-baelz",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":39,
+    "branch":"en",
+    "genNumber":"2",
+    "genName":"HoloCouncil",
+    "genOther":[
+
+    ],
+    "name":"Ouro Kronii",
+    "basicInfo":{
+      "age":"",
+      "height":"",
+      "birthday":"14 March",
+      "debutDate":"2021/08/22",
+      "zodiacSign":""
+    },
+    "officialBio":"bio-ouro-kronii",
+    "tags":[
+      "オーロクロニー"
+    ],
+    "channelId":"UCmbs8T6MWqUHP1tIQvSgKrg",
+    "twitter":"ourokronii",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/ouro-kronii",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/ouro-kronii",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":40,
+    "branch":"en",
+    "genNumber":"2",
+    "genName":"HoloCouncil",
+    "genOther":[
+
+    ],
+    "name":"Ceres Fauna",
+    "basicInfo":{
+      "age":"",
+      "height":"",
+      "birthday":"",
+      "debutDate":"2021/08/22",
+      "zodiacSign":""
+    },
+    "officialBio":"bio-ceres-fauna",
+    "tags":[
+      "セレスファウナ",
+      "Mama ファウナママ"
+    ],
+    "channelId":"UCO_aKKYxn4tvrqPjcTzZ6EQ",
+    "twitter":"ceresfauna",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/ceres-fauna",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/ceres-fauna",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":41,
+    "branch":"en",
+    "genNumber":"2",
+    "genName":"HoloCouncil",
+    "genOther":[
+
+    ],
+    "name":"Tsukumo Sana",
+    "basicInfo":{
+      "age":"",
+      "height":"",
+      "birthday":"",
+      "debutDate":"2021/08/22",
+      "zodiacSign":""
+    },
+    "officialBio":"bio-tsukumo-sana",
+    "tags":[
+      "つくもさな"
+    ],
+    "channelId":"UCsUj0dszADCGbF3gNrQEuSQ",
+    "twitter":"tsukumosana",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/tsukumo-sana",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/tsukumo-sana",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":42,
+    "branch":"en",
+    "genNumber":"2",
+    "genName":"HoloCouncil",
+    "genOther":[
+
+    ],
+    "name":"Nanashi Mumei",
+    "basicInfo":{
+      "age":"",
+      "height":"",
+      "birthday":"",
+      "debutDate":"2021/08/22",
+      "zodiacSign":""
+    },
+    "officialBio":"bio-nanashi-mumei",
+    "tags":[
+      "ななしむめい",
+      "Bird 鳥"
+    ],
+    "channelId":"UC3n5uGu18FoCy23ggWWp8tA",
+    "twitter":"nanashimumei_en",
+    "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/nanashi-mumei",
+    "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/nanashi-mumei",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":43,
     "branch":"id",
     "genNumber":"1",
     "genName":"",
@@ -1417,7 +1606,7 @@
     ]
   },
   {
-    "id":38,
+    "id":44,
     "branch":"id",
     "genNumber":"1",
     "genName":"",
@@ -1453,7 +1642,7 @@
     ]
   },
   {
-    "id":39,
+    "id":45,
     "branch":"id",
     "genNumber":"1",
     "genName":"",
@@ -1486,7 +1675,7 @@
     ]
   },
   {
-    "id":40,
+    "id":46,
     "branch":"id",
     "genNumber":"2",
     "genName":"",
@@ -1520,7 +1709,7 @@
     ]
   },
   {
-    "id":41,
+    "id":47,
     "branch":"id",
     "genNumber":"2",
     "genName":"",
@@ -1553,7 +1742,7 @@
     ]
   },
   {
-    "id":42,
+    "id":48,
     "branch":"id",
     "genNumber":"2",
     "genName":"",
