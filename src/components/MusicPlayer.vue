@@ -440,7 +440,7 @@ input.slider {
 }
 </style>
 <style lang="scss" scoped>
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .music-player {
     width: 100%;
     bottom: 0;

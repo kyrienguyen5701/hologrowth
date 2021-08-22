@@ -1,8 +1,9 @@
 import { ChangeColor } from "@/assets/ts/colors";
-import { GetTalentCSSName, GetTalentName } from "@/assets/ts/common";
+import { GetTalentCSSName } from "@/assets/ts/common";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
+import Member from "../views/Member.vue";
 
 Vue.use(VueRouter);
 
@@ -41,7 +42,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/member/:talentName",
     name: "Member",
-    component: () => import("../views/Member.vue"),
+    component: Member,
     props: true
   },
   {
@@ -60,6 +61,6 @@ const router = new VueRouter({
 router.afterEach((to, from) => {
   if (to.params.talentName == undefined) return;
   ChangeColor(GetTalentCSSName(to.params.talentName));
-})
+});
 
 export default router;
