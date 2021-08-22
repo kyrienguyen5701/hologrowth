@@ -525,7 +525,6 @@ $bg_sidebar: #ccc;
     }
 
     &-description {
-      text-align: right;
       margin-bottom: 15px;
     }
   }
@@ -566,7 +565,6 @@ $bg_sidebar: #ccc;
     width: 100%;
     border-left: none !important;
     border-top: 10px solid;
-    // height: calc(70vh - 140px);
 
     .chart-swiper {
       height: 100%;
@@ -603,7 +601,6 @@ $bg_sidebar: #ccc;
       }
 
       &-description {
-        text-align: right;
         padding: 15px;
         margin-bottom: 15px;
       }
@@ -631,11 +628,20 @@ $bg_sidebar: #ccc;
     }
   }
   .chart-placeholder {
+    width: calc(100% - 250px);
     border-left: 5px solid !important;
 
     .chart-swiper {
-      width: calc(100% - 15px);
       border-width: 5px;
+    }
+  }
+  .section-2 {
+    border-width: 5px;
+    top: calc(100vh - 20px);
+
+    .section-inner {
+      border: none;
+      width: 100%;
     }
   }
 }
