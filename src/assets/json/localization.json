@@ -12,7 +12,7 @@
     "en": "About this site"
   },
   "what": {
-    "jp": "内容",
+    "jp": "コンテンツ",
     "en": "Contents"
   },
   "what-content": {
@@ -28,12 +28,12 @@
     "en": "To toggle the data visualization of a talent, click on their banner in the sidebar. You can display as many talents as you want, though too many may cause some performance issues. Not a fan of navigating through a list? Use the search tool to find your talents immediately. Keywords are not limited to official names - they can be generation names, generation numbers, nicknames, and more (mostly for fooling around, try Soda or Cola for example www). Charts are wrapped in a swiper, so try swiping around to see more charts (2 for homepage, 8 for each talent's page)."
   },
   "why": {
-    "jp": "動機付け",
-    "en": "Motivations"
+    "jp": "霊感",
+    "en": "Inspirations"
   },
   "why-content": {
     "jp": "",
-    "en": "Why, you ask? Because we are 𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶ dedicated people www. Joke aside, we hope to develop a website for people, while chilling with music in the background, to know more about Hololive and their talents - about how they started out diminutive in 2017 with Sora's debut stream of only 13 viewers to grow into a𝚗̶ 𝚒̶𝚗̶famous 𝚌̶𝚒̶𝚛̶𝚌̶𝚞̶𝚜̶ 𝚎̶𝚗̶𝚝̶𝚎̶𝚛̶𝚝̶𝚊̶𝚒̶𝚗̶𝚖̶𝚎̶𝚗̶𝚝̶ 𝚌̶𝚘̶𝚖̶𝚙̶𝚊̶𝚗̶𝚢̶ idol group with branches worldwide and streams and lives with thousands of 𝚜̶𝚑̶𝚛̶𝚒̶𝚖̶𝚙̶𝚜̶ viewers tuning in."
+    "en": "Why, you ask? Because we are 𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶ dedicated people www. Joke aside, we hope to develop a website for people, while chilling with music in the background, to know more about Hololive and their talents - about how they started out diminutive in 2017 with Sora's debut stream of only 13 viewers to grow into a𝚗̶ 𝚒̶𝚗̶famous 𝚌̶𝚒̶𝚛̶𝚌̶𝚞̶𝚜̶ 𝚎̶𝚗̶𝚝̶𝚎̶𝚛̶𝚝̶𝚊̶𝚒̶𝚗̶𝚖̶𝚎̶𝚗̶𝚝̶ 𝚌̶𝚘̶𝚖̶𝚙̶𝚊̶𝚗̶𝚢̶ idol group with branches worldwide and streams and lives with thousands of 𝚜̶𝚑̶𝚛̶𝚒̶𝚖̶𝚙̶𝚜̶ viewers tuning in, along with fun facts about them as well (Not available yet)."
   },
   "disclaimer": {
     "jp": "免責事項",
@@ -52,12 +52,12 @@
     "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to give feedbacks or contribute to the project, please contact either of us through Discord or fork the project on Github and create a pull request."
   },
   "license": {
-    "jp": "",
+    "jp": "許可証",
     "en": "License"
   },
   "license-content": {
     "jp": "",
-    "en": "This project is licensed under "
+    "en": "This project is licensed under MIT License."
   },
   "debutDate": {
     "jp": "デビュー日",
@@ -160,7 +160,7 @@
     "jp": "ときのそら"
   },
   "bio-tokino-sora": {
-    "en": "How's it going, Soratomos! It is Tokino Sora!\nDebuting on September 7, 2017, she is the first Virtual Idol of Hololive Production. She loves singing and horror games, and her dream has been to hold a live concert at Yokohama Arena since the very beginning. She had her major debut at Victor Entertainment in March 2019. On her road to pro idol, she played a role in the TV show Watanuki-san Chi while also running a podcast known as SoraAoto! She also takes an active role in other genres. On October 6, 2019, she held her own live concert Dream! ",
+    "en": "\"How's it going, Soratomos! It is Tokino Sora!\"\nDebuting on September 7, 2017, she is the first Virtual Idol of Hololive Production. She loves singing and horror games, and her dream has been to hold a live concert at Yokohama Arena since the very beginning. She had her major debut at Victor Entertainment in March 2019. On her road to pro idol, she played a role in the TV show Watanuki-san Chi while also running a podcast known as SoraAoto! She also takes an active role in other genres. On October 6, 2019, she held her own live concert Dream! ",
     "jp": "「そらとものみんなー！元気ー？ときのそらです！」\n2017年9月7日より活動を開始、ホロライブプロダクション初のバーチャルアイドル。歌とホラーゲームが大好きで、活動当初からの夢は「横浜アリーナでライブをすること」。 2019年3月にビクターエンタテインメントからメジャーデビュー。一人前のアイドルを目指すために、女優としてTVドラマ『四月一日さん家の』に出演したり、ラジオ『そらあおと！』ではMCをつとめるなど、様々なジャンルでアクティブに活動中。2019年10月6日にはときのそら初の単独ライブ「Dream!」を開催、自身の夢に一歩近づいた。"
   },
   "Roboco": {
@@ -172,7 +172,7 @@
     "jp": "ロボ子"
   },
   "bio-roboco": {
-    "en": "Hello-robo! Roboco here!\nA lonely, wimpy robot from a random wasteland. She is now hoping to contact and live with lots of people as a Virtual Liver.",
+    "en": "\"Hello-robo! Roboco here!\"\nA lonely, wimpy robot from a random wasteland. She is now hoping to contact and live with lots of people as a Virtual Liver.",
     "jp": "「はろーぼー！ロボ子だよー」\nとある荒地にいる、いつもひとりぼっちのポンコツロボット。 今はバーチャルユーチューバーとして、たくさんの人と交流をとって毎日を楽しく過ごすことが目標。"
   },
   "Sakura Miko": {
@@ -184,7 +184,7 @@
     "jp": "さくらみこ"
   },
   "bio-sakura-miko": {
-    "en": "Nya-hello! It's Sakura Miko!\nShe has been working on religious services really hard as a miko in the computer world. With the revelation of the gods, she is now visiting Japan. While performing her errand, she has now decided to become and work hard as a virtual miko idol.",
+    "en": "\"Nya-hello! It's Sakura Miko!\"\nShe has been working on religious services really hard as a miko in the computer world. With the revelation of the gods, she is now visiting Japan. While performing her errand, she has now decided to become and work hard as a virtual miko idol.",
     "jp": "「にゃっはろー！さくらみこだよ～！」\n電脳世界での巫女として真面目に神事をこなしてきたが、神様にお使いを頼まれ日本に訪れる。 お使いをこなしていくうち、バーチャル巫女アイドルになることを決意し、日々奮闘中！"
   },
   "Hoshimachi Suisei": {
@@ -196,7 +196,7 @@
     "jp": "星街すいせい"
   },
   "bio-hoshimachi-suisei": {
-    "en": "It's your shooting star, your diamond in the rough, idol VTuber Hoshimachi Suisei!\nA forever 18 VTuber who deeply loves singing and idols. Her dream is to one day hold a live concert in Tokyo Budokan.",
+    "en": "\"It's your shooting star, your diamond in the rough, idol VTuber Hoshimachi Suisei!\"\nA forever 18 VTuber who deeply loves singing and idols. Her dream is to one day hold a live concert in Tokyo Budokan.",
     "jp": "「彗星の如く現れたスターの原石！アイドルVTuberの星街すいせいです！」\n歌とアイドルをこよなく愛する永遠の18歳のアイドルVTuber。 いつか武道館でライブをすることを夢見て活動している。"
   },
   "AZKi": {
@@ -220,7 +220,7 @@
     "jp": "夜空メル"
   },
   "bio-yozora-mel": {
-    "en": "Sweet bites! It's Yozora Mel!\nA vampire girl. Even though she is a vampire, she is not into blood, instead, she loves acerola juice the most.",
+    "en": "\"Sweet bites! It's Yozora Mel!\"\nA vampire girl. Even though she is a vampire, she is not into blood, instead, she loves acerola juice the most.",
     "jp": "「こんかぷ～夜空メルだよ！」\nバンパイアの女の子。バンパイアなのに血は苦手で、アセロラジュースが大好き。"
   },
   "Aki Rosenthal": {
@@ -232,7 +232,7 @@
     "jp": "アキローゼンタール"
   },
   "bio-aki-rosenthal": {
-    "en": "Alona, everyone! This is Aki Rosenthal a.k.a. AkiRose!\nA girl who traveled from a different universe. She has hyper curiosity and manages to reach out to all sorts of things. Her trademark pigtails float due to some sort of supernatural power.",
+    "en": "\"Alona, everyone! This is Aki Rosenthal a.k.a. AkiRose!\"\nA girl who traveled from a different universe. She has hyper curiosity and manages to reach out to all sorts of things. Her trademark pigtails float due to some sort of supernatural power.",
     "jp": "「こんばんアローナ！アキロゼことアキローゼンタールです！」\n異世界から来た女子高生。好奇心旺盛であり、色々なことに積極的に手を出していく。彼女のトレードマークであるツインテールは不思議な力で浮いている."
   },
   "Akai Haato": {
@@ -244,8 +244,8 @@
     "jp": "赤井はあと"
   },
   "bio-akai-haato": {
-    "en": "Welcome to your rouge awakening! This is Akai Haato!\nA sassy kouhai. She is often prickly, however she manages to demand lots of attention from those with whom she has been getting along well. She loves red ribbons and heart shapes and often adds them to her hair and dresses.",
-    "jp": "生意気な後輩。普段はツンツンしているが仲良くなった相手には甘えたりする。赤いリボンとハートが好きで、髪や服によくつけている。"
+    "en": "\"Welcome to your rouge awakening! This is Akai Haato!\"\nA sassy kouhai. She is often prickly, however she manages to demand lots of attention from those with whom she has been getting along well. She loves red ribbons and heart shapes and often adds them to her hair and dresses.",
+    "jp": "「こんるーじゅ！赤井はあとよ！」生意気な後輩。普段はツンツンしているが仲良くなった相手には甘えたりする。赤いリボンとハートが好きで、髪や服によくつけている。"
   },
   "Shirakami Fubuki": {
     "en": "Shirakami Fubuki",
@@ -256,8 +256,8 @@
     "jp": "白上フブキ"
   },
   "bio-shirakami-fubuki": {
-    "en": "Foxy day to you! I'm Shirakami Fubuki!\nA white haired animal-eared highschool student. Although she is shy and mostly calm, she likes to talk to people. She would be very happy if you pay attention to her.",
-    "jp": "白髪ケモミミの女子高生。恥ずかしがり屋であり、おとなしめな性格だけれど、実は人と話すのが好きで、構ってもらえると喜ぶ。"
+    "en": "\"Foxy day to you! I'm Shirakami Fubuki!\"\nA white haired animal-eared highschool student. Although she is shy and mostly calm, she likes to talk to people. She would be very happy if you pay attention to her.",
+    "jp": "「こんばんきーつね！白上フブキです！」白髪ケモミミの女子高生。恥ずかしがり屋であり、おとなしめな性格だけれど、実は人と話すのが好きで、構ってもらえると喜ぶ。"
   },
   "Natsuiro Matsuri": {
     "en": "Natsuiro Matsuri",
@@ -268,8 +268,8 @@
     "jp": "夏色まつり"
   },
   "bio-natsuiro-matsuri": {
-    "en": "Festival night! Natsuiro Matsuri is here!\nA rookie on the Cheerleading Team. Cheerful and affectionate, her pleasant attitude means she gets along with everyone. She has a lot of friends, and loves festivals and events.",
-    "jp": "チア部の新入生。明るく元気で人懐っこい性格であり誰とでもすぐに仲良くなれて、友達も多い。祭りやイベントなど楽しいことが好き。"
+    "en": "\"Festival night! Natsuiro Matsuri is here!\"\nA rookie on the Cheerleading Team. Cheerful and affectionate, her pleasant attitude means she gets along with everyone. She has a lot of friends, and loves festivals and events.",
+    "jp": "「こんばんわっしょーい！夏色まつりです！」チア部の新入生。明るく元気で人懐っこい性格であり誰とでもすぐに仲良くなれて、友達も多い。祭りやイベントなど楽しいことが好き。"
   },
   "Minato Aqua": {
     "en": "Minato Aqua",
@@ -280,8 +280,8 @@
     "jp": "港あくあ"
   },
   "bio-minato-aqua": {
-    "en": "A-quality day to one and all! I'm Minato Aqua!\nA marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.",
-    "jp": "マリンメイド服のバーチャルメイド。本人は頑張っているがおっちょこちょいでドジっ子。"
+    "en": "\"A-quality day to one and all! I'm Minato Aqua!\"\nA marine maid-styled virtual maid. She is trying her very best, yet is still sometimes awkward and clumsy.",
+    "jp": "「皆さんどうもこんあくあー！湊あくあです！」マリンメイド服のバーチャルメイド。本人は頑張っているがおっちょこちょいでドジっ子。"
   },
   "Murasaki Shion": {
     "en": "Murasaki Shion",
@@ -292,7 +292,7 @@
     "jp": "紫咲シオン"
   },
   "bio-murasaki-shion": {
-    "en": "Hellshio! Murasaki Shion here!\nA random self-proclaimed child (though she is probably an adult) who appears around the Demonic-Realm Academy. She calls herself a highborne black magician (probably). She can barely say her greeting, “Hellshio”.",
+    "en": "\"Hellshio! Murasaki Shion here!\"\nA random self-proclaimed child (though she is probably an adult) who appears around the Demonic-Realm Academy. She calls herself a highborne black magician (probably). She can barely say her greeting, “Hellshio”.",
     "jp": "「こんしお～、紫咲シオンだよ」\n魔界学校に出没する子供・・・ではなく本人曰く大人（らしい）。自称名門の出身で黒魔術を得意としている（らしい）あまり「こんしお」とは言わない。"
   },
   "Nakiri Ayame": {
@@ -304,7 +304,7 @@
     "jp": "百鬼あやめ"
   },
   "bio-nakiri-ayame": {
-    "en": "Greetings, humans! Nakiri Ayame has arrived!\nA kimono-clad Oni girl from the Demonic-Realm Academy. As she loves to prank people, she always uses will-o’-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.",
+    "en": "\"Greetings, humans! Nakiri Ayame has arrived!\"\nA kimono-clad Oni girl from the Demonic-Realm Academy. As she loves to prank people, she always uses will-o’-the-wisp on them just to have fun. Many may not realize it, but she is actually the president of the student council.",
     "jp": "「人間様たちこんなきりー！百鬼あやめだぞ」\n魔界学校所属の和装鬼娘。いたずら好きで、よく鬼火を飛ばして他人をからかって遊んでいる。こう見えて実は生徒会長。"
   },
   "Yuzuki Choco": {
@@ -316,7 +316,7 @@
     "jp": "癒月ちょこ"
   },
   "bio-yuzuki-choco": {
-    "en": "Good evening, my cute students! It's your teacher, Choco!\nA health doctor from the Demonic-Realm Academy. Has a high reputation around the school. It was told that the line of male students never ends. She loves snacks quite a lot, although one time her desk was caked with food wrappers, and she was then scolded badly.",
+    "en": "\"Good evening, my cute students! It's your teacher, Choco!\"\nA health doctor from the Demonic-Realm Academy. Has a high reputation around the school. It was told that the line of male students never ends. She loves snacks quite a lot, although one time her desk was caked with food wrappers, and she was then scolded badly.",
     "jp": "「Good evening!my cute students.ちょっこーん！」\n魔界学校の保健医。校内の男女からの人気は高く、特に男子からの診察依頼が絶えないという。お菓子が好きで、机の上にお菓子の袋が散乱しているのが目撃されては怒られている。"
   },
   "Oozora Subaru": {
@@ -328,7 +328,7 @@
     "jp": "大空スバル"
   },
   "bio-oozora-subaru": {
-    "en": "Sup? I'm Oozora Subaru!\nThe manager of an MMA club and an E-sports club. A supremely spirited, cheerful, lively girl who can talk to anyone without breaking a sweat. She’s currently practicing her pro-gamer skills.",
+    "en": "\"Sup? I'm Oozora Subaru!\"\nThe manager of an MMA club and an E-sports club. A supremely spirited, cheerful, lively girl who can talk to anyone without breaking a sweat. She’s currently practicing her pro-gamer skills.",
     "jp": "「ちわっす！大空スバルっす！」\n総合格闘技部とe-sports部のマネージャーをしている。男勝りな性格で、誰とも分け隔てなく接する、明るく元気で活発な子。ゲームは絶賛練習中。"
   },
   "Ookami Mio": {
@@ -340,7 +340,7 @@
     "jp": "大神ミオ"
   },
   "bio-ookami-mio": {
-    "en": "Hellooowl! It is Ookami Mio!\nA black haired kemomimi girl who appeared on our radar randomly. She often shows up around shrines. She likes gaming.",
+    "en": "\"Hellooowl! It is Ookami Mio!\"\nA black haired kemomimi girl who appeared on our radar randomly. She often shows up around shrines. She likes gaming.",
     "jp": "「こんばんみぉーん！大神ミオだよ～！」\nどこからともなく現れた黒髪のケモミミ少女。神社によく出没するらしい。ゲームが大好き。"
   },
   "Nekomata Okayu": {
@@ -352,7 +352,7 @@
     "jp": "猫又おかゆ"
   },
   "bio-nekomata-okayu": {
-    "en": "Om, nom, nom! Okayu time!\nA cat raised by a old woman from the onigiri store. She streams just because there is a PC in the old woman’s room.",
+    "en": "\"Om, nom, nom! Okayu time!\"\nA cat raised by a old woman from the onigiri store. She streams just because there is a PC in the old woman’s room.",
     "jp": "「もぐもぐ～おかゆ～！」\nおにぎり屋さんを経営してるおばあさんに飼われてる猫。おばあちゃんの部屋にあるPCから配信している。"
   },
   "Inugami Korone": {
@@ -364,7 +364,7 @@
     "jp": "戌神ころね"
   },
   "bio-inugami-korone": {
-    "en": "G'morning! Fingers! Give me your fingers!!\nThe dog from a random bakery. She likes to play games when she has free time while watchdogging.",
+    "en": "\"G'morning! Fingers! Give me your fingers!!\"\nThe dog from a random bakery. She likes to play games when she has free time while watchdogging.",
     "jp": "「ぉぁよ～！ゆびゆび～」\n都会にあるパン屋さんにいる犬。店番をしながら空いた時間にゲームをしている。"
   },
   "Houshou Marine": {
@@ -376,7 +376,7 @@
     "jp": "宝鐘マリン"
   },
   "bio-houshou-marine": {
-    "en": "Ahoy! Houshou Pirate Captain, Houshou Marine here!\nLoves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do (which also means she is currently just a girl cosplayer). She acts like a big sis and sometimes seduces people like a succubus does.",
+    "en": "\"Ahoy! Houshou Pirate Captain, Houshou Marine here!\"\nLoves jewels, treasure, and money. Her dream is to become a pirate and go treasure hunting. In order to get a pirate ship, she is now stacking up money as a VTuber on the great lands, just like how the other land-lovers do (which also means she is currently just a girl cosplayer). She acts like a big sis and sometimes seduces people like a succubus does.",
     "jp": "「Ahoy!宝鐘海賊団船長！宝鐘マリンです～！」\n宝石、宝、お金が大好きで、海賊になって宝を探すのが夢。海賊船を買うのが目標で今は陸でVTuberをしている。（ようするには今はただの海賊コスプレ女）お姉さん風にふるまい、小悪魔的に誘惑したりからかったりしてくる。"
   },
   "Uruha Rushia": {
@@ -388,7 +388,7 @@
     "jp": "潤羽るしあ"
   },
   "bio-uruha-rushia": {
-    "en": "Hel-rushi! This is Uruha Rushia!\nA necromancer from the Demonic-Realm Academy who is not good at communicating with people. She does not want to be alone, however, which is why she talks to the spirits and the damned.",
+    "en": "\"Hel-rushi! This is Uruha Rushia!\"\nA necromancer from the Demonic-Realm Academy who is not good at communicating with people. She does not want to be alone, however, which is why she talks to the spirits and the damned.",
     "jp": "「こんるし～潤羽るしあなのです！」\n人前に出ることが苦手な魔界学校に所属のネクロマンサー(死霊使い)の少女。ひとりぼっちが嫌なので死霊や屍とおしゃべりをしている。"
   },
   "Usada Pekora": {
@@ -400,7 +400,7 @@
     "jp": "兎田ぺこら"
   },
   "bio-usada-pekora": {
-    "en": "Hiya-peko! Hiya-peko! Hiya-pekooo!\nI'm Usada Pekora, peko! A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.",
+    "en": "\"Hiya-peko! Hiya-peko! Hiya-pekooo!\"\nI'm Usada Pekora, peko! A lonely rabbit-eared girl who loves carrots. She loves them so much that she always brings a few anywhere she goes.",
     "jp": "「こんぺこ！こんぺこ！こんぺこー！兎田ぺこらぺこ！」\n寂しがり屋なうさ耳の女の子。にんじんをこよなく愛し、いつでも食べられるように持ち歩いている。"
   },
   "Shiranui Flare": {
@@ -412,7 +412,7 @@
     "jp": "不知火フレア"
   },
   "bio-shiranui-flare": {
-    "en": "Noon-nui! This is Shiranui Flare!\nA half-elf who seems sloppy and undependable, however when it is time, she becomes an extremely reliable big sis. She is basically kind of drained. Her weakness is her emotions and she cries or gets embarrassed quite easily (Just praise her!). The fairy-like creature that looks like a panda is named “Kintsuba”.",
+    "en": "\"Noon-nui! This is Shiranui Flare!\"\nA half-elf who seems sloppy and undependable, however when it is time, she becomes an extremely reliable big sis. She is basically kind of drained. Her weakness is her emotions and she cries or gets embarrassed quite easily (Just praise her!). The fairy-like creature that looks like a panda is named “Kintsuba”.",
     "jp": "「こんぬい～！不知火フレアだよ～！」\n普段は適当に見えるけどいざというときは頼れる姉御肌なハーフエルフ。基本少しやさぐれている。情に熱く涙もろく、褒められるのに弱い。（デレがち。）いつも近くにいるパンダに見える妖精の名前は「きんつば」。"
   },
   "Shirogane Noel": {
@@ -424,7 +424,7 @@
     "jp": "白銀ノエル"
   },
   "bio-shirogane-noel": {
-    "en": "Hey muscle! Shirogane Noel's here!\nWhile she is easy-going, she has a dangerous side where she attempts to solve all her problems with muscle power. As much as this fluffy, meatheaded knight hungers for power, she came to the world of VTubers where all the stronk people are, for training.",
+    "en": "\"Hey muscle! Shirogane Noel's here!\"\nWhile she is easy-going, she has a dangerous side where she attempts to solve all her problems with muscle power. As much as this fluffy, meatheaded knight hungers for power, she came to the world of VTubers where all the stronk people are, for training.",
     "jp": "「こんばんまっする～！白銀ノエルです！」\nおっとりしているが、なんでも筋力でどうにかする物騒な面を持つ ゆるふわ脳筋女騎士。強さに憧れるあまり、つよつよな人達が集まるVTuber界に武者修行にきた。"
   },
   "Tsunomaki Watame": {
@@ -544,7 +544,7 @@
     "jp": "ワトソンアメリア"
   },
   "bio-watson-amelia": {
-    "en": "She heard strange rumors surrounding Hololive online:  ,  ,  , and more. Soon after beginning her investigation on Hololive, and just out of interest, she decided to become an idol herself! She loves to pass her time training her reflexes with FPS games, and challenging herself with puzzle games. It's elementary, right? ",
+    "en": "She heard strange rumors surrounding Hololive online: talking foxes, magical squirrels, superhuman dogs, and more. Soon after beginning her investigation on Hololive, and just out of interest, she decided to become an idol herself! She loves to pass her time training her reflexes with FPS games, and challenging herself with puzzle games. It's elementary, right? ",
     "jp": "ネットで喋るキツネとか魔法リスとか超人ワンコとか、色々ホロライブにまつわる変な噂を耳にし、気になって調査に出向いたところ、彼女自身もアイドルになりたくなった。暇つぶしに反射神経を鍛えられるFPSやパズルゲーなどを好んでやっている。「初歩的なことなんでしょう？」"
   },
   "Ninomae Ina'nis": {
