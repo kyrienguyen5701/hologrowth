@@ -1045,6 +1045,30 @@
             "height": "165 cm",
             "zodiacSign": "Cancer",
             "officialBio": "An idol whose dream is to become a fast food shop owner. She is a phoenix, NOT a chicken or turkey. (Very important)\nShe works extremely hard since she will be reborn from ashes anyway.\n"
+        },
+        "IRyS": {
+            "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+            "generation": ["Project HOPE"]
+        },
+        "Hakos Baelz": {
+            "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+            "generation": ["HoloCouncil", 2]
+        },
+        "Ouro Kronii": {
+            "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg",
+            "generation": ["HoloCouncil", 2]
+        },
+        "Ceres Fauna": {
+            "channelId": "UCO_aKKYxn4tvrqPjcTzZ6EQ",
+            "generation": ["HoloCouncil", 2]
+        },
+        "Tsukumo Sana": {
+            "channelId": "UCsUj0dszADCGbF3gNrQEuSQ",
+            "generation": ["HoloCouncil", 2]
+        },
+        "Nanashi Mumei": {
+            "channelId": "UC3n5uGu18FoCy23ggWWp8tA",
+            "generation": ["HoloCouncil", 2]
         }
     },
     "id": {
