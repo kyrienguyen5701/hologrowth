@@ -41,6 +41,12 @@ $color_kiara: #f15429;
 $color_inanis: #9274e4;
 $color_gura: #6679c8;
 $color_amelia: #f1df95;
+$color_irys: #85333e;
+$color_baelz: #d2261e;
+$color_kronii: #076aec;
+$color_fauna: #a3E5cf;
+$color_sana: #fdde46;
+$color_mumei: #998173;
 
 @function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
@@ -94,6 +100,12 @@ $colors: (
     "Inanis": $color_inanis,
     "Gura": $color_gura,
     "Amelia": $color_amelia,
+    "IRyS": $color_irys,
+    "Baelz": $color_baelz,
+    "Kronii": $color_kronii,
+    "Fauna": $color_fauna,
+    "Sana": $color_sana,
+    "Mumei": $color_mumei,
 );
 
 :root {

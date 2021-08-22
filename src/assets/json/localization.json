@@ -49,7 +49,7 @@
   },
   "who-content": {
     "jp": "",
-    "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to contribute to the project of any kind, please contact either of us through Discord or fork the project on Github and create a pull request."
+    "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to give feedbacks or contribute to the project, please contact either of us through Discord or fork the project on Github and create a pull request."
   },
   "license": {
     "jp": "",
@@ -128,8 +128,16 @@
     "en": "Hololive EN"
   },
   "menu-en-gen-1": {
-    "en": "1st Generation: HoloMyth",
-    "jp": "1期生: ホロミス"
+    "en": "Pre-prelude: HoloMyth",
+    "jp": "序前: ホロミス"
+  },
+  "menu-en-gen-2": {
+    "en": "Omen: HoloCouncil",
+    "jp": "兆し: ホロ議会"
+  },
+  "menu-en-gen-project-hope": {
+    "en": "Project HOPE",
+    "jp": "プロジェクトHOPE"
   },
   "menu-id": {
     "jp": "ホロライブID",
@@ -587,6 +595,79 @@
     "en": "An idol whose dream is to become a fast food shop owner. She is a phoenix, NOT a chicken or turkey. (Very important) She works extremely hard since she will be reborn from ashes anyway.",
     "jp": "ファストフードチェーンの店主になりたいアイドル。不死鳥であり、ニワトリや七面鳥ではない。（重要）彼女は命を削りながらすごく頑張って働いている、どうせ死んでも灰から蘇られるから。"
   },
+  
+  "IRyS": {
+    "en": "IRyS",
+    "jp": "IRyS"
+  },
+  "menu-irys": {
+    "en": "IRyS",
+    "jp": "IRyS"
+  },
+  "bio-irys": {
+    "en": "IRyS, a half-demon, half-angel also known as a Nephilim, once brought hope to “The Paradise” during the ancient age. Her full name is ███████ Irys. This current era, riddled with despair and desperation, has brought upon her second awakening. She has arrived to deliver hope, with her feelings put into her lyrics and songs, and determination in her voice.\n Though she tends to retain her Nephilim form, she is still quite young within her race. With emotion and “other factors,” it is possible that her form may lean to either side. When that occurs, she bears a brief change in her appearance.\n She does not speak of the events that preceded her second awakening. She faces ever forward, perhaps because she is Hope Incarnate, though no one knows for sure. Or could it be...\n \n“The future is not what helps people; the future is made with our own hands.\n Salvation is hypocrisy. If people know they are to be saved, they simply will not try.\n From the depths of despair: a glimmer of light, the warmth of recovery.\n As long as we are with hope, we live. We stand tall.”\n ",
+    "jp": "遥か太古、かの楽園に希望をもたらした悪魔と天使のハーフ、「ネフィリム」とも呼ばれている、IRyS。本名を██アイリス。絶望にまみれた現世は彼女を2回目の目覚めへと誘った（いざなった）。そして彼女は希望を世間に届けたいと再び歌に想いを乗せる。基本はハーフ状態を保っているが、種族としてはまだ幼いがため、感情や「他の要素」によってどちらかに傾く可能性がある。それによって容姿も少し変わるらしい。    彼女は2回目の目覚めより以前のことはあまり語りたがらない。それは彼女は「希望の化身」ゆえに前向きな姿勢を示しているのか、それともーー。「人々の助けになるのは未来ではない。未来は自分の手で作るもの。救いも余計なお世話。救われるなら頑張る気にはならない。絶望の深淵から見える僅かな光、立ち直れる暖かさ。ーー希望さえあれば、生きようと、頑張ろうと思える。」"
+  },
+  "Hakos Baelz": {
+    "en": "Hakos Baelz",
+    "jp": "ハコスベールズ"
+  },
+  "menu-hakos-baelz": {
+    "en": "Hakos Baelz",
+    "jp": "ハコスベールズ"
+  },
+  "bio-hakos-baelz": {
+    "en": "A member of the Council and the very concept of Chaos, birthed by the world, itself.\n The Gods appointed her Chairperson of the Council, but she mostly takes a hands-off approach as she has yet to accept the decision, much like her fellow members. That said, all of them have no intention of contending; instead to obey.\n Her mouse-like appearance has deceived many a fool who fails to realize that mice are the harbingers of chaos.\n Also of note is her wild smile, which she often flashes in her frequent romps.\n Chaos is confusion and disarray, it is fortune and tragedy, and it is freedom from all the logic and inherent nature of life.\n She believes that rules are not the be-all and end-all, which is why she has come to break them all.\n Watching the aftermath is her greatest joy, and so she remains a bystander to the destruction caused by mayhem.\n ",
+    "jp": "「議会」の一角であり、世界より作られし概念「カオス」そのものにあたる。神々に命じられ、「議会」の議長をやっている。基本は放任主義である。議長を一任されたことに彼女も含めて誰一人納得してない。だが任命されたからには従うのみ。見た目がネズミだからと言って侮ってはいけない、何故ならばネズミは「カオス」の前触れだ。「カオス」とは混沌、運気もまたは自由の類である。彼女は爛漫と輝く笑顔の持ち主であり、縛られることはなく、気のままに走り回る永久機関。彼女は世界はルールだけでは成り立たないと彼女は思っている、ゆえに彼女は世の理を全てがぶっ壊しにきた。混乱を見るのが最大の愉しみだからと、ほとんどの場合は手を出さない。"
+  },
+  "Ouro Kronii": {
+    "en": "Ouro Kronii",
+    "jp": "オーロクロニー"
+  },
+  "menu-ouro-kronii": {
+    "en": "Ouro Kronii",
+    "jp": "オーロクロニー"
+  },
+  "bio-ouro-kronii": {
+    "en": "A member of the Council and the Warden of \"Time,\" the third concept birthed by the Gods and the one most intrinsically linked with mankind.\n None may escape the sands of time and, indeed, most men do not even wish to be freed from her captivity. She picked up the blades almost as a reflex action of sorts, and seems to be enjoying it. Her quiet, aloof personality has never changed over the ages, but she has developed a little bit of haughtiness and sadistic tendencies along the way...\n Originally, the concept of time was but a cog in the wheel, one which only functioned in tandem with others.\n Eventually, humans went on to give time individual meanings such as dawn and dusk, making it universal. The humans became enslaved to Time in return for empowering her. In her present form, she has become a sadistic, prideful warden.\n ",
+    "jp": "「議会」の一角であり、神々より作られし三番目の概念「時間」の典獄にあたる。在り方が人間によって一番歪められた概念である。刃を取り始めたのは無意識な行動ではあるが、本人もきっと喜んで動いている。「時間」から逃れられる人間はいない、ほとんど人間もまた彼女の牢獄からの解放を望まない。本来「時間」という概念の役割は歯車として、他の概念と連携を取るための存在であった。 ただある日、人間は日の出や日没に意味を与え、その発想は「時間」に刻まれた。それ以来「時間」は人間のみにしか認識できない概念となり、それを紡いだ罪として「時間」に囚われ始めた。然る後、彼女は生ある者を時の牢獄に捉えるためだけに動く獄吏と化した。無口でクールな性格は昔から変わってないが、今の彼女は加虐を嗜むようなプライド高き典獄である。"
+  },
+  "Ceres Fauna": {
+    "en": "Ceres Fauna",
+    "jp": "セレスファウナ"
+  },
+  "menu-ceres-fauna": {
+    "en": "Ceres Fauna",
+    "jp": "セレスファウナ"
+  },
+  "bio-ceres-fauna": {
+    "en": "A member of the Council and the Keeper of \"Nature,\" the second concept created by the Gods.\n She has materialized in the mortal realm as a druid in a bid to save nature.\n She has Kirin blood flowing in her veins, and horns that are made out of the branches of a certain tree; they are NOT deer antlers.\n \"Nature\" refers to all organic matter on the planet except mankind.\n It is long said that her whispers, as an avatar of Mother Nature, have healing properties. Whether or not that is true is something only those who have heard them can say.\n While she is usually affable, warm, and slightly mischievous, any who anger her will bear the full brunt of Nature's fury.\n ",
+    "jp": "「議会」の一角であり、神々より作られし二番目の概念「自然」の番人にあたる。彼女は自然を守るべく「ドルイド」として顕現した。彼女には麒麟の血が流れており、従えてもいる。その角はとある樹の枝そのものであり、決して鹿の類ではない。「自然」とは、星の人類以外全ての有機物を指す。母なる自然である彼女の囁きには癒し効果があると語り伝えられている。その真偽は体験した者のみぞ知る。しかし、母なる自然である彼女は普段とても穏やかで少しおちゃめなところもあるが、、彼女に逆らうものは自然の恐ろしさを知ることになるのであろう。"
+  },
+  "Tsukumo Sana": {
+    "en": "Tsukumo Sana",
+    "jp": "つくもさな"
+  },
+  "menu-tsukumo-sana": {
+    "en": "Tsukumo Sana",
+    "jp": "つくもさな"
+  },
+  "bio-tsukumo-sana": {
+    "en": "A member of the Council and the Speaker of \"Space,\" the very first concept created by the Gods.\n After being materialized in the mortal realm, she began researching astrology in earnest for one particular reason. However, she soon stumbled unknowingly upon the Forbidden Truth, and was turned into an apostle for the Ancient Ones.\n \"Space\" refers not only to this universe we live in, but all dimensions and matter to exist. It is a concept unbridled by definition, and one that continues to grow in scope limitlessly. As it is yet to be fully explored by man, her seemingly strange behavior and speech can be explained away with a simple, \"Humanity simply isn't yet ready to understand.\"\n As a side note, despite how she may look, she is quite chi... young.\n ",
+    "jp": "「議会」の一角であり、神々より作られし最初の概念「空間」の代弁者にあたる。現世に顕現してからとある理由で占星術を研究しはじめ、神秘の禁忌に無自覚に触れてしまい、「古き神」の使徒に。「空間」とは、宇宙だけでなく、次元、物理などの概念を指す。それは果て無き概念であり、いまだ永遠に成長している概念である。未解明のことも多いため、その権現である彼女は一件意味不明なことばかりをしたり、話したりするが、本人曰く「それは人類の理解にはまだ早いだけである。」また彼女の見た目と違ってまだ......こど、、、若い。"
+  },
+  "Nanashi Mumei": {
+    "en": "Nanashi Mumei",
+    "jp": "ななしむめい"
+  },
+  "menu-nanashi-mumei": {
+    "en": "Nanashi Mumei",
+    "jp": "ななしむめい"
+  },
+  "bio-nanashi-mumei": {
+    "en": "A member of the Council and the Guardian of \"Civilization,\" a concept crafted by mankind.\n As a living embodiment of the sum of mankind's efforts—the mark that humans have left on the world—she is far removed from her fellow members, as well as other lifeforms. Due to not being created by the Gods, she was free to choose her own appearance, and decided to make herself owl-like, after the bird that symbolizes wisdom.\n She is gentle, wise, and an unbelievably hard worker. As a well-traveled vagabond, she is blessed with a wealth of knowledge of the world. She has seen, heard, and experienced so many things that she has forgotten most of them, one of them being her own name.\n For some reason, she seems to project a rather pitiable aura. Perhaps this is in part thanks to the loneliness she has often felt in her perennial travels. That is what gave her the idea of making her own friend out of a material that was indispensable to the development of human civilization: paper.\n \"It may fade and rip, but once a friend, forever a friend.\"\n ",
+    "jp": "「議会」の一角であり、人類の祟りより生まれし概念「文明」の守護者にあたる。彼女は非常に博識で、旅を好む熟練な旅人である。だが目の当たりにしたもの、伝え聞いたもの、身で体験したものがあまりにも多く、彼女自分自身の名前でさえ忘れ去られてしまった。彼女は他の議員とは異色な存在、人間の誕生や存在証明であり、それこそが他の生命体や概念との差である。「文明」とは、知恵を乞った生命体、人間が作りだしたものであり、人類が築き上げたものを指す。彼女自分は「神々」に作られた概念ではないがため、自ら今の姿を選び、人類が考えた賢明の代表動物である梟を見た目に取り組んでいる。彼女はとても優しく、賢い努力家。不思議ながら不憫で可憐な雰囲気が漂っている。ーー長い年月の旅を一人でしていると彼女は多少寂しく感じていたそうだ。だから彼女は「文明」の中でも、人間にとっても役割がかなり重要な紙を選んで友達を作った。「ボロボロになっていても友達は友達･･･。」"
+  },
   "Moona Hoshinova": {
     "en": "Moona Hoshinova",
     "jp": "ムーナホシノヴァ"
@@ -656,7 +737,7 @@
     "jp": "アーニャメルフィッサ"
   },
   "bio-anya-melfissa": {
-    "en": "An ancient weapon known as Keris, she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.",
+    "en": "An ancient weapon known as \"Keris\", she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.",
     "jp": "「クリス」として知られている古代武器だった彼女は、主人の神秘的な儀式によって、人間の身体を与えられた。彼女はほとんど寝ているかゲームをしている。長い間一人で生活をしていた為、人にあまり懐かない。興味のないことや人に対して反応が薄くなるが、好きなことについて話すときは、とても子供っぽく熱心になる。"
   }
 }

@@ -126,6 +126,7 @@
                 "https://www.youtube.com/watch?v=7O9XSvuQy5Q"
             ],
             "tags": [
+                "AZKi",
                 "AZKichi"
             ],
             "debutDate": "2018/11/15",
@@ -1048,27 +1049,111 @@
         },
         "IRyS": {
             "channelId": "UC8rcEBzJSleTkf_-agPM20g",
-            "generation": ["Project HOPE"]
+            "generation": [
+                "Project HOPE"
+            ],
+            "tags": [
+                "IRyS"
+            ],
+            "debutDate": "2021/07/11",
+            "twitter": "https://twitter.com/irys_en",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/irys",
+                "jp": "https://www.hololive.tv/portfolio/items/irys"
+            },
+            "age": "As long as hope has been in your heart",
+            "birthday": "7 March",
+            "height": "166 cm (with heels)",
+            "zodiacSign": "Pisces",
+            "officialBio": "IRyS, a half-demon, half-angel also known as a Nephilim, once brought hope to “The Paradise” during the ancient age. Her full name is ███████ Irys. This current era, riddled with despair and desperation, has brought upon her second awakening. She has arrived to deliver hope, with her feelings put into her lyrics and songs, and determination in her voice.\n Though she tends to retain her Nephilim form, she is still quite young within her race. With emotion and “other factors,” it is possible that her form may lean to either side. When that occurs, she bears a brief change in her appearance.\n She does not speak of the events that preceded her second awakening. She faces ever forward, perhaps because she is Hope Incarnate, though no one knows for sure. Or could it be...\n \n“The future is not what helps people; the future is made with our own hands.\n Salvation is hypocrisy. If people know they are to be saved, they simply will not try.\n From the depths of despair: a glimmer of light, the warmth of recovery.\n As long as we are with hope, we live. We stand tall.”\n "
         },
         "Hakos Baelz": {
             "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
-            "generation": ["HoloCouncil", 2]
+            "generation": [
+                "HoloCouncil",
+                2
+            ],
+            "tags": [
+                "ハコスベールズ"
+            ],
+            "debutDate": "2021/08/22",
+            "twitter": "https://twitter.com/hakosbaelz",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/hakos-baelz",
+                "jp": "https://www.hololive.tv/portfolio/items/hakos-baelz"
+            },
+            "officialBio": "A member of the Council and the very concept of Chaos, birthed by the world, itself.\n The Gods appointed her Chairperson of the Council, but she mostly takes a hands-off approach as she has yet to accept the decision, much like her fellow members. That said, all of them have no intention of contending; instead to obey.\n Her mouse-like appearance has deceived many a fool who fails to realize that mice are the harbingers of chaos.\n Also of note is her wild smile, which she often flashes in her frequent romps.\n Chaos is confusion and disarray, it is fortune and tragedy, and it is freedom from all the logic and inherent nature of life.\n She believes that rules are not the be-all and end-all, which is why she has come to break them all.\n Watching the aftermath is her greatest joy, and so she remains a bystander to the destruction caused by mayhem.\n "
         },
         "Ouro Kronii": {
             "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg",
-            "generation": ["HoloCouncil", 2]
+            "generation": [
+                "HoloCouncil",
+                2
+            ],
+            "tags": [
+                "オーロクロニー"
+            ],
+            "debutDate": "2021/08/22",
+            "twitter": "https://twitter.com/ourokronii",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/ouro-kronii",
+                "jp": "https://www.hololive.tv/portfolio/items/ouro-kronii"
+            },
+            "birthday": "14 March",
+            "officialBio": "A member of the Council and the Warden of \"Time,\" the third concept birthed by the Gods and the one most intrinsically linked with mankind.\n None may escape the sands of time and, indeed, most men do not even wish to be freed from her captivity. She picked up the blades almost as a reflex action of sorts, and seems to be enjoying it. Her quiet, aloof personality has never changed over the ages, but she has developed a little bit of haughtiness and sadistic tendencies along the way...\n Originally, the concept of time was but a cog in the wheel, one which only functioned in tandem with others.\n Eventually, humans went on to give time individual meanings such as dawn and dusk, making it universal. The humans became enslaved to Time in return for empowering her. In her present form, she has become a sadistic, prideful warden.\n "
         },
         "Ceres Fauna": {
             "channelId": "UCO_aKKYxn4tvrqPjcTzZ6EQ",
-            "generation": ["HoloCouncil", 2]
+            "generation": [
+                "HoloCouncil",
+                2
+            ],
+            "tags": [
+                "セレスファウナ",
+                "Mama ファウナママ"
+            ],
+            "debutDate": "2021/08/22",
+            "twitter": "https://twitter.com/ceresfauna",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/ceres-fauna",
+                "jp": "https://www.hololive.tv/portfolio/items/ceres-fauna"
+            },
+            "officialBio": "A member of the Council and the Keeper of \"Nature,\" the second concept created by the Gods.\n She has materialized in the mortal realm as a druid in a bid to save nature.\n She has Kirin blood flowing in her veins, and horns that are made out of the branches of a certain tree; they are NOT deer antlers.\n \"Nature\" refers to all organic matter on the planet except mankind.\n It is long said that her whispers, as an avatar of Mother Nature, have healing properties. Whether or not that is true is something only those who have heard them can say.\n While she is usually affable, warm, and slightly mischievous, any who anger her will bear the full brunt of Nature's fury.\n "
         },
         "Tsukumo Sana": {
             "channelId": "UCsUj0dszADCGbF3gNrQEuSQ",
-            "generation": ["HoloCouncil", 2]
+            "generation": [
+                "HoloCouncil",
+                2
+            ],
+            "tags": [
+                "つくもさな"
+            ],
+            "debutDate": "2021/08/22",
+            "twitter": "https://twitter.com/tsukumosana",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/tsukumo-sana",
+                "jp": "https://www.hololive.tv/portfolio/items/tsukumo-sana"
+            },
+            "officialBio": "A member of the Council and the Speaker of \"Space,\" the very first concept created by the Gods.\n After being materialized in the mortal realm, she began researching astrology in earnest for one particular reason. However, she soon stumbled unknowingly upon the Forbidden Truth, and was turned into an apostle for the Ancient Ones.\n \"Space\" refers not only to this universe we live in, but all dimensions and matter to exist. It is a concept unbridled by definition, and one that continues to grow in scope limitlessly. As it is yet to be fully explored by man, her seemingly strange behavior and speech can be explained away with a simple, \"Humanity simply isn't yet ready to understand.\"\n As a side note, despite how she may look, she is quite chi... young.\n "
         },
         "Nanashi Mumei": {
             "channelId": "UC3n5uGu18FoCy23ggWWp8tA",
-            "generation": ["HoloCouncil", 2]
+            "generation": [
+                "HoloCouncil",
+                2
+            ],
+            "tags": [
+                "ななしむめい",
+                "Bird 鳥"
+            ],
+            "debutDate": "2021/08/22",
+            "twitter": "https://twitter.com/nanashimumei_en",
+            "officialWebsite": {
+                "en": "https://en.hololive.tv/portfolio/items/nanashi-mumei",
+                "jp": "https://www.hololive.tv/portfolio/items/nanashi-mumei"
+            },
+            "officialBio": "A member of the Council and the Guardian of \"Civilization,\" a concept crafted by mankind.\n As a living embodiment of the sum of mankind's efforts—the mark that humans have left on the world—she is far removed from her fellow members, as well as other lifeforms. Due to not being created by the Gods, she was free to choose her own appearance, and decided to make herself owl-like, after the bird that symbolizes wisdom.\n She is gentle, wise, and an unbelievably hard worker. As a well-traveled vagabond, she is blessed with a wealth of knowledge of the world. She has seen, heard, and experienced so many things that she has forgotten most of them, one of them being her own name.\n For some reason, she seems to project a rather pitiable aura. Perhaps this is in part thanks to the loneliness she has often felt in her perennial travels. That is what gave her the idea of making her own friend out of a material that was indispensable to the development of human civilization: paper.\n \"It may fade and rip, but once a friend, forever a friend.\"\n "
         }
     },
     "id": {
