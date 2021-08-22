@@ -39,29 +39,41 @@
           </div>
         </div>
       </div>
-      <div
-        class="chart"
-        v-for="countType in countTypes"
-        :key="countType"
-        :ref="`holochart-${countType}`"
+      <div class="chart-swiper" ref="swiper"
         style="border-image-slice: 1;border-image-source: linear-gradient(var(--angle),var(--color-Sora),var(--color-Sora))"
       >
-        <div v-if="loading">
-          <div class="overlay-loading-container">
-            <div class="overlay-loading">
-              <div class="left"></div>
-              <div class="right"></div>
-            </div>
+        <div class="overlay-loading-container" v-if="loading">
+          <div class="overlay-loading">
+            <div class="left"></div>
+            <div class="right"></div>
           </div>
         </div>
-        <div v-else>
-          <HoloChart
-            v-bind:countType="countType"
-            v-bind:sentSeries="[fullSeries[countType][0]]"
-            v-bind:sentColors="[fullColors[0]]"
-            v-bind:xaxis="fullXAxis"
-          ></HoloChart>
-        </div>
+        <swiper class="swiper" :options="swiperOptionh">
+          <swiper-slide v-for="countType in countTypes" :key="countType">
+            <div
+              class="chart"
+              :ref="`holochart-${countType}`"
+            >
+              <div v-if="loading">
+                <div class="overlay-loading-container">
+                  <div class="overlay-loading">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                  </div>
+                </div>
+              </div>
+              <div v-else>
+                <HoloChart
+                  v-bind:countType="countType"
+                  v-bind:sentSeries="[fullSeries[countType][0]]"
+                  v-bind:sentColors="[fullColors[0]]"
+                  v-bind:xaxis="fullXAxis"
+                ></HoloChart>
+              </div>
+            </div>
+          </swiper-slide>
+          <div class="swiper-pagination swiper-pagination-h" slot="pagination"></div>
+        </swiper>
       </div>
     </div>
     <div class="section-2">
@@ -89,12 +101,19 @@ import { Component, Vue, Watch } from "vue-property-decorator";
 import Member from "@/components/MemberHome.vue";
 import Stats from "@/components/Stats.vue";
 import { GetCSSVar, dateFormatter, GetTalentCSSName } from "@/assets/ts/common";
-import { countTypesMap } from "@/assets/ts/common";
 import { TalentDisplay } from "@/assets/ts/interfaces";
 import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
 import axios from "axios";
 import { GetLocalizedText } from "@/assets/ts/localize";
+import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import "swiper/swiper-bundle.css";
+
+const about = ["what", "how", "why", "disclaimer", "who", "license"];
+
+Vue.component("swiper", Swiper);
+Vue.component("swiper-slide", SwiperSlide);
+
 @Component({
   components: {
     Member,
@@ -141,17 +160,24 @@ export default class Home extends Vue {
         data: [["Sora"]]
       },
       aboutSection: {
-        aboutText: GetLocalizedText("About this website"),
-        data: [
-          {
-            title: GetLocalizedText("OwO what's this?"),
-            description: GetLocalizedText("It's a website")
-          },
-          {
-            title: GetLocalizedText("About what?"),
-            description: GetLocalizedText("Hololive")
-          }
-        ]
+        aboutText: GetLocalizedText("about"),
+        data: (() => {
+          const res = [] as Array<{title: string, description: string}>;
+          about.forEach(part => {
+            res.push({
+              title: GetLocalizedText(part),
+              description: GetLocalizedText(`${part}-content`)
+            });
+          });
+          return res;
+        })()
+      },
+      swiperOptionh: {
+        spaceBetween: 50,
+        pagination: {
+          el: ".swiper-pagination-h",
+          clickable: true
+        }
       }
     };
   }
@@ -198,10 +224,6 @@ export default class Home extends Vue {
     soraDiv?.setAttribute("clicked", "");
   }
 
-  // getTabName(countType: "sub" | "view") {
-  //   return countTypesMap(countType);
-  // }
-
   toggleTalentSeries(event: Event) {
     let target = event.target as HTMLElement | null | undefined;
     let talentName = "";
@@ -229,6 +251,7 @@ export default class Home extends Vue {
       target?.setAttribute("clicked", "");
       isShown = true;
     }
+    this.toggleChartBorder(talentName, isShown);
     if (!this.$data.members[talentRel].dataAvailable) {
       const color = this.$data.fullColors[talentRel];
       this.$data.sentColors.push(color);
@@ -240,16 +263,9 @@ export default class Home extends Vue {
           colors: this.$data.sentColors
         });
         this.$data.members[talentRel].dataAvailable = true;
-        if (this.$data.members[talentRel].dataAvailable) {
-          ApexCharts.exec(
-            `holochart-${countType}`,
-            "toggleSeries",
-            talentName
-          );
-        }
       })
     }
-    // if (this.$data.members[talentRel].dataAvailable) {
+    else {
       this.$data.countTypes.forEach((countType: "sub" | "view") => {
         ApexCharts.exec(
           `holochart-${countType}`,
@@ -257,32 +273,29 @@ export default class Home extends Vue {
         talentName
         );
       });
-    // }
-    this.toggleChartBorder(talentName, isShown);
+    }
   }
 
   toggleChartBorder(talentName: string, isShown: boolean) {
     const cssVar = `var(--color-${GetTalentCSSName(talentName)})`;
-    this.$data.countTypes.forEach((countType: "sub" | "view") => {
-      const currentGrad = (this.$refs[`holochart-${countType}`] as Array<HTMLElement>)[0].style
-        .borderImageSource;
-      const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
-      if (matches.length == 2 && matches[0] == matches[1]) {
-        matches.pop();
-      }
-      if (isShown) {
-        matches.push(cssVar);
-      } else {
-        const i = matches.indexOf(cssVar);
-        matches.splice(i, 1);
-      }
-      if (matches.length == 1) matches.push(matches[0]);
-      (this.$refs[
-        `holochart-${countType}`
-      ] as Array<HTMLElement>)[0].style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
-        ","
-      )}`;
-    })
+    const currentGrad = (this.$refs[`swiper`] as HTMLElement).style
+      .borderImageSource;
+    const matches = currentGrad.match(/var\(--color-.*?\)/gm) || [];
+    if (matches.length == 2 && matches[0] == matches[1]) {
+      matches.pop();
+    }
+    if (isShown) {
+      matches.push(cssVar);
+    } else {
+      const i = matches.indexOf(cssVar);
+      matches.splice(i, 1);
+    }
+    if (matches.length == 1) matches.push(matches[0]);
+    (this.$refs[
+      'swiper'
+    ] as HTMLElement).style.borderImageSource = `linear-gradient(var(--angle),${matches.join(
+      ","
+    )}`;
   }
 
   search(input: string) {
@@ -411,7 +424,7 @@ $bg_sidebar: #ccc;
   }
 }
 .chart-placeholder {
-  width: 100%;
+  width: calc(100% - 320px);
   position: relative;
 
   .chart-background {
@@ -431,13 +444,15 @@ $bg_sidebar: #ccc;
     }
   }
 
-  .chart {
+  .chart-swiper {
     --angle: 0deg;
     background: white;
-    padding: 2%;
     width: calc(100% * 11 / 12);
+    padding: 2%;
     border: 10px solid;
     animation: rotate-border 8s linear infinite;
+    position: relative;
+    min-height: 200px;
   }
 }
 
@@ -510,6 +525,7 @@ $bg_sidebar: #ccc;
     }
 
     &-description {
+      text-align: right;
       margin-bottom: 15px;
     }
   }
@@ -547,14 +563,50 @@ $bg_sidebar: #ccc;
     }
   }
   .chart-placeholder {
+    width: 100%;
     border-left: none !important;
     border-top: 10px solid;
     // height: calc(70vh - 140px);
 
-    .chart {
+    .chart-swiper {
       height: 100%;
       padding: 0;
       border: none;
+    }
+  }
+  .section-2 {
+    top: calc(100vh + 70px);
+
+    .section-inner {
+      width: 100%;
+      margin: auto;
+      border: none;
+      background: #fff;
+      padding: 20px 0;
+    }
+
+    .title-section {
+      &-title {
+        font-size: 2rem;
+      }
+    }
+
+    .text-section {
+      text-align: left;
+      &-title {
+        width: 100%;
+        margin-left: 0px;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &-description {
+        text-align: right;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -581,7 +633,7 @@ $bg_sidebar: #ccc;
   .chart-placeholder {
     border-left: 5px solid !important;
 
-    .chart {
+    .chart-swiper {
       width: calc(100% - 15px);
       border-width: 5px;
     }

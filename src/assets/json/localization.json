@@ -7,6 +7,58 @@
     "jp": "English",
     "en": "English"
   },
+  "about": {
+    "jp": "このサイトについて",
+    "en": "About this site"
+  },
+  "what": {
+    "jp": "内容",
+    "en": "Contents"
+  },
+  "what-content": {
+    "jp": "",
+    "en": "Hologrowth serves as a space to record the growth of Hololive as a group and of individual talents since their debut. It is also a music player dedicated to original Hololive songs, along with some BGMs used by talents for their streams. Data are updated daily."
+  },
+  "how": {
+    "jp": "使用方法",
+    "en": "Usage Instructions"
+  },
+  "how-content": {
+    "jp": "",
+    "en": "To toggle the data visualization of a talent, click on their banner in the sidebar. You can display as many talents as you want, though too many may cause some performance issues. Not a fan of navigating through a list? Use the search tool to find your talents immediately. Keywords are not limited to official names - they can be generation names, generation numbers, nicknames, and more (mostly for fooling around, try Soda or Cola for example www). Charts are wrapped in a swiper, so try swiping around to see more charts (2 for homepage, 8 for each talent's page)."
+  },
+  "why": {
+    "jp": "動機付け",
+    "en": "Motivations"
+  },
+  "why-content": {
+    "jp": "",
+    "en": "Why, you ask? Because we are 𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶ dedicated people www. Joke aside, we hope to develop a website for people, while chilling with music in the background, to know more about Hololive and their talents - about how they started out diminutive in 2017 with Sora's debut stream of only 13 viewers to grow into a𝚗̶ 𝚒̶𝚗̶famous 𝚌̶𝚒̶𝚛̶𝚌̶𝚞̶𝚜̶ 𝚎̶𝚗̶𝚝̶𝚎̶𝚛̶𝚝̶𝚊̶𝚒̶𝚗̶𝚖̶𝚎̶𝚗̶𝚝̶ 𝚌̶𝚘̶𝚖̶𝚙̶𝚊̶𝚗̶𝚢̶ idol group with branches worldwide and streams and lives with thousands of 𝚜̶𝚑̶𝚛̶𝚒̶𝚖̶𝚙̶𝚜̶ viewers tuning in."
+  },
+  "disclaimer": {
+    "jp": "免責事項",
+    "en": "Disclaimer"
+  },
+  "disclaimer-content": {
+    "jp": "",
+    "en": "This is an unofficial fan site and is not affiliated in any way with Cover Co., Ltd. or Hololive Production. We are not compensated in any way for any portion of this site. To the best of our knowledge, all contents, images, sounds, etc., if any, are being used in compliance with the Fan Work Guidelines. If you own any content displayed here and want it to be deleted, please contact us immediately. Data collection began on March 23, 2021, so number of channel subscribers prior to this date may not be accurate. Please be aware of this in advance."
+  },
+  "who": {
+    "jp": "連絡",
+    "en": "Contacts"
+  },
+  "who-content": {
+    "jp": "",
+    "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to contribute to the project of any kind, please contact either of us through Discord or fork the project on Github and create a pull request."
+  },
+  "license": {
+    "jp": "",
+    "en": "License"
+  },
+  "license-content": {
+    "jp": "",
+    "en": "This project is licensed under "
+  },
   "debutDate": {
     "jp": "デビュー日",
     "en": "Debut Date"

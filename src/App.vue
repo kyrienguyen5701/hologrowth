@@ -3,7 +3,8 @@
     <div id="navbar">
       <div class="logo p-10 flex-centered">
         <div class="logo-text">
-          <a href="/">Hologrowth</a>
+          <a href="/" v-if="currentLang==='en'">Hologrowth</a>
+          <a href="/" v-else>ホロ成長</a>
         </div>
       </div>
       <div class="menus">
