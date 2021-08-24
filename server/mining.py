@@ -5,12 +5,13 @@ import json
 import pandas as pd
 import requests
 
-today = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+date_format = '%Y-%m-%d'
+today = datetime.now().strftime(date_format)
 subDB = 'holo_subcounts.csv'
 viewDB = 'holo_viewcounts.csv'
 META = json.load(open('talents.json', 'r'))
 YOUTUBE_V3_API_KEY = 'AIzaSyDGNHvi3763dJK_LTSXVWWwXgTGq2m7yXk'
-SLEEPING_TIME = 86000
+SLEEPING_TIME = 24 * 60 * 60
 
 sub_today, view_today = {'Date': [today]}, {'Date': [today]}
 
@@ -30,7 +31,9 @@ def updateDB():
     subDF = pd.concat([pd.DataFrame(sub_today), subDF])
     viewDF = pd.concat([pd.DataFrame(view_today), viewDF])
     subDF.set_index('Date', inplace=True)
+    subDF.index = pd.to_datetime(subDF.index, format=date_format)
     viewDF.set_index('Date', inplace=True)
+    viewDF.index = pd.to_datetime(viewDF.index, format=date_format)
     subDF.astype('int64').to_csv(subDB)
     viewDF.astype('int64').to_csv(viewDB)
 
@@ -52,12 +55,10 @@ def main():
 
 if __name__ == '__main__':
     while True:
-        if today[-8:] == '16:00:00':
-            today = today[:11] + '12' + today[-6:]  # convert to New York timezone 
-            print('Begin mining data for', today[:10])
-            sub_today, view_today = {'Date': [today]}, {'Date': [today]}
-            main()
-            print('Done. Go to sleeping mode')
-            time.sleep(SLEEPING_TIME)
-        today = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        print(f'Begin mining data for {today} ...')
+        sub_today, view_today = {'Date': [today]}, {'Date': [today]}
+        main()
+        print('Done. Go to sleeping mode')
+        time.sleep(SLEEPING_TIME)
+        today = datetime.now().strftime(date_format)
         

@@ -72,7 +72,6 @@ for branch in META.items():
             talent_name: milestones.keys()
         })
         interpolatePath = f'../archive/temp/{talent_name}.csv'
-        # df = pd.read_csv(interpolatePath, parse_dates=['Date'], encoding='utf-8')
         df.set_index('Date', inplace=True)
         df.index = pd.to_datetime(df.index)
         number_of_milestones = len(df.index)
@@ -87,9 +86,9 @@ for branch in META.items():
                 spike = int((current_milestone - previous_milestone) / dist * 2)
                 df.loc[previous_day] = df.loc[date] - spike 
         df = df.resample('D').interpolate('spline', order=1.2)
-        df[talent_name] //= 1
-        df.loc['2019-08-01':][talent_name][df[talent_name] >= 1000] = df[talent_name] // 100 * 100
-        df.loc['2019-08-01':][talent_name][df[talent_name] >= 100000] = df[talent_name] // 1000 * 1000
+        df.loc[:,talent_name] //= 1
+        df.loc['2019-08-01':, talent_name][df[talent_name] >= 1000] = df.loc[:, talent_name] // 100 * 100
+        df.loc['2019-08-01':, talent_name][df[talent_name] >= 100000] = df.loc[:, talent_name] // 1000 * 1000
         # print(df.head())
         df[talent_name] = df[talent_name].astype('int64')
         df.to_csv(os.path.join(os.path.dirname(__file__), interpolatePath))

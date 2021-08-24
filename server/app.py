@@ -9,25 +9,23 @@ CORS(app)
 
 @app.route('/get-member-data', methods=['POST'])
 def get_member_data():
-    range = request.json['range']
+    period = request.json['range']
     talent = request.json['talent']
     count_type = request.json['countType']
     db = f'holo_{count_type}counts.csv'
     df = pd.read_csv(db, encoding='utf-8')
     df.set_index('Date', inplace=True)
-    range = df[talent].size if range == 0 or range > df[talent].size else range
-    return df[talent][:range].to_dict()
-
-@app.route('/get-holo-data', methods=['POST'])
-def get_holo_data():
-    count_type = request.json['countType']
-    db = f'holo_{count_type}counts.csv'
-    df = pd.read_csv(db, encoding='utf-8')
-    df.set_index('Date', inplace=True)
-    res = dict()
-    for talent in df.columns:
-        res[talent] = df[talent].to_dict()
-    return json.dumps(res)
+    period = df.index.size if period == 0 or period > df[talent].size else period
+    # reduce data point to speed up render speed
+    interval = 1 if period <= 200 else 2
+    start = 1 if period % 2 and period > 200 == 0 else 0
+    return_dict = df[talent].iloc[:period].iloc[start::interval].to_dict()
+    # dates = list(return_dict.keys())
+    # i = -1
+    # while return_dict[dates[i - 1]] == 0:
+    #     return_dict[dates[i]] = None
+    #     i -= 1
+    return return_dict
 
 if __name__ == '__main__':
     app.run(port=8000, debug=False)

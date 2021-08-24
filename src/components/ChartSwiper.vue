@@ -21,7 +21,7 @@
                 countType: countType,
                 range: range,
                 seriesData: allSeries[`${countType}-${range}`],
-                xaxis: xaxis
+                xaxis: xaxis[`${countType}-${range}`]
               }"
             ></MemberChart>
           </div>
@@ -38,7 +38,7 @@
 
 <script lang="ts">
 import { Component, Prop, Watch, Vue } from "vue-property-decorator";
-import { dateFormatter, countTypesMap } from "@/assets/ts/common";
+import { dateFormatter, countTypesMap, tickAmount } from "@/assets/ts/common";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
@@ -46,7 +46,7 @@ import "swiper/swiper-bundle.css";
 Vue.component("swiper", Swiper);
 Vue.component("swiper-slide", SwiperSlide);
 
-const ranges = [7, 30, 365, 0];
+const ranges = [7, 30, 365];
 const countTypes = ["sub", "view"];
 
 @Component
@@ -80,12 +80,9 @@ export default class ChartSwiper extends Vue {
                 data: Object.values(res.data)
               }
             ];
-            this.$data.xaxis = {
+            this.$data.xaxis[`${countType}-${range}`] = {
               categories: Object.keys(res.data).map(dateFormatter),
-              tickAmount:
-                window.innerWidth <= 600
-                  ? 7
-                  : Math.min(15, Object.keys(res.data).length)
+              tickAmount: tickAmount
             };
           })
           .catch(e => console.log(e));
@@ -103,13 +100,18 @@ export default class ChartSwiper extends Vue {
         "sub-7": [],
         "sub-30": [],
         "sub-365": [],
-        "sub-0": [],
         "view-7": [],
         "view-30": [],
-        "view-365": [],
-        "view-0": []
+        "view-365": []
       },
-      xaxis: [],
+      xaxis: {
+        "sub-7": {},
+        "sub-30": {},
+        "sub-365": {},
+        "view-7": {},
+        "view-30": {},
+        "view-365": {}
+      },
       swiperOptionh: {
         spaceBetween: 50,
         pagination: {

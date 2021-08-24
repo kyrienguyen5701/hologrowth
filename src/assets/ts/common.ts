@@ -2,7 +2,9 @@ import * as interfaces from "./interfaces";
 import { format } from "date-fns";
 
 export function GetCSSVar(name: string) {
-  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(name)
+    .trim();
 }
 
 export function SetCSSVar(name: string, value: string) {
@@ -17,7 +19,10 @@ export function GetProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
 }
 
-export function ContainsKey(obj: Record<string, any>, searchKey: string): boolean {
+export function ContainsKey(
+  obj: Record<string, any>,
+  searchKey: string
+): boolean {
   return Object.keys(obj).includes(searchKey);
 }
 
@@ -58,7 +63,7 @@ export function Categorize(
 
   for (let i = 0; i < data.length; i++) {
     let key = GetProperty(data[i], findKey) as string;
-    if (key === '' && findKey === "genNumber") {
+    if (key === "" && findKey === "genNumber") {
       key = GetProperty(data[i], "genName") as string;
     }
     // temporary fix: add Fubuki for GAMERS
@@ -74,23 +79,19 @@ export function Categorize(
   return result;
 }
 
-export function GetTalentName(name: string)
-{
-  const s = name.split("-")
-  for (let i = 0; i < s.length; i++)
-  {
+export function GetTalentName(name: string) {
+  const s = name.split("-");
+  for (let i = 0; i < s.length; i++) {
     s[i] = s[i].charAt(0).toUpperCase() + s[i].substring(1);
   }
-  return s.join(" ")
+  return s.join(" ");
 }
 
-export function GetTalentCSSName(name: string)
-{
+export function GetTalentCSSName(name: string) {
   const s = name.replace(/ /g, "-");
   const _ = s.split("-");
   const result = _[_.length - 1];
-  switch (result)
-  {
+  switch (result) {
     case "Ina'nis":
       return "Inanis";
   }
@@ -131,3 +132,17 @@ export const countTypesMap = (countType: string) => {
       return "View";
   }
 };
+
+export const tickAmount = (() => {
+  const innerWidth = window.innerWidth;
+  // phone
+  if (innerWidth <= 600) {
+    return 8;
+  }
+  // tablet
+  if (innerWidth <= 768) {
+    return 12;
+  } else {
+    return 15;
+  }
+})();
