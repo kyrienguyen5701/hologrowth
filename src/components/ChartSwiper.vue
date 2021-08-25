@@ -38,10 +38,12 @@
 
 <script lang="ts">
 import { Component, Prop, Watch, Vue } from "vue-property-decorator";
-import { dateFormatter, countTypesMap, tickAmount } from "@/assets/ts/common";
+import { dateFormatter, longDateFormatter, tickAmount } from "@/assets/ts/common";
+import { XAxis } from "@/assets/ts/interfaces";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
+import { GetLocalizedText } from "@/assets/ts/localize";
 
 Vue.component("swiper", Swiper);
 Vue.component("swiper-slide", SwiperSlide);
@@ -74,14 +76,18 @@ export default class ChartSwiper extends Vue {
           }
         })
           .then(res => {
+            const size = Object.values(res.data).length;
             this.$data.allSeries[`${countType}-${range}`] = [
               {
-                name: `${countTypesMap(countType)} Count`,
+                name: GetLocalizedText(countType),
                 data: Object.values(res.data)
               }
             ];
             this.$data.xaxis[`${countType}-${range}`] = {
-              categories: Object.keys(res.data).map(dateFormatter),
+              categories: Object.keys(res.data),
+              labels: {
+                formatter: size >= 365 ? longDateFormatter : dateFormatter
+              },
               tickAmount: tickAmount
             };
           })
@@ -105,12 +111,12 @@ export default class ChartSwiper extends Vue {
         "view-365": []
       },
       xaxis: {
-        "sub-7": {},
-        "sub-30": {},
-        "sub-365": {},
-        "view-7": {},
-        "view-30": {},
-        "view-365": {}
+        "sub-7": {} as XAxis,
+        "sub-30": {} as XAxis,
+        "sub-365": {} as XAxis,
+        "view-7": {} as XAxis,
+        "view-30": {} as XAxis,
+        "view-365": {} as XAxis
       },
       swiperOptionh: {
         spaceBetween: 50,

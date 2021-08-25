@@ -1,4 +1,5 @@
 import * as interfaces from "./interfaces";
+import { GetChartLocalizedDate } from "./localize";
 import { format } from "date-fns";
 
 export function GetCSSVar(name: string) {
@@ -98,6 +99,8 @@ export function GetTalentCSSName(name: string) {
   return result;
 }
 
+// chart utils
+
 export const countFormatter = (count: number) => {
   if (count == undefined) return "";
   const thousand = 1000;
@@ -108,28 +111,34 @@ export const countFormatter = (count: number) => {
 };
 
 export const dateFormatter = (val: string) => {
-  return format(new Date(val), "MMM dd");
+  if (val) {
+    return GetChartLocalizedDate(format(new Date(val), "MMM dd"));
+  }
+  return val;
 };
+
+export const longDateFormatter = (val: string) => {
+  if (val) {
+    return GetChartLocalizedDate(format(new Date(val), "MMM y"));
+  }
+  return val;
+};
+
+export const xTooltipDateFormatter = (xaxis: interfaces.XAxis, val: string, obj: {series: Array<string>, seriesIndex: number, dataPointIndex: number}) => {
+  const dateString = format(new Date(xaxis.categories[obj.dataPointIndex]), "MMM dd y"); 
+  return GetChartLocalizedDate(dateString);
+}
 
 export const availableRangesMap = (range: number) => {
   switch (range) {
     case 7:
-      return "Last Week";
+      return "last-week";
     case 30:
-      return "Last Month";
+      return "last-month";
     case 365:
-      return "Last Year";
-    case 0:
+      return "last-year";
+    default:
       return "All Time";
-  }
-};
-
-export const countTypesMap = (countType: string) => {
-  switch (countType) {
-    case "sub":
-      return "Subscriber";
-    case "view":
-      return "View";
   }
 };
 
@@ -137,12 +146,12 @@ export const tickAmount = (() => {
   const innerWidth = window.innerWidth;
   // phone
   if (innerWidth <= 600) {
-    return 8;
+    return 4;
   }
   // tablet
   if (innerWidth <= 768) {
-    return 12;
+    return 6;
   } else {
-    return 15;
+    return 8;
   }
 })();

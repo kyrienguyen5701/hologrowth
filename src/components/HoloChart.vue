@@ -14,15 +14,19 @@
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
 import VueApexCharts from "vue-apexcharts";
-import { countFormatter, countTypesMap } from "@/assets/ts/common";
+import { countFormatter, xTooltipDateFormatter } from "@/assets/ts/common";
+import { GetLocalizedText } from "@/assets/ts/localize";
+import { XAxis } from "@/assets/ts/interfaces";
+
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
+
 @Component
 export default class HoloChart extends Vue {
   @Prop() countType!: string;
   @Prop() sentSeries!: Array<object>;
   @Prop() sentColors!: Array<object>;
-  @Prop() xaxis!: object;
+  @Prop() xaxis!: XAxis;
 
   data() {
     return {
@@ -41,15 +45,16 @@ export default class HoloChart extends Vue {
           show: false
         },
         stroke: {
-          curve: "smooth"
+          curve: "smooth",
+          width: 3
         },
         title: {
-          text: `Hololive Number of ${countTypesMap(this.countType)}s Growth`,
+          text: GetLocalizedText(`${this.countType}-growth`),
           align: "center"
         },
         grid: {
           row: {
-            colors: ["#ffffff"],
+            colors: ["#ffffff", "transparent"],
             opacity: 0.5
           }
         },
@@ -59,13 +64,23 @@ export default class HoloChart extends Vue {
             formatter: countFormatter
           },
           title: {
-            text: `${countTypesMap(this.countType)} Count`
+            text: GetLocalizedText(this.countType)
           }
         },
         tooltip: {
           shared: false,
+          x: {
+            formatter: (val: string, obj: {series: Array<string>, seriesIndex: number, dataPointIndex: number}) => {
+              return xTooltipDateFormatter(this.xaxis, val, obj);
+            }
+          },
           y: {
-            formatter: this.countType === "sub" ? countFormatter : (val: number) => {return val}
+            formatter:
+              this.countType === "sub"
+                ? countFormatter
+                : (val: number) => {
+                    return val;
+                  }
           }
         }
       }

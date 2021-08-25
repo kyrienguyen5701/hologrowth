@@ -7,6 +7,10 @@
     "jp": "English",
     "en": "English"
   },
+  "search-placeholder": {
+    "jp": "名前か、期生か、ニックネーム例えば入る",
+    "en": "Enter name, generation, nickname, etc."
+  },
   "about": {
     "jp": "このサイトについて",
     "en": "About this site"
@@ -59,6 +63,10 @@
     "jp": "",
     "en": "This project is licensed under MIT License."
   },
+  "basic-info": {
+    "jp": "基本情報",
+    "en": "Basic information"
+  },
   "debutDate": {
     "jp": "デビュー日",
     "en": "Debut Date"
@@ -86,6 +94,90 @@
   "zodiacSign": {
     "jp": "干支",
     "en": "Zodiac Sign"
+  },
+  "Aries": {
+    "jp": "牡羊座 ",
+    "en": "Aries"
+  },
+  "Taurus": {
+    "jp": "牡牛座",
+    "en": "Taurus"
+  },
+  "Gemini": {
+    "jp": "双子座",
+    "en": "Gemini"
+  },
+  "Cancer": {
+    "jp": "蟹座",
+    "en": "Cancer"
+  },
+  "Leo": {
+    "jp": "獅子座",
+    "en": "Leo"
+  },
+  "Virgo": {
+    "jp": "乙女座",
+    "en": "Virgo"
+  },
+  "Libra": {
+    "jp": "天秤座",
+    "en": "Libra"
+  },
+  "Scorpio": {
+    "jp": "さそり座",
+    "en": "Scorpio"
+  },
+  "Sagittarius": {
+    "jp": "射手座",
+    "en": "Sagittarius"
+  },
+  "Capricorn": {
+    "jp": "山羊座",
+    "en": "Capricorn"
+  },
+  "Aquarius": {
+    "jp": "水瓶座",
+    "en": "Aquarius"
+  },
+  "Pisces": {
+    "jp": "魚座",
+    "en": "Pisces"
+  },
+  "sub": {
+    "jp": "加入者数",
+    "en": "Subscriber Counts"
+  },
+  "view": {
+    "jp": "ビュー数",
+    "en": "View Counts"
+  },
+  "sub-growth": {
+    "jp": "ホロライブの加入者数の成長",
+    "en": "Hololive's Number of Subscribers Growth"
+  },
+  "view-growth": {
+    "jp": "ホロライブのビュー数の成長",
+    "en": "Hololive's Number of Views Growth"
+  },
+  "space": {
+    "jp": "",
+    "en": " "
+  },
+  "'s": {
+    "jp": "の",
+    "en": "'s"
+  },
+  "last-week": {
+    "jp": "先週",
+    "en": "Last Week"
+  },
+  "last-month": {
+    "jp": "先月",
+    "en": "Last Month"
+  },
+  "last-year": {
+    "jp": "去年",
+    "en": "Last Year"
   },
   "menu-jp": {
     "jp": "ホロライブJP",

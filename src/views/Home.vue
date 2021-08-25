@@ -5,7 +5,7 @@
         <input
           type="text"
           v-on:keyup="search($event.target.value)"
-          placeholder="Enter name, generation, nickname, etc."
+          :placeholder="searchPlaceholder"
         />
       </div>
       <div class="members">
@@ -105,6 +105,7 @@ import Stats from "@/components/Stats.vue";
 import {
   GetCSSVar,
   dateFormatter,
+  longDateFormatter,
   GetTalentCSSName,
   tickAmount
 } from "@/assets/ts/common";
@@ -133,6 +134,7 @@ export default class Home extends Vue {
     return {
       loading: false,
       countTypes: ["sub", "view"],
+      searchPlaceholder: GetLocalizedText("search-placeholder"),
       members: (() => {
         const res = Array<TalentDisplay>();
         talents.forEach(talent => {
@@ -212,8 +214,9 @@ export default class Home extends Vue {
         }
       })
         .then(res => {
+          const size = Object.keys(res.data).length;
           this.$data.sentSeries[countType].push({
-            name: goddess,
+            name: GetLocalizedText(goddess),
             data: Object.values(res.data)
           });
           if (countType === "sub") {
@@ -222,7 +225,10 @@ export default class Home extends Vue {
             );
           }
           this.$data.fullXAxis[countType] = {
-            categories: Object.keys(res.data).map(dateFormatter),
+            categories: Object.keys(res.data),
+            labels: {
+              formatter: size >= 365 ? longDateFormatter : dateFormatter
+            },
             tickAmount: tickAmount
           };
         })
@@ -250,7 +256,7 @@ export default class Home extends Vue {
       })
         .then(res => {
           this.$data.sentSeries[countType].push({
-            name: talent,
+            name: GetLocalizedText(talent),
             data: Object.values(res.data)
           });
           if (countType === "sub") {
