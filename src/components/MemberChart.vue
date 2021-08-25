@@ -17,8 +17,10 @@ import {
   GetCSSVar,
   countFormatter,
   availableRangesMap,
-  countTypesMap
+  xTooltipDateFormatter
 } from "@/assets/ts/common";
+import { GetLocalizedText } from "@/assets/ts/localize";
+import { XAxis } from "@/assets/ts/interfaces";
 
 Vue.use(VueApexCharts);
 Vue.component("chart", VueApexCharts);
@@ -34,7 +36,7 @@ export default class MemberChart extends Vue {
     countType: "sub" | "view";
     range: number;
     seriesData: Array<{ name: string; data: Array<number> }>;
-    xaxis: Array<string>;
+    xaxis: XAxis;
   };
 
   data() {
@@ -59,9 +61,14 @@ export default class MemberChart extends Vue {
           curve: "smooth"
         },
         title: {
-          text: `${this.memberData.name}'s ${availableRangesMap(
-            this.chartData.range
-          )} ${countTypesMap(this.chartData.countType)} Counts`,
+          text: `
+          ${GetLocalizedText(this.memberData.name)}${GetLocalizedText(
+            "'s"
+          )}${GetLocalizedText("space")}${GetLocalizedText(
+            availableRangesMap(this.chartData.range)
+          )}${GetLocalizedText("'s")}${GetLocalizedText(
+            "space"
+          )}${GetLocalizedText(this.chartData.countType)}`,
           align: "center"
         },
         grid: {
@@ -79,11 +86,16 @@ export default class MemberChart extends Vue {
             formatter: countFormatter
           },
           title: {
-            text: `${countTypesMap(this.chartData.countType)} Count`
+            text: `${GetLocalizedText(this.chartData.countType)}`
           }
         },
         tooltip: {
           shared: false,
+          x: {
+            formatter: (val: string, obj: {series: Array<string>, seriesIndex: number, dataPointIndex: number}) => {
+              return xTooltipDateFormatter(this.chartData.xaxis, val, obj);
+            }
+          },
           y: {
             formatter:
               this.chartData.countType === "sub"

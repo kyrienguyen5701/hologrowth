@@ -1,3 +1,4 @@
+import { tickAmount } from './common';
 // interface Object {
 //   ContainsKey(searchKey: string): boolean;
 // }
@@ -64,6 +65,21 @@ export enum LocalizationType {
   Song
 }
 
+export enum MonthAbbrv {
+  Jan,
+  Feb,
+  Mar,
+  Apr,
+  May,
+  Jun,
+  Jul,
+  Aug,
+  Sep,
+  Oct,
+  Nov,
+  Dec
+}
+
 export interface SongData {
   name: LanguageData;
   path: string;
@@ -89,4 +105,12 @@ export interface TalentBasicInfo {
   birthday: string;
   height: string;
   zodiacSign: string;
+}
+
+export interface XAxis {
+  categories: Array<string>;
+  labels: {
+    formatter: Function
+  };
+  tickAmount: number;
 }

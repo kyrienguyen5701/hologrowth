@@ -73,7 +73,7 @@
           <div class="more-info-images">
             <div class="more-info-title">
               <div class="title-text">
-                Basic Information
+                {{ getBasicInfo() }}
               </div>
             </div>
             <div class="more-info-banner">
@@ -108,7 +108,7 @@ import Stats from "@/components/Stats.vue";
 import * as Common from "@/assets/ts/common";
 import talents from "@/assets/json/talents.json";
 import { TalentBasicInfo, TalentData } from "@/assets/ts/interfaces";
-import { GetLocalizedText } from "@/assets/ts/localize";
+import { GetLocalizedText, GetLocalizedDate } from "@/assets/ts/localize";
 
 @Component({
   components: {
@@ -151,6 +151,12 @@ export default class MemberPage extends Vue {
       return talent.name === this.getMemberName();
     }) as TalentData;
     this.$data.basicInfo = talentData.basicInfo;
+    this.$data.basicInfo.debutDate = GetLocalizedDate(
+      this.$data.basicInfo.debutDate
+    );
+    this.$data.basicInfo.birthday = GetLocalizedDate(
+      this.$data.basicInfo.birthday
+    );
     this.$data.links[0].destination = `https://www.youtube.com/channel/${talentData.channelId}`;
     this.$data.links[1].destination = `https://twitter.com/${talentData.twitter}`;
     this.$data.links[2].destination =
@@ -199,6 +205,10 @@ export default class MemberPage extends Vue {
     } catch {
       return "";
     }
+  }
+
+  getBasicInfo() {
+    return GetLocalizedText("basic-info");
   }
 
   getMemberName() {
@@ -562,7 +572,6 @@ export default class MemberPage extends Vue {
     }
 
     &-content {
-
       .member-content {
         &-info {
           flex-direction: column;
