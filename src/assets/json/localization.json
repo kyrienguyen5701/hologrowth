@@ -20,7 +20,7 @@
     "en": "Contents"
   },
   "what-content": {
-    "jp": "",
+    "jp": "ホロライブメンバーの発展が記録されるHologrowthといます。ホロライブのオリジナル曲とホロライブの所属タレントのBGMが使える配信はあれで流れます。毎日データ更新します。",
     "en": "Hologrowth serves as a space to record the growth of Hololive as a group and of individual talents since their debut. It is also a music player dedicated to original Hololive songs, along with some BGMs used by talents for their streams. Data are updated daily."
   },
   "how": {
@@ -28,7 +28,7 @@
     "en": "Usage Instructions"
   },
   "how-content": {
-    "jp": "",
+    "jp": "サイドバーでホロライブの人々のバナーをクリックすると、データの視覚化をトグルします。何人の配信でも顕示できますが、いっぱい顕示すると効率の問題が出てきます。リストをナビゲートしたくない人だったら、検索ツールで探せます。キーワードは名前だけじゃなくて、期生名とか期生番号とかニックネームとか検索できます。例えばソダとかコラとか検索してみてください。図表はスワイパーはで囲まれているので、画面でスワイプすると図表をもっと見えます。ホームページでは二つあって、タレントのページでは六つあります。",
     "en": "To toggle the data visualization of a talent, click on their banner in the sidebar. You can display as many talents as you want, though too many may cause some performance issues. Not a fan of navigating through a list? Use the search tool to find your talents immediately. Keywords are not limited to official names - they can be generation names, generation numbers, nicknames, and more (mostly for fooling around, try Soda or Cola for example www). Charts are wrapped in a swiper, so try swiping around to see more charts (2 for homepage, 8 for each talent's page)."
   },
   "why": {
@@ -36,31 +36,31 @@
     "en": "Inspirations"
   },
   "why-content": {
-    "jp": "",
-    "en": "Why, you ask? Because we are 𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶ dedicated people www. Joke aside, we hope to develop a website for people, while chilling with music in the background, to know more about Hololive and their talents - about how they started out diminutive in 2017 with Sora's debut stream of only 13 viewers to grow into a𝚗̶ 𝚒̶𝚗̶famous 𝚌̶𝚒̶𝚛̶𝚌̶𝚞̶𝚜̶ 𝚎̶𝚗̶𝚝̶𝚎̶𝚛̶𝚝̶𝚊̶𝚒̶𝚗̶𝚖̶𝚎̶𝚗̶𝚝̶ 𝚌̶𝚘̶𝚖̶𝚙̶𝚊̶𝚗̶𝚢̶ idol group with branches worldwide and streams and lives with thousands of 𝚜̶𝚑̶𝚛̶𝚒̶𝚖̶𝚙̶𝚜̶ viewers tuning in, along with fun facts about them as well (Not available yet)."
+    "jp": "なぜ聞くの？　𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶献身的な人々だよ。",
+    "en": "Why, you ask? Because we are 𝚜̶𝚒̶𝚖̶𝚙̶𝚜̶ dedicated people www. Joke aside, we hope to develop a website for people, while chilling with music in the background, to know more about Hololive and their talents - about how they started out small in 2017 with Sora's debut stream of only 13 viewers to grow into a𝚗̶ 𝚒̶𝚗̶famous 𝚌̶𝚒̶𝚛̶𝚌̶𝚞̶𝚜̶ 𝚎̶𝚗̶𝚝̶𝚎̶𝚛̶𝚝̶𝚊̶𝚒̶𝚗̶𝚖̶𝚎̶𝚗̶𝚝̶ 𝚌̶𝚘̶𝚖̶𝚙̶𝚊̶𝚗̶𝚢̶ group of 𝚌̶𝚘̶𝚖̶𝚎̶𝚍̶𝚒̶𝚊̶𝚗̶𝚜̶ idols with branches worldwide and streams and lives with thousands of 𝚜̶𝚑̶𝚛̶𝚒̶𝚖̶𝚙̶𝚜̶ viewers tuning in. We will try to add fun facts about them in the near future."
   },
   "disclaimer": {
     "jp": "免責事項",
     "en": "Disclaimer"
   },
   "disclaimer-content": {
-    "jp": "",
-    "en": "This is an unofficial fan site and is not affiliated in any way with Cover Co., Ltd. or Hololive Production. We are not compensated in any way for any portion of this site. To the best of our knowledge, all contents, images, sounds, etc., if any, are being used in compliance with the Fan Work Guidelines. If you own any content displayed here and want it to be deleted, please contact us immediately. Data collection began on March 23, 2021, so number of channel subscribers prior to this date may not be accurate. Please be aware of this in advance."
+    "jp": "これは非公式ファンサイトであって、カバー株式会社とホロライブプロダクションとの組合わせません。内容など写真など音などはFan Guidelineが許可されます。ここで表示されているあなたの内容だったら、必要に応じてそれらを削除しますので、ご連絡ください。2021年3月23日にデタ取得を始めましたから、この日の前に加入者数は正しくないかもしれません。新しいタレント（ホーププロジェクト後）追加された日に前にデタ正しくないかもしれません。ご注意してください。",
+    "en": "This is an unofficial fan site and is not affiliated in any way with Cover Co., Ltd. or Hololive Production. We are not compensated in any way for any portion of this site. To the best of our knowledge, all contents, images, sounds, etc., if any, are being used in compliance with the Fan Work Guidelines. If you own any contents displayed here and want them to be removed, please contact us immediately. Data collection began on March 23, 2021, so number of channel subscribers prior to this date may not be accurate. Beginning data for talents after project HOPE may also not be accurate. Please be aware of this in advance."
   },
   "who": {
     "jp": "連絡",
     "en": "Contacts"
   },
   "who-content": {
-    "jp": "",
-    "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to give feedbacks or contribute to the project, please contact either of us through Discord or fork the project on Github and create a pull request."
+    "jp": "このウェブサイトはMafuyu＃4633と恋々＃2434によって開発されました。 ご不明な点があったり、フィードバックを提供したたり、または何らかの方法でプロジェクトに貢献したいたり、Discordで連絡するか、Githubでプロジェクトをフォークしてプルリクエストを作成してください。",
+    "en": "This website is developed by Mafuyu#4633 and 恋々#2434. If you have any questions or want to give feedback or contribute to the project in any means, please contact either of us through Discord or fork the project on Github and create a pull request."
   },
   "license": {
     "jp": "許可証",
     "en": "License"
   },
   "license-content": {
-    "jp": "",
+    "jp": "このプロジェクトはMIT Licenseが許可されます。",
     "en": "This project is licensed under MIT License."
   },
   "basic-info": {

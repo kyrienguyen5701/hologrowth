@@ -117,7 +117,8 @@
     "solo":[
       "さくら色ハイテンション.mp3",
       "サクラカゼ.mp3",
-      "マイネームイズエリート☆.mp3"
+      "マイネームイズエリート☆.mp3",
+      "花月ノ夢.mp3"
     ]
   },
   {
@@ -383,7 +384,8 @@
       "鈴色日和.mp3"
     ],
     "solo":[
-      "君と眺める夏の花.mp3"
+      "君と眺める夏の花.mp3",
+      "HiHiハイテンション.mp3"
     ]
   },
   {
@@ -456,7 +458,7 @@
       "紫咲詩音正月.mp3"
     ],
     "solo":[
-
+      "メイジ・オブ・ヴァイオレット.mp3"
     ]
   },
   {
@@ -562,7 +564,7 @@
       "極東の羊、テレキャスターと踊る.mp3"
     ],
     "solo":[
-
+      "太陽少女.mp3"
     ]
   },
   {
@@ -715,7 +717,8 @@
     "solo":[
       "Ahoy - 我ら宝鐘海賊団☆.mp3",
       "Hoihoi☆Gensou Holoism.mp3",
-      "キャプテンマリンのケツアンカ.mp3"
+      "キャプテンマリンのケツアンカ.mp3",
+      "Unison.mp3"
     ]
   },
   {
@@ -778,7 +781,9 @@
       "兎田ぺこら",
       "Peko-chan ぺこちゃん",
       "Pekoracho ぺこらちょ",
-      "Shachou 社長"
+      "Shachou 社長",
+      "Rabbit 兎",
+      "Rodent 鼠族"
     ],
     "channelId":"UC1DCedRgGHBdm81E1llLhOQ",
     "twitter":"usadapekora",
@@ -1017,7 +1022,8 @@
       "楽しい帰り道.mp3"
     ],
     "solo":[
-      "ソーラン節.mp3"
+      "ソーラン節.mp3",
+      "特者生存ワンダラダー.mp3"
     ]
   },
   {
@@ -1264,7 +1270,7 @@
       "ensolarado.mp3"
     ],
     "solo":[
-
+      "VIOLET.mp3"
     ]
   },
   {
@@ -1407,10 +1413,10 @@
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/irys",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/irys",
     "bgm":[
-
+      "パステルハウス.mp3"
     ],
     "solo":[
-
+      "Caesura of Despair.mp3"
     ]
   },
   {
@@ -1423,22 +1429,27 @@
     ],
     "name":"Hakos Baelz",
     "basicInfo":{
-      "age":"",
-      "height":"",
-      "birthday":"",
+      "age":"Roll a dice",
+      "height":"149 cm",
+      "birthday":"29 February",
       "debutDate":"2021/08/22",
-      "zodiacSign":""
+      "zodiacSign":"Pisces"
     },
     "officialBio":"bio-hakos-baelz",
     "tags":[
-      "ハコスベールズ"
+      "ハコスベールズ",
+      "MasterBae マスターベ",
+      "Chaos カオス",
+      "Rat 鼠",
+      "Rodent 鼠族"
     ],
     "channelId":"UCgmPnx-EEeOrZSg5Tiw7ZRQ",
     "twitter":"hakosbaelz",
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/hakos-baelz",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/hakos-baelz",
     "bgm":[
-
+      "8bit Game Menu.mp3",
+      "キュートなマジック！.mp3"
     ],
     "solo":[
 
@@ -1454,22 +1465,26 @@
     ],
     "name":"Ouro Kronii",
     "basicInfo":{
-      "age":"",
-      "height":"",
+      "age":"∞",
+      "height":"168 cm",
       "birthday":"14 March",
       "debutDate":"2021/08/22",
-      "zodiacSign":""
+      "zodiacSign":"Pisces"
     },
     "officialBio":"bio-ouro-kronii",
     "tags":[
-      "オーロクロニー"
+      "オーロクロニー",
+      "Kronini オーロクロニニ",
+      "Time 時間"
     ],
     "channelId":"UCmbs8T6MWqUHP1tIQvSgKrg",
     "twitter":"ourokronii",
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/ouro-kronii",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/ouro-kronii",
     "bgm":[
-
+      "Someday.mp3",
+      "Somebody.mp3",
+      "Daystar - Zero Gravity.mp3"
     ],
     "solo":[
 
@@ -1485,23 +1500,27 @@
     ],
     "name":"Ceres Fauna",
     "basicInfo":{
-      "age":"",
-      "height":"",
-      "birthday":"",
+      "age":"4.54 billion",
+      "height":"164 cm",
+      "birthday":"21 March",
       "debutDate":"2021/08/22",
-      "zodiacSign":""
+      "zodiacSign":"Aries"
     },
     "officialBio":"bio-ceres-fauna",
     "tags":[
       "セレスファウナ",
-      "Mama ファウナママ"
+      "Faufau ファウファウ",
+      "Mama ファウナママ",
+      "Nature 自然"
     ],
     "channelId":"UCO_aKKYxn4tvrqPjcTzZ6EQ",
     "twitter":"ceresfauna",
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/ceres-fauna",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/ceres-fauna",
     "bgm":[
-
+      "森林ループ.mp3",
+      "静かな空気.mp3",
+      "黒ねこのボッサ.mp3"
     ],
     "solo":[
 
@@ -1517,22 +1536,24 @@
     ],
     "name":"Tsukumo Sana",
     "basicInfo":{
-      "age":"",
-      "height":"",
-      "birthday":"",
+      "age":"13.8 billion",
+      "height":"169 cm (with limiter)",
+      "birthday":"10 June",
       "debutDate":"2021/08/22",
-      "zodiacSign":""
+      "zodiacSign":"Gemini"
     },
     "officialBio":"bio-tsukumo-sana",
     "tags":[
-      "つくもさな"
+      "つくもさな",
+      "Space 空間"
     ],
     "channelId":"UCsUj0dszADCGbF3gNrQEuSQ",
     "twitter":"tsukumosana",
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/tsukumo-sana",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/tsukumo-sana",
     "bgm":[
-
+      "やさしいきもち.mp3",
+      "のんびり過ごしましょ.mp3"
     ],
     "solo":[
 
@@ -1548,15 +1569,18 @@
     ],
     "name":"Nanashi Mumei",
     "basicInfo":{
-      "age":"",
-      "height":"",
-      "birthday":"",
+      "age":"???????",
+      "height":"156 cm",
+      "birthday":"4 August",
       "debutDate":"2021/08/22",
-      "zodiacSign":""
+      "zodiacSign":"Leo"
     },
     "officialBio":"bio-nanashi-mumei",
     "tags":[
       "ななしむめい",
+      "Meimei めいめい",
+      "Civilization 文明",
+      "Owl フクロウ",
       "Bird 鳥"
     ],
     "channelId":"UC3n5uGu18FoCy23ggWWp8tA",
@@ -1564,7 +1588,9 @@
     "officialWebsiteEN":"https://en.hololive.tv/portfolio/items/nanashi-mumei",
     "officialWebsiteJP":"https://www.hololive.tv/portfolio/items/nanashi-mumei",
     "bgm":[
-
+      "テントウムシ見つけた.mp3",
+      "今日はお散歩日和。.mp3",
+      "ひなたぼっこ.mp3"
     ],
     "solo":[
 
@@ -1625,7 +1651,8 @@
     "tags":[
       "アユンダリス",
       "Alter Risu アルターリス",
-      "Okakoro Child おかころの子"
+      "Okakoro Child おかころの子",
+      "Rodent 鼠族"
     ],
     "channelId":"UCOyYb1c43VlX9rc_lT6NKQw",
     "twitter":"ayunda_risu",

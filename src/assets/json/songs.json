@@ -84,6 +84,11 @@
         "en": "Sakura-iro Hi-Tension!",
         "path": "さくら色ハイテンション.mp3"
     },
+    "kagetsu": {
+        "jp": "花月ノ夢",
+        "en": "Kagetsu no Hana",
+        "path": "花月ノ夢.mp3"
+    },
     "roba": {
         "jp": "ロバでも眺めながら",
         "en": "Roba demo Nagamenagara",
@@ -133,6 +138,11 @@
         "jp": "Bluerose",
         "en": "Bluerose",
         "path": "Bluerose.mp3"
+    },
+    "kakero": {
+        "jp": "駆けろ",
+        "en": "Kakero",
+        "path": "駆けろ.mp3"
     },
     "kaeru": {
         "jp": "かえるのピアノ",
@@ -309,6 +319,11 @@
         "en": "Kimi to Nagameru Natso no Hana",
         "path": "君と眺める夏の花.mp3"
     },
+    "hihi": {
+        "jp": "HiHiハイテンション",
+        "en": "Hi Hi Hi-Tension",
+        "path": "HiHiハイテンション.mp3"
+    },
     "day-off": {
         "jp": "アズールレーン×ホロライブ-夏色まつり【まつりの休日】スキンBGM ",
         "en": "Azur Lane x Hololive - Natsuiro Matsuri [Matsuri's Day Off] Skin BGM",
@@ -348,6 +363,11 @@
         "jp": "リコーダービート2",
         "en": "Recorder beat 2",
         "path": "リコーダービート2.mp3"
+    },
+    "mage": {
+        "jp": "メイジ・オブ・ヴァイオレット",
+        "en": "Mage of Violet",
+        "path": "メイジ・オブ・ヴァイオレット.mp3"
     },
     "magician": {
         "jp": "アズールレーン×ホロライブ-紫咲シオン【バーチャルマジシャン】スキンBGM",
@@ -393,6 +413,11 @@
         "jp": "まったりしましょ",
         "en": "Mattari shimasho",
         "path": "まったりしましょ.mp3"
+    },
+    "taishou": {
+        "jp": "太陽少女",
+        "en": "Taishou Shoujo",
+        "path": "太陽少女.mp3"
     },
     "you-and-me": {
         "jp": "You and Me",
@@ -488,6 +513,11 @@
         "jp": "キャプテンマリンのケツアンカー",
         "en": "Captain Marine no Ketsu Anchor",
         "path": "キャプテンマリンのケツアンカ.mp3"
+    },
+    "unison": {
+        "jp": "Unison",
+        "en": "Unison",
+        "path": "Unison.mp3"
     },
     "comfy": {
         "jp": "船長の快適なBGM",
@@ -694,6 +724,11 @@
         "en": "Souran Bushi",
         "path": "ソーラン節.mp3"
     },
+    "tokusha": {
+        "jp": "特者生存ワンダラダー",
+        "en": "Tokusha Seizon Wonder Ladder",
+        "path": "特者生存ワンダラダー.mp3"
+    },
     "yosei-san": {
         "jp": "妖精さんこんにちは",
         "en": "Yousei-san Konnichiwa",
@@ -783,6 +818,11 @@
         "jp": "Watson Amelia BGM 5 min",
         "en": "Watson Amelia BGM 5 min",
         "path": "Watson Amelia BGM 5 min.mp3"
+    },
+    "violet": {
+        "jp": "VIOLET",
+        "en": "VIOLET",
+        "path": "VIOLET.mp3"
     },
     "ensolarado": {
         "jp": "Ensolarado",
@@ -893,6 +933,81 @@
         "jp": "少年達の夏休み的なBGM",
         "en": "Shounen-tachi no Natsu Yasumi-tekina BGM",
         "path": "少年達の夏休み的なBGM.mp3"
+    },
+    "caesura": {
+        "jp": "Caesura of Despair",
+        "en": "Caesura of Despair",
+        "path": "Caesura of Despair.mp3"
+    },
+    "pastel": {
+        "jp": "パステルハウス",
+        "en": "Pastel House",
+        "path": "パステルハウス.mp3"
+    },
+    "8bit": {
+        "jp": "8bit Game Menu",
+        "en": "8bit Game Menu",
+        "path": "8bit Game Menu.mp3"
+    },
+    "cute": {
+        "jp": "キュートなマジック！",
+        "en": "Cute Magic!",
+        "path": "キュートなマジック！.mp3"
+    },
+    "daystar": {
+        "jp": "デイスター - 無重力",
+        "en": "Daystar - Zero Gravity",
+        "path": "Daystar - Zero Gravity.mp3"
+    },
+    "somebody": {
+        "jp": "Somebody",
+        "en": "Somebody",
+        "path": "Somebody.mp3"
+    },
+    "someday": {
+        "jp": "Someday",
+        "en": "Someday",
+        "path": "Someday.mp3"
+    },
+    "shinrin": {
+        "jp": "森林ループ",
+        "en": "Shinrin Loop",
+        "path": "森林ループ.mp3"
+    },
+    "shizukana": {
+        "jp": "静かな空気",
+        "en": "Shizukana Kuuki",
+        "path": "静かな空気.mp3"
+    },
+    "kuroneko": {
+        "jp": "黒ねこのボッサ",
+        "en": "Kuro Neko no Bossa",
+        "path": "黒ねこのボッサ.mp3"
+    },
+    "yasashii": {
+        "jp": "やさしいきもち",
+        "en": "Yasashii Kimochi",
+        "path": "やさしいきもち.mp3"
+    },
+    "nonbiri-sugo": {
+        "jp": "のんびり過ごしましょ",
+        "en": "Nonbiri Sugoshimasho",
+        "path": "のんびり過ごしましょ.mp3"
+    },
+    "tentomushi": {
+        "jp": "テントウムシ見つけた",
+        "en": "Tentoumushi Mitsuketa",
+        "path": "テントウムシ見つけた.mp3"
+    },
+    "kyou": {
+        "jp": "今日はお散歩日和。",
+        "en": "Kyou wa Osanpo Biyori.",
+        "path": "今日はお散歩日和。.mp3"
+    },
+    "hinata": {
+        "jp": "ひなたぼっこ",
+        "en": "Hinatabokko",
+        "path": "ひなたぼっこ.mp3"
     },
     "chisana": {
         "jp": "愛の小さな歌",
