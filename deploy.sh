@@ -9,6 +9,6 @@ cd dist
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:kyrienguyen5701/hologrowth.git master:gh-pages
+git push -f git@github.com:kyrienguyen5701/hologrowth.git main:gh-pages
 
 cd -
