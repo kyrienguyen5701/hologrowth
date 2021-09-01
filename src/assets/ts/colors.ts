@@ -10,7 +10,7 @@ export const COLOR_VARS = [
 ];
 
 export function ChangeColor(member: string) {
-  if (member == "Ina'nis") member = "Inanis"
+  if (member == "Ina'nis") member = "Inanis";
   COLOR_VARS.forEach(colorVar => {
     const name = `--color-${member}${colorVar}`;
     const targetName = `--color-current${colorVar}`;

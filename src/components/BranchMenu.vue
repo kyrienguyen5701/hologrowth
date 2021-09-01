@@ -47,7 +47,11 @@
 // import * as Localization from "@/assets/ts/localize";
 import { Component, Emit, Vue } from "vue-property-decorator";
 import talents from "@/assets/json/talents.json";
-import { Categorize, GetTalentCSSName, GetYoutubeURL } from "@/assets/ts/common";
+import {
+  Categorize,
+  GetTalentCSSName,
+  GetYoutubeURL
+} from "@/assets/ts/common";
 import * as Localization from "@/assets/ts/localize";
 import {
   BranchMenuData,

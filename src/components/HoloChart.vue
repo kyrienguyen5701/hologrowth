@@ -70,7 +70,14 @@ export default class HoloChart extends Vue {
         tooltip: {
           shared: false,
           x: {
-            formatter: (val: string, obj: {series: Array<string>, seriesIndex: number, dataPointIndex: number}) => {
+            formatter: (
+              val: string,
+              obj: {
+                series: Array<string>;
+                seriesIndex: number;
+                dataPointIndex: number;
+              }
+            ) => {
               return xTooltipDateFormatter(this.xaxis, val, obj);
             }
           },

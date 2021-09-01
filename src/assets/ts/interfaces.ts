@@ -1,4 +1,3 @@
-import { tickAmount } from './common';
 // interface Object {
 //   ContainsKey(searchKey: string): boolean;
 // }
@@ -110,7 +109,7 @@ export interface TalentBasicInfo {
 export interface XAxis {
   categories: Array<string>;
   labels: {
-    formatter: Function
+    formatter: Function;
   };
   tickAmount: number;
 }

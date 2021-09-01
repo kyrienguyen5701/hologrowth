@@ -124,10 +124,17 @@ export const longDateFormatter = (val: string) => {
   return val;
 };
 
-export const xTooltipDateFormatter = (xaxis: interfaces.XAxis, val: string, obj: {series: Array<string>, seriesIndex: number, dataPointIndex: number}) => {
-  const dateString = format(new Date(xaxis.categories[obj.dataPointIndex]), "MMM dd y"); 
+export const xTooltipDateFormatter = (
+  xaxis: interfaces.XAxis,
+  val: string,
+  obj: { series: Array<string>; seriesIndex: number; dataPointIndex: number }
+) => {
+  const dateString = format(
+    new Date(xaxis.categories[obj.dataPointIndex]),
+    "MMM dd y"
+  );
   return GetChartLocalizedDate(dateString);
-}
+};
 
 export const availableRangesMap = (range: number) => {
   switch (range) {

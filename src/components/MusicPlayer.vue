@@ -288,7 +288,7 @@ export default class MusicPlayer extends Vue {
 
   seek() {
     this.$data.isSeeking = false;
-    const currentTime = 
+    const currentTime =
       parseFloat((this.$refs["player-seek"] as HTMLInputElement).value) *
       this.$data.currentSong.audio.duration;
     this.$data.currentSong.audio.currentTime = currentTime;

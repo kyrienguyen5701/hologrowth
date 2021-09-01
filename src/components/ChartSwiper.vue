@@ -38,7 +38,11 @@
 
 <script lang="ts">
 import { Component, Prop, Watch, Vue } from "vue-property-decorator";
-import { dateFormatter, longDateFormatter, tickAmount } from "@/assets/ts/common";
+import {
+  dateFormatter,
+  longDateFormatter,
+  tickAmount
+} from "@/assets/ts/common";
 import { XAxis } from "@/assets/ts/interfaces";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
