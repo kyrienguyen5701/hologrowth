@@ -232,7 +232,7 @@ export default class Home extends Vue {
             tickAmount: tickAmount
           };
         })
-        .catch(e => console.log(e));
+        .catch(e => console.error(e));
     }
     this.$data.loading = false;
     const soraDiv = document.getElementById(`${goddess}-banner`)
@@ -266,7 +266,7 @@ export default class Home extends Vue {
             );
           }
         })
-        .catch(e => console.log(e));
+        .catch(e => console.error(e));
     }
     this.$data.loading = false;
   }

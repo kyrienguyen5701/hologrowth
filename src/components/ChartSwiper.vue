@@ -91,7 +91,7 @@ export default class ChartSwiper extends Vue {
               tickAmount: tickAmount
             };
           })
-          .catch(e => console.log(e));
+          .catch(e => console.error(e));
       }
     }
     this.$data.loading = false;
