@@ -205,7 +205,7 @@ export default class Home extends Vue {
       const countType = this.$data.countTypes[i];
       await axios({
         method: "POST",
-        url: "http://127.0.0.1:8000/get-member-data",
+        url: "https://tools.kekstudio.com/get-member-data",
         headers: { "content-type": "application/json" },
         data: {
           range: 0,
@@ -244,9 +244,10 @@ export default class Home extends Vue {
     this.$data.loading = true;
     for (let i = 0; i < 2; i++) {
       const countType = this.$data.countTypes[i];
+
       await axios({
         method: "POST",
-        url: "http://127.0.0.1:8000/get-member-data",
+        url: "https://tools.kekstudio.com/get-member-data",
         headers: { "content-type": "application/json" },
         data: {
           range: 0,
