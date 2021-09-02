@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 set -e
-npm run build
+yarn build
 
 cd dist
 

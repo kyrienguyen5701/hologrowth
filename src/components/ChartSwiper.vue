@@ -71,7 +71,7 @@ export default class ChartSwiper extends Vue {
         const range = ranges[j];
         await axios({
           method: "POST",
-          url: "https://tools.kekstudio.com/get-member-data",
+          url: "https://hologrowth-server.kyrie5701.com/get-member-data",
           headers: { "content-type": "application/json" },
           data: {
             range: range,
