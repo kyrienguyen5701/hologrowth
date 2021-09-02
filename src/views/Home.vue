@@ -69,6 +69,14 @@
                   v-bind:xaxis="fullXAxis[countType]"
                 ></HoloChart>
               </div>
+              <div v-if="additionalLoading">
+                <div class="overlay-loading-container">
+                  <div class="overlay-loading">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </swiper-slide>
           <div
@@ -133,6 +141,7 @@ export default class Home extends Vue {
   data() {
     return {
       loading: false,
+      additionalLoading: false,
       countTypes: ["sub", "view"],
       searchPlaceholder: GetLocalizedText("search-placeholder"),
       members: (() => {
@@ -241,7 +250,7 @@ export default class Home extends Vue {
   }
 
   async getData(talent: string) {
-    this.$data.loading = true;
+    this.$data.additionalLoading = true;
     for (let i = 0; i < 2; i++) {
       const countType = this.$data.countTypes[i];
 
@@ -268,7 +277,7 @@ export default class Home extends Vue {
         })
         .catch(e => console.error(e));
     }
-    this.$data.loading = false;
+    this.$data.additionalLoading = false;
   }
 
   async toggleTalentSeries(event: Event) {
@@ -311,7 +320,11 @@ export default class Home extends Vue {
       });
     } else {
       this.$data.countTypes.forEach((countType: "sub" | "view") => {
-        ApexCharts.exec(`holochart-${countType}`, "toggleSeries", talentName);
+        ApexCharts.exec(
+          `holochart-${countType}`,
+          "toggleSeries",
+          GetLocalizedText(talentName)
+        );
       });
     }
   }
