@@ -3,7 +3,7 @@
     <div id="navbar">
       <div class="logo p-10 flex-centered">
         <div class="logo-text">
-          <a :href="home">Hologrowth</a>
+          <a href="/">Hologrowth</a>
         </div>
       </div>
       <div class="menus">
@@ -41,7 +41,6 @@ export default Vue.extend({
   },
   data() {
     return {
-      home: process.env.NODE_ENV === "production" ? "/hologrowth/" : "/",
       currentLang: localStorage.getItem("lang")
     };
   }
