@@ -32,7 +32,10 @@
         ></div>
       </swiper>
     </swiper-slide>
-    <div class="swiper-pagination swiper-pagination-h" slot="pagination"></div>
+    <div
+      class="swiper-pagination swiper-pagination-h swiper-pagination-bullets"
+      slot="pagination"
+    ></div>
   </swiper>
 </template>
 
@@ -45,9 +48,19 @@ import {
 } from "@/assets/ts/common";
 import { XAxis } from "@/assets/ts/interfaces";
 import axios from "axios";
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import {
+  Swiper as SwiperClass,
+  Mousewheel,
+  Pagination,
+  Navigation
+} from "swiper";
+import getAwesomeSwiper from "vue-awesome-swiper/dist/exporter";
 import "swiper/swiper-bundle.css";
 import { GetLocalizedText } from "@/assets/ts/localize";
+
+SwiperClass.use([Mousewheel, Pagination, Navigation]);
+Vue.use(getAwesomeSwiper(SwiperClass));
+const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass);
 
 Vue.component("swiper", Swiper);
 Vue.component("swiper-slide", SwiperSlide);
@@ -126,7 +139,10 @@ export default class ChartSwiper extends Vue {
         spaceBetween: 50,
         pagination: {
           el: ".swiper-pagination-h",
-          clickable: true
+          clickable: true,
+          renderBullet(index: number, className: string) {
+            return `<span id="${index}h" class="${className} swiper-pagination-bullet-custom"></span>`;
+          }
         }
       },
       swiperOptionv: {
@@ -134,7 +150,10 @@ export default class ChartSwiper extends Vue {
         spaceBetween: 50,
         pagination: {
           el: ".swiper-pagination-v",
-          clickable: true
+          clickable: true,
+          renderBullet(index: number, className: string) {
+            return `<span id="${index}v" class="${className} swiper-pagination-bullet-custom"></span>`;
+          }
         }
       }
     };
@@ -159,6 +178,22 @@ export default class ChartSwiper extends Vue {
 
   &.vertical {
     background-color: #fff;
+  }
+
+  ::v-deep .swiper-pagination-bullet-custom {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-current-shade-25);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--color-current);
+    }
   }
 }
 .overlay-loading-container {

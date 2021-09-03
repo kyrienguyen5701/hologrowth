@@ -122,8 +122,18 @@ import talents from "@/assets/json/talents.json";
 import ApexCharts from "apexcharts";
 import axios from "axios";
 import { GetLocalizedText } from "@/assets/ts/localize";
-import { Swiper, SwiperSlide } from "vue-awesome-swiper";
+import {
+  Swiper as SwiperClass,
+  Mousewheel,
+  Pagination,
+  Navigation
+} from "swiper";
+import getAwesomeSwiper from "vue-awesome-swiper/dist/exporter";
 import "swiper/swiper-bundle.css";
+
+SwiperClass.use([Mousewheel, Pagination, Navigation]);
+Vue.use(getAwesomeSwiper(SwiperClass));
+const { Swiper, SwiperSlide } = getAwesomeSwiper(SwiperClass);
 
 const about = ["what", "how", "why", "disclaimer", "who", "license"];
 const goddess = "Tokino Sora";
@@ -201,7 +211,10 @@ export default class Home extends Vue {
         spaceBetween: 50,
         pagination: {
           el: ".swiper-pagination-h",
-          clickable: true
+          clickable: true,
+          renderBullet(index: number, className: string) {
+            return `<span id="${index}h" class="${className} swiper-pagination-bullet-custom"></span>`;
+          }
         }
       }
     };
@@ -506,6 +519,22 @@ $bg_sidebar: #ccc;
     animation: rotate-border 8s linear infinite;
     position: relative;
     min-height: calc(565px + 2%);
+
+    ::v-deep .swiper-pagination-bullet-custom {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-current-shade-25);
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        background: var(--color-current);
+      }
+    }
   }
 }
 
