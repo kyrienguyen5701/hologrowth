@@ -47,6 +47,11 @@ $color_kronii: #076aec;
 $color_fauna: #a3E5cf;
 $color_sana: #fdde46;
 $color_mumei: #998173;
+$color_darknesss: #a284c4;
+$color_lui: #c588a3;
+$color_koyori: #e4acb7;
+$color_chloe: #8d8d8d;
+$color_iroha: #a6c5bc;
 
 @function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
@@ -106,6 +111,11 @@ $colors: (
     "Fauna": $color_fauna,
     "Sana": $color_sana,
     "Mumei": $color_mumei,
+    "Darknesss": $color_darknesss,
+    "Lui": $color_lui,
+    "Koyori": $color_koyori,
+    "Chloe": $color_chloe,
+    "Iroha": $color_iroha
 );
 
 :root {

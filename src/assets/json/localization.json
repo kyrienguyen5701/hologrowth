@@ -211,6 +211,10 @@
     "en": "5th Generation",
     "jp": "5期生"
   },
+  "menu-jp-gen-6": {
+    "en": "Secret Society holoX",
+    "jp": "秘密結社holoX"
+  },
   "menu-jp-gen-gamers": {
     "en": "GAMERS",
     "jp": "ゲーマーズ"
@@ -687,7 +691,6 @@
     "en": "An idol whose dream is to become a fast food shop owner. She is a phoenix, NOT a chicken or turkey. (Very important) She works extremely hard since she will be reborn from ashes anyway.",
     "jp": "ファストフードチェーンの店主になりたいアイドル。不死鳥であり、ニワトリや七面鳥ではない。（重要）彼女は命を削りながらすごく頑張って働いている、どうせ死んでも灰から蘇られるから。"
   },
-  
   "IRyS": {
     "en": "IRyS",
     "jp": "IRyS"
@@ -831,5 +834,65 @@
   "bio-anya-melfissa": {
     "en": "An ancient weapon known as \"Keris\", she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.",
     "jp": "「クリス」として知られている古代武器だった彼女は、主人の神秘的な儀式によって、人間の身体を与えられた。彼女はほとんど寝ているかゲームをしている。長い間一人で生活をしていた為、人にあまり懐かない。興味のないことや人に対して反応が薄くなるが、好きなことについて話すときは、とても子供っぽく熱心になる。"
+  },
+  "La+ Darknesss": {
+    "en": "La+ Darknesss",
+    "jp": "ラプラスダークネス"
+  },
+  "menu-la+-darknesss": {
+    "en": "La+ Darknesss",
+    "jp": "ラプラスダークネス"
+  },
+  "bio-la+-darknesss": {
+    "en": "The one who established Secret Society holoX.\n She was originally known for her vast power and intelligence, but most of it is now sealed away. She is vaguely aware of the debilitating nature of her shackles but does not remember when or how they got there.\n The crow by her side is a long-time companion.\n ",
+    "jp": "お前ら、刮目せよ！！【秘密結社holoX】を設立した総帥。本来頭も良く、力も膨大だが、今は力の大半が封印されている。枷のせいで力の大半が封印されていることは本人も薄々感じているが、いつからかけられたのかよく覚えていない。側にいるカラスとは長い付き合い。"
+  },
+  "Takane Lui": {
+    "en": "Takane Lui",
+    "jp": "鷹嶺ルイ"
+  },
+  "menu-takane-lui": {
+    "en": "Takane Lui",
+    "jp": "鷹嶺ルイ"
+  },
+  "bio-takane-lui": {
+    "en": "The executive officer of Secret Society holoX.\n As holoX's point of contact and the one in charge of external affairs, she is the de facto leader of the group, handling matters that the founder cannot.\n While she may seem aloof and standoffish at first glance, she is a compassionate person who cares a lot for her subordinates.\n ",
+    "jp": "【秘密結社holoX】の女幹部。総帥にできない交渉を担当しており、実質「組織の司令塔」。一見クールに見えるが仲間思いで面倒見が良いお姉さん。しかし、大事な所でミスをするポンコツ。"
+  },
+  "Hakui Koyori": {
+    "en": "Hakui Koyori",
+    "jp": "博衣こより"
+  },
+  "menu-hakui-koyori": {
+    "en": "Hakui Koyori",
+    "jp": "博衣こより"
+  },
+  "bio-hakui-koyori": {
+    "en": "The one in charge of R&D in Secret Society holoX.\n As part of her studies into human behavior, she meddles in the other members' affairs and tries to help them out at every turn.\n Possessed by an insatiable thirst for knowledge, she may sometimes also deliberately mess with people just to see how they react.\n The self-proclaimed \"brains of the operation.\" Her areas of expertise, however, are pretty limited.\n ",
+    "jp": "【秘密結社holoX】の研究者。メンバーの面倒を見ながら、人間観察も行っている。研究熱心、好奇心旺盛で、他人のリアクション見たさから、つい悪戯をしてしまうことも。自称「holoXの頭脳」。しかし、その知識には偏りがあるようだ。"
+  },
+  "Sakamata Chloe": {
+    "en": "Sakamata Chloe",
+    "jp": "沙花叉クロヱ"
+  },
+  "menu-sakamata-chloe": {
+    "en": "Sakamata Chloe",
+    "jp": "沙花叉クロヱ"
+  },
+  "bio-sakamata-chloe": {
+    "en": "An intern who acts as a fixer and cleaner for Secret Society holoX.\n Calm and composed at all times, she carries out her orders without so much as batting an eyelid.\n She loves music and can be found listening to it every chance she gets.\n And while she denies it vehemently, she apparently tends to come across as guarded and not very upfront with her thoughts, only letting people get very occasional glimpses into how she really feels.\n ",
+    "jp": "【秘密結社holoX】の掃除屋でholoXのインターン生。冷静沈着で淡々と組織からの依頼をこなす。音楽が好きで、よく音楽を聴いている。本人は否定しているが、ツンデレに見られるらしい。"
+  },
+  "Kazama Iroha": {
+    "en": "Kazama Iroha",
+    "jp": "風真いろは"
+  },
+  "menu-kazama-iroha": {
+    "en": "Kazama Iroha",
+    "jp": "風真いろは"
+  },
+  "bio-kazama-iroha": {
+    "en": "Secret Society holoX's insurance policy.\n Hailing from a remote mountainous area, she left her home behind and, along with her companion, set off on a journey to achieve her dream of seeing and learning more about the outside world.\n Nowadays, she handles security detail and bodyguard missions for holoX, making enough money to get by.\n ",
+    "jp": "【秘密結社holoX】の用心棒。山奥の田舎で生活していたが、外の世界に憧れてお供と共に面白い事を求めて武者修行の旅を始めた。今は日銭を稼ぎながら【秘密結社holoX】の用心棒として雇われている。"
   }
 }
