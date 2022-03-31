@@ -1955,5 +1955,100 @@
     "solo":[
 
     ]
+  },
+  {
+    "id":54,
+    "branch":"id",
+    "genNumber":"3",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Vestia Zeta",
+    "basicInfo":{
+      "age":"Confidential",
+      "height":"155 cm",
+      "birthday":"7 November",
+      "debutDate":"2022/03/25",
+      "zodiacSign":"Scorpio"
+    },
+    "officialBio":"bio-vestia-zeta",
+    "tags":[
+      "ベスティアゼータ",
+      "Keqing 刻晴"
+    ],
+    "channelId":"UCTvHWSfBZgtxE4sILOaurIQ",
+    "twitter":"vestiazeta",
+    "officialWebsiteEN":"https://hololive.hololivepro.com/en/talents/vestia-zeta",
+    "officialWebsiteJP":"https://hololive.hololivepro.com/talents/vestia-zeta",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":55,
+    "branch":"id",
+    "genNumber":"3",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Kaela Kovalskia",
+    "basicInfo":{
+      "age":"Too busy collecting hammers",
+      "height":"173 cm",
+      "birthday":"30 August",
+      "debutDate":"2022/03/26",
+      "zodiacSign":"Virgo"
+    },
+    "officialBio":"bio-kaela-kovalskia",
+    "tags":[
+      "カエラコヴァルスキア",
+      "Bird 鳥"
+    ],
+    "channelId":"UCZLZ8Jjx_RN2CXloOmgTHVg",
+    "twitter":"kaelakovalskia",
+    "officialWebsiteEN":"https://hololive.hololivepro.com/en/talents/kaela-kovalskia",
+    "officialWebsiteJP":"https://hololive.hololivepro.com/talents/kaela-kovalskia",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
+  },
+  {
+    "id":56,
+    "branch":"id",
+    "genNumber":"3",
+    "genName":"",
+    "genOther":[
+
+    ],
+    "name":"Kobo Kanaeru",
+    "basicInfo":{
+      "age":"I'm legal",
+      "height":"150 cm",
+      "birthday":"12 December",
+      "debutDate":"2022/03/27",
+      "zodiacSign":"Sagittarius"
+    },
+    "officialBio":"bio-kobo-kanaeru",
+    "tags":[
+      "こぼかなえる"
+    ],
+    "channelId":"UCjLEmnpCNeisMxy134KPwWw",
+    "twitter":"kobokanaeru",
+    "officialWebsiteEN":"https://hololive.hololivepro.com/en/talents/kobo-kanaeru",
+    "officialWebsiteJP":"https://hololive.hololivepro.com/talents/kobo-kanaeru",
+    "bgm":[
+
+    ],
+    "solo":[
+
+    ]
   }
 ]

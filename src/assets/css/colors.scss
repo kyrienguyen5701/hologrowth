@@ -30,12 +30,20 @@ $color_lamy: #a3fbfc;
 $color_nene: #ffb45f;
 $color_botan: #a3e4ce;
 $color_polka: #fd0f81;
+$color_darknesss: #a284c4;
+$color_lui: #c588a3;
+$color_koyori: #e4acb7;
+$color_chloe: #8d8d8d;
+$color_iroha: #a6c5bc;
 $color_risu: #f2bcbc;
 $color_moona: #b19ede;
 $color_iofi: #b5ed56;
 $color_ollie: #d60e56;
 $color_anya: #ffce5f;
 $color_reine: #134db8;
+$color_zeta: #9f98a2;
+$color_kovalskia: #c13439;
+$color_kanaeru: #2596be;
 $color_calliope: #c61043;
 $color_kiara: #f15429;
 $color_inanis: #9274e4;
@@ -47,11 +55,6 @@ $color_kronii: #076aec;
 $color_fauna: #a3E5cf;
 $color_sana: #fdde46;
 $color_mumei: #998173;
-$color_darknesss: #a284c4;
-$color_lui: #c588a3;
-$color_koyori: #e4acb7;
-$color_chloe: #8d8d8d;
-$color_iroha: #a6c5bc;
 
 @function tint($color, $percentage) {
     @return mix(white, $color, $percentage);
@@ -94,12 +97,20 @@ $colors: (
     "Nene": $color_nene,
     "Botan": $color_botan,
     "Polka": $color_polka,
+    "Darknesss": $color_darknesss,
+    "Lui": $color_lui,
+    "Koyori": $color_koyori,
+    "Chloe": $color_chloe,
+    "Iroha": $color_iroha,
     "Risu": $color_risu,
     "Hoshinova": $color_moona,
     "Iofifteen": $color_iofi,
     "Ollie": $color_ollie,
     "Melfissa": $color_anya,
     "Reine": $color_reine,
+    "Zeta": $color_zeta,
+    "Kovalskia": $color_kovalskia,
+    "Kanaeru": $color_kanaeru,
     "Calliope": $color_calliope,
     "Kiara": $color_kiara,
     "Inanis": $color_inanis,
@@ -110,12 +121,7 @@ $colors: (
     "Kronii": $color_kronii,
     "Fauna": $color_fauna,
     "Sana": $color_sana,
-    "Mumei": $color_mumei,
-    "Darknesss": $color_darknesss,
-    "Lui": $color_lui,
-    "Koyori": $color_koyori,
-    "Chloe": $color_chloe,
-    "Iroha": $color_iroha
+    "Mumei": $color_mumei
 );
 
 :root {

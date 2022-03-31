@@ -1429,6 +1429,77 @@
             "height": "147 cm",
             "zodiacSign": "Pisces",
             "officialBio": "An ancient weapon known as Keris, she was granted human form through a mystical ritual performed by her master. She’s just about always sleeping or playing games. Living mostly alone for so long has made her tend to be apathetic towards things and people she’s uninterested in, but when talking about things she likes, she can be quite childlike and passionate.\n"
+        },
+        "Vestia Zeta": {
+            "channelId": "UCTvHWSfBZgtxE4sILOaurIQ",
+            "generation": [
+                3
+            ],
+            "bgm": [
+                
+            ],
+            "tags": [
+                "ベスティアゼータ",
+                "Keqing 刻晴"
+            ],
+            "debutDate": "2022/03/25",
+            "twitter": "https://twitter.com/vestiazeta",
+            "officialWebsite": {
+                "en": "https://hololive.hololivepro.com/en/talents/vestia-zeta",
+                "jp": "https://hololive.hololivepro.com/talents/vestia-zeta"
+            },
+            "age": "Confidential",
+            "birthday": "7 November",
+            "height": "155 cm",
+            "zodiacSign": "Scorpio",
+            "officialBio": "She is the mysterious 7th recruit of The Secret Archive Unit that has a full license to collect virtual data. Despite her being a promising rookie, who is also known as codename V.7, she turns clumsy when things are not going exactly according to the manual. It was initially a lonely mission to infiltrate the virtual world, but now she had found comfort here. Will this mission end up leading her to a new destiny instead...?"
+        },
+        "Kaela Kovalskia": {
+            "channelId": "UCZLZ8Jjx_RN2CXloOmgTHVg",
+            "generation": [
+                3
+            ],
+            "bgm": [
+                
+            ],
+            "tags": [
+                "カエラコヴァルスキア",
+                "Bird 鳥"
+            ],
+            "debutDate": "2022/03/26",
+            "twitter": "https://twitter.com/kaelakovalskia",
+            "officialWebsite": {
+                "en": "https://hololive.hololivepro.com/en/talents/kaela-kovalskia",
+                "jp": "https://hololive.hololivepro.com/talents/kaela-kovalskia"
+            },
+            "age": "Too busy collecting hammers",
+            "birthday": "30 August",
+            "height": "173 cm",
+            "zodiacSign": "Virgo",
+            "officialBio": "After taking over her great blacksmithing teacher's forge, she felt a lack of excitement in her life. So, she decided to be free and depart on a journey to find rare smithing materials, one of which was rumored to be under the building of a certain 'idol group' in town. She also loves challenging herself and has a peculiar taste when it comes to foods!"
+        },
+        "Kobo Kanaeru": {
+            "channelId": "UCjLEmnpCNeisMxy134KPwWw",
+            "generation": [
+                3
+            ],
+            "bgm": [
+                
+            ],
+            "tags": [
+                "こぼかなえる"
+            ],
+            "debutDate": "2022/03/27",
+            "twitter": "https://twitter.com/https://twitter.com/kobokanaeru",
+            "officialWebsite": {
+                "en": "https://hololive.hololivepro.com/en/talents/kobo-kanaeru",
+                "jp": "https://hololive.hololivepro.com/talents/kobo-kanaeru"
+            },
+            "age": "I'm legal",
+            "birthday": "12 December",
+            "height": "150 cm",
+            "zodiacSign": "Sagittarius",
+            "officialBio": "A carefree girl who lives in the topmost room of a lighthouse, she is actually the bloodline of the strongest rain shaman in the area. She has great potential to control rain, but she does not like to do it as a task. In order to win back her Rain Master title, she needs to prove to her family that she can keep their rain shaman service afloat. Not only does she have to train daily, but she also needs to adopt some sort of virtual marketing strategy to succeed!"
         }
     }
 }

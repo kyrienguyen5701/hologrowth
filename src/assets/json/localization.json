@@ -247,6 +247,10 @@
     "en": "2nd Generation",
     "jp": "2期生"
   },
+  "menu-id-gen-3": {
+    "en": "3rd Generation",
+    "jp": "3期生"
+  },
   "menu-tokino-sora": {
     "en": "Tokino Sora",
     "jp": "ときのそら"
@@ -894,5 +898,41 @@
   "bio-kazama-iroha": {
     "en": "Secret Society holoX's insurance policy.\n Hailing from a remote mountainous area, she left her home behind and, along with her companion, set off on a journey to achieve her dream of seeing and learning more about the outside world.\n Nowadays, she handles security detail and bodyguard missions for holoX, making enough money to get by.\n ",
     "jp": "【秘密結社holoX】の用心棒。山奥の田舎で生活していたが、外の世界に憧れてお供と共に面白い事を求めて武者修行の旅を始めた。今は日銭を稼ぎながら【秘密結社holoX】の用心棒として雇われている。"
+  },
+  "Vestia Zeta": {
+    "en": "Vestia Zeta",
+    "jp": "ベスティアゼータ"
+  },
+  "menu-vestia-zeta": {
+    "en": "Vestia Zeta",
+    "jp": "ベスティアゼータ"
+  },
+  "bio-vestia-zeta": {
+    "en": "She is the mysterious 7th recruit of The Secret Archive Unit that has a full license to collect virtual data. Despite her being a promising rookie, who is also known as codename V.7, she turns clumsy when things are not going exactly according to the manual. It was initially a lonely mission to infiltrate the virtual world, but now she had found comfort here. Will this mission end up leading her to a new destiny instead...?",
+    "jp": "バーチャル世界のあらゆるデータにアクセスできる組織「シークレット・アーカイブ・ユニット」の7人目の構成員。コードネーム「V.7」と呼ばれる期待の新人だが、マニュアル通りにいかないとボロが出てしまう。バーチャル世界への潜入は孤独な任務だったが、今では安らぎを見出し始めている。この任務が、彼女を新たな運命へと導くことになるのだろうか……？"
+  },
+  "Kaela Kovalskia": {
+    "en": "Kaela Kovalskia",
+    "jp": "カエラコヴァルスキア"
+  },
+  "menu-kaela-kovalskia": {
+    "en": "Kaela Kovalskia",
+    "jp": "カエラコヴァルスキア"
+  },
+  "bio-kaela-kovalskia": {
+    "en": "After taking over her great blacksmithing teacher's forge, she felt a lack of excitement in her life. So, she decided to be free and depart on a journey to find rare smithing materials, one of which was rumored to be under the building of a certain 'idol group' in town. She also loves challenging herself and has a peculiar taste when it comes to foods!",
+    "jp": "偉大なる師匠から鍛冶場を継いだものの、日々の暮らしに刺激がなさすぎることを嘆いていた彼女は、自由に生きることを決断した。そして、とあるアイドル（？）グループと縁の深い建物の下に埋められていると噂される、レアな鍛冶材料を探すための旅に出た。チャレンジ精神旺盛な性格で、食べ物には強いこだわりがある。"
+  },
+  "Kobo Kanaeru": {
+    "en": "Kobo Kanaeru",
+    "jp": "こぼかなえる"
+  },
+  "menu-kobo-kanaeru": {
+    "en": "Kobo Kanaeru",
+    "jp": "こぼかなえる"
+  },
+  "bio-kobo-kanaeru": {
+    "en": "A carefree girl who lives in the topmost room of a lighthouse, she is actually the bloodline of the strongest rain shaman in the area. She has great potential to control rain, but she does not like to do it as a task. In order to win back her Rain Master title, she needs to prove to her family that she can keep their rain shaman service afloat. Not only does she have to train daily, but she also needs to adopt some sort of virtual marketing strategy to succeed!",
+    "jp": "灯台の最上階に住むのんびりした少女。実はその地域で最強のレイン・シャーマンの血筋。雨を自在に操る強力な能力をもつが、他人に言われて力を使うのは好きではない。レイン・マスターの称号を取り戻すには、レイン・シャーマンの仕事を続けられることを家族に証明する必要がある。そのためには訓練だけでなくバーチャルマーケティング戦略も必要と考え、VTuberを目指した。"
   }
 }
