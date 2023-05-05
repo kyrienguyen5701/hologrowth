@@ -185,7 +185,7 @@ export default class MemberPage extends Vue {
         break;
     }
     try {
-      return require(`@/assets/talentBanners/${res}/${this.getMemberName()}_${size}.png`);
+      return `https://storage.googleapis.com/hologrowth-assets/talentBanners/${res}/${this.getMemberName()}_${size}.png`;
     } catch {
       return "";
     }
@@ -193,7 +193,7 @@ export default class MemberPage extends Vue {
 
   getMemberIconURL() {
     try {
-      return require(`@/assets/talentIcons/default/${this.getMemberName()}.svg`);
+      return `https://storage.googleapis.com/hologrowth-assets/talentIcons/default/${this.getMemberName()}.svg`;
     } catch {
       return "";
     }
@@ -201,7 +201,7 @@ export default class MemberPage extends Vue {
 
   getMemberAvatarURL() {
     try {
-      return require(`@/assets/talentAvatars/medium/${this.getMemberName()}.png`);
+      return `https://storage.googleapis.com/hologrowth-assets/talentAvatars/medium/${this.getMemberName()}.png`;
     } catch {
       return "";
     }
@@ -230,7 +230,7 @@ export default class MemberPage extends Vue {
       res = arr[Math.floor(Math.random() * arr.length)];
     }
     try {
-      return require(`@/assets/talentSignatures/${res}/${this.getMemberName()}.png`);
+      return `https://storage.googleapis.com/hologrowth-assets/talentSignatures/${res}/${this.getMemberName()}.png`;
     } catch {
       return "";
     }

@@ -195,7 +195,9 @@ export default class MusicPlayer extends Vue {
   setCurrentSong() {
     this.setSeek(0);
     const songPath = this.$data.songList[this.$data.currentSongIndex];
-    const song = new Audio(require(`@/assets/sounds/${songPath}`));
+    const song = new Audio(
+      `https://storage.googleapis.com/hologrowth-assets/sounds/${songPath}`
+    );
     if (song) {
       if (this.$data.isPlaying) {
         song.play();
