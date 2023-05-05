@@ -1,18 +1,12 @@
 from datetime import datetime
 import os
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
 import json
 import requests
 import re
-import pandas as pd
 
 today = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 ENV_PATH = os.path.join(os.path.dirname(__file__), '.env.local')
-# subDB = os.path.join(os.path.dirname(__file__), 'holo_subcounts.csv')
-# viewDB = os.path.join(os.path.dirname(__file__), 'holo_viewcounts.csv')
-# subDF = pd.read_csv(subDB, parse_dates=['Date'], encoding='utf-8')
-# viewDF = pd.read_csv(viewDB, parse_dates=['Date'], encoding='utf-8')
 META_FILE = open(os.path.join(os.path.dirname(__file__), '../public/talents.json'), 'r+', encoding='utf-8')
 META = json.load(META_FILE)
 AVA_FOLDER = os.path.join(os.path.dirname(__file__), '../src/assets/talentAvatars/')
@@ -26,9 +20,7 @@ WIKI_START_URL = 'https://hololive.wiki/wiki/'
 ANOTHER_WIKI_START_URL = 'https://virtualyoutuber.fandom.com/wiki/'
 YOUTUBE_BANNER_START_URL = 'yt3.ggpht.com/'
 YOUTUBE_BANNER_END_URL = '-no-nd-rj'
-
-load_dotenv(ENV_PATH)
-YOUTUBE_V3_API_KEY = os.getenv('YOUTUBE_V3_API_KEY')
+YOUTUBE_V3_API_KEY = os.environ.get('YOUTUBE_V3_API_KEY')
 
 sub_today, view_today = {'Date': [today]}, {'Date': [today]}
 
@@ -152,29 +144,11 @@ def getYoutubeChannelBanners(talent_name, channelId):
 def getDataFromYoutube(API_URL, talent_name):
     req_data = json.loads(requests.get(API_URL).text)['items'][0]
 
-    # # get subscriberCount and viewCount
-    # channel_name = req_data['snippet']['title']
-    # sub_count = req_data['statistics']['subscriberCount']
-    # view_count = req_data['statistics']['viewCount']
-    # sub_today[channel_name] = [sub_count]
-    # view_today[channel_name] = [view_count]
-
     # get avatars
     avatars = req_data['snippet']['thumbnails']
     for resolution, avatar in avatars.items():
         avaUrl = avatar['url']
         download_picture(avaUrl, AVA_FOLDER, talent_name, resolution)
-
-# def updateDB():
-#     global subDB, viewDB
-#     subDF = pd.read_csv(subDB, parse_dates=['Date'], encoding='utf-8')
-#     viewDF = pd.read_csv(viewDB, parse_dates=['Date'], encoding='utf-8')
-#     subDF = pd.concat([pd.DataFrame(sub_today), subDF])
-#     viewDF = pd.concat([pd.DataFrame(view_today), viewDF])
-#     subDF.set_index('Date', inplace=True)
-#     viewDF.set_index('Date', inplace=True)
-#     subDF.to_csv(subDB)
-#     viewDF.to_csv(viewDB)
 
 def main():
     for branch in META.items():
@@ -209,11 +183,8 @@ def main():
             # # fetch signatures
             # getSignature(talent_name)
 
-    # write to DB   
-    # updateDB()
-
 if __name__ == '__main__':
     main()
     # json.dump(META, META_FILE, ensure_ascii=False, indent=4)
 
-# TODO: add argparse
+# TODO: add argparse to determine what to mine
