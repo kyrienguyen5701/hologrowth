@@ -14,8 +14,9 @@ __pycache__
 # archive directories, for old draft files
 archive
 
-# server code
-server
+# secrets
+Dockerfile_*
+credentials.json
 
 # Log files
 npm-debug.log*
