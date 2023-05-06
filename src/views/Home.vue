@@ -160,8 +160,8 @@ export default class Home extends Vue {
           res.push({
             rel: talent.id,
             name: talent.name,
-            avatar: require(`@/assets/talentAvatars/medium/${talent.name}.png`),
-            banner: require(`@/assets/talentBanners/medium/${talent.name}_320 x 52.png`),
+            avatar: `https://storage.googleapis.com/hologrowth-assets/talentAvatars/medium/${talent.name}.png`,
+            banner: `https://storage.googleapis.com/hologrowth-assets/talentBanners/medium/${talent.name}_320 x 52.png`,
             dataAvailable: talent.name === goddess ? true : false,
             shown: true
           });
@@ -227,7 +227,7 @@ export default class Home extends Vue {
       const countType = this.$data.countTypes[i];
       await axios({
         method: "POST",
-        url: "https://hologrowth-server.kyrie5701.com/get-member-data",
+        url: "https://hologrowth-server-dev-cihb2awmvq-uc.a.run.app/get-member-data",
         headers: { "content-type": "application/json" },
         data: {
           range: 0,
@@ -393,7 +393,7 @@ export default class Home extends Vue {
   }
 
   getMemberIconURL(memberName: string) {
-    return require(`@/assets/talentIcons/default/${memberName}.svg`);
+    return `https://storage.googleapis.com/hologrowth-assets/talentIcons/default/${memberName}.svg`;
   }
 }
 </script>

@@ -92,8 +92,8 @@ export interface CurrentSong {
 export interface TalentDisplay {
   rel: number;
   name: string;
-  avatar: object;
-  banner: object;
+  avatar: object | string;
+  banner: object | string;
   dataAvailable: boolean;
   shown: boolean;
 }
