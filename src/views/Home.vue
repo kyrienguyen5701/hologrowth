@@ -227,7 +227,7 @@ export default class Home extends Vue {
       const countType = this.$data.countTypes[i];
       await axios({
         method: "POST",
-        url: "https://hologrowth-server-dev-cihb2awmvq-uc.a.run.app/get-member-data",
+        url: "https://hologrowth-server.kyrie5701.com/get-member-data",
         headers: { "content-type": "application/json" },
         data: {
           range: 0,

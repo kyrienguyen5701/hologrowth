@@ -1,0 +1,22 @@
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-f', 'Dockerfile_dev', '-t', 'gcr.io/${PROJECT_ID}/hologrowth-server:dev', '.' ]
+# Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'push', 'gcr.io/${PROJECT_ID}/hologrowth-server:dev']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: 
+  - 'run'
+  - 'deploy'
+  - 'hologrowth-server-dev'
+  - '--image'
+  - 'gcr.io/${PROJECT_ID}/hologrowth-server:dev'
+  - '--region'
+  - 'us-central1'
+  - '--port'
+  - '8000'
+images:
+- 'gcr.io/${PROJECT_ID}/hologrowth-server:dev'

@@ -1,0 +1,13 @@
+venv/
+
+__pycache__
+
+Dockerfile_*
+cloudbuild_*
+
+# Exclude "build-time" ignore files.
+.dockerignore
+.gcloudignore
+
+# Exclude git history and configuration.
+.gitignore

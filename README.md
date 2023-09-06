@@ -74,3 +74,7 @@ A really fun and somewhat challenging project to work at since I have no experie
 ### April 30th, 2023
 
 Static files are move to Google Cloud Storage to speed up building.
+
+### May 5th, 2023
+
+Moving from old server codes to microservice(s) with Docker and Cloud Run.

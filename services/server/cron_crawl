@@ -1,0 +1,1 @@
+0 12 * * * root /usr/local/bin/python3 /app/mining_scheduled.py >> /var/log/cron_crawl.log 2>&1
