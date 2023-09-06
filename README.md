@@ -1,3 +1,6 @@
+# IMPORTANT UPDATE
+Due to how fast Hololive is growing and various personal + external factors, this project will no longer receive any updates. I hope this is a good demonstration of Full Stack (Flask + Vue.js) and DevOps (Cloud Run with Google Cloud Platform)
+
 # Hologrowth
 
 Hololive Fanwork: Unofficial Data Tracker + Music Player
